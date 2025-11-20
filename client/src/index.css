@@ -4,8 +4,11 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  /* Google Branding Style: Plus Jakarta Sans is very close to 'Google Sans' / 'Product Sans' */
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Google Interface Style: Roboto is the standard Google/Android font */
+  --font-body: 'Roboto', sans-serif;
 
   --color-background: hsl(0 0% 3%);
   --color-foreground: hsl(0 0% 98%);
