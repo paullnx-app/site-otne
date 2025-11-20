@@ -32,47 +32,63 @@ const steps = [
 
 export function Methodology() {
   return (
-    <section id="metodologia" className="py-24 bg-white relative overflow-hidden">
+    <section id="metodologia" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Decorative Prism Background */}
-      <div className="absolute right-0 top-1/4 w-1/2 opacity-40 pointer-events-none">
-        <img src={prismImg} alt="" className="w-full h-auto rotate-180 mix-blend-multiply" />
+      <div className="absolute left-0 top-1/4 w-1/3 opacity-10 pointer-events-none">
+        <img src={prismImg} alt="" className="w-full h-auto mix-blend-multiply" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
-            Como funciona a consultoria de SEO <span className="text-primary">na prática</span>
+            Como funciona a consultoria <br/>
+            <span className="text-primary">na prática</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Nada de relatórios complicados e ações soltas. Você vai saber exatamente <strong>o que será feito, quando e por quê</strong>. O processo é dividido em etapas claras:
+            Nada de relatórios complicados e ações soltas. Você vai saber exatamente <strong>o que será feito, quando e por quê</strong>.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-6 relative">
+            {/* Connecting Line (Desktop only) */}
+            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-primary/30 to-transparent -translate-x-1/2" />
+
           {steps.map((step, index) => (
             <motion.div
               key={step.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.2 }}
-              className="relative pl-12 border-l border-border pb-12 last:pb-0"
+              transition={{ delay: index * 0.1 }}
+              className={`relative flex items-center gap-6 ${
+                index % 2 === 0 ? "md:text-right md:flex-row-reverse md:pr-12" : "md:pl-12"
+              }`}
             >
-              <div className="absolute left-[-24px] top-0 flex items-center justify-center w-12 h-12 rounded-full bg-white border border-primary text-primary font-mono font-bold shadow-lg shadow-primary/10">
-                {step.id}
+              {/* Timeline Dot */}
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-4 border-primary shadow-sm hidden md:block z-10" />
+
+              <div className="flex-1 bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group w-full">
+                <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <step.icon className="w-6 h-6" />
+                    </div>
+                    <span className="text-4xl font-display font-bold text-slate-100 select-none absolute top-4 right-4 pointer-events-none">
+                        {step.id}
+                    </span>
+                    <h3 className="text-xl font-display font-bold text-foreground">
+                        {step.title}
+                    </h3>
+                </div>
+                
+                <p className="text-muted-foreground leading-relaxed">
+                  {step.desc}
+                </p>
               </div>
-              
-              <h3 className="text-2xl font-display font-bold text-foreground mb-4 flex items-center gap-3">
-                {step.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                {step.desc}
-              </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-16 text-center">
            <p className="text-foreground mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
            <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20">
              Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
