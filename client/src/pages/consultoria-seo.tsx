@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 
 const services = [
   {
@@ -111,31 +112,43 @@ export default function ConsultoriaSEO() {
     <div className="min-h-screen bg-background">
       <Navbar />
       
-      <main className="pt-24 pb-16">
-        {/* Header Section */}
-        <section className="container mx-auto px-6 text-center mb-20">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto"
-          >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 tracking-tight">
-              Consultoria de SEO Completa para <br/>
-              <span className="text-primary">Pequenas e Médias Empresas</span>
-            </h1>
-            
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Estratégia + Correções Técnicas + Conteúdo + SEO Local + Monitoramento. <br/>
-              Tudo o que sua empresa precisa para aparecer, atrair clientes e crescer com previsibilidade.
-            </p>
+      <main className="pt-20">
+        {/* Header Section with Hero Background */}
+        <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden mb-20">
+           {/* Background Image Layer */}
+          <div className="absolute inset-0 z-0">
+            <img 
+              src={heroBg} 
+              alt="Data Background" 
+              className="w-full h-full object-cover opacity-30"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
+          </div>
 
-            <div className="inline-block p-6 bg-secondary/50 rounded-2xl border border-border backdrop-blur-sm">
-              <p className="text-2xl font-display font-bold text-foreground">
-                "SEO não é sobre visitas. É sobre vendas."
+          <div className="container mx-auto px-6 text-center relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto"
+            >
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-6 tracking-tight">
+                Consultoria de SEO Completa para <br/>
+                <span className="text-primary">Pequenas e Médias Empresas</span>
+              </h1>
+              
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Estratégia + Correções Técnicas + Conteúdo + SEO Local + Monitoramento. <br/>
+                Tudo o que sua empresa precisa para aparecer, atrair clientes e crescer com previsibilidade.
               </p>
-            </div>
-          </motion.div>
+
+              <div className="inline-block p-6 bg-white/80 rounded-2xl border border-border backdrop-blur-sm shadow-sm">
+                <p className="text-2xl font-display font-bold text-foreground">
+                  "SEO não é sobre visitas. É sobre vendas."
+                </p>
+              </div>
+            </motion.div>
+          </div>
         </section>
 
         {/* Introduction */}
