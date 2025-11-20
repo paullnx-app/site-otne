@@ -49,10 +49,7 @@ export function Methodology() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6 relative">
-            {/* Connecting Line (Desktop only) */}
-            <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-primary/30 to-transparent -translate-x-1/2" />
-
+        <div className="grid md:grid-cols-2 gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.id}
@@ -60,30 +57,26 @@ export function Methodology() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`relative flex items-center gap-6 ${
-                index % 2 === 0 ? "md:text-right md:flex-row-reverse md:pr-12" : "md:pl-12"
-              }`}
+              className="flex bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group"
             >
-              {/* Timeline Dot - Removido as "bolinhas" laranjas no meio do texto, agora é um ponto limpo na timeline */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white border-4 border-primary shadow-sm hidden md:block z-10" />
-
-              <div className="flex-1 bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group w-full">
-                <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <step.icon className="w-6 h-6" />
+              <div className="flex flex-col gap-6 w-full">
+                <div className="flex items-center justify-between">
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
+                        <step.icon className="w-7 h-7" />
                     </div>
-                    <span className="text-4xl font-display font-bold text-slate-100 select-none absolute top-4 right-4 pointer-events-none">
+                    <span className="text-5xl font-display font-bold text-slate-100 select-none">
                         {step.id}
                     </span>
-                    <h3 className="text-xl font-display font-bold text-foreground">
-                        {step.title}
-                    </h3>
                 </div>
                 
-                {/* Texto revisado para terceira pessoa/impessoal */}
-                <p className="text-muted-foreground leading-relaxed">
-                  {step.desc}
-                </p>
+                <div>
+                    <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                        {step.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                        {step.desc}
+                    </p>
+                </div>
               </div>
             </motion.div>
           ))}
