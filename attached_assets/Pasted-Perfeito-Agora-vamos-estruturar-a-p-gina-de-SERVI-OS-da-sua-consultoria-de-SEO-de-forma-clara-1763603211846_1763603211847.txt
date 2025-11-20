@@ -1,0 +1,196 @@
+Perfeito. Agora vamos estruturar **a página de SERVIÇOS** da sua consultoria de SEO — de forma clara, objetiva e extremamente profissional, pronta para colar no Elementor.
+
+A ideia aqui é:
+✔ explicar *o que você faz*,
+✔ *como entrega*,
+✔ *o que vem incluso*,
+✔ e *por que isso importa* para o empresário.
+
+---
+
+# ✅ **ITEM 2 — PÁGINA DE SERVIÇOS (Consultoria de SEO)**
+
+---
+
+# **1. Título da Página (H1)**
+
+**Consultoria de SEO Completa para Pequenas e Médias Empresas**
+
+Subtítulo:
+Estratégia + Correções Técnicas + Conteúdo + SEO Local + Monitoramento.
+Tudo o que sua empresa precisa para aparecer, atrair clientes e crescer com previsibilidade.
+
+---
+
+# **2. Introdução da página**
+
+A consultoria foi criada para empresários que querem resultados reais, não relatórios complicados.
+Eu entro no seu negócio, analiso profundamente o cenário atual e construo uma estratégia completa para fazer seu site aparecer nas posições certas do Google — e transformar essas posições em vendas.
+
+Aqui você pode usar uma frase forte:
+
+> **SEO não é sobre visitas. É sobre vendas.**
+
+---
+
+# **3. Seção: O que está incluído na consultoria**
+
+Use formato de **cards** no Elementor.
+
+---
+
+## **CARD 1 — Diagnóstico 360º**
+
+Análise completa de tudo que influencia seu SEO:
+
+* Auditoria técnica do site
+* Indexação, velocidade e Core Web Vitals
+* Análise estrutural (URLs, headings, HTML, semântica)
+* Qualidade do conteúdo atual
+* Análise de concorrentes e SERP real
+* SEO Local (Google Business Profile)
+* Auditoria de backlinks
+* Mapa das principais causas de baixo desempenho
+
+**Resultado entregue:** Relatório completo + plano de correções prioritárias.
+
+---
+
+## **CARD 2 — Planejamento Estratégico de SEO**
+
+Criamos toda a estratégia baseada nos dados do diagnóstico:
+
+* Pesquisa profunda de palavras-chave
+* Clusterização por intenção e funil
+* Arquitetura SEO do site (silos, hubs, topical authority)
+* Definição das páginas prioritárias
+* Estratégia para SEO Local (se for negócio físico)
+* Guia de escrita SEO (copy + SEO)
+* Calendário editorial completo
+
+**Resultado entregue:** Documento mestre de estratégia (roadmap de 90 dias).
+
+---
+
+## **CARD 3 — Implementação Técnica**
+
+Ajustes essenciais para que o Google “entenda” seu site e você ganhe performance:
+
+* Correções de erros técnicos de SEO
+* Ajustes de performance e velocidade
+* Melhoria na estrutura de URLs
+* Configuração de dados estruturados (Schema)
+* Otimização de imagens e carregamento
+* Ajustes de tags, metas e headings
+* Configuração avançada de Search Console e Analytics
+* SEO Técnico Local (NAP, categorias, GBP)
+
+**Resultado entregue:** Site tecnicamente otimizado e mais rápido.
+
+---
+
+## **CARD 4 — Otimização e Criação de Conteúdo**
+
+Conteúdo pensado para gerar tráfego qualificado e conversão:
+
+* Revisão e otimização de páginas já existentes
+* Criação de conteúdos novos (blog, serviços, institucionais)
+* Otimização de páginas de serviço para conversão
+* Conteúdos estratégicos para SEO Local
+* Implementação de CTA inteligente e copy persuasiva
+* Linkagem interna inteligente
+* Atualização de conteúdos antigos com baixa performance
+
+**Resultado entregue:** Conteúdo que ranqueia e gera leads.
+
+---
+
+## **CARD 5 — Autoridade e SEO Local**
+
+Reforçamos sua relevância no Google, especialmente se você atende regionalmente.
+
+* Estratégia completa de SEO Local
+* Gestão e otimização do Google Business Profile
+* Criação e otimização de conteúdos locais
+* Construção de citações e backlinks locais
+* Estratégia de autoridade digital (guest posts, parcerias)
+
+**Resultado entregue:** Mais visibilidade, presença e relevância na sua região.
+
+---
+
+## **CARD 6 — Monitoramento e Evolução Contínua**
+
+SEO não é “configurar e largar”. É acompanhar, ajustar e melhorar.
+
+* Acompanhamento semanal de posições
+* Relatórios mensais com indicadores chave
+* Ajustes no roadmap conforme performance
+* Dashboards com métricas em tempo real
+* Reuniões recorrentes de alinhamento
+
+**Resultado entregue:** Crescimento contínuo e previsível, com decisões baseadas em dados.
+
+---
+
+# **4. Seção: O que sua empresa ganha com isso**
+
+(benefícios diretos, não técnicos)
+
+Use bullets claros:
+
+* Crescimento de tráfego qualificado
+* Aumento de leads e oportunidades
+* Páginas mais fortes para conversão
+* Redução de CAC
+* Independência (parcial) de mídia paga
+* Autoridade digital real
+* Domínio do SEO Local (se aplicável)
+* Melhoria da percepção de marca
+* Resultados consistentes mês a mês
+
+---
+
+# **5. Bloco de reforço (copy curta)**
+
+> **O SEO certo não faz você competir por preço.
+> Ele faz você competir por autoridade.**
+
+---
+
+# **6. Mini-CTA dentro da página de serviços**
+
+> Quer saber quanto sua empresa está deixando de ganhar hoje por falta de SEO?
+> **Solicite um diagnóstico gratuito** e eu te mostro — com dados — onde estão as oportunidades.
+
+---
+
+# **7. Fechamento da página**
+
+*(Você pode repetir o CTA principal ou um formulário curto)*
+
+**Botão:** *Quero um diagnóstico gratuito de SEO*
+ou
+**Botão secundário:** *Falar comigo no WhatsApp*
+
+---
+
+# 🔥 Observação importante (para você, Paul)
+
+Essa página de serviços está pensada para:
+
+* vender **consultoria séria**, não “pacote de SEO barato”;
+* gerar **autoridade** sem ser técnica demais;
+* mostrar **processo claro**, que empresários valorizam;
+* guiar o visitante sempre para o CTA;
+* posicionar você como **especialista + estrategista**, não executor isolado.
+
+---
+
+Se quiser, posso agora montar:
+
+👉 **Item 3 – Metodologia simplificada (para uma página específica)**
+OU
+👉 transformar tudo isso em **layout pronto para Elementor**, com blocos, ordem, espaçamentos e sugestões de imagens/ícones.
+
+Como prefere seguir?
