@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@assets/generated_images/Abstract_dark_data_visualization_background_with_orange_lines_3dabf822.png";
+import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 
 export function Hero() {
   return (
@@ -11,9 +11,9 @@ export function Hero() {
         <img 
           src={heroBg} 
           alt="Data Background" 
-          className="w-full h-full object-cover opacity-40"
+          className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10 text-center">
@@ -22,17 +22,17 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-border mb-6 shadow-sm">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-xs font-medium text-white/80 uppercase tracking-widest">Consultoria SEO Especializada</span>
+            <span className="text-xs font-medium text-foreground/80 uppercase tracking-widest">Consultoria SEO Especializada</span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white tracking-tight mb-6 leading-[1.1]">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground tracking-tight mb-6 leading-[1.1]">
             Consultoria de SEO para <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white to-white/50">PMEs que Querem Crescer</span>
+            <span className="text-primary">PMEs que Querem Crescer</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-primary font-medium mb-6 max-w-4xl mx-auto">
+          <h2 className="text-xl md:text-2xl text-foreground/80 font-medium mb-6 max-w-4xl mx-auto">
             Transforme o Google na sua principal fonte de clientes, com uma estratégia de SEO feita para a realidade da sua empresa — sem promessas vazias, com números claros.
           </h2>
 
@@ -47,10 +47,10 @@ export function Hero() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto">
+          <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-lg shadow-primary/20">
             Quero um diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
-          <Button variant="outline" size="lg" className="h-14 px-8 border-white/10 text-white hover:bg-white/5 rounded-xl text-lg w-full sm:w-auto">
+          <Button variant="outline" size="lg" className="h-14 px-8 border-border text-foreground hover:bg-secondary rounded-xl text-lg w-full sm:w-auto shadow-sm bg-white">
             Ver como funciona a consultoria
           </Button>
         </motion.div>

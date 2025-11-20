@@ -10,38 +10,43 @@
   /* Google Interface Style: Roboto */
   --font-body: 'Roboto', sans-serif;
 
-  --color-background: hsl(220 15% 10%); /* Darker, cooler background to make orange pop */
-  --color-foreground: hsl(0 0% 98%);
+  /* LIGHT MODE PALETTE - Clean, White, Professional */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(220 20% 15%); /* Dark Slate Grey for text - softer than pure black */
 
-  --color-card: hsl(220 15% 13%);
-  --color-card-foreground: hsl(0 0% 98%);
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(220 20% 15%);
 
-  --color-popover: hsl(220 15% 13%);
-  --color-popover-foreground: hsl(0 0% 98%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(220 20% 15%);
 
-  /* #FF772B -> HSL(22, 100%, 58%) */
+  /* #FF772B -> HSL(22, 100%, 58%) - Vibrant Orange */
   --color-primary: hsl(22 100% 58%);
-  --color-primary-foreground: hsl(0 0% 100%); /* White text looks better on this orange */
+  --color-primary-foreground: hsl(0 0% 100%);
 
-  --color-secondary: hsl(220 10% 20%);
-  --color-secondary-foreground: hsl(0 0% 98%);
+  --color-secondary: hsl(220 15% 96%); /* Light Grey for secondary backgrounds */
+  --color-secondary-foreground: hsl(220 20% 15%);
 
-  --color-muted: hsl(220 10% 20%);
-  --color-muted-foreground: hsl(220 10% 70%);
+  --color-muted: hsl(220 15% 96%);
+  --color-muted-foreground: hsl(220 10% 45%);
 
-  --color-accent: hsl(22 100% 58%);
-  --color-accent-foreground: hsl(0 0% 100%);
+  --color-accent: hsl(22 100% 96%); /* Very light orange tint for accents */
+  --color-accent-foreground: hsl(22 100% 40%);
 
-  --color-destructive: hsl(0 62.8% 30.6%);
+  --color-destructive: hsl(0 84% 60%);
   --color-destructive-foreground: hsl(0 0% 98%);
 
-  --color-border: hsl(220 10% 20%);
-  --color-input: hsl(220 10% 20%);
+  --color-border: hsl(220 15% 90%);
+  --color-input: hsl(220 15% 90%);
   --color-ring: hsl(22 100% 58%);
 
-  --radius-sm: 0.2rem;
-  --radius-md: 0.4rem;
-  --radius-lg: 0.6rem;
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  
+  /* Custom Shadows for Depth on White */
+  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
 }
 
 @layer base {
@@ -52,22 +57,27 @@
     @apply font-body bg-background text-foreground antialiased selection:bg-primary selection:text-primary-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display tracking-tight;
+    @apply font-display tracking-tight text-foreground;
   }
 }
 
 @layer utilities {
   .glass-panel {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm;
   }
   
   .text-glow {
-    text-shadow: 0 0 20px hsla(22, 100%, 58%, 0.4);
+    /* Removed for light mode - replaced with clean typography */
+    text-shadow: none;
   }
   
   .grid-bg {
-    background-size: 50px 50px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  }
+  
+  .section-gradient {
+    background: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 15% 98%) 100%);
   }
 }

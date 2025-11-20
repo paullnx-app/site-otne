@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Search, Map, Settings, TrendingUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import prismImg from "@assets/generated_images/3D_glass_prism_refracting_orange_light_d8ad0b15.png";
+import prismImg from "@assets/generated_images/3D_glass_prism_on_white_background_with_orange_light_4ab32b32.png";
 
 const steps = [
   {
@@ -32,15 +32,15 @@ const steps = [
 
 export function Methodology() {
   return (
-    <section id="metodologia" className="py-24 bg-background relative overflow-hidden">
+    <section id="metodologia" className="py-24 bg-white relative overflow-hidden">
       {/* Decorative Prism Background */}
-      <div className="absolute right-0 top-1/4 w-1/2 opacity-10 pointer-events-none mix-blend-screen">
-        <img src={prismImg} alt="" className="w-full h-auto rotate-180" />
+      <div className="absolute right-0 top-1/4 w-1/2 opacity-40 pointer-events-none">
+        <img src={prismImg} alt="" className="w-full h-auto rotate-180 mix-blend-multiply" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mb-16">
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
             Como funciona a consultoria de SEO <span className="text-primary">na prática</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -56,13 +56,13 @@ export function Methodology() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
-              className="relative pl-12 border-l border-white/10 pb-12 last:pb-0"
+              className="relative pl-12 border-l border-border pb-12 last:pb-0"
             >
-              <div className="absolute left-[-24px] top-0 flex items-center justify-center w-12 h-12 rounded-full bg-background border border-primary/30 text-primary font-mono font-bold shadow-[0_0_15px_rgba(255,119,43,0.2)]">
+              <div className="absolute left-[-24px] top-0 flex items-center justify-center w-12 h-12 rounded-full bg-white border border-primary text-primary font-mono font-bold shadow-lg shadow-primary/10">
                 {step.id}
               </div>
               
-              <h3 className="text-2xl font-display font-bold text-white mb-4 flex items-center gap-3">
+              <h3 className="text-2xl font-display font-bold text-foreground mb-4 flex items-center gap-3">
                 {step.title}
               </h3>
               <p className="text-muted-foreground leading-relaxed text-lg">
@@ -73,8 +73,8 @@ export function Methodology() {
         </div>
 
         <div className="mt-12 text-center">
-           <p className="text-white mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
-           <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-[0_0_30px_rgba(255,119,43,0.2)]">
+           <p className="text-foreground mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
+           <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20">
              Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
            </Button>
         </div>

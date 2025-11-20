@@ -23,7 +23,7 @@ export function Stats() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-6">
               We Speak <span className="text-primary">Data</span>, <br />
               Not Assumptions.
             </h2>
@@ -32,13 +32,13 @@ export function Stats() {
             </p>
             
             <div className="grid grid-cols-2 gap-6">
-              <div className="border-l-2 border-primary pl-6">
-                <h3 className="text-4xl font-display font-bold text-white mb-1">+145%</h3>
-                <p className="text-sm text-muted-foreground">Avg. Traffic Increase</p>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-4xl font-display font-bold text-foreground mb-1">+145%</h3>
+                <p className="text-sm text-muted-foreground font-medium">Avg. Traffic Increase</p>
               </div>
-              <div className="border-l-2 border-primary pl-6">
-                <h3 className="text-4xl font-display font-bold text-white mb-1">3.5x</h3>
-                <p className="text-sm text-muted-foreground">ROI Multiplier</p>
+              <div className="border-l-4 border-primary pl-6">
+                <h3 className="text-4xl font-display font-bold text-foreground mb-1">3.5x</h3>
+                <p className="text-sm text-muted-foreground font-medium">ROI Multiplier</p>
               </div>
             </div>
           </motion.div>
@@ -49,13 +49,13 @@ export function Stats() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Card className="bg-card/50 border-white/10 p-6 backdrop-blur-sm shadow-2xl">
+            <Card className="bg-white border border-border p-6 shadow-[0_20px_50px_-12px_rgba(0,0,0,0.1)] rounded-2xl">
               <div className="flex items-center justify-between mb-6">
                 <div>
                   <p className="text-sm font-medium text-muted-foreground">Organic Traffic Growth</p>
-                  <h4 className="text-2xl font-bold text-white">18,240 <span className="text-primary text-sm font-normal ml-2">▲ 12% this week</span></h4>
+                  <h4 className="text-2xl font-bold text-foreground">18,240 <span className="text-green-600 text-sm font-bold ml-2 bg-green-100 px-2 py-0.5 rounded-full">▲ 12%</span></h4>
                 </div>
-                <div className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold">
+                <div className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold border border-primary/20">
                   Live Data
                 </div>
               </div>
@@ -64,29 +64,30 @@ export function Stats() {
                   <AreaChart data={data}>
                     <defs>
                       <linearGradient id="colorTraffic" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="hsl(22, 100%, 58%)" stopOpacity={0.3}/>
+                        <stop offset="5%" stopColor="hsl(22, 100%, 58%)" stopOpacity={0.2}/>
                         <stop offset="95%" stopColor="hsl(22, 100%, 58%)" stopOpacity={0}/>
                       </linearGradient>
                     </defs>
                     <XAxis 
                       dataKey="name" 
-                      stroke="#333" 
+                      stroke="#94a3b8" 
                       fontSize={12} 
                       tickLine={false} 
                       axisLine={false}
                     />
                     <YAxis 
-                      stroke="#333" 
+                      stroke="#94a3b8" 
                       fontSize={12} 
                       tickLine={false} 
                       axisLine={false}
                       tickFormatter={(value) => `${value/1000}k`}
                     />
                     <Tooltip 
-                      contentStyle={{ backgroundColor: '#111', borderColor: '#333', borderRadius: '8px' }}
-                      itemStyle={{ color: '#fff' }}
+                      contentStyle={{ backgroundColor: '#fff', borderColor: '#e2e8f0', borderRadius: '12px', boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1)' }}
+                      itemStyle={{ color: '#1e293b', fontWeight: 'bold' }}
+                      labelStyle={{ color: '#64748b' }}
                     />
-                    <CartesianGrid strokeDasharray="3 3" stroke="#222" vertical={false} />
+                    <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" vertical={false} />
                     <Area 
                       type="monotone" 
                       dataKey="traffic" 
