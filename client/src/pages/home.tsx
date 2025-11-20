@@ -17,7 +17,7 @@ export default function Home() {
         <Trust />
       </main>
       
-      <footer className="py-12 border-t border-white/5 bg-black">
+      <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
             © 2025 RANK.AI - Consultoria de SEO. Todos os direitos reservados.
