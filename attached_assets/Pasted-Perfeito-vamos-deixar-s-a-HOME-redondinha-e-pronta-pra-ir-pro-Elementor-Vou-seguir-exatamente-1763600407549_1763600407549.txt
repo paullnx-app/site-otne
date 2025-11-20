@@ -1,0 +1,132 @@
+Perfeito, vamos deixar **só a HOME** redondinha e pronta pra ir pro Elementor.
+Vou seguir exatamente aqueles blocos: **Hero → Benefícios → Quem eu ajudo → Como funciona → Prova social + CTA**.
+
+---
+
+## 🔹 SEÇÃO 1 – HERO (ABERTURA DA HOME)
+
+**Título principal (H1):**
+**Consultoria de SEO para Pequenas e Médias Empresas que Querem Crescer de Verdade**
+
+**Subtítulo:**
+Transformo o Google na sua principal fonte de clientes, com uma estratégia de SEO feita para a realidade da sua empresa — sem promessas vazias, com números claros.
+
+**Texto curto de apoio (1 parágrafo):**
+Se você já investe em site, conteúdo ou anúncios, mas sente que “o Google não funciona” para o seu negócio, o problema não é o canal — é a estratégia. Eu ajudo empresários e gestores a organizarem o SEO de forma simples, técnica e orientada a resultados: mais visitas qualificadas, mais leads e mais vendas.
+
+**CTA principal (botão):**
+
+> *Quero um diagnóstico gratuito de SEO*
+
+**CTA secundário (link abaixo do botão):**
+
+> *Ver como funciona a consultoria*
+
+---
+
+## 🔹 SEÇÃO 2 – BENEFÍCIOS RÁPIDOS (ACIMA OU LOGO ABAIXO DA DOBRA)
+
+Título da seção (H2):
+**Por que trabalhar o SEO da sua empresa comigo**
+
+Bullets em 2 ou 3 colunas:
+
+* **Mais clientes sem depender só de anúncios pagos**
+* **Posicionamento estratégico no Google nas buscas certas**
+* **Aumento de leads qualificados, não só visitas**
+* **Site mais rápido, organizado e confiável aos olhos do Google**
+* **Conteúdos pensados para vender, não apenas para encher blog**
+* **Acompanhamento contínuo, com números e ações claras**
+
+Se quiser, pode ter uma frase de reforço abaixo:
+
+> *SEO não é sobre aparecer “em qualquer lugar” no Google, é sobre aparecer na hora certa, para a pessoa certa, com a oferta certa.*
+
+---
+
+## 🔹 SEÇÃO 3 – QUEM EU AJUDO
+
+Título (H2):
+**Para quem é a minha consultoria de SEO**
+
+Texto introdutório (curto):
+Minha consultoria é focada em **empresários, gestores e profissionais** que já entenderam que precisam estar bem posicionados no Google, mas não têm tempo ou equipe interna para montar uma estratégia sólida.
+
+Lista de perfis:
+
+* **Pequenas e médias empresas** que querem crescer com previsibilidade.
+* **Empresas de serviços** que dependem de leads (B2B e B2C).
+* **Negócios locais** (clínicas, escritórios, coworkings, escolas, etc.) que precisam dominar o SEO Local.
+* **Empreendedores digitais e infoprodutores** que querem escalar tráfego orgânico.
+* **E-commerces menores** que precisam competir com players maiores com inteligência, não só com verba.
+
+Frase final de identificação:
+
+> Se você já tem ou está construindo um site, atende clientes recorrentemente e quer que o Google trabalhe a seu favor todos os dias, a consultoria foi desenhada para você.
+
+---
+
+## 🔹 SEÇÃO 4 – COMO FUNCIONA (VISÃO GERAL DO PROCESSO)
+
+Título (H2):
+**Como funciona a consultoria de SEO na prática**
+
+Subtexto:
+Nada de relatórios complicados e ações soltas. Você vai saber exatamente **o que será feito, quando e por quê**. O processo é dividido em etapas claras:
+
+### Etapa 1 – Diagnóstico 360º
+
+Analiso o seu site, seu mercado e seus concorrentes. Identifico tudo o que trava seu crescimento orgânico hoje: parte técnica, conteúdo, SEO Local, autoridade e experiência do usuário.
+
+### Etapa 2 – Estratégia sob medida
+
+Transformo o diagnóstico em um plano prático: palavras-chave certas, prioridades, mapa de conteúdo, ajustes técnicos e oportunidades rápidas de ganho.
+
+### Etapa 3 – Implementação e ajustes
+
+Colocamos o plano em prática: otimizações no site, estrutura, páginas de serviço, blog, Google Business Profile e demais pontos definidos na estratégia.
+
+### Etapa 4 – Acompanhamento e evolução
+
+SEO não é algo que se faz uma vez só. Acompanho seus números, ajusto rotas e busco melhorias contínuas para manter e ampliar resultados.
+
+Pode fechar com um mini-CTA:
+
+> *Quer ver como isso se aplica ao seu negócio?*
+> **[Botão]** *Solicitar diagnóstico gratuito*
+
+---
+
+## 🔹 SEÇÃO 5 – PROVA SOCIAL / AUTORIDADE (MESMO QUE SEJA SÓ ESTRUTURA POR ENQUANTO)
+
+Título (H2):
+**Por que confiar no meu trabalho**
+
+Aqui você pode colocar, agora ou depois:
+
+* **Depoimentos de clientes** (mesmo que de outros serviços ligados a marketing).
+* **Resultados rápidos** em formato “Antes x Depois”:
+
+  * aumento de tráfico orgânico
+  * posições conquistadas
+  * leads gerados
+* **Logo das empresas atendidas** (quando fizer sentido).
+
+Enquanto você ainda não tiver muitos cases de SEO puro, pode usar algo assim:
+
+> “Ao longo dos últimos anos, ajudei diversas empresas a organizarem sua presença digital, estruturarem seus sites e melhorarem a aquisição de clientes. A consultoria de SEO nasceu justamente da prática: entender o que funciona no dia a dia de quem precisa vender, não só gerar relatórios bonitos.”
+
+E fechar com um CTA final da página:
+
+> **Pronto para ver onde o Google está desperdiçando oportunidades para o seu negócio?**
+> **[Botão]** *Quero meu diagnóstico gratuito*
+
+---
+
+Se você quiser, no **próximo passo (item 2 – Serviços)** eu posso:
+
+* alinhar a lista exata do que entra na consultoria,
+* deixar os blocos já em formato de cards para Elementor,
+* encaixar isso com nomes de planos (sem falar preço ainda, se preferir).
+
+Me fala “vamos pro item 2” e já sigo na mesma linha 😄

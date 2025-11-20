@@ -28,11 +28,11 @@ export function Navbar() {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Services</a>
-          <a href="#methodology" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Methodology</a>
-          <a href="#results" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Results</a>
+          <a href="#beneficios" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Por que nós</a>
+          <a href="#quem-atendemos" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Para quem</a>
+          <a href="#metodologia" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Como funciona</a>
           <Button variant="default" className="bg-primary text-black font-bold hover:bg-primary/90 rounded-full px-6">
-            Free Audit
+            Diagnóstico Gratuito
           </Button>
         </div>
 
@@ -54,10 +54,10 @@ export function Navbar() {
             exit={{ opacity: 0, y: -20 }}
             className="absolute top-full left-0 w-full bg-background border-b border-white/5 p-6 flex flex-col gap-4 md:hidden"
           >
-            <a href="#services" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Services</a>
-            <a href="#methodology" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Methodology</a>
-            <a href="#results" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Results</a>
-            <Button className="w-full bg-primary text-black font-bold">Free Audit</Button>
+            <a href="#beneficios" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Por que nós</a>
+            <a href="#quem-atendemos" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Para quem</a>
+            <a href="#metodologia" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Como funciona</a>
+            <Button className="w-full bg-primary text-black font-bold">Diagnóstico Gratuito</Button>
           </motion.div>
         )}
       </AnimatePresence>
