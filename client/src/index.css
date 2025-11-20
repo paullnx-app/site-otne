@@ -4,39 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Google Branding Style: Plus Jakarta Sans is very close to 'Google Sans' / 'Product Sans' */
+  /* Google Branding Style: Plus Jakarta Sans */
   --font-display: 'Plus Jakarta Sans', sans-serif;
   
-  /* Google Interface Style: Roboto is the standard Google/Android font */
+  /* Google Interface Style: Roboto */
   --font-body: 'Roboto', sans-serif;
 
-  --color-background: hsl(0 0% 3%);
+  --color-background: hsl(220 15% 10%); /* Darker, cooler background to make orange pop */
   --color-foreground: hsl(0 0% 98%);
 
-  --color-card: hsl(0 0% 7%);
+  --color-card: hsl(220 15% 13%);
   --color-card-foreground: hsl(0 0% 98%);
 
-  --color-popover: hsl(0 0% 7%);
+  --color-popover: hsl(220 15% 13%);
   --color-popover-foreground: hsl(0 0% 98%);
 
-  --color-primary: hsl(75 100% 50%); /* Neon Lime */
-  --color-primary-foreground: hsl(0 0% 0%);
+  /* #FF772B -> HSL(22, 100%, 58%) */
+  --color-primary: hsl(22 100% 58%);
+  --color-primary-foreground: hsl(0 0% 100%); /* White text looks better on this orange */
 
-  --color-secondary: hsl(0 0% 15%);
+  --color-secondary: hsl(220 10% 20%);
   --color-secondary-foreground: hsl(0 0% 98%);
 
-  --color-muted: hsl(0 0% 15%);
-  --color-muted-foreground: hsl(0 0% 60%);
+  --color-muted: hsl(220 10% 20%);
+  --color-muted-foreground: hsl(220 10% 70%);
 
-  --color-accent: hsl(75 100% 50%);
-  --color-accent-foreground: hsl(0 0% 0%);
+  --color-accent: hsl(22 100% 58%);
+  --color-accent-foreground: hsl(0 0% 100%);
 
   --color-destructive: hsl(0 62.8% 30.6%);
   --color-destructive-foreground: hsl(0 0% 98%);
 
-  --color-border: hsl(0 0% 15%);
-  --color-input: hsl(0 0% 15%);
-  --color-ring: hsl(75 100% 50%);
+  --color-border: hsl(220 10% 20%);
+  --color-input: hsl(220 10% 20%);
+  --color-ring: hsl(22 100% 58%);
 
   --radius-sm: 0.2rem;
   --radius-md: 0.4rem;
@@ -61,7 +62,7 @@
   }
   
   .text-glow {
-    text-shadow: 0 0 20px hsla(75, 100%, 50%, 0.3);
+    text-shadow: 0 0 20px hsla(22, 100%, 58%, 0.4);
   }
   
   .grid-bg {

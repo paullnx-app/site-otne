@@ -31,7 +31,7 @@ export function Navbar() {
           <a href="#beneficios" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Por que nós</a>
           <a href="#quem-atendemos" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Para quem</a>
           <a href="#metodologia" className="text-sm font-medium text-muted-foreground hover:text-white transition-colors">Como funciona</a>
-          <Button variant="default" className="bg-primary text-black font-bold hover:bg-primary/90 rounded-full px-6">
+          <Button variant="default" className="bg-primary text-white font-bold hover:bg-primary/90 rounded-full px-6">
             Diagnóstico Gratuito
           </Button>
         </div>
@@ -57,7 +57,7 @@ export function Navbar() {
             <a href="#beneficios" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Por que nós</a>
             <a href="#quem-atendemos" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Para quem</a>
             <a href="#metodologia" className="text-lg font-medium text-white" onClick={() => setMobileMenuOpen(false)}>Como funciona</a>
-            <Button className="w-full bg-primary text-black font-bold">Diagnóstico Gratuito</Button>
+            <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
           </motion.div>
         )}
       </AnimatePresence>

@@ -64,8 +64,8 @@ export function Stats() {
                   <AreaChart data={data}>
                     <defs>
                       <linearGradient id="colorTraffic" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="hsl(75, 100%, 50%)" stopOpacity={0.3}/>
-                        <stop offset="95%" stopColor="hsl(75, 100%, 50%)" stopOpacity={0}/>
+                        <stop offset="5%" stopColor="hsl(22, 100%, 58%)" stopOpacity={0.3}/>
+                        <stop offset="95%" stopColor="hsl(22, 100%, 58%)" stopOpacity={0}/>
                       </linearGradient>
                     </defs>
                     <XAxis 
@@ -90,7 +90,7 @@ export function Stats() {
                     <Area 
                       type="monotone" 
                       dataKey="traffic" 
-                      stroke="hsl(75, 100%, 50%)" 
+                      stroke="hsl(22, 100%, 58%)" 
                       strokeWidth={3}
                       fillOpacity={1} 
                       fill="url(#colorTraffic)" 

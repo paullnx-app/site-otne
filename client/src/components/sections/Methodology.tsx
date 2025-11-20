@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Search, Map, Settings, TrendingUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import prismImg from "@assets/generated_images/3D_glass_prism_refracting_light_2acae17c.png";
+import prismImg from "@assets/generated_images/3D_glass_prism_refracting_orange_light_d8ad0b15.png";
 
 const steps = [
   {
@@ -58,7 +58,7 @@ export function Methodology() {
               transition={{ delay: index * 0.2 }}
               className="relative pl-12 border-l border-white/10 pb-12 last:pb-0"
             >
-              <div className="absolute left-[-24px] top-0 flex items-center justify-center w-12 h-12 rounded-full bg-background border border-primary/30 text-primary font-mono font-bold shadow-[0_0_15px_rgba(190,255,0,0.2)]">
+              <div className="absolute left-[-24px] top-0 flex items-center justify-center w-12 h-12 rounded-full bg-background border border-primary/30 text-primary font-mono font-bold shadow-[0_0_15px_rgba(255,119,43,0.2)]">
                 {step.id}
               </div>
               
@@ -74,7 +74,7 @@ export function Methodology() {
 
         <div className="mt-12 text-center">
            <p className="text-white mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
-           <Button size="lg" className="h-14 px-8 bg-primary text-black font-bold hover:bg-primary/90 rounded-xl text-lg shadow-[0_0_30px_rgba(190,255,0,0.2)]">
+           <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-[0_0_30px_rgba(255,119,43,0.2)]">
              Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
            </Button>
         </div>

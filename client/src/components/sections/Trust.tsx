@@ -30,7 +30,7 @@ export function Trust() {
 
             <div className="mt-10">
               <h4 className="text-white font-bold mb-4">Pronto para ver onde o Google está desperdiçando oportunidades para o seu negócio?</h4>
-              <Button size="lg" className="h-14 px-8 bg-primary text-black font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-[0_0_30px_rgba(190,255,0,0.2)]">
+              <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-[0_0_30px_rgba(255,119,43,0.2)]">
                 Quero meu diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
