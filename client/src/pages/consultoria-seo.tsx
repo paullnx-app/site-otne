@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
+import ctaBg from "@assets/generated_images/clean_minimalist_white_and_gray_abstract_background_with_subtle_orange_accents.png";
 import { useSEO } from "@/hooks/use-seo";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
@@ -252,32 +253,45 @@ export default function ConsultoriaSEO() {
         </section>
 
         {/* Reinforcement & CTA */}
-        <section className="container mx-auto px-6 text-center">
-          <div className="max-w-4xl mx-auto bg-foreground text-white rounded-3xl p-12 md:p-16 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-20" />
+        <section className="container mx-auto px-6 text-center mb-24">
+          <div className="max-w-5xl mx-auto rounded-3xl p-12 md:p-20 relative overflow-hidden border border-border shadow-2xl shadow-black/5">
+            {/* Background Image Layer */}
+            <div className="absolute inset-0 z-0">
+              <img 
+                src={ctaBg} 
+                alt="Background" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]" />
+            </div>
             
             <div className="relative z-10">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-8">
+              <h2 className="text-3xl md:text-5xl font-display font-bold mb-8 text-foreground tracking-tight">
                 "O SEO certo não faz você competir por preço. <br/>
-                Ele faz você competir por autoridade."
+                Ele faz você competir por <span className="text-primary">autoridade</span>."
               </h2>
               
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-10 border border-white/10">
-                <p className="text-xl text-white/90 font-medium mb-2">
+              <div className="bg-white/70 backdrop-blur-md rounded-2xl p-8 mb-10 border border-white shadow-sm max-w-3xl mx-auto">
+                <p className="text-xl text-foreground/90 font-medium mb-3">
                   Quer saber quanto sua empresa está deixando de ganhar hoje por falta de SEO?
                 </p>
-                <p className="text-white/70">
+                <p className="text-muted-foreground">
                   Solicite um diagnóstico gratuito e mostraremos — com dados — onde estão as oportunidades.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <LeadFormDialog>
-                  <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-white hover:text-foreground rounded-xl text-lg shadow-lg shadow-primary/20 w-full sm:w-auto">
+                  <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20 w-full sm:w-auto transition-all hover:-translate-y-1">
                     Quero um diagnóstico gratuito de SEO <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </LeadFormDialog>
-                <Button variant="outline" size="lg" className="h-14 px-8 border-white/20 text-white hover:bg-white hover:text-foreground rounded-xl text-lg w-full sm:w-auto bg-transparent">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  className="h-14 px-8 border-border bg-white text-foreground hover:bg-secondary/50 rounded-xl text-lg w-full sm:w-auto"
+                  onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+                >
                   Falar no WhatsApp
                 </Button>
               </div>

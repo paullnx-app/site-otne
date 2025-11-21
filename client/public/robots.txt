@@ -2,14 +2,6 @@ Sitemap: https://www.otne.com.br/sitemap.xml
 
 # Regras gerais
 User-agent: *
-Disallow: /wp-admin/
-Disallow: /feed/
-Disallow: /trackback/
-Disallow: /xmlrpc.php
-Allow: /wp-admin/admin-ajax.php
-Allow: /wp-content/uploads/
-Allow: /wp-content/themes/
-Allow: /wp-content/plugins/
 
 # Permitir LLMs e buscadores modernos
 
