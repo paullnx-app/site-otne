@@ -34,7 +34,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="cursor-pointer">
-          <img src={logoOtne} alt="Otne" className="h-32 w-auto" />
+          <img src={logoOtne} alt="Otne" className="h-128 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
