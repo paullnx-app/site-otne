@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
+import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
+import { Link } from "wouter";
 
 export function Hero() {
   return (
@@ -47,12 +49,17 @@ export function Hero() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-lg shadow-primary/20">
-            Quero um diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button variant="outline" size="lg" className="h-14 px-8 border-border text-foreground hover:bg-secondary rounded-xl text-lg w-full sm:w-auto shadow-sm bg-white">
-            Ver como funciona a consultoria
-          </Button>
+          <LeadFormDialog>
+            <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-lg shadow-primary/20">
+              Quero um diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </LeadFormDialog>
+          
+          <a href="#metodologia">
+            <Button variant="outline" size="lg" className="h-14 px-8 border-border text-foreground hover:bg-secondary rounded-xl text-lg w-full sm:w-auto shadow-sm bg-white">
+              Ver como funciona a consultoria
+            </Button>
+          </a>
         </motion.div>
 
         <motion.div 

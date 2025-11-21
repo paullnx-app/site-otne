@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, S
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import { useSEO } from "@/hooks/use-seo";
+import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 
 const services = [
   {
@@ -247,9 +248,11 @@ export default function ConsultoriaSEO() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-white hover:text-foreground rounded-xl text-lg shadow-lg shadow-primary/20 w-full sm:w-auto">
-                  Quero um diagnóstico gratuito de SEO <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
+                <LeadFormDialog>
+                  <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-white hover:text-foreground rounded-xl text-lg shadow-lg shadow-primary/20 w-full sm:w-auto">
+                    Quero um diagnóstico gratuito de SEO <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </LeadFormDialog>
                 <Button variant="outline" size="lg" className="h-14 px-8 border-white/20 text-white hover:bg-white hover:text-foreground rounded-xl text-lg w-full sm:w-auto bg-transparent">
                   Falar no WhatsApp
                 </Button>

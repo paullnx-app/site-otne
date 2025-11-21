@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 import { Link, useLocation } from "wouter";
 
 export function Navbar() {
@@ -68,9 +69,11 @@ export function Navbar() {
             </a>
           </Link>
 
-          <Button variant="default" className="bg-primary text-white font-bold hover:bg-primary/90 rounded-full px-6 shadow-md shadow-primary/20">
-            Diagnóstico Gratuito
-          </Button>
+          <LeadFormDialog>
+            <Button variant="default" className="bg-primary text-white font-bold hover:bg-primary/90 rounded-full px-6 shadow-md shadow-primary/20">
+              Diagnóstico Gratuito
+            </Button>
+          </LeadFormDialog>
         </div>
 
         {/* Mobile Toggle */}
@@ -128,7 +131,9 @@ export function Navbar() {
                 Blog
               </a>
             </Link>
-            <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
+            <LeadFormDialog>
+              <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
+            </LeadFormDialog>
           </motion.div>
         )}
       </AnimatePresence>
