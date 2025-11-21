@@ -40,8 +40,18 @@ export function LeadFormDialog({ children }: LeadFormDialogProps) {
   const isLoading = form.formState.isSubmitting;
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
+    // Map budget values to readable strings
+    const budgetMap: Record<string, string> = {
+      low: "Até R$ 1.000",
+      medium: "R$ 1.000 - R$ 3.000",
+      high: "R$ 3.000 - R$ 5.000",
+      enterprise: "Acima de R$ 5.000"
+    };
+
+    const budgetLabel = budgetMap[values.budget] || values.budget;
+
     // Format message for WhatsApp
-    const message = `Olá! Me chamo ${values.name}, meu site é ${values.website} e gostaria de um diagnóstico de SEO. Meu orçamento é ${values.budget}. (Email: ${values.email}, Telefone: ${values.phone})`;
+    const message = `Olá! Me chamo ${values.name}, meu site é ${values.website} e gostaria de um diagnóstico de SEO. Meu orçamento é ${budgetLabel}. (Email: ${values.email}, Telefone: ${values.phone})`;
     
     // Encode message for URL
     const encodedMessage = encodeURIComponent(message);
