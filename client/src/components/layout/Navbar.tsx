@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useLocation } from "wouter";
+import { Link, useLocation } from "wouter";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,9 +31,9 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="/" className="text-2xl font-display font-bold tracking-tighter text-foreground">
+        <Link href="/" className="text-2xl font-display font-bold tracking-tighter text-foreground cursor-pointer">
           RANK<span className="text-primary">.AI</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -56,12 +56,17 @@ export function Navbar() {
             Como funciona
           </a>
           
-          <a 
-            href="/consultoria-seo" 
-            className={`text-sm font-medium transition-colors ${location === "/consultoria-seo" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}
-          >
-            Consultoria SEO
-          </a>
+          <Link href="/consultoria-seo">
+            <a className={`text-sm font-medium transition-colors ${location === "/consultoria-seo" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+              Consultoria SEO
+            </a>
+          </Link>
+
+          <Link href="/blog">
+            <a className={`text-sm font-medium transition-colors ${location.startsWith("/blog") ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+              Blog
+            </a>
+          </Link>
 
           <Button variant="default" className="bg-primary text-white font-bold hover:bg-primary/90 rounded-full px-6 shadow-md shadow-primary/20">
             Diagnóstico Gratuito
@@ -107,13 +112,22 @@ export function Navbar() {
             >
               Como funciona
             </a>
-            <a 
-              href="/consultoria-seo" 
-              className={`text-lg font-medium ${location === "/consultoria-seo" ? "text-primary" : "text-foreground"}`}
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Consultoria SEO
-            </a>
+            <Link href="/consultoria-seo">
+              <a 
+                className={`text-lg font-medium ${location === "/consultoria-seo" ? "text-primary" : "text-foreground"}`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Consultoria SEO
+              </a>
+            </Link>
+            <Link href="/blog">
+              <a 
+                className={`text-lg font-medium ${location.startsWith("/blog") ? "text-primary" : "text-foreground"}`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
+              </a>
+            </Link>
             <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
           </motion.div>
         )}

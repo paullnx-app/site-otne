@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
+import { useSEO } from "@/hooks/use-seo";
 
 const services = [
   {
@@ -108,6 +109,11 @@ const benefits = [
 ];
 
 export default function ConsultoriaSEO() {
+  useSEO({
+    title: "Consultoria de SEO Estratégica para Empresas | Rank.ai",
+    description: "Aumente seu tráfego orgânico e vendas com nossa Consultoria de SEO. Diagnóstico técnico, estratégia de conteúdo e SEO Local para PMEs."
+  });
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
