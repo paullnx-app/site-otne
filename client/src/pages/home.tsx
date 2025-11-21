@@ -20,7 +20,7 @@ export default function Home() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Otne - Consultoria de SEO. Todos os direitos reservados.
+            © 2025 RANK.AI - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

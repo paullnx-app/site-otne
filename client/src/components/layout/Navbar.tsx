@@ -4,7 +4,6 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 import { Link, useLocation } from "wouter";
-import logoOtne from "@assets/logo-otne_1763757391307.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,8 +32,8 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="cursor-pointer">
-          <img src={logoOtne} alt="Otne" className="h-24 w-auto" />
+        <Link href="/" className="text-2xl font-display font-bold tracking-tighter text-foreground cursor-pointer">
+          RANK<span className="text-primary">.AI</span>
         </Link>
 
         {/* Desktop Nav */}
