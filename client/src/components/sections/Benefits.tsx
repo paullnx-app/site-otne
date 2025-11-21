@@ -40,7 +40,7 @@ export function Benefits() {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-            Por que trabalhar o SEO <br />
+            Por que trabalhar o ranqueamento <br />
             <span className="text-primary">da sua empresa conosco</span>
           </h2>
           <p className="text-xl text-muted-foreground italic font-light">
