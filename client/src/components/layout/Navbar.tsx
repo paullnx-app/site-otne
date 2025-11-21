@@ -33,7 +33,7 @@ export function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="text-2xl font-display font-bold tracking-tighter text-foreground cursor-pointer">
-          RANK<span className="text-primary">.AI</span>
+          Otne<span className="text-primary">.seo</span>
         </Link>
 
         {/* Desktop Nav */}
