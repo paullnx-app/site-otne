@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import { useSEO } from "@/hooks/use-seo";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
+import { SchemaMarkup } from "@/components/seo/schema-markup";
 
 const services = [
   {
@@ -111,12 +112,35 @@ const benefits = [
 
 export default function ConsultoriaSEO() {
   useSEO({
-    title: "Consultoria de SEO Estratégica para Empresas | Rank.ai",
+    title: "Consultoria de SEO Estratégica para Empresas | Otne.seo",
     description: "Aumente seu tráfego orgânico e vendas com nossa Consultoria de SEO. Diagnóstico técnico, estratégia de conteúdo e SEO Local para PMEs."
   });
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Consultoria de SEO",
+    "provider": {
+      "@type": "Organization",
+      "name": "Otne.seo"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Brasil"
+    },
+    "description": "Consultoria completa de SEO incluindo auditoria técnica, estratégia de conteúdo e SEO Local.",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "BRL",
+      "price": "1000.00",
+      "priceValidUntil": "2025-12-31",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SchemaMarkup data={serviceSchema} />
       <Navbar />
       
       <main className="pt-20">
@@ -265,7 +289,7 @@ export default function ConsultoriaSEO() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 RANK.AI - Consultoria de SEO. Todos os direitos reservados.
+            © 2025 Otne.seo - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

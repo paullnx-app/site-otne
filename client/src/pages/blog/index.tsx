@@ -7,7 +7,7 @@ import { Calendar, Clock, ArrowRight } from "lucide-react";
 
 export default function BlogIndex() {
   useSEO({
-    title: "Blog de SEO | Dicas e Estratégias - Rank.ai",
+    title: "Blog de SEO | Dicas e Estratégias - Otne.seo",
     description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google."
   });
 

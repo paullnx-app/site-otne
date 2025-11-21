@@ -25,7 +25,7 @@ export const blogPosts: BlogPost[] = [
       <h3>2. Core Web Vitals</h3>
       <p>A velocidade e a estabilidade visual do seu site continuam sendo fatores cruciais para o ranqueamento.</p>
     `,
-    author: "Equipe Rank.ai",
+    author: "Equipe Otne.seo",
     date: "21 Nov 2025",
     category: "Tendências",
     readTime: "5 min",

@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { useRoute, Link } from "wouter";
 import { blogPosts } from "@/data/blog-posts";
 import { useSEO } from "@/hooks/use-seo";
+import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
 
@@ -10,14 +11,36 @@ export default function BlogPost() {
   const post = blogPosts.find(p => p.slug === params?.slug);
 
   useSEO({
-    title: post ? `${post.title} | Blog Rank.ai` : "Artigo não encontrado",
+    title: post ? `${post.title} | Blog Otne.seo` : "Artigo não encontrado",
     description: post ? post.excerpt : "Artigo não encontrado"
   });
 
   if (!post) return <NotFound />;
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "image": post.imageUrl,
+    "author": {
+      "@type": "Person",
+      "name": post.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Otne.seo",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://otne.seo/logo.png"
+      }
+    },
+    "datePublished": "2024-01-01", // Placeholder
+    "description": post.excerpt
+  };
+
   return (
     <div className="min-h-screen bg-background">
+      <SchemaMarkup data={articleSchema} />
       <Navbar />
       
       <main className="pt-32 pb-20 container mx-auto px-6">
