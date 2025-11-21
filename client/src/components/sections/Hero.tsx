@@ -17,7 +17,6 @@ export function Hero() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
       </div>
-
       <div className="container mx-auto px-6 relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +30,7 @@ export function Hero() {
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground tracking-tight mb-6 leading-[1.1]">
             Consultoria de SEO para <br />
-            <span className="text-primary">PMEs que Querem Crescer</span>
+            <span className="text-primary">empresas que querem crescer</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl text-foreground/80 font-medium mb-6 max-w-4xl mx-auto">
