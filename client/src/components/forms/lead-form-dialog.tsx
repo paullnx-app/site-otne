@@ -40,14 +40,21 @@ export function LeadFormDialog({ children }: LeadFormDialogProps) {
   const isLoading = form.formState.isSubmitting;
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    // Simulate API delay
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    // Format message for WhatsApp
+    const message = `Olá! Me chamo ${values.name}, meu site é ${values.website} e gostaria de um diagnóstico de SEO. Meu orçamento é ${values.budget}. (Email: ${values.email}, Telefone: ${values.phone})`;
     
-    console.log(values);
+    // Encode message for URL
+    const encodedMessage = encodeURIComponent(message);
+    
+    // WhatsApp number (placeholder)
+    const whatsappNumber = "5511999999999";
+    
+    // Open WhatsApp
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
     
     toast({
-      title: "Solicitação enviada!",
-      description: "Nossa equipe entrará em contato em breve para agendar seu diagnóstico.",
+      title: "Redirecionando para o WhatsApp...",
+      description: "Finalize o envio da mensagem no aplicativo.",
     });
     
     setOpen(false);
