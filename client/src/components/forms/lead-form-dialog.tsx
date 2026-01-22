@@ -20,9 +20,10 @@ const formSchema = z.object({
 
 interface LeadFormDialogProps {
   children: React.ReactNode;
+  initialWebsite?: string;
 }
 
-export function LeadFormDialog({ children }: LeadFormDialogProps) {
+export function LeadFormDialog({ children, initialWebsite = "" }: LeadFormDialogProps) {
   const [open, setOpen] = useState(false);
   const { toast } = useToast();
   
@@ -32,10 +33,15 @@ export function LeadFormDialog({ children }: LeadFormDialogProps) {
       name: "",
       phone: "",
       email: "",
-      website: "",
+      website: initialWebsite,
       budget: "",
     },
   });
+
+  // Update default values when initialWebsite changes
+  if (initialWebsite && form.getValues("website") !== initialWebsite) {
+    form.setValue("website", initialWebsite);
+  }
 
   const isLoading = form.formState.isSubmitting;
 
