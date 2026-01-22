@@ -182,18 +182,10 @@ export default function QuemSomos() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <LeadFormDialog>
-                  <Button size="lg" className="bg-primary text-white font-bold hover:bg-primary/90 text-lg h-14 px-8 rounded-xl">
+                  <Button size="lg" className="bg-primary text-white font-bold hover:bg-primary/90 text-lg h-14 px-8 rounded-xl w-full sm:w-auto">
                     Converse com um Especialista
                   </Button>
                 </LeadFormDialog>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="border-white/20 bg-white/5 text-white hover:bg-white/10 text-lg h-14 px-8 rounded-xl backdrop-blur-sm"
-                  onClick={() => window.open("https://wa.me/553133609525", "_blank")}
-                >
-                  Falar no WhatsApp
-                </Button>
               </div>
             </div>
           </div>
