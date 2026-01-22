@@ -63,9 +63,11 @@ export default function BlogPost() {
         <article className="max-w-[1100px] mx-auto">
           <header className="mb-12 text-center max-w-[800px] mx-auto">
             <div className="flex items-center justify-center gap-2 mb-8">
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
-                {post.category}
-              </span>
+              <Link href={`/blog?category=${encodeURIComponent(post.category)}`}>
+                <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider cursor-pointer hover:bg-primary/20 transition-colors">
+                  {post.category}
+                </span>
+              </Link>
             </div>
             
             <h1 className="text-3xl md:text-[42px] font-display font-bold text-foreground mb-8 leading-[1.2] tracking-tight">

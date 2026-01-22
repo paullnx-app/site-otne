@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { motion } from "framer-motion";
 import { blogPosts } from "@/data/blog-posts";
-import { Link } from "wouter";
+import { Link, useSearch } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 export default function BlogIndex() {
@@ -13,7 +13,29 @@ export default function BlogIndex() {
     description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google."
   });
 
+  const search = useSearch();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // Parse category from URL query parameters
+  useEffect(() => {
+    const params = new URLSearchParams(search);
+    const category = params.get("category");
+    if (category) {
+      setSelectedCategory(decodeURIComponent(category));
+    } else {
+      setSelectedCategory(null);
+    }
+  }, [search]);
+
+  // Update URL when category changes
+  const handleCategoryChange = (category: string | null) => {
+    setSelectedCategory(category);
+    if (category) {
+      window.history.pushState(null, "", `/blog?category=${encodeURIComponent(category)}`);
+    } else {
+      window.history.pushState(null, "", "/blog");
+    }
+  };
 
   // Get unique categories from blog posts
   const categories = Array.from(new Set(blogPosts.map(post => post.category)));
@@ -22,6 +44,7 @@ export default function BlogIndex() {
   const filteredPosts = selectedCategory 
     ? blogPosts.filter(post => post.category === selectedCategory)
     : blogPosts;
+
 
   return (
     <div className="min-h-screen bg-background">
@@ -40,7 +63,7 @@ export default function BlogIndex() {
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 justify-center mb-12">
           <button 
-            onClick={() => setSelectedCategory(null)}
+            onClick={() => handleCategoryChange(null)}
             className={cn(
               "px-5 py-2.5 rounded-full text-sm font-medium transition-all border", 
               !selectedCategory 
@@ -55,7 +78,7 @@ export default function BlogIndex() {
             .map(cat => (
             <button
               key={cat}
-              onClick={() => setSelectedCategory(cat)}
+              onClick={() => handleCategoryChange(cat)}
               className={cn(
                 "px-5 py-2.5 rounded-full text-sm font-medium transition-all border", 
                 selectedCategory === cat 
@@ -121,7 +144,7 @@ export default function BlogIndex() {
             <div className="col-span-full text-center py-20">
               <p className="text-muted-foreground text-lg">Nenhum artigo encontrado nesta categoria.</p>
               <button 
-                onClick={() => setSelectedCategory(null)}
+                onClick={() => handleCategoryChange(null)}
                 className="mt-4 text-primary font-bold hover:underline"
               >
                 Ver todos os artigos
