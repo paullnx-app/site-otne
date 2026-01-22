@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
-import { useRoute, Link } from "wouter";
+import { useRoute, Link, useLocation } from "wouter";
 import { blogPosts } from "@/data/blog-posts";
 import { useSEO } from "@/hooks/use-seo";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
@@ -10,21 +10,49 @@ import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogCTA } from "@/components/blog/blog-cta";
 import { BlogCategories } from "@/components/blog/blog-categories";
 import { ScrollProgress } from "@/components/blog/scroll-progress";
-import { useMemo } from "react";
+import { useMemo, useEffect, useRef } from "react";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
   const post = blogPosts.find(p => p.slug === params?.slug);
+  const [, setLocation] = useLocation();
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useSEO({
     title: post ? `${post.title} | Blog Otne.seo` : "Artigo não encontrado",
-    description: post ? post.excerpt : "Artigo não encontrado"
+    description: post ? post.excerpt : "Artigo não encontrado",
+    image: post?.imageUrl,
+    type: "article"
   });
 
   const { content: processedContent, toc } = useMemo(() => {
     if (!post) return { content: "", toc: [] };
     return processContent(post.content);
   }, [post]);
+
+  // Intercept internal links for SPA navigation
+  useEffect(() => {
+    const contentElement = contentRef.current;
+    if (!contentElement) return;
+
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+
+      if (anchor) {
+        const href = anchor.getAttribute('href');
+        // Check if it's an internal link
+        if (href && href.startsWith('/') && !href.startsWith('//')) {
+          e.preventDefault();
+          setLocation(href);
+          window.scrollTo(0, 0);
+        }
+      }
+    };
+
+    contentElement.addEventListener('click', handleClick);
+    return () => contentElement.removeEventListener('click', handleClick);
+  }, [processedContent, setLocation]);
 
   if (!post) return <NotFound />;
 
@@ -104,6 +132,7 @@ export default function BlogPost() {
             </div>
 
             <div 
+              ref={contentRef}
               className="prose prose-lg max-w-none 
                 prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground 
                 [&>h2]:text-[32px] [&>h2]:leading-[1.3] [&>h2]:tracking-tight [&>h2]:!mt-[40px] [&>h2]:!mb-[20px] 
