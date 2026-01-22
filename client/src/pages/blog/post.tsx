@@ -87,7 +87,7 @@ export default function BlogPost() {
           </div>
 
           <div 
-            className="prose prose-lg prose-headings:font-display prose-headings:font-bold prose-headings:mt-12 prose-headings:mb-6 prose-p:mb-6 prose-p:leading-relaxed prose-li:mb-2 prose-a:text-primary hover:prose-a:text-primary/80 max-w-none [&>h2]:text-3xl [&>h3]:text-2xl [&>p]:text-foreground/90"
+            className="prose prose-lg prose-headings:font-display prose-headings:font-bold prose-headings:mt-12 prose-headings:mb-6 prose-p:mb-8 prose-p:leading-loose prose-li:mb-3 prose-a:text-primary hover:prose-a:text-primary/80 max-w-none [&>h2]:text-3xl [&>h3]:text-2xl [&>p]:text-foreground/90"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
