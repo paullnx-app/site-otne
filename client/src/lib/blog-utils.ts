@@ -8,9 +8,9 @@ export interface TOCItem {
 export function processContent(html: string): { content: string; toc: TOCItem[] } {
   const toc: TOCItem[] = [];
   
-  // Regex to match h2 and h3 tags
-  // Captures: 1=level (2 or 3), 2=attributes (optional), 3=content
-  const regex = /<h([23])([^>]*)>(.*?)<\/h\1>/gi;
+  // Regex to match h2 tags only (minimalist approach)
+  // Captures: 1=level (2), 2=attributes (optional), 3=content
+  const regex = /<h(2)([^>]*)>(.*?)<\/h\1>/gi;
   
   const processedContent = html.replace(regex, (match, level, attrs, text) => {
     // Strip HTML tags from text for the ID and TOC display
