@@ -18,11 +18,12 @@ export function BlogCategories() {
       <ul className="space-y-3">
         {categories.map((category) => (
           <li key={category} className="text-sm">
-            <Link href={`/blog?category=${encodeURIComponent(category)}`}>
-              <a className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group">
-                <span className="w-1.5 h-1.5 rounded-sm bg-primary/70 group-hover:bg-primary transition-colors" />
-                {category}
-              </a>
+            <Link 
+              href={`/blog?category=${encodeURIComponent(category)}`}
+              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+            >
+              <span className="w-1.5 h-1.5 rounded-sm bg-primary/70 group-hover:bg-primary transition-colors" />
+              {category}
             </Link>
           </li>
         ))}
