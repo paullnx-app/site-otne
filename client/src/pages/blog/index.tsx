@@ -4,12 +4,24 @@ import { blogPosts } from "@/data/blog-posts";
 import { Link } from "wouter";
 import { useSEO } from "@/hooks/use-seo";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { cn } from "@/lib/utils";
 
 export default function BlogIndex() {
   useSEO({
     title: "Blog de SEO | Dicas e Estratégias - Otne.seo",
     description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google."
   });
+
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  // Get unique categories from blog posts
+  const categories = Array.from(new Set(blogPosts.map(post => post.category)));
+
+  // Filter posts based on selection
+  const filteredPosts = selectedCategory 
+    ? blogPosts.filter(post => post.category === selectedCategory)
+    : blogPosts;
 
   return (
     <div className="min-h-screen bg-background">
@@ -25,9 +37,40 @@ export default function BlogIndex() {
           </p>
         </div>
 
+        {/* Category Filter */}
+        <div className="flex flex-wrap gap-2 justify-center mb-12">
+          <button 
+            onClick={() => setSelectedCategory(null)}
+            className={cn(
+              "px-5 py-2.5 rounded-full text-sm font-medium transition-all border", 
+              !selectedCategory 
+                ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20" 
+                : "bg-white text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
+            )}
+          >
+            Todos
+          </button>
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={cn(
+                "px-5 py-2.5 rounded-full text-sm font-medium transition-all border", 
+                selectedCategory === cat 
+                  ? "bg-primary text-primary-foreground border-primary shadow-lg shadow-primary/20" 
+                  : "bg-white text-muted-foreground border-border hover:border-primary/50 hover:text-foreground"
+              )}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {blogPosts.map((post, index) => (
+          {filteredPosts.length > 0 ? (
+            filteredPosts.map((post, index) => (
             <motion.article
+              layout
               key={post.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -71,7 +114,18 @@ export default function BlogIndex() {
                 </div>
               </Link>
             </motion.article>
-          ))}
+            ))
+          ) : (
+            <div className="col-span-full text-center py-20">
+              <p className="text-muted-foreground text-lg">Nenhum artigo encontrado nesta categoria.</p>
+              <button 
+                onClick={() => setSelectedCategory(null)}
+                className="mt-4 text-primary font-bold hover:underline"
+              >
+                Ver todos os artigos
+              </button>
+            </div>
+          )}
         </div>
       </main>
     </div>
