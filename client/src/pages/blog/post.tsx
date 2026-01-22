@@ -8,6 +8,7 @@ import NotFound from "@/pages/not-found";
 import { processContent } from "@/lib/blog-utils";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogCTA } from "@/components/blog/blog-cta";
+import { BlogCategories } from "@/components/blog/blog-categories";
 import { useMemo } from "react";
 
 export default function BlogPost() {
@@ -111,6 +112,7 @@ export default function BlogPost() {
 
             <aside className="hidden lg:block sticky top-32">
               <TableOfContents items={toc} />
+              <BlogCategories />
               <BlogCTA />
             </aside>
           </div>
