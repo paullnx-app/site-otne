@@ -189,11 +189,11 @@ export const blogPosts: BlogPost[] = [
   },
   {
     id: "1",
-    slug: "guia-seo-2025",
-    title: "Guia Completo de SEO para 2025: O que muda? (E como sobreviver)",
-    excerpt: "O SEO morreu? Não, ele evoluiu. Descubra como a IA, o Search Generative Experience (SGE) e os novos fatores de ranqueamento vão impactar seu negócio em 2025.",
+    slug: "guia-seo-2026",
+    title: "Guia Completo de SEO para 2026: O que muda? (E como sobreviver)",
+    excerpt: "O SEO morreu? Não, ele evoluiu. Descubra como a IA, o Search Generative Experience (SGE) e os novos fatores de ranqueamento vão impactar seu negócio em 2026.",
     content: `
-      <p class="lead">Se você ouviu alguém dizer que "o SEO morreu" recentemente, ignore. O SEO não morreu, mas a versão de 2015 dele certamente já não existe mais. Em 2025, estamos vivendo a transformação mais radical da história dos motores de busca.</p>
+      <p class="lead">Se você ouviu alguém dizer que "o SEO morreu" recentemente, ignore. O SEO não morreu, mas a versão de 2015 dele certamente já não existe mais. Em 2026, estamos vivendo a transformação mais radical da história dos motores de busca.</p>
 
       <p>A entrada massiva da Inteligência Artificial nos resultados de pesquisa (com o Google AI Overviews e o Search Generative Experience - SGE) mudou as regras do jogo. Não se trata mais apenas de "rankear em primeiro lugar" com palavras-chave repetidas. Trata-se de ser a <strong>resposta definitiva</strong>.</p>
 
@@ -201,7 +201,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>1. O Fim da "Pesquisa de 10 Links Azuis"</h2>
 
-      <p>Durante duas décadas, o objetivo do SEO foi simples: aparecer entre os 10 primeiros links azuis do Google. Em 2025, esses links foram empurrados para baixo. O topo da página agora é dominado por respostas geradas por IA, vídeos curtos, snippets de produtos e discussões de fóruns.</p>
+      <p>Durante duas décadas, o objetivo do SEO foi simples: aparecer entre os 10 primeiros links azuis do Google. Em 2026, esses links foram empurrados para baixo. O topo da página agora é dominado por respostas geradas por IA, vídeos curtos, snippets de produtos e discussões de fóruns.</p>
 
       <p>Isso significa que o tráfego orgânico tradicional vai cair? Para sites informativos genéricos, sim. Mas para empresas que oferecem valor real, a oportunidade mudou de lugar.</p>
 
@@ -224,11 +224,11 @@ export const blogPosts: BlogPost[] = [
 
       <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1000" alt="Análise de dados de SEO e tendências de busca" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
-      <h2>3. E-E-A-T: A Moeda Mais Forte de 2025</h2>
+      <h2>3. E-E-A-T: A Moeda Mais Forte de 2026</h2>
 
       <p>Já falamos sobre isso, mas vale repetir: Experiência, Especialização, Autoridade e Confiabilidade (E-E-A-T) são os filtros de segurança do Google contra o spam de IA.</p>
 
-      <p>Em 2025, o Google quer ver <em>humanos reais</em> por trás do conteúdo. Se o seu blog não tem autores definidos, se sua página "Sobre Nós" é vaga e se você não tem avaliações reais de clientes, você será invisível.</p>
+      <p>Em 2026, o Google quer ver <em>humanos reais</em> por trás do conteúdo. Se o seu blog não tem autores definidos, se sua página "Sobre Nós" é vaga e se você não tem avaliações reais de clientes, você será invisível.</p>
 
       <h3>Como Demonstrar E-E-A-T na Prática?</h3>
       <p>Não basta dizer que é especialista. Você precisa provar:</p>
@@ -242,7 +242,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>O Google Core Web Vitals evoluiu. Não é mais apenas sobre a velocidade de carregamento (LCP) ou estabilidade visual (CLS). O novo métrica-chave é o INP (Interaction to Next Paint), que mede a responsividade.</p>
 
-      <p>Sabe quando você clica em um botão e o site "congela" por meio segundo? Isso mata seu SEO em 2025. Sites precisam ser instantâneos.</p>
+      <p>Sabe quando você clica em um botão e o site "congela" por meio segundo? Isso mata seu SEO em 2026. Sites precisam ser instantâneos.</p>
       
       <p>Para PMEs, isso significa que aquele site WordPress pesado, cheio de plugins desnecessários, é um passivo tóxico. Investir em uma arquitetura limpa (como a que usamos na Rank.AI) é essencial.</p>
 
@@ -266,7 +266,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>7. Vídeo SEO: O Gigante Adormecido Acordou</h2>
 
-      <p>O TikTok e o YouTube são os "motores de busca" da Geração Z. Mas em 2025, o Google indexa vídeos com uma precisão assustadora, capaz de entender o que é dito dentro do vídeo sem precisar de transcrição (embora legendas ainda ajudem).</p>
+      <p>O TikTok e o YouTube são os "motores de busca" da Geração Z. Mas em 2026, o Google indexa vídeos com uma precisão assustadora, capaz de entender o que é dito dentro do vídeo sem precisar de transcrição (embora legendas ainda ajudem).</p>
 
       <p>Se sua estratégia de conteúdo é apenas texto, você está perdendo 40% das buscas. Vídeos curtos (Shorts/Reels) integrados às páginas de produto aumentam a conversão e o tempo de permanência - dois sinais fortíssimos de qualidade para o Google.</p>
 
@@ -283,7 +283,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>Uma <strong>Consultoria de SEO</strong> especializada não vende "pacotes de links". Ela vende inteligência de mercado. Ela blinda sua empresa contra atualizações de algoritmo e constrói um ativo digital que vale dinheiro real.</p>
 
-      <h2>Checklist de Sobrevivência para 2025</h2>
+      <h2>Checklist de Sobrevivência para 2026</h2>
 
       <p>Se você fizer apenas 5 coisas este ano, faça estas:</p>
 
@@ -312,7 +312,7 @@ export const blogPosts: BlogPost[] = [
 
       <h2>Conclusão: O Melhor Momento é Agora</h2>
 
-      <p>As mudanças de 2025 são assustadoras apenas para quem insiste em táticas de 2020. Para empresas ágeis, é a chance de ultrapassar concorrentes maiores que são lentos para se adaptar.</p>
+      <p>As mudanças de 2026 são assustadoras apenas para quem insiste em táticas de 2020. Para empresas ágeis, é a chance de ultrapassar concorrentes maiores que são lentos para se adaptar.</p>
 
       <p>O SEO continua sendo o canal de marketing com o melhor ROI (Retorno sobre Investimento) a longo prazo. Mas ele exige profissionalismo.</p>
 
@@ -331,7 +331,7 @@ export const blogPosts: BlogPost[] = [
 
       <hr class="my-12 border-border" />
 
-      <h2>Perguntas Frequentes sobre SEO em 2025</h2>
+      <h2>Perguntas Frequentes sobre SEO em 2026</h2>
 
       <div class="space-y-6">
         <div>
@@ -340,7 +340,7 @@ export const blogPosts: BlogPost[] = [
         </div>
 
         <div>
-          <h3 class="text-lg font-bold mb-2">Quanto custa uma Consultoria de SEO em 2025?</h3>
+          <h3 class="text-lg font-bold mb-2">Quanto custa uma Consultoria de SEO em 2026?</h3>
           <p class="text-muted-foreground">Os valores variam, mas o investimento mudou de foco. Antes pagava-se por pacotes de links; hoje paga-se por estratégia de conteúdo e autoridade. Para PMEs, o ROI costuma ser superior ao de mídia paga (Ads).</p>
         </div>
 
