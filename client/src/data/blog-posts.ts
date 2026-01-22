@@ -1,7 +1,7 @@
-import awardsImg from "@assets/images/blog/awards.jpg";
-import mediaImg from "@assets/images/blog/media.jpg";
-import partnershipImg from "@assets/images/blog/partnership.jpg";
-import teamImg from "@assets/images/blog/team-authority.jpg";
+import awardsImg from "@/assets/images/blog/awards.jpg";
+import mediaImg from "@/assets/images/blog/media.jpg";
+import partnershipImg from "@/assets/images/blog/partnership.jpg";
+import teamImg from "@/assets/images/blog/team-authority.jpg";
 
 export interface BlogPost {
   id: string;
