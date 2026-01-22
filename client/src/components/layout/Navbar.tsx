@@ -63,6 +63,12 @@ export function Navbar() {
             </a>
           </Link>
 
+          <Link href="/quem-somos">
+            <a className={`text-sm font-medium transition-colors ${location === "/quem-somos" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+              Quem Somos
+            </a>
+          </Link>
+
           <Link href="/blog">
             <a className={`text-sm font-medium transition-colors ${location.startsWith("/blog") ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
               Blog
@@ -121,6 +127,14 @@ export function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Consultoria SEO
+              </a>
+            </Link>
+            <Link href="/quem-somos">
+              <a 
+                className={`text-lg font-medium ${location === "/quem-somos" ? "text-primary" : "text-foreground"}`}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Quem Somos
               </a>
             </Link>
             <Link href="/blog">
