@@ -20,7 +20,7 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
-    id: "5",
+    id: "6",
     slug: "seo-local-para-pequenas-empresas",
     title: "Guia Definitivo de SEO Local para Pequenas Empresas: Domine sua Região",
     excerpt: "Aprenda como colocar sua empresa no mapa (literalmente) e atrair clientes da sua região que estão prontos para comprar.",
@@ -464,23 +464,6 @@ export const blogPosts: BlogPost[] = [
     category: "Tendências",
     readTime: "10 min",
     imageUrl: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1000"
-  },
-  {
-    id: "2",
-    slug: "seo-local-para-pequenas-empresas",
-    title: "SEO Local: Como colocar sua empresa no mapa",
-    excerpt: "Aprenda estratégias práticas para dominar as buscas locais e atrair clientes na sua região.",
-    content: `
-      <h2>Por que investir em SEO Local?</h2>
-      <p>Para pequenas empresas, competir com gigantes globais é difícil. O SEO Local permite que você domine o seu território.</p>
-      <h3>Google Business Profile</h3>
-      <p>Manter seu perfil atualizado com fotos, horários e avaliações é o primeiro passo para o sucesso local.</p>
-    `,
-    author: "Ana Silva",
-    date: "18 Nov 2025",
-    category: "SEO Local",
-    readTime: "4 min",
-    imageUrl: "https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&q=80&w=1000"
   },
   {
     id: "3",
