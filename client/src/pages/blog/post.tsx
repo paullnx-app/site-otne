@@ -5,6 +5,9 @@ import { useSEO } from "@/hooks/use-seo";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
+import { processContent } from "@/lib/blog-utils";
+import { TableOfContents } from "@/components/blog/table-of-contents";
+import { useMemo } from "react";
 
 export default function BlogPost() {
   const [, params] = useRoute("/blog/:slug");
@@ -14,6 +17,11 @@ export default function BlogPost() {
     title: post ? `${post.title} | Blog Otne.seo` : "Artigo não encontrado",
     description: post ? post.excerpt : "Artigo não encontrado"
   });
+
+  const { content: processedContent, toc } = useMemo(() => {
+    if (!post) return { content: "", toc: [] };
+    return processContent(post.content);
+  }, [post]);
 
   if (!post) return <NotFound />;
 
@@ -48,8 +56,8 @@ export default function BlogPost() {
           <ArrowLeft className="w-4 h-4 mr-2" /> Voltar para o blog
         </Link>
 
-        <article className="max-w-[700px] mx-auto">
-          <header className="mb-12 text-center">
+        <article className="max-w-[1100px] mx-auto">
+          <header className="mb-12 text-center max-w-[800px] mx-auto">
             <div className="flex items-center justify-center gap-2 mb-8">
               <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
                 {post.category}
@@ -84,16 +92,26 @@ export default function BlogPost() {
             />
           </div>
 
-          <div 
-            className="prose prose-lg max-w-none 
-              prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground 
-              [&>h2]:text-[32px] [&>h2]:leading-[1.3] [&>h2]:tracking-tight [&>h2]:!mt-[60px] [&>h2]:!mb-[30px] 
-              [&>h3]:text-[26px] [&>h3]:leading-[1.35] [&>h3]:tracking-tight [&>h3]:!mt-[50px] [&>h3]:!mb-[25px]
-              [&>p]:text-[20px] [&>p]:text-[#2d2d2d] [&>p]:leading-[1.8] [&>p]:!mb-[32px]
-              [&>ul]:!my-[32px] [&>li]:text-[#2d2d2d] [&>li]:text-[20px] [&>li]:leading-[1.8] [&>li]:mb-4
-              [&>a]:text-primary [&>a]:font-semibold [&>a]:no-underline hover:[&>a]:underline hover:[&>a]:text-primary/90"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
+          <div className="grid lg:grid-cols-[1fr_320px] gap-12 items-start">
+            <div className="lg:hidden mb-8">
+              <TableOfContents items={toc} />
+            </div>
+
+            <div 
+              className="prose prose-lg max-w-none 
+                prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground 
+                [&>h2]:text-[32px] [&>h2]:leading-[1.3] [&>h2]:tracking-tight [&>h2]:!mt-[40px] [&>h2]:!mb-[20px] 
+                [&>h3]:text-[26px] [&>h3]:leading-[1.35] [&>h3]:tracking-tight [&>h3]:!mt-[30px] [&>h3]:!mb-[15px]
+                [&>p]:text-[20px] [&>p]:text-[#2d2d2d] [&>p]:leading-[1.8] [&>p]:!mb-[28px]
+                [&>ul]:!my-[28px] [&>li]:text-[#2d2d2d] [&>li]:text-[20px] [&>li]:leading-[1.8] [&>li]:mb-3
+                [&>a]:text-primary [&>a]:font-semibold [&>a]:no-underline hover:[&>a]:underline hover:[&>a]:text-primary/90"
+              dangerouslySetInnerHTML={{ __html: processedContent }}
+            />
+
+            <aside className="hidden lg:block sticky top-32">
+              <TableOfContents items={toc} />
+            </aside>
+          </div>
         </article>
       </main>
     </div>
