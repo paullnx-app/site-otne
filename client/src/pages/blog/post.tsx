@@ -44,10 +44,8 @@ export default function BlogPost() {
       <Navbar />
       
       <main className="pt-32 pb-20 container mx-auto px-6">
-        <Link href="/blog">
-          <a className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors font-medium">
-            <ArrowLeft className="w-4 h-4 mr-2" /> Voltar para o blog
-          </a>
+        <Link href="/blog" className="inline-flex items-center text-muted-foreground hover:text-primary mb-8 transition-colors font-medium">
+          <ArrowLeft className="w-4 h-4 mr-2" /> Voltar para o blog
         </Link>
 
         <article className="max-w-[700px] mx-auto">
