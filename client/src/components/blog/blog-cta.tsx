@@ -25,7 +25,7 @@ export function BlogCTA() {
         </div>
 
         <h3 className="text-xl font-bold mb-3 leading-tight text-white drop-shadow-sm">
-          Descubra oportunidades ocultas de SEO no seu site
+          Coloque o seu site na frente dos seus concorrentes
         </h3>
         
         <p className="text-slate-300 text-sm mb-6 leading-relaxed">
