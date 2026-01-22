@@ -170,13 +170,13 @@ export default function QuemSomos() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-transparent" />
             
             <div className="relative z-10 p-12 md:p-24 max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-white">
                 Queremos ser o último parceiro de SEO que você vai contratar.
               </h2>
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-200 mb-8 leading-relaxed">
                 A maioria dos nossos clientes chega até nós depois de experiências frustrantes com outras agências. Nosso objetivo é simples: entregar tanto valor que você nunca mais precise procurar outra consultoria.
               </p>
               
