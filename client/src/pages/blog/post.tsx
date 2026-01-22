@@ -89,8 +89,8 @@ export default function BlogPost() {
           <div 
             className="prose prose-lg max-w-none 
               prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground 
-              [&>h2]:text-3xl [&>h2]:mt-20 [&>h2]:!mb-[20px] 
-              [&>h3]:text-2xl [&>h3]:mt-12 [&>h3]:!mb-[20px]
+              [&>h2]:text-3xl [&>h2]:!mt-[20px] [&>h2]:!mb-[20px] 
+              [&>h3]:text-2xl [&>h3]:!mt-[20px] [&>h3]:!mb-[20px]
               [&>p]:text-lg [&>p]:text-muted-foreground [&>p]:leading-[2.2] [&>p]:!mb-[20px]
               [&>ul]:!my-[20px] [&>li]:text-muted-foreground [&>li]:text-lg [&>li]:leading-[2.2] [&>li]:mb-4
               [&>a]:text-primary hover:[&>a]:text-primary/80"
