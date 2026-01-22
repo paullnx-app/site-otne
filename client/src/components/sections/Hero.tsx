@@ -65,9 +65,17 @@ export function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-12 flex items-center justify-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500"
+          className="mt-16 max-w-2xl mx-auto"
         >
-          {/* Placeholder for client logos or trust markers if needed */}
+          <div className="relative inline-block group cursor-default">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-xl blur opacity-0 group-hover:opacity-70 transition duration-500"></div>
+            <div className="relative bg-white/60 backdrop-blur-md border border-black/5 rounded-xl py-4 px-6 text-sm md:text-base text-muted-foreground leading-relaxed shadow-sm">
+              <span className="font-bold text-primary block md:inline md:mr-2 mb-1 md:mb-0">
+                O que é SEO?
+              </span>
+              É organizar o seu site para que o Google entenda que você é a melhor resposta para o seu cliente, colocando sua empresa no topo das buscas.
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
