@@ -57,22 +57,16 @@ export function Navbar() {
             Como funciona
           </a>
           
-          <Link href="/consultoria-seo">
-            <a className={`text-sm font-medium transition-colors ${location === "/consultoria-seo" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
-              Consultoria SEO
-            </a>
+          <Link href="/consultoria-seo" className={`text-sm font-medium transition-colors ${location === "/consultoria-seo" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+            Consultoria SEO
           </Link>
 
-          <Link href="/quem-somos">
-            <a className={`text-sm font-medium transition-colors ${location === "/quem-somos" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
-              Quem Somos
-            </a>
+          <Link href="/quem-somos" className={`text-sm font-medium transition-colors ${location === "/quem-somos" ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+            Quem Somos
           </Link>
 
-          <Link href="/blog">
-            <a className={`text-sm font-medium transition-colors ${location.startsWith("/blog") ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
-              Blog
-            </a>
+          <Link href="/blog" className={`text-sm font-medium transition-colors ${location.startsWith("/blog") ? "text-primary" : "text-muted-foreground hover:text-primary"}`}>
+            Blog
           </Link>
 
           <LeadFormDialog>
@@ -121,29 +115,26 @@ export function Navbar() {
             >
               Como funciona
             </a>
-            <Link href="/consultoria-seo">
-              <a 
-                className={`text-lg font-medium ${location === "/consultoria-seo" ? "text-primary" : "text-foreground"}`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Consultoria SEO
-              </a>
+            <Link 
+              href="/consultoria-seo"
+              className={`text-lg font-medium ${location === "/consultoria-seo" ? "text-primary" : "text-foreground"}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Consultoria SEO
             </Link>
-            <Link href="/quem-somos">
-              <a 
-                className={`text-lg font-medium ${location === "/quem-somos" ? "text-primary" : "text-foreground"}`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Quem Somos
-              </a>
+            <Link 
+              href="/quem-somos"
+              className={`text-lg font-medium ${location === "/quem-somos" ? "text-primary" : "text-foreground"}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Quem Somos
             </Link>
-            <Link href="/blog">
-              <a 
-                className={`text-lg font-medium ${location.startsWith("/blog") ? "text-primary" : "text-foreground"}`}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Blog
-              </a>
+            <Link 
+              href="/blog"
+              className={`text-lg font-medium ${location.startsWith("/blog") ? "text-primary" : "text-foreground"}`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blog
             </Link>
             <LeadFormDialog>
               <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
