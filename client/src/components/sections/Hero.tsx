@@ -14,6 +14,9 @@ export function Hero() {
           src={heroBg} 
           alt="Data Background" 
           className="w-full h-full object-cover opacity-30"
+          width="1920"
+          height="1080"
+          fetchPriority="high" // Prioritize LCP image
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
       </div>

@@ -82,10 +82,13 @@ export default function Home() {
                   className="bg-white rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all group"
                 >
                   <Link href={`/blog/${post.slug}`}>
-                    <div className="aspect-video overflow-hidden cursor-pointer">
+                    <div className="aspect-video overflow-hidden cursor-pointer bg-muted">
                       <img 
                         src={post.imageUrl} 
                         alt={post.title}
+                        loading="lazy"
+                        width="400"
+                        height="225"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
