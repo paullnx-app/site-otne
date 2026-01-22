@@ -390,6 +390,47 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 
 ---
 
+## PADRÕES VISUAIS E CSS (ESTILO NEIL PATEL)
+
+### Configurações de Legibilidade (Focused Reading):
+
+Todo o conteúdo do blog deve seguir rigorosamente estas especificações técnicas para garantir máxima retenção e conforto visual:
+
+**Estrutura e Largura:**
+- **Container:** Máximo de 700px (max-w-[700px])
+- **Alinhamento:** Centralizado (mx-auto)
+- **Objetivo:** Linhas com média de 66 caracteres para não cansar a vista
+
+**Tipografia (Texto Base):**
+- **Tamanho:** 20px (text-[20px])
+- **Cor:** Cinza Escuro #2d2d2d (text-[#2d2d2d])
+- **Line-Height:** 1.8 (leading-[1.8])
+- **Fonte:** Display para títulos, Sans-serif limpa para corpo
+
+**Espaçamento Vertical (Ritmo de Leitura):**
+- **Parágrafos:** Margem inferior de 32px (!mb-[32px])
+- **Listas (UL/OL):** Margem vertical de 32px (!my-[32px])
+- **Itens de Lista (LI):** Margem inferior de 16px (mb-4)
+
+**Títulos (Hierarquia Visual):**
+- **H2 (Seção Principal):**
+  - Tamanho: 32px (text-[32px])
+  - Margem Superior: 60px (!mt-[60px]) - Pausa longa antes de novo assunto
+  - Margem Inferior: 30px (!mb-[30px]) - Espaço claro antes do texto
+  - Line-Height: 1.3
+  
+- **H3 (Subseção):**
+  - Tamanho: 26px (text-[26px])
+  - Margem Superior: 50px (!mt-[50px])
+  - Margem Inferior: 25px (!mb-[25px])
+  - Line-Height: 1.35
+
+**Links:**
+- **Estilo:** Cor primária (laranja), negrito (font-semibold)
+- **Comportamento:** Sem sublinhado por padrão, sublinhado no hover
+
+---
+
 ## OTIMIZAÇÃO PARA GEO (Generative Engine Optimization)
 
 ### Conteúdo para IA generativa:
