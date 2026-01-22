@@ -33,10 +33,6 @@ export function Hero() {
             <span className="text-primary text-[65px]">empresas que querem crescer</span>
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-foreground/80 font-medium mb-6 max-w-4xl mx-auto">
-            Transforme o Google na sua principal fonte de clientes, com uma estratégia de SEO feita para a realidade da sua empresa — sem promessas vazias, com números claros.
-          </h2>
-
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed">
             Se você já investe em site, conteúdo ou anúncios, mas sente que “o Google não funciona” para o seu negócio, o problema não é o canal — é a estratégia. Ajudamos empresários e gestores a organizarem o SEO de forma simples, técnica e orientada a resultados: mais visitas qualificadas, mais leads e mais vendas.
           </p>
