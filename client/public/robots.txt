@@ -1,4 +1,4 @@
-Sitemap: https://www.otne.com.br/sitemap.html
+Sitemap: https://www.otne.com.br/sitemap.xml
 
 # Regras gerais
 User-agent: *
