@@ -243,239 +243,134 @@ export const blogPosts: BlogPost[] = [
   {
     id: "5",
     slug: "como-construir-confianca-conteudo-digital-ia",
-    title: "Como Construir Confiança em Conteúdo Digital na Era da Inteligência Artificial",
-    excerpt: "Descubra estratégias práticas para construir credibilidade genuína no ambiente digital de 2026, diferenciar conteúdo autêntico de deepfakes e dominar o framework E-E-A-T.",
+    title: "Como Construir Confiança em Conteúdo Digital na Era da Inteligência Artificial: Guia Completo 2026",
+    excerpt: "Em um mundo saturado de conteúdo gerado por IA, a confiança é a nova moeda valiosa. Descubra como diferenciar sua marca, dominar o E-E-A-T e por que uma Consultoria de SEO estratégica é vital para sua sobrevivência digital.",
     content: `
-      <p class="lead">Você confiaria em um conteúdo sem saber quem o criou? Essa dúvida é o pesadelo de todo empresário hoje.</p>
+      <p class="lead">Você confiaria o futuro do seu negócio a um robô? A pergunta pode parecer dramática, mas reflete a realidade do mercado digital atual. Com a explosão da inteligência artificial generativa, a internet foi inundada por um tsunami de conteúdo automatizado, criando uma crise de confiança sem precedentes.</p>
 
-      <p>Com a <strong>explosão da inteligência artificial generativa</strong>, qualquer um cria textos e vídeos em segundos. Mas isso trouxe um problema real: diferenciar o que é autêntico do que é falso.</p>
+      <p>Para pequenas e médias empresas (PMEs), isso representa tanto uma ameaça existencial quanto uma oportunidade de ouro. Enquanto seus concorrentes buscam atalhos usando IA de forma indiscriminada, você pode se destacar construindo o ativo mais valioso de 2026: <strong>confiança genuína</strong>.</p>
 
-      <p>A confiança virou o ativo mais valioso. Pesquisas mostram que <strong>31% dos brasileiros checam a reputação antes de comprar</strong>. Segurança vale mais que preço baixo.</p>
+      <p>Neste guia definitivo, vamos explorar como navegar nesse novo cenário, dominar os critérios de E-E-A-T do Google e entender por que uma <strong>Consultoria de SEO</strong> especializada nunca foi tão crucial para separar o joio do trigo.</p>
 
-      <p>Neste artigo, você vai ver estratégias práticas para blindar sua credibilidade em 2026.</p>
+      <h2>O Cenário Atual: A Crise da Veracidade</h2>
 
-      <h2>Por Que Confiança Digital Virou Prioridade Estratégica</h2>
+      <p>Vivemos o que especialistas chamam de "Colapso do Contexto". Ferramentas como ChatGPT, Claude e Midjourney permitem criar textos persuasivos e imagens hiper-realistas em segundos. O resultado? O consumidor médio não sabe mais em quem acreditar.</p>
 
-      <p>A transformação digital não tem volta. Hoje, tudo acontece online: bancos, serviços e notícias.</p>
+      <p>Dados recentes indicam que <strong>31% dos brasileiros já verificam a reputação de uma marca em múltiplas fontes antes de considerar uma compra</strong>. O ceticismo é o novo padrão. Se o seu site parece genérico, "robotizado" ou superficial, você perde o cliente antes mesmo do primeiro clique.</p>
 
-      <p>Mas os riscos cresceram junto. <strong>Deepfakes aumentaram 400% em 2024</strong>. É um dado alarmante que mostra: construir confiança não é mais opcional.</p>
+      <div class="bg-secondary/30 p-6 rounded-lg my-6 border-l-4 border-primary">
+        <strong>O Paradoxo da IA:</strong> Quanto mais fácil é criar conteúdo, menos valor ele tem. O que se torna escasso – e, portanto, valioso – é a experiência humana autêntica, verificável e empática.
+      </div>
 
-      <p>Confiança digital é a percepção de segurança ao interagir com sua marca. É o cliente saber que você é ético e protege os dados dele.</p>
+      <h2>Por Que a Consultoria de SEO Mudou Radicalmente</h2>
 
-      <p>Ignorar isso é perder relevância. O consumidor está cansado de promessas vazias e quer <strong>autenticidade comprovada</strong>.</p>
+      <p>Antigamente, SEO (Search Engine Optimization) era sobre palavras-chave e backlinks. Hoje, é sobre <strong>Gestão de Reputação Digital</strong>. Uma <strong>Consultoria de SEO</strong> moderna não foca apenas em colocar seu site no topo do Google; ela foca em garantir que, quando você chegar lá, o usuário confie no que vê.</p>
+
+      <p>O Google atualizou seus algoritmos para penalizar conteúdo puramente gerado por IA sem supervisão humana. O foco agora é premiar conteúdo que demonstra <em>Experience</em> (Experiência real). É aqui que muitas PMEs falham: elas têm a experiência, mas não sabem como comunicá-la digitalmente.</p>
 
       <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
-      <h2>Proveniência Digital: A Certidão de Nascimento do Conteúdo</h2>
+      <h2>Desvendando o E-E-A-T: A Bússola da Confiança</h2>
 
-      <p>Já imaginou um documento que prova a origem de cada imagem ou texto? Isso é a <strong>proveniência digital</strong>.</p>
+      <p>Se você quer sobreviver às atualizações do Google em 2026, precisa respirar E-E-A-T. Este acrônimo não é apenas uma métrica de vaidade; é a base de toda estratégia de <strong>Consultoria de SEO</strong> séria.</p>
 
-      <p>Ela rastreia todo o histórico do conteúdo: quem criou, quando e se foi editado.</p>
+      <h3>1. Experience (Experiência)</h3>
+      <p>O Google quer saber se você realmente usou o produto que está vendendo ou vivenciou o serviço que está prestando. Conteúdo teórico não basta mais. Fotos reais da sua equipe, vídeos de bastidores e relatos em primeira pessoa são fundamentais.</p>
 
-      <p>Gigantes como Adobe e Google lideram a <a href="https://c2pa.org/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Coalition for Content Provenance and Authenticity (C2PA)</a>. É um padrão global que mais de 1.500 empresas já usam.</p>
+      <h3>2. Expertise (Especialização)</h3>
+      <p>Quem escreveu o conteúdo? Um redator genérico ou um especialista no assunto? Assinar artigos com "Equipe" ou "Admin" é um erro fatal. Seus autores precisam ter nomes, rostos e biografias que comprovem seu conhecimento.</p>
 
-      <p>A Leica já lançou câmeras com isso embutido. Cada foto sai com um "selo de verificação" automático.</p>
+      <h3>3. Authoritativeness (Autoridade)</h3>
+      <p>O que outros dizem sobre você? Menções em sites de notícias, prêmios do setor e links de associações comerciais validam sua autoridade. Uma boa <strong>Consultoria de SEO</strong> trabalhará ativamente para construir essa rede de validação externa.</p>
 
-      <p>Proveniência não diz se é verdade ou mentira, mas dá o contexto para o cliente decidir se confia.</p>
+      <h3>4. Trustworthiness (Confiabilidade)</h3>
+      <p>Seu site é seguro tecnicamente (HTTPS)? Suas políticas de privacidade são claras? Você tem um endereço físico verificado? A transparência é a base da pirâmide do E-E-A-T.</p>
 
-      <h2>E-E-A-T: O Framework que Define Autoridade no Google</h2>
+      <h2>A Era da Proveniência Digital e C2PA</h2>
 
-      <p>O Google mudou o jogo com o <strong>E-E-A-T</strong>: Experience, Expertise, Authoritativeness e Trustworthiness.</p>
+      <p>Uma tendência tecnológica emergente que todo empresário deve conhecer é a <strong>proveniência digital</strong>. Liderada pela <em>Coalition for Content Provenance and Authenticity (C2PA)</em>, essa tecnologia funciona como uma "certidão de nascimento" para conteúdo digital.</p>
 
-      <p>O "Experience" (Experiência) foi adicionado recentemente. O foco é conteúdo baseado em vivência real.</p>
+      <p>Em breve, navegadores e redes sociais exibirão selos em imagens e vídeos informando sua origem: se foi capturado por uma câmera, editado por software ou gerado por IA. Adotar esses padrões cedo pode colocar sua empresa anos à frente da concorrência.</p>
 
-      <h3>O que significa cada pilar?</h3>
+      <h2>Estratégias Práticas para PMEs Construírem Confiança</h2>
 
-      <p><strong>Experiência:</strong> Você viveu o que escreveu? Usou o produto? Visitou o lugar? Isso separa o genérico do valioso.</p>
+      <p>Como uma pequena empresa pode competir com gigantes nesse cenário? A resposta é simples: sendo radicalmente humana.</p>
 
-      <p><strong>Expertise:</strong> Você tem credenciais? Formação? Histórico? A IA verifica se seu conhecimento é consistente.</p>
+      <h3>Humanize Sua Marca (Sem Medo)</h3>
+      <p>Pare de usar bancos de imagem genéricos. Uma foto tremida da sua equipe real trabalhando vale mais do que uma foto 4K de modelos sorrindo em um escritório falso. As pessoas se conectam com pessoas, não com logotipos.</p>
 
-      <p><strong>Autoridade:</strong> Outros citam você? Sites confiáveis linkam para o seu? Isso é prova social de alto nível.</p>
+      <h3>Estudos de Caso Detalhados</h3>
+      <p>Em vez de apenas listar serviços, conte histórias. "Como ajudamos o Cliente X a resolver o Problema Y". Mostre os desafios, os erros no caminho e a solução final. Isso demonstra <em>Experience</em> na prática.</p>
 
-      <p><strong>Confiança:</strong> É a base de tudo. Precisão e transparência são inegociáveis para o Google.</p>
-
-      <p>Para temas como saúde e finanças (YMYL), a exigência é ainda maior. Errar aqui causa danos reais.</p>
+      <h3>Invista em Consultoria de SEO Especializada</h3>
+      <p>Muitas PMEs tentam fazer SEO sozinhas ou com ferramentas automáticas. O resultado geralmente é um site tecnicamente correto, mas sem alma e sem autoridade. Uma <strong>Consultoria de SEO</strong> profissional vai além do código: ela ajuda a estruturar a narrativa da sua marca para que ela ressoe tanto com os algoritmos quanto com os humanos.</p>
 
       <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1000" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
-      <h2>Estratégias Práticas Para Demonstrar E-E-A-T</h2>
+      <h2>O Papel da IA: Ferramenta, Não Autor</h2>
 
-      <p>Não basta ser bom, tem que parecer bom. Aqui estão ações concretas:</p>
-
-      <h3>1. Mostre Experiência Prática</h3>
-      <p>Destaque o histórico da empresa e estudos de caso reais. Mostre resultados, não apenas teoria.</p>
-
-      <h3>2. Crie Páginas de Autor Robustas</h3>
-      <p>Quem escreve importa. Coloque biografia completa, foto, formação e links para perfis verificados.</p>
-
-      <h3>3. Conquiste Backlinks de Qualidade</h3>
-      <p>Parcerias com instituições sérias valem ouro. Busque reconhecimento de quem já tem autoridade.</p>
-
-      <h3>4. Colete Avaliações Reais</h3>
-      <p>Reviews positivos são prova social pura. Incentive seus clientes felizes a falarem.</p>
-
-      <h3>5. Tenha Transparência Técnica</h3>
-      <p>Use HTTPS, mostre contato claro e tenha políticas de privacidade fáceis de ler.</p>
-
-      <h3>6. Cite Fontes Respeitáveis</h3>
-      <p>Vai dar um dado? Linke para o estudo original. Isso reforça sua credibilidade factual.</p>
-
-      <h2>Como IA Generativa Mudou as Regras do Jogo</h2>
-
-      <p>Ferramentas como ChatGPT mudaram tudo. Criar conteúdo ficou fácil e rápido.</p>
-
-      <p>O problema é o oceano de conteúdo raso que surgiu. O Google reagiu: agora prioriza <strong>profundidade e experiência humana</strong>.</p>
-
-      <p>Num mundo cheio de IA, o humano vale mais. As pessoas querem conexão real, opiniões fortes e insights únicos.</p>
-
-      <p>O segredo é combinar os dois. Use IA para pesquisa e estrutura, mas coloque sua alma no texto final.</p>
-
-      <p>Conteúdo 100% IA sem supervisão está sendo penalizado. O algoritmo sabe quando não tem toque humano.</p>
-
-      <h2>Regulamentação: O Que Empresários Precisam Saber</h2>
-
-      <p>As leis estão chegando. O AI Act da Europa já define regras claras.</p>
-
-      <p>A partir de agosto de 2026, conteúdo de IA terá que ser marcado. Texto, áudio e vídeo precisarão de aviso.</p>
-
-      <p>Sistemas de IA terão que garantir que suas criações sejam detectáveis. Marcas d'água digitais serão o padrão.</p>
-
-      <p>No Brasil, a discussão avança. Empresas inteligentes já adotam transparência antes de ser lei.</p>
-
-      <p>Recomendação clara: documente quando e como você usa IA. Transparência gera confiança.</p>
-
-      <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000" alt="Inteligência Artificial e tecnologia digital" class="rounded-xl my-8 w-full object-cover h-[300px]" />
-
-      <h2>Tendências de Confiança Digital Para 2026</h2>
-
-      <p>O consumidor latino quer confiar. 62% preferem marcas que explicam como usam tecnologia.</p>
-
-      <p><strong>Autenticidade é o novo luxo.</strong> Ninguém aguenta mais perfeição artificial. As pessoas querem bastidores reais e vulnerabilidade.</p>
-
-      <p>Influenciadores de verdade estão ganhando dos fabricados. Propósito genuíno vende mais que alcance vazio.</p>
-
-      <p>Personalização sim, invasão não. Transparência sobre dados é diferencial competitivo hoje.</p>
-
-      <p>A nostalgia voltou com força. Reinterpretar o passado conecta emocionalmente e aumenta a afinidade com a marca.</p>
-
-      <h2>Construindo Infraestrutura de Confiança na Sua Empresa</h2>
-
-      <p>Confiança se constrói com método. Comece auditando seu conteúdo com a lente E-E-A-T.</p>
-
-      <p>Crie um guia editorial. Defina padrões de qualidade e regras para uso de IA. Isso alinha sua equipe.</p>
-
-      <p>Treine seus colaboradores. Eles precisam entender de literacia digital e ética no conteúdo.</p>
-
-      <p>Parcerias de verificação de fatos ajudam muito. Mostra que você se importa com a verdade.</p>
-
-      <p>Monitore sua reputação online. Responda rápido, assuma erros e dialogue de verdade.</p>
-
-      <h2>Comunicação Transparente Como Pilar Fundamental</h2>
-
-      <p>Abra a caixa preta. Mostre como você cria e decide.</p>
-
-      <p>Errou? Assuma. O consumidor perdoa o erro, mas não perdoa a mentira ou a tentativa de esconder.</p>
-
-      <p>Simplifique a linguagem jurídica. Explique privacidade de dados de jeito que qualquer um entenda.</p>
-
-      <p>Estar em dia com a LGPD não é só lei, é sinal de respeito ao cliente.</p>
-
-      <p>Eduque seu público sobre segurança. Ajude-os a não cair em golpes. Isso cria lealdade.</p>
-
-      <h2>Métricas Para Avaliar Confiança Digital</h2>
-
-      <p>Como medir confiança? Tem jeito sim:</p>
+      <p>Não me entenda mal: a Inteligência Artificial é incrível e deve ser usada. Mas ela deve ser sua <em>assistente</em>, não sua <em>substituta</em>.</p>
 
       <ul class="space-y-2 list-disc pl-5 mb-6">
-        <li><strong>Taxa de rejeição e tempo na página:</strong> Se ficam, confiam.</li>
-        <li><strong>Backlinks de qualidade:</strong> O mercado te valida.</li>
-        <li><strong>Sentimento nos comentários:</strong> O que dizem sobre você?</li>
-        <li><strong>Taxa de conversão:</strong> Quem confia, compra.</li>
-        <li><strong>Citações no Google:</strong> O algoritmo te vê como autoridade?</li>
+        <li><strong>Use IA para:</strong> Pesquisar tópicos, estruturar ideias, corrigir gramática, analisar dados, gerar variações de títulos.</li>
+        <li><strong>Não use IA para:</strong> Escrever opiniões finais, criar depoimentos falsos, gerar análises "profundas" sobre temas que você não domina.</li>
       </ul>
 
-      <p>Pergunte direto pro seu público. Pesquisa de percepção vale muito.</p>
+      <p>O Google é capaz de detectar padrões de linguagem de IA. Textos que seguem sempre a mesma estrutura ("Em conclusão...", "É importante notar...") acendem alertas vermelhos nos algoritmos de classificação.</p>
 
-      <h2>Desafios e Oportunidades no Horizonte</h2>
-
-      <p>Implementar tudo isso custa dinheiro e tempo. A educação digital ainda é um desafio no Brasil.</p>
-
-      <p>As Big Techs têm vantagem, claro. Multas pra elas são troco, pra pequenos podem ser o fim.</p>
-
-      <p>Mas a oportunidade é gigante para quem se mexe agora. O mercado premia os pioneiros.</p>
-
-      <p>Marcas transparentes criam laços emocionais. Pequenos negócios podem usar isso para vencer os grandes.</p>
-
-      <p>A IA democratizou o acesso. Use a tecnologia, mas mantenha a essência humana.</p>
-
-      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" alt="Planejamento estratégico de negócios" class="rounded-xl my-8 w-full object-cover h-[300px]" />
-
-      <h2>Ações Imediatas Para Começar Hoje</h2>
-
-      <p>Não tente fazer tudo de uma vez. Comece pelo básico que dá resultado:</p>
-
-      <p><strong>1. Revise as páginas de autor.</strong> Coloque foto, bio e links reais.</p>
+      <h2>O Futuro: Regulamentação e Transparência</h2>
       
-      <p><strong>2. Audite seu conteúdo.</strong> Tem afirmação sem fonte? Coloque o link.</p>
-      
-      <p><strong>3. Use HTTPS.</strong> É o mínimo para segurança.</p>
-      
-      <p><strong>4. Crie um FAQ de segurança.</strong> Tire as dúvidas antes do cliente perguntar.</p>
-      
-      <p><strong>5. Documente sua política de IA.</strong> Deixe claro como você usa.</p>
+      <p>Com o AI Act na Europa e discussões avançadas no Brasil, a identificação de conteúdo por IA será obrigatória. Antecipe-se à lei. Crie uma política de uso de IA visível no seu site. Diga ao seu cliente: "Usamos IA para nos ajudar a pesquisar, mas este texto foi escrito e revisado por humanos". Essa honestidade é desarmante e constrói lealdade imediata.</p>
 
-      <p>Esses passos já colocam sua empresa num patamar diferente.</p>
+      <h2>Conclusão: A Confiança é Seu Maior Ativo de SEO</h2>
+
+      <p>Em 2026, SEO não é mais sobre enganar o algoritmo. É sobre convencer o usuário. Se você ganhar a confiança do visitante, o Google notará (através de métricas de engajamento como tempo na página e taxa de conversão) e recompensará seu site.</p>
+
+      <p>Construir essa infraestrutura de credibilidade dá trabalho. Exige estratégia, consistência e conhecimento técnico profundo. É por isso que contar com uma <strong>Consultoria de SEO</strong> experiente não é um gasto, é um investimento na longevidade do seu negócio.</p>
+
+      <p>Não deixe sua reputação digital ao acaso. Em um mar de robôs, seja o humano que seu cliente procura.</p>
+
+      <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
+        <h3 class="text-2xl font-bold mb-4 text-primary">Pronto para elevar sua autoridade digital?</h3>
+        <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Não jogue dados com o futuro da sua empresa. Nossa <strong>Consultoria de SEO</strong> é desenhada sob medida para PMEs que querem crescer com solidez e segurança.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            SOLICITAR DIAGNÓSTICO GRATUITO
+          </a>
+        </div>
+        <p class="mt-4 text-sm text-muted-foreground">Junte-se a dezenas de empresas que já transformaram sua presença online.</p>
+      </div>
 
       <hr class="my-12 border-border" />
 
-      <h2>Perguntas Frequentes Sobre Confiança em Conteúdo Digital</h2>
+      <h2>Perguntas Frequentes Sobre Confiança e SEO</h2>
 
       <div class="space-y-6">
         <div>
-          <h3 class="text-lg font-bold mb-2">O que é E-E-A-T e por que importa?</h3>
-          <p class="text-muted-foreground">É a sigla do Google para Experiência, Expertise, Autoridade e Confiança. É a régua que define se seu conteúdo vai aparecer ou sumir nas buscas.</p>
+          <h3 class="text-lg font-bold mb-2">O Google penaliza todo conteúdo de IA?</h3>
+          <p class="text-muted-foreground">Não diretamente. O Google penaliza conteúdo de <em>baixa qualidade</em>. Se a IA gerar um texto inútil, repetitivo ou impreciso, ele será rebaixado. Se o conteúdo for útil e revisado, ele pode rankear. Porém, conteúdo 100% humano tende a performar melhor em termos de engajamento.</p>
         </div>
 
         <div>
-          <h3 class="text-lg font-bold mb-2">Preciso avisar que uso IA no site?</h3>
-          <p class="text-muted-foreground">No Brasil ainda não é lei, mas é ético. Na Europa, vai ser obrigatório em 2026. Antecipe-se e ganhe a confiança do cliente.</p>
+          <h3 class="text-lg font-bold mb-2">Como uma Consultoria de SEO ajuda no E-E-A-T?</h3>
+          <p class="text-muted-foreground">Uma consultoria identifica lacunas na sua autoridade atual. Ela pode sugerir pautas que demonstrem expertise, conectar sua marca a parceiros de autoridade para backlinks e otimizar a estrutura técnica do site para passar segurança.</p>
         </div>
 
         <div>
-          <h3 class="text-lg font-bold mb-2">Pequena empresa consegue competir nisso?</h3>
-          <p class="text-muted-foreground">Sim! Sua vantagem é a proximidade e autenticidade. Grandes empresas têm dificuldade em parecer humanas. Você já é.</p>
+          <h3 class="text-lg font-bold mb-2">Preciso ser um influenciador para ter autoridade?</h3>
+          <p class="text-muted-foreground">Não. Você precisa ser uma autoridade <em>no seu nicho</em>. Um dentista não precisa ser famoso no Instagram, mas precisa ter artigos técnicos bem escritos e avaliações reais de pacientes no seu site local.</p>
         </div>
 
         <div>
-          <h3 class="text-lg font-bold mb-2">Posso usar IA e ser autêntico?</h3>
-          <p class="text-muted-foreground">Com certeza. Use a IA para o trabalho braçal e pesquisa. A opinião, a vivência e o tom de voz têm que ser seus.</p>
+          <h3 class="text-lg font-bold mb-2">Quanto tempo leva para construir confiança digital?</h3>
+          <p class="text-muted-foreground">É um processo contínuo. Melhorias técnicas (HTTPS, velocidade) são rápidas. Autoridade de conteúdo e backlinks levam de 6 a 12 meses para maturar. Por isso, começar hoje é essencial.</p>
         </div>
-      </div>
-
-      <h2>Conclusão: Confiança é Investimento</h2>
-
-      <p>Confiança não se compra, se constrói. É longo prazo, mas é sustentável.</p>
-
-      <p>Em 2026, quem tiver integridade vai liderar. O consumidor está carente de verdade.</p>
-
-      <p>Quem priorizar E-E-A-T e transparência vai sair na frente. O futuro é de quem une tecnologia com humanidade.</p>
-
-      <p>Comece hoje. Cada ação conta.</p>
-
-      <p>Sua empresa está pronta para inspirar confiança?</p>
-
-      <div class="bg-primary/5 p-6 rounded-lg my-8 text-center border border-primary/20">
-        <h3 class="text-xl font-bold mb-3 text-primary">Construa autoridade com quem entende</h3>
-        <p class="mb-4 text-muted-foreground">Descubra como a Otne pode ajudar seu negócio a crescer com estratégias digitais que inspiram confiança e produtividade.</p>
-        <a href="https://www.otne.com.br" class="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors" target="_blank" rel="noopener noreferrer">
-          CONHEÇA NOSSAS SOLUÇÕES DE SEO
-        </a>
       </div>
     `,
-    author: "Equipe Otne.seo",
+    author: "Equipe Rank.AI",
     date: "22 Jan 2026",
     category: "Inteligência Artificial",
-    readTime: "12 min",
+    readTime: "15 min",
     imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000"
   }
 ];
