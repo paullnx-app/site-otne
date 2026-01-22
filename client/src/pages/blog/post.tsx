@@ -50,35 +50,35 @@ export default function BlogPost() {
           </a>
         </Link>
 
-        <article className="max-w-3xl mx-auto">
-          <header className="mb-10 text-center">
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold">
+        <article className="max-w-[700px] mx-auto">
+          <header className="mb-12 text-center">
+            <div className="flex items-center justify-center gap-2 mb-8">
+              <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
                 {post.category}
               </span>
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-display font-bold text-foreground mb-6 leading-tight">
+            <h1 className="text-3xl md:text-[42px] font-display font-bold text-foreground mb-8 leading-[1.2] tracking-tight">
               {post.title}
             </h1>
 
-            <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground border-y border-border py-4">
-              <div className="flex items-center gap-2">
+            <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground border-y border-border py-6">
+              <div className="flex items-center gap-2 font-medium">
                 <User className="w-4 h-4" />
                 {post.author}
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 font-medium">
                 <Calendar className="w-4 h-4" />
                 {post.date}
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 font-medium">
                 <Clock className="w-4 h-4" />
                 {post.readTime}
               </div>
             </div>
           </header>
 
-          <div className="aspect-video rounded-2xl overflow-hidden mb-12 shadow-sm">
+          <div className="aspect-video rounded-xl overflow-hidden mb-16 shadow-sm">
             <img 
               src={post.imageUrl} 
               alt={post.title}
@@ -89,11 +89,11 @@ export default function BlogPost() {
           <div 
             className="prose prose-lg max-w-none 
               prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground 
-              [&>h2]:text-3xl [&>h2]:!mt-[20px] [&>h2]:!mb-[20px] 
-              [&>h3]:text-2xl [&>h3]:!mt-[20px] [&>h3]:!mb-[20px]
-              [&>p]:text-lg [&>p]:text-muted-foreground [&>p]:leading-[2.2] [&>p]:!mb-[20px]
-              [&>ul]:!my-[20px] [&>li]:text-muted-foreground [&>li]:text-lg [&>li]:leading-[2.2] [&>li]:mb-4
-              [&>a]:text-primary hover:[&>a]:text-primary/80"
+              [&>h2]:text-[32px] [&>h2]:leading-[1.3] [&>h2]:tracking-tight [&>h2]:!mt-[60px] [&>h2]:!mb-[30px] 
+              [&>h3]:text-[26px] [&>h3]:leading-[1.35] [&>h3]:tracking-tight [&>h3]:!mt-[50px] [&>h3]:!mb-[25px]
+              [&>p]:text-[20px] [&>p]:text-[#2d2d2d] [&>p]:leading-[1.8] [&>p]:!mb-[32px]
+              [&>ul]:!my-[32px] [&>li]:text-[#2d2d2d] [&>li]:text-[20px] [&>li]:leading-[1.8] [&>li]:mb-4
+              [&>a]:text-primary [&>a]:font-semibold [&>a]:no-underline hover:[&>a]:underline hover:[&>a]:text-primary/90"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
         </article>
