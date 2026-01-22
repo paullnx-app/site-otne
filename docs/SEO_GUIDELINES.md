@@ -8,10 +8,6 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 
 ---
 
-## DIRETRIZES INICIAIS
-
----
-
 ## QUALIDADE DO CONTEÚDO
 
 ### Princípios fundamentais:
@@ -248,7 +244,7 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 **Anchor text:**
 - Natural e descritivo
 - Evitar "clique aqui" ou "saiba mais"
-- Exemplo: "vantagens do coworking" em vez de "clique aqui"
+- Exemplo: "vantagens do marketing digital" em vez de "clique aqui"
 
 **Destinos prioritários:**
 - Pillar pages (conteúdo pilar)
@@ -257,7 +253,7 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 - Páginas de serviço/produto quando relevante
 
 **Atenção:**
-- Busque no site https://www.deskcoworking.com.br qual melhor link interno para linkagem que faça sentido
+- Busque no site https://www.otne.com.br qual melhor link interno para linkagem que faça sentido
 - Links devem agregar valor ao leitor
 
 ### Links externos:
@@ -510,7 +506,7 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 - Traga sempre o mais relevante para o leitor
 
 **Call to Action (CTA):**
-- Busque no site https://www.deskcoworking.com.br
+- Busque no site https://www.otne.com.br
 - Escolha o melhor link interno
 - CTA que faça sentido com o conteúdo
 
@@ -653,7 +649,7 @@ Antes de finalizar o artigo, verificar:
 2. **Meta descrição** (150-155 caracteres)
 
 3. **Sugestões de links internos** com anchor text
-   - Verificar disponibilidade em https://www.deskcoworking.com.br
+   - Verificar disponibilidade em https://www.otne.com.br
 
 4. **Sugestões de links externos** com fontes confiáveis
 
