@@ -5,6 +5,10 @@ import teamImg from "@/assets/images/blog/team-authority.jpg";
 import localStoreImg from "@/assets/images/blog/local-seo-store.jpg";
 import localSearchImg from "@/assets/images/blog/local-search-mobile.jpg";
 import googleMapsImg from "@/assets/images/blog/google-maps-guide.jpg";
+import futureSeoImg from "@/assets/images/blog/future-seo-2026.jpg";
+import technicalSeoImg from "@/assets/images/blog/technical-seo-errors.jpg";
+import linkBuildingImg from "@/assets/images/blog/link-building-network.jpg";
+import aiTrustImg from "@/assets/images/blog/ai-trust-human.jpg";
 
 export interface BlogPost {
   id: string;
@@ -426,7 +430,7 @@ export const blogPosts: BlogPost[] = [
     date: "25 Jan 2025",
     category: "Link Building",
     readTime: "8 min",
-    imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1000"
+    imageUrl: linkBuildingImg
   },
   {
     id: "1",
@@ -463,7 +467,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>Uma <strong>Consultoria de SEO</strong> moderna não olha apenas para o Google Search Console; ela analisa como sua marca está sendo percebida e citada pelos modelos de linguagem.</p>
 
-      <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1000" alt="Análise de dados de SEO e tendências de busca" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${futureSeoImg}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>3. E-E-A-T: A Moeda Mais Forte de 2026</h2>
 
@@ -495,7 +499,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>Não tente "vender" nesses espaços. Tente ajudar. A venda será consequência da sua autoridade percebida.</p>
 
-      <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1000" alt="Estratégia de conteúdo e planejamento digital" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${aiTrustImg}" alt="Estratégia de conteúdo humano e IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>6. A Morte das Palavras-Chave de Cauda Longa?</h2>
 
@@ -595,7 +599,7 @@ export const blogPosts: BlogPost[] = [
     date: "22 Jan 2026",
     category: "Tendências",
     readTime: "10 min",
-    imageUrl: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&q=80&w=1000"
+    imageUrl: futureSeoImg
   },
   {
     id: "3",
@@ -612,7 +616,7 @@ export const blogPosts: BlogPost[] = [
     date: "15 Nov 2025",
     category: "Técnico",
     readTime: "6 min",
-    imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1000"
+    imageUrl: technicalSeoImg
   },
   {
     id: "5",
@@ -642,7 +646,7 @@ export const blogPosts: BlogPost[] = [
 
       <p>O Google atualizou seus algoritmos para penalizar conteúdo puramente gerado por IA sem supervisão humana. O foco agora é premiar conteúdo que demonstra <em>Experience</em> (Experiência real). É aqui que muitas PMEs falham: elas têm a experiência, mas não sabem como comunicá-la digitalmente.</p>
 
-      <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1000" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${aiTrustImg}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Desvendando o E-E-A-T: A Bússola da Confiança</h2>
 
@@ -655,7 +659,7 @@ export const blogPosts: BlogPost[] = [
       <p>Quem escreveu o conteúdo? Um redator genérico ou um especialista no assunto? Assinar artigos com "Equipe" ou "Admin" é um erro fatal. Seus autores precisam ter nomes, rostos e biografias que comprovem seu conhecimento.</p>
 
       <h3>3. Authoritativeness (Autoridade)</h3>
-      <p>O que outros dizem sobre você? Menções em sites de notícias, prêmios do setor e links de associações comerciais validam sua autoridade. Existem <a href="/blog/como-aumentar-autoridade-conquistar-links" class="text-primary font-bold hover:underline">métodos comprovados para aumentar sua autoridade</a> que você pode aplicar hoje.</p>
+      <p>O que outros dizem sobre você? Menções em sites de notícias, prêmios do setor e links de associações comerciais validam sua autoridade. Uma boa <strong>Consultoria de SEO</strong> trabalhará ativamente nas <a href="/blog/como-aumentar-autoridade-conquistar-links" class="text-primary font-bold hover:underline">estratégias para conquistar backlinks de qualidade</a>.</p>
 
       <h3>4. Trustworthiness (Confiabilidade)</h3>
       <p>Seu site é seguro tecnicamente (HTTPS)? Suas políticas de privacidade são claras? Você tem um endereço físico verificado? A transparência é a base da pirâmide do E-E-A-T.</p>
@@ -679,7 +683,7 @@ export const blogPosts: BlogPost[] = [
       <h3>Invista em Consultoria de SEO Especializada</h3>
       <p>Muitas PMEs tentam fazer SEO sozinhas ou com ferramentas automáticas. O resultado geralmente é um site tecnicamente correto, mas sem alma e sem autoridade. Uma <strong>Consultoria de SEO</strong> profissional vai além do código: ela ajuda a estruturar a narrativa da sua marca para que ela ressoe tanto com os algoritmos quanto com os humanos.</p>
 
-      <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=1000" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${teamImg}" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>O Papel da IA: Ferramenta, Não Autor</h2>
 
@@ -745,6 +749,6 @@ export const blogPosts: BlogPost[] = [
     date: "22 Jan 2026",
     category: "Inteligência Artificial",
     readTime: "15 min",
-    imageUrl: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=1000"
+    imageUrl: aiTrustImg
   }
 ];
