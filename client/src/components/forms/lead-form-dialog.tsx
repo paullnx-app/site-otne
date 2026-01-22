@@ -63,7 +63,7 @@ export function LeadFormDialog({ children, initialWebsite = "" }: LeadFormDialog
     const encodedMessage = encodeURIComponent(message);
     
     // WhatsApp number (placeholder)
-    const whatsappNumber = "5511999999999";
+    const whatsappNumber = "553133609525";
     
     // Open WhatsApp
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
@@ -114,7 +114,7 @@ export function LeadFormDialog({ children, initialWebsite = "" }: LeadFormDialog
                   <FormItem>
                     <FormLabel>Telefone</FormLabel>
                     <FormControl>
-                      <Input placeholder="(11) 99999-9999" {...field} />
+                      <Input placeholder="(31) 3360-9525" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

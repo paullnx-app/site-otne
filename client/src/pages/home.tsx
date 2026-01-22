@@ -26,7 +26,7 @@ export default function Home() {
     "description": "Consultoria de SEO especializada em pequenas e médias empresas.",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+55-11-99999-9999",
+      "telephone": "+55-31-3360-9525",
       "contactType": "customer service",
       "areaServed": "BR",
       "availableLanguage": "Portuguese"

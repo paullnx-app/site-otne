@@ -290,7 +290,7 @@ export default function ConsultoriaSEO() {
                   variant="outline" 
                   size="lg" 
                   className="h-14 px-8 border-border bg-white text-foreground hover:bg-secondary/50 rounded-xl text-lg w-full sm:w-auto"
-                  onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+                  onClick={() => window.open("https://wa.me/553133609525", "_blank")}
                 >
                   Falar no WhatsApp
                 </Button>
