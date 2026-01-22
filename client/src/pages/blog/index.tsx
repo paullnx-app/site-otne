@@ -50,7 +50,9 @@ export default function BlogIndex() {
           >
             Todos
           </button>
-          {categories.map(cat => (
+          {categories
+            .filter(cat => !selectedCategory || cat === selectedCategory)
+            .map(cat => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
