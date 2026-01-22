@@ -1,4 +1,4 @@
-Sitemap: https://www.otne.com.br/sitemap.xml
+Sitemap: https://www.otne.com.br/sitemap.html
 
 # Regras gerais
 User-agent: *
@@ -24,4 +24,4 @@ User-agent: CCBot
 Allow: /
 
 User-agent: GPTBot
-Disallow: / 
+Disallow: /
