@@ -9,6 +9,7 @@ import { processContent } from "@/lib/blog-utils";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogCTA } from "@/components/blog/blog-cta";
 import { BlogCategories } from "@/components/blog/blog-categories";
+import { ScrollProgress } from "@/components/blog/scroll-progress";
 import { useMemo } from "react";
 
 export default function BlogPost() {
@@ -49,7 +50,8 @@ export default function BlogPost() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background relative">
+      <ScrollProgress />
       <SchemaMarkup data={articleSchema} />
       <Navbar />
       
