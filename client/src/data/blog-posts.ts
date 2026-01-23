@@ -3,7 +3,7 @@ import mediaImg from "@/assets/images/blog/media.jpg";
 import partnershipImg from "@/assets/images/blog/partnership.jpg";
 import teamImg from "@/assets/images/blog/team-authority.jpg";
 import localStoreImg from "@/assets/images/blog/local-seo-store.jpg";
-import localSearchImg from "@/assets/images/blog/local-search-mobile.jpg";
+import localSearchImg from "@/assets/images/blog/local-seo-guide-unique.jpg";
 import googleMapsImg from "@/assets/images/blog/google-maps-guide.jpg";
 import futureSeoImg from "@/assets/images/blog/future-seo-2026.jpg";
 import technicalSeoImg from "@/assets/images/blog/technical-seo-errors.jpg";
