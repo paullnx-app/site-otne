@@ -113,7 +113,7 @@ const benefits = [
 
 export default function ConsultoriaSEO() {
   useSEO({
-    title: "Consultoria de SEO Estratégica para Empresas | Otne.seo",
+    title: "Consultoria de SEO Estratégica para Empresas | Otne SEO",
     description: "Aumente seu tráfego orgânico e vendas com nossa Consultoria de SEO. Diagnóstico técnico, estratégia de conteúdo e SEO Local para PMEs."
   });
 
@@ -123,7 +123,7 @@ export default function ConsultoriaSEO() {
     "serviceType": "Consultoria de SEO",
     "provider": {
       "@type": "Organization",
-      "name": "Otne.seo"
+      "name": "Otne SEO"
     },
     "areaServed": {
       "@type": "Country",
@@ -303,7 +303,7 @@ export default function ConsultoriaSEO() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Otne.seo - Consultoria de SEO. Todos os direitos reservados.
+            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

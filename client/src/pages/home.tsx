@@ -13,14 +13,14 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   useSEO({
-    title: "Otne.seo | Consultoria de SEO Especializada em PMEs",
+    title: "Otne SEO | Consultoria de SEO Especializada em PMEs",
     description: "Aumente suas vendas com SEO estratégico. Consultoria especializada para pequenas e médias empresas que buscam crescimento orgânico real e previsível."
   });
 
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Otne.seo",
+    "name": "Otne SEO",
     "url": "https://www.otne.com.br",
     "logo": "https://www.otne.com.br/logo.png",
     "description": "Consultoria de SEO especializada em pequenas e médias empresas.",
@@ -126,7 +126,7 @@ export default function Home() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Otne.seo - Consultoria de SEO. Todos os direitos reservados.
+            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

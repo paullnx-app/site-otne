@@ -10,8 +10,8 @@ import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 
 export default function QuemSomos() {
   useSEO({
-    title: "Quem Somos | Otne.seo - Consultoria de SEO Especializada",
-    description: "Conheça a Otne.seo, consultoria focada em resultados reais para PMEs. Nossa missão, valores e por que somos diferentes das agências tradicionais."
+    title: "Quem Somos | Otne SEO - Consultoria de SEO Especializada",
+    description: "Conheça a Otne SEO, consultoria focada em resultados reais para PMEs. Nossa missão, valores e por que somos diferentes das agências tradicionais."
   });
 
   const organizationSchema = {
@@ -19,7 +19,7 @@ export default function QuemSomos() {
     "@type": "AboutPage",
     "mainEntity": {
       "@type": "Organization",
-      "name": "Otne.seo",
+      "name": "Otne SEO",
       "description": "Consultoria de SEO especializada em pequenas e médias empresas.",
       "foundingDate": "2020",
       "url": "https://www.otne.com.br",
@@ -68,7 +68,7 @@ export default function QuemSomos() {
             className="max-w-4xl mx-auto text-center"
           >
             <span className="text-primary font-bold uppercase tracking-wider text-sm mb-4 block">
-              Sobre a Otne.seo
+              Sobre a Otne SEO
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mb-8">
               Não somos uma agência de marketing 360º. <br/>
@@ -92,7 +92,7 @@ export default function QuemSomos() {
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">
                 <img 
                   src={teamImg} 
-                  alt="Equipe Otne.seo reunida analisando dados" 
+                  alt="Equipe Otne SEO reunida analisando dados" 
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -115,7 +115,7 @@ export default function QuemSomos() {
                   Durante anos, o SEO técnico de verdade estava restrito a grandes corporações com orçamentos milionários. As pequenas empresas ficavam reféns de "pacotes básicos" que não traziam resultado, ou dependentes eternamente do Google Ads.
                 </p>
                 <p>
-                  A <strong>Otne.seo</strong> foi fundada para quebrar esse ciclo. Acreditamos que uma padaria local, um escritório de advocacia ou uma startup nascente merecem a mesma qualidade técnica de SEO que um gigante do varejo.
+                  A <strong>Otne SEO</strong> foi fundada para quebrar esse ciclo. Acreditamos que uma padaria local, um escritório de advocacia ou uma startup nascente merecem a mesma qualidade técnica de SEO que um gigante do varejo.
                 </p>
                 <p>
                   Usamos inteligência de dados, automação e uma metodologia proprietária para entregar resultados de elite com um investimento que faz sentido para o seu momento de negócio.
@@ -195,7 +195,7 @@ export default function QuemSomos() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Otne.seo - Consultoria de SEO. Todos os direitos reservados.
+            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

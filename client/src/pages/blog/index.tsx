@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 export default function BlogIndex() {
   useSEO({
-    title: "Blog de SEO | Dicas e Estratégias - Otne.seo",
+    title: "Blog de SEO | Dicas e Estratégias - Otne SEO",
     description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google."
   });
 

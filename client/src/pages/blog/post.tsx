@@ -19,7 +19,7 @@ export default function BlogPost() {
   const contentRef = useRef<HTMLDivElement>(null);
 
   useSEO({
-    title: post ? `${post.title} | Blog Otne.seo` : "Artigo não encontrado",
+    title: post ? `${post.title} | Blog Otne SEO` : "Artigo não encontrado",
     description: post ? post.excerpt : "Artigo não encontrado",
     image: post?.imageUrl,
     type: "article"
@@ -67,7 +67,7 @@ export default function BlogPost() {
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Otne.seo",
+      "name": "Otne SEO",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.otne.com.br/logo.png"

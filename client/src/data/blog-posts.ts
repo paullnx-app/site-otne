@@ -149,7 +149,7 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne.seo",
+    author: "Equipe Otne SEO",
     date: "02 Fev 2026",
     category: "Tutorial",
     readTime: "7 min",
@@ -256,7 +256,7 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne.seo",
+    author: "Equipe Otne SEO",
     date: "28 Jan 2026",
     category: "SEO Local",
     readTime: "6 min",
@@ -426,7 +426,7 @@ export const blogPosts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne.seo",
+    author: "Equipe Otne SEO",
     date: "25 Jan 2025",
     category: "Link Building",
     readTime: "8 min",
