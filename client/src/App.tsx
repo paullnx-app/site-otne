@@ -21,6 +21,9 @@ function Router() {
     <Suspense fallback={<LoadingSpinner />}>
       <Switch>
         <Route path="/" component={Home}/>
+        <Route path="/index.html" component={Home}/>
+        <Route path="/index.htm" component={Home}/>
+        <Route path="/home" component={Home}/>
         <Route path="/consultoria-seo" component={ConsultoriaSEO}/>
         <Route path="/quem-somos" component={QuemSomos}/>
         <Route path="/blog" component={BlogIndex}/>
