@@ -23,7 +23,7 @@ app.use(
     verify: (req, _res, buf) => {
       req.rawBody = buf;
     },
-  })
+  }),
 );
 app.use(express.urlencoded({ extended: false }));
 
@@ -78,7 +78,7 @@ app.use((req, res, next) => {
     // >>> Fallback SPA: QUALQUER rota não-API devolve o mesmo index.html
     app.get("*", (req, res) => {
       // Ajuste este caminho se o build do client estiver em outro lugar
-      const indexPath = path.resolve(__dirname, "../client/dist/index.html");
+      const indexPath = path.resolve(__dirname, "../client/index.html");
       res.sendFile(indexPath);
     });
     // <<< fim fallback SPA
@@ -93,6 +93,6 @@ app.use((req, res, next) => {
     },
     () => {
       log(`serving on port ${port}`);
-    }
+    },
   );
 })();
