@@ -21,8 +21,8 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Otne.seo",
-    "url": "https://otne.seo",
-    "logo": "https://otne.seo/logo.png",
+    "url": "https://www.otne.com.br",
+    "logo": "https://www.otne.com.br/logo.png",
     "description": "Consultoria de SEO especializada em pequenas e médias empresas.",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -32,8 +32,8 @@ export default function Home() {
       "availableLanguage": "Portuguese"
     },
     "sameAs": [
-      "https://instagram.com/otne.seo",
-      "https://linkedin.com/company/otne-seo"
+      "https://www.instagram.com/otne.seo",
+      "https://www.linkedin.com/company/otne-seo"
     ]
   };
 

@@ -70,7 +70,7 @@ export default function BlogPost() {
       "name": "Otne.seo",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://otne.seo/logo.png"
+        "url": "https://www.otne.com.br/logo.png"
       }
     },
     "datePublished": "2024-01-01", // Placeholder

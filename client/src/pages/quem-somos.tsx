@@ -22,7 +22,7 @@ export default function QuemSomos() {
       "name": "Otne.seo",
       "description": "Consultoria de SEO especializada em pequenas e médias empresas.",
       "foundingDate": "2020",
-      "url": "https://otne.seo",
+      "url": "https://www.otne.com.br",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+55-31-3360-9525",
