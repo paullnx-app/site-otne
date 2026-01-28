@@ -62,7 +62,7 @@ export default function BlogPost() {
     "headline": post.title,
     "image": post.imageUrl,
     "author": {
-      "@type": "Person",
+      "@type": "Organization",
       "name": post.author
     },
     "publisher": {
@@ -73,7 +73,7 @@ export default function BlogPost() {
         "url": "https://www.otne.com.br/logo.png"
       }
     },
-    "datePublished": "2024-01-01", // Placeholder
+    "datePublished": post.date,
     "description": post.excerpt
   };
 
