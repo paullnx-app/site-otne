@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Quer um plano de marketing digital com foco em vendas?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Podemos estruturar a sua estratégia, corrigir o que trava o crescimento e criar um caminho previsível de aquisição. Comece com um diagnóstico.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">Quero falar com um especialista</a>
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">Quero falar com um especialista</a>
           <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-white px-8 py-4 rounded-lg font-bold text-lg border border-border hover:bg-secondary/50 transition-all">Chamar no WhatsApp</a>
         </div>
       </div>
@@ -246,7 +246,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Quer dominar o Google Maps na sua cidade?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Cadastrar é fácil, mas chegar ao Top 3 exige estratégia. Nossa consultoria é especializada em SEO Local para PMEs.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             QUERO APARECER NO TOPO
           </a>
         </div>
@@ -362,7 +362,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Quer dominar sua região?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Na Rank.AI, somos especialistas em colocar negócios locais no topo do mapa. Deixe a parte técnica com a gente enquanto você cuida dos seus clientes.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             QUERO UM DIAGNÓSTICO LOCAL
           </a>
         </div>
@@ -701,7 +701,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Precisa de um guia nesse novo cenário?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">A Rank.AI é especializada em <strong>Consultoria de SEO</strong> para PMEs. Ajudamos você a navegar pelas mudanças da IA e colocar sua marca onde ela merece: na frente do cliente.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             QUERO UMA ANÁLISE DO MEU SITE
           </a>
         </div>
@@ -798,7 +798,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Seu site está perdendo visitas por erros técnicos?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Nossa consultoria inclui um Diagnóstico Técnico 360º para identificar e corrigir tudo o que está travando seu SEO.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             QUERO UM DIAGNÓSTICO TÉCNICO
           </a>
         </div>
@@ -935,7 +935,7 @@ export const blogPosts: BlogPost[] = [
         <h3 class="text-2xl font-bold mb-4 text-primary">Pronto para elevar sua autoridade digital?</h3>
         <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">Não jogue dados com o futuro da sua empresa. Nossa <strong>Consultoria de SEO</strong> é desenhada sob medida para PMEs que querem crescer com solidez e segurança.</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             SOLICITAR DIAGNÓSTICO GRATUITO
           </a>
         </div>
