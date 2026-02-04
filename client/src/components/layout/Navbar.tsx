@@ -69,11 +69,11 @@ export function Navbar() {
             Blog
           </Link>
 
-          <LeadFormDialog>
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer">
             <Button variant="default" className="bg-primary text-white font-bold hover:bg-primary/90 rounded-full px-6 shadow-md shadow-primary/20">
               Diagnóstico Gratuito
             </Button>
-          </LeadFormDialog>
+          </a>
         </div>
 
         {/* Mobile Toggle */}
@@ -136,9 +136,9 @@ export function Navbar() {
             >
               Blog
             </Link>
-            <LeadFormDialog>
+            <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="w-full">
               <Button className="w-full bg-primary text-white font-bold">Diagnóstico Gratuito</Button>
-            </LeadFormDialog>
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

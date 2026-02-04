@@ -86,11 +86,11 @@ export function Methodology() {
 
         <div className="mt-16 text-center">
            <p className="text-foreground mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
-           <LeadFormDialog>
+           <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="inline-block">
              <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20">
                Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
              </Button>
-           </LeadFormDialog>
+           </a>
         </div>
 
       </div>

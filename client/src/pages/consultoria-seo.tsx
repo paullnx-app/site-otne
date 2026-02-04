@@ -281,11 +281,11 @@ export default function ConsultoriaSEO() {
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <LeadFormDialog>
-                  <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20 w-full sm:w-auto transition-all hover:-translate-y-1">
+                <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                  <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20 w-full transition-all hover:-translate-y-1">
                     Quero um diagnóstico gratuito de SEO <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
-                </LeadFormDialog>
+                </a>
                 <Button 
                   variant="outline" 
                   size="lg" 

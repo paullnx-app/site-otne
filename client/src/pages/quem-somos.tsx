@@ -181,11 +181,11 @@ export default function QuemSomos() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <LeadFormDialog>
-                  <Button size="lg" className="bg-primary text-white font-bold hover:bg-primary/90 text-lg h-14 px-8 rounded-xl w-full sm:w-auto">
+                <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                  <Button size="lg" className="bg-primary text-white font-bold hover:bg-primary/90 text-lg h-14 px-8 rounded-xl w-full">
                     Converse com um Especialista
                   </Button>
-                </LeadFormDialog>
+                </a>
               </div>
             </div>
           </div>

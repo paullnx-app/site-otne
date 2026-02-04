@@ -47,13 +47,13 @@ export function Hero() {
           transition={{ delay: 0.2, duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <LeadFormDialog>
-            <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full sm:w-auto shadow-lg shadow-primary/20">
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full shadow-lg shadow-primary/20">
               Quero um diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-          </LeadFormDialog>
+          </a>
           
-          <a href="#metodologia">
+          <a href="#metodologia" className="w-full sm:w-auto">
             <Button variant="outline" size="lg" className="h-14 px-8 border-border text-foreground hover:bg-secondary rounded-xl text-lg w-full sm:w-auto shadow-sm bg-white">
               Ver como funciona a consultoria
             </Button>

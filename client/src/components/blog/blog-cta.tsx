@@ -42,11 +42,11 @@ export function BlogCTA() {
             />
           </div>
           
-          <LeadFormDialog initialWebsite={url}>
+          <a href={`https://wa.me/553133609525?text=${encodeURIComponent("Olá, gostaria de uma análise para o site: " + (url || "Meu Site"))}`} target="_blank" rel="noopener noreferrer" className="block w-full">
             <Button className="w-full h-12 font-bold text-base bg-gradient-to-r from-primary to-orange-600 hover:from-primary/90 hover:to-orange-600/90 text-white shadow-lg shadow-orange-900/20 border border-white/10 transition-all hover:scale-[1.02]">
               ANALISAR MEU SITE
             </Button>
-          </LeadFormDialog>
+          </a>
         </div>
 
         <p className="text-xs text-slate-400 mt-4 flex items-center gap-1.5 opacity-80">
