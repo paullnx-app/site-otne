@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap, Users, TrendingUp, ShieldCheck, Award, MapPin, LineChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import ctaBg from "@assets/generated_images/clean_minimalist_white_and_gray_abstract_background_with_subtle_orange_accents.png";
@@ -100,15 +100,15 @@ const services = [
 ];
 
 const benefits = [
-  "Crescimento de tráfego qualificado",
-  "Aumento de leads e oportunidades",
-  "Páginas mais fortes para conversão",
-  "Redução de CAC",
-  "Independência (parcial) de mídia paga",
-  "Autoridade digital real",
-  "Domínio do SEO Local",
-  "Melhoria da percepção de marca",
-  "Resultados consistentes mês a mês"
+  "Pessoas certas encontrando seu site",
+  "Seu WhatsApp tocando com clientes reais",
+  "Um site que convence o cliente a comprar",
+  "Gaste menos para fechar cada venda (CAC)",
+  "Fim da dependência total de anúncios caros",
+  "Sua empresa vista como a referência número 1",
+  "Seja a primeira escolha na sua cidade",
+  "Muito mais confiança na hora do cliente fechar",
+  "Previsibilidade de vendas todos os meses"
 ];
 
 export default function ConsultoriaSEO() {
@@ -235,17 +235,20 @@ export default function ConsultoriaSEO() {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-secondary/30 py-20 mb-24">
+        <section className="bg-white py-20 mb-12">
           <div className="container mx-auto px-6">
             <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="text-3xl font-display font-bold text-foreground mb-4">O que sua empresa ganha com isso</h2>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">O que sua empresa ganha com isso</h2>
             </div>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-border shadow-sm">
+                <div 
+                  key={index} 
+                  className="flex items-center gap-3 bg-white p-5 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow"
+                >
                   <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                  <span className="text-foreground font-medium">{benefit}</span>
+                  <span className="text-foreground font-medium text-sm md:text-base">{benefit}</span>
                 </div>
               ))}
             </div>
