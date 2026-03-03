@@ -4,6 +4,7 @@ import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, S
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import ctaBg from "@assets/generated_images/clean_minimalist_white_and_gray_abstract_background_with_subtle_orange_accents.png";
+import empresarioFelizImg from "@/assets/images/consultoria/empresario-feliz.jpg";
 import { useSEO } from "@/hooks/use-seo";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
@@ -235,22 +236,83 @@ export default function ConsultoriaSEO() {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-white py-20 mb-12">
+        <section className="bg-white py-24 mb-12 overflow-hidden">
           <div className="container mx-auto px-6">
-            <div className="text-center max-w-3xl mx-auto mb-12">
-              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">O que sua empresa ganha com isso</h2>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-              {benefits.map((benefit, index) => (
-                <div 
-                  key={index} 
-                  className="flex items-center gap-3 bg-white p-5 rounded-xl border border-border shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="w-2 h-2 rounded-full bg-primary shrink-0" />
-                  <span className="text-foreground font-medium text-sm md:text-base">{benefit}</span>
+            <div className="flex flex-col lg:flex-row items-center gap-16 max-w-7xl mx-auto">
+              
+              {/* Left Side: Humanized Image */}
+              <motion.div 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="w-full lg:w-1/2 relative"
+              >
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] max-h-[600px]">
+                  <img 
+                    src={empresarioFelizImg} 
+                    alt="Empresário tranquilo vendo os resultados" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
-              ))}
+
+                {/* Floating Badge */}
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="absolute -bottom-6 -right-6 lg:-right-12 bg-white p-5 rounded-2xl shadow-xl border border-border flex items-center gap-4 z-10"
+                >
+                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                    <TrendingUp className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground font-medium">Vendas Orgânicas</p>
+                    <p className="text-xl font-bold text-foreground">+ Crescimento Constante</p>
+                  </div>
+                </motion.div>
+              </motion.div>
+
+              {/* Right Side: Benefits */}
+              <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="mb-10"
+                >
+                  <span className="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">RESULTADOS REAIS</span>
+                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
+                    O que sua empresa ganha com isso
+                  </h2>
+                  <p className="text-lg text-muted-foreground">
+                    Menos relatórios confusos, mais previsibilidade de caixa. Transformamos acessos perdidos em reuniões de negócios e vendas.
+                  </p>
+                </motion.div>
+                
+                <div className="space-y-4">
+                  {benefits.map((benefit, index) => (
+                    <motion.div 
+                      key={index}
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                      className="flex items-start gap-4 bg-white p-5 rounded-xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                    >
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                        <benefit.icon className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-foreground font-bold text-lg mb-1">{benefit.title}</h3>
+                        <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
