@@ -49,7 +49,9 @@ export function Benefits() {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {benefits.map((item, index) => (
+          {benefits.map((item, index) => {
+            const Icon = item.icon;
+            return (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -59,14 +61,14 @@ export function Benefits() {
               className="group p-8 rounded-2xl bg-white border border-border hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-primary">
-                <item.icon className="w-6 h-6" />
+                <Icon className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-display font-bold text-foreground mb-3">{item.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {item.description}
               </p>
             </motion.div>
-          ))}
+          )})}
         </div>
       </div>
     </section>

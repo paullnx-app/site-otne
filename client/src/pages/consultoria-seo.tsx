@@ -220,39 +220,42 @@ export default function ConsultoriaSEO() {
           <h2 className="text-3xl font-display font-bold text-foreground mb-12 text-center">O que está incluído na consultoria</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="bg-white rounded-2xl border border-border shadow-sm hover:shadow-md hover:border-primary/30 transition-all p-8 flex flex-col"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
-                  <service.icon className="w-6 h-6" />
-                </div>
-                
-                <h3 className="text-xl font-display font-bold text-foreground mb-3">{service.title}</h3>
-                <p className="text-muted-foreground mb-6">{service.description}</p>
-                
-                <ul className="space-y-3 mb-8 flex-1">
-                  {service.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
-                      <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                
-                <div className="pt-6 border-t border-border mt-auto">
-                  <p className="text-sm font-bold text-primary flex items-center gap-2">
-                    <Zap className="w-4 h-4" />
-                    Resultado: <span className="text-foreground font-normal">{service.result}</span>
-                  </p>
-                </div>
-              </motion.div>
-            ))}
+            {services.map((service, index) => {
+              const ServiceIcon = service.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1 }}
+                  className="bg-white rounded-2xl border border-border shadow-sm hover:shadow-md hover:border-primary/30 transition-all p-8 flex flex-col"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6">
+                    <ServiceIcon className="w-6 h-6" />
+                  </div>
+                  
+                  <h3 className="text-xl font-display font-bold text-foreground mb-3">{service.title}</h3>
+                  <p className="text-muted-foreground mb-6">{service.description}</p>
+                  
+                  <ul className="space-y-3 mb-8 flex-1">
+                    {service.items.map((item, i) => (
+                      <li key={i} className="flex items-start gap-2 text-sm text-foreground/80">
+                        <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  <div className="pt-6 border-t border-border mt-auto">
+                    <p className="text-sm font-bold text-primary flex items-center gap-2">
+                      <Zap className="w-4 h-4" />
+                      Resultado: <span className="text-foreground font-normal">{service.result}</span>
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
           </div>
         </section>
 
@@ -313,24 +316,27 @@ export default function ConsultoriaSEO() {
                 </motion.div>
                 
                 <div className="space-y-4">
-                  {benefits.map((benefit, index) => (
-                    <motion.div 
-                      key={index}
-                      initial={{ opacity: 0, x: 20 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="flex items-start gap-4 bg-white p-5 rounded-xl border border-border shadow-sm hover:border-primary/30 transition-colors"
-                    >
-                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                        <benefit.icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <div>
-                        <h3 className="text-foreground font-bold text-lg mb-1">{benefit.title}</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
-                      </div>
-                    </motion.div>
-                  ))}
+                  {benefits.map((benefit, index) => {
+                    const Icon = benefit.icon;
+                    return (
+                      <motion.div 
+                        key={index}
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="flex items-start gap-4 bg-white p-5 rounded-xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                      >
+                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                          <Icon className="w-5 h-5 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="text-foreground font-bold text-lg mb-1">{benefit.title}</h3>
+                          <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
                 </div>
               </div>
 

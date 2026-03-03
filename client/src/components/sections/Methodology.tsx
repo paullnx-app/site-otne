@@ -52,7 +52,9 @@ export function Methodology() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {steps.map((step, index) => (
+          {steps.map((step, index) => {
+            const Icon = step.icon;
+            return (
             <motion.div
               key={step.id}
               initial={{ opacity: 0, y: 20 }}
@@ -64,7 +66,7 @@ export function Methodology() {
               <div className="flex flex-col gap-6 w-full">
                 <div className="flex items-center justify-between">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <step.icon className="w-7 h-7" />
+                        <Icon className="w-7 h-7" />
                     </div>
                     <span className="text-5xl font-display font-bold text-slate-100 select-none">
                         {step.id}
@@ -81,7 +83,7 @@ export function Methodology() {
                 </div>
               </div>
             </motion.div>
-          ))}
+          )})}
         </div>
 
         <div className="mt-16 text-center">
