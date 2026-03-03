@@ -307,7 +307,7 @@ export default function ConsultoriaSEO() {
               </motion.div>
 
               <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-                <div className="space-y-6">
+                <div className="flex flex-col">
                   {benefits.slice(0, 3).map((benefit, index) => {
                     const Icon = benefit.icon;
                     return (
@@ -317,14 +317,19 @@ export default function ConsultoriaSEO() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
-                        className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                        className="group py-8 border-t border-border/60 first:border-t-0 first:pt-0"
                       >
-                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                          <Icon className="w-6 h-6 text-primary" />
-                        </div>
-                        <div>
-                          <h3 className="text-foreground font-bold text-xl mb-2">{benefit.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                        <div className="flex items-start gap-6 relative">
+                          <div className="mt-1 shrink-0 relative flex flex-col items-center">
+                            <div className="w-12 h-12 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center relative z-10 text-primary group-hover:scale-110 transition-transform duration-300">
+                              <Icon className="w-6 h-6" strokeWidth={1.5} />
+                            </div>
+                            <div className="w-px h-full bg-orange-100/50 absolute top-12 bottom-0 -z-10 group-last:hidden"></div>
+                          </div>
+                          <div className="pb-8 group-last:pb-0">
+                            <h3 className="text-foreground font-display font-bold text-2xl mb-3 group-hover:text-primary transition-colors">{benefit.title}</h3>
+                            <p className="text-muted-foreground leading-relaxed text-lg">{benefit.description}</p>
+                          </div>
                         </div>
                       </motion.div>
                     );
@@ -336,7 +341,7 @@ export default function ConsultoriaSEO() {
             {/* Split Section 2: Autoridade e Crescimento */}
             <div className="flex flex-col-reverse lg:flex-row items-center gap-16 max-w-7xl mx-auto">
               <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
-                <div className="space-y-6">
+                <div className="flex flex-col">
                   {benefits.slice(3, 6).map((benefit, index) => {
                     const Icon = benefit.icon;
                     return (
@@ -346,14 +351,19 @@ export default function ConsultoriaSEO() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
-                        className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                        className="group py-8 border-t border-border/60 first:border-t-0 first:pt-0"
                       >
-                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                          <Icon className="w-6 h-6 text-primary" />
-                        </div>
-                        <div>
-                          <h3 className="text-foreground font-bold text-xl mb-2">{benefit.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                        <div className="flex items-start gap-6 relative">
+                          <div className="mt-1 shrink-0 relative flex flex-col items-center">
+                            <div className="w-12 h-12 rounded-xl bg-orange-50 border border-orange-100 flex items-center justify-center relative z-10 text-primary group-hover:scale-110 transition-transform duration-300">
+                              <Icon className="w-6 h-6" strokeWidth={1.5} />
+                            </div>
+                            <div className="w-px h-full bg-orange-100/50 absolute top-12 bottom-0 -z-10 group-last:hidden"></div>
+                          </div>
+                          <div className="pb-8 group-last:pb-0">
+                            <h3 className="text-foreground font-display font-bold text-2xl mb-3 group-hover:text-primary transition-colors">{benefit.title}</h3>
+                            <p className="text-muted-foreground leading-relaxed text-lg">{benefit.description}</p>
+                          </div>
                         </div>
                       </motion.div>
                     );
