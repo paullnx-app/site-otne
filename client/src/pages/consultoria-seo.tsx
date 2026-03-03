@@ -4,7 +4,8 @@ import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, S
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import ctaBg from "@assets/generated_images/clean_minimalist_white_and_gray_abstract_background_with_subtle_orange_accents.png";
-import empresarioFelizImg from "@/assets/images/consultoria/empresario-feliz.jpg";
+import empresarioFelizImg from "@/assets/images/consultoria/empresario-resultados.jpg";
+import equipeResultadosImg from "@/assets/images/consultoria/equipe-resultados.jpg";
 import { useSEO } from "@/hooks/use-seo";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
@@ -260,63 +261,54 @@ export default function ConsultoriaSEO() {
         </section>
 
         {/* Benefits Section */}
-        <section className="bg-white py-24 mb-12 overflow-hidden">
+        <section className="bg-secondary/30 py-24 overflow-hidden">
           <div className="container mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-16 max-w-7xl mx-auto">
-              
-              {/* Left Side: Humanized Image */}
+            <div className="text-center max-w-3xl mx-auto mb-16">
+              <span className="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">RESULTADOS REAIS</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
+                O que sua empresa ganha com isso
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Menos relatórios confusos, mais previsibilidade de caixa. Transformamos acessos perdidos em reuniões de negócios e vendas.
+              </p>
+            </div>
+
+            {/* Split Section 1: Atração e Leads */}
+            <div className="flex flex-col lg:flex-row items-center gap-16 max-w-7xl mx-auto mb-24">
               <motion.div 
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 className="w-full lg:w-1/2 relative"
               >
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/5] max-h-[600px]">
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square md:aspect-[4/3] max-h-[500px]">
                   <img 
                     src={empresarioFelizImg} 
-                    alt="Empresário tranquilo vendo os resultados" 
+                    alt="Empresário conferindo resultados de SEO" 
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 </div>
-
-                {/* Floating Badge */}
                 <motion.div 
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
-                  className="absolute -bottom-6 -right-6 lg:-right-12 bg-white p-5 rounded-2xl shadow-xl border border-border flex items-center gap-4 z-10"
+                  className="absolute -bottom-6 -right-6 lg:-right-8 bg-white p-5 rounded-2xl shadow-xl border border-border flex items-center gap-4 z-10"
                 >
                   <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-green-600">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground font-medium">Vendas Orgânicas</p>
+                    <p className="text-sm text-muted-foreground font-medium">Leads Qualificados</p>
                     <p className="text-xl font-bold text-foreground">+ Crescimento Constante</p>
                   </div>
                 </motion.div>
               </motion.div>
 
-              {/* Right Side: Benefits */}
-              <div className="w-full lg:w-1/2 mt-12 lg:mt-0">
-                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  className="mb-10"
-                >
-                  <span className="text-primary font-bold uppercase tracking-wider text-sm mb-2 block">RESULTADOS REAIS</span>
-                  <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-                    O que sua empresa ganha com isso
-                  </h2>
-                  <p className="text-lg text-muted-foreground">
-                    Menos relatórios confusos, mais previsibilidade de caixa. Transformamos acessos perdidos em reuniões de negócios e vendas.
-                  </p>
-                </motion.div>
-                
-                <div className="space-y-4">
-                  {benefits.map((benefit, index) => {
+              <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div className="space-y-6">
+                  {benefits.slice(0, 3).map((benefit, index) => {
                     const Icon = benefit.icon;
                     return (
                       <motion.div 
@@ -325,14 +317,43 @@ export default function ConsultoriaSEO() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
-                        className="flex items-start gap-4 bg-white p-5 rounded-xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                        className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-border shadow-sm hover:border-primary/30 transition-colors"
                       >
-                        <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 mt-1">
-                          <Icon className="w-5 h-5 text-primary" />
+                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                          <Icon className="w-6 h-6 text-primary" />
                         </div>
                         <div>
-                          <h3 className="text-foreground font-bold text-lg mb-1">{benefit.title}</h3>
-                          <p className="text-muted-foreground text-sm leading-relaxed">{benefit.description}</p>
+                          <h3 className="text-foreground font-bold text-xl mb-2">{benefit.title}</h3>
+                          <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
+                        </div>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            {/* Split Section 2: Autoridade e Crescimento */}
+            <div className="flex flex-col-reverse lg:flex-row items-center gap-16 max-w-7xl mx-auto">
+              <div className="w-full lg:w-1/2 mt-8 lg:mt-0">
+                <div className="space-y-6">
+                  {benefits.slice(3, 6).map((benefit, index) => {
+                    const Icon = benefit.icon;
+                    return (
+                      <motion.div 
+                        key={index + 3}
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: index * 0.1 }}
+                        className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-border shadow-sm hover:border-primary/30 transition-colors"
+                      >
+                        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-1">
+                          <Icon className="w-6 h-6 text-primary" />
+                        </div>
+                        <div>
+                          <h3 className="text-foreground font-bold text-xl mb-2">{benefit.title}</h3>
+                          <p className="text-muted-foreground leading-relaxed">{benefit.description}</p>
                         </div>
                       </motion.div>
                     );
@@ -340,6 +361,36 @@ export default function ConsultoriaSEO() {
                 </div>
               </div>
 
+              <motion.div 
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="w-full lg:w-1/2 relative"
+              >
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-square md:aspect-[4/3] max-h-[500px]">
+                  <img 
+                    src={equipeResultadosImg} 
+                    alt="Equipe reunida analisando gráficos de autoridade" 
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                </div>
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="absolute -bottom-6 -left-6 lg:-left-8 bg-white p-5 rounded-2xl shadow-xl border border-border flex items-center gap-4 z-10"
+                >
+                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-600">
+                    <ShieldCheck className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground font-medium">Autoridade</p>
+                    <p className="text-xl font-bold text-foreground">Marca Nº 1</p>
+                  </div>
+                </motion.div>
+              </motion.div>
             </div>
           </div>
         </section>
