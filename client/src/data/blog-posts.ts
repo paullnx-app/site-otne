@@ -25,7 +25,17 @@ export interface BlogPost {
   imageUrl: string;
 }
 
-export const blogPosts: BlogPost[] = [
+// Helper function to parse date string to Date object for sorting
+const parseDate = (dateStr: string) => {
+  const months: Record<string, number> = {
+    'Jan': 0, 'Fev': 1, 'Mar': 2, 'Abr': 3, 'Mai': 4, 'Jun': 5,
+    'Jul': 6, 'Ago': 7, 'Set': 8, 'Out': 9, 'Nov': 10, 'Dez': 11
+  };
+  const [day, month, year] = dateStr.split(' ');
+  return new Date(parseInt(year), months[month], parseInt(day));
+};
+
+const posts: BlogPost[] = [
   {
     id: "8",
     slug: "marketing-digital-para-empresarios",
@@ -1050,3 +1060,5 @@ export const blogPosts: BlogPost[] = [
     imageUrl: aparecerNasBuscasImg
   }
 ];
+
+export const blogPosts = [...posts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
