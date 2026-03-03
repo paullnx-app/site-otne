@@ -101,15 +101,36 @@ const services = [
 ];
 
 const benefits = [
-  "Pessoas certas encontrando seu site",
-  "Seu WhatsApp tocando com clientes reais",
-  "Um site que convence o cliente a comprar",
-  "Gaste menos para fechar cada venda (CAC)",
-  "Fim da dependência total de anúncios caros",
-  "Sua empresa vista como a referência número 1",
-  "Seja a primeira escolha na sua cidade",
-  "Muito mais confiança na hora do cliente fechar",
-  "Previsibilidade de vendas todos os meses"
+  {
+    title: "Pessoas certas encontrando seu site",
+    description: "Atraia visitantes que estão no momento exato de decisão, não apenas curiosos procurando informação grátis.",
+    icon: Users
+  },
+  {
+    title: "Seu WhatsApp tocando com clientes reais",
+    description: "Pare de receber contatos desqualificados. Otimizamos para quem realmente precisa e pode pagar pelo seu serviço.",
+    icon: TrendingUp
+  },
+  {
+    title: "Um site que convence o cliente a comprar",
+    description: "Criamos páginas focadas em converter visitantes em leads qualificados, agindo como seu melhor vendedor 24h.",
+    icon: ShieldCheck
+  },
+  {
+    title: "Gaste menos para fechar cada venda (CAC)",
+    description: "O tráfego orgânico tem o menor Custo de Aquisição de Clientes do mercado, aumentando sua margem de lucro.",
+    icon: Award
+  },
+  {
+    title: "Fim da dependência total de anúncios caros",
+    description: "Construa um canal de vendas orgânico e duradouro que não zera as vendas no segundo que você pausa a campanha.",
+    icon: MapPin
+  },
+  {
+    title: "Sua empresa vista como a referência número 1",
+    description: "Seja visto pelo Google (e pelos clientes) como a referência número 1 e a escolha mais segura do seu setor.",
+    icon: LineChart
+  }
 ];
 
 export default function ConsultoriaSEO() {
