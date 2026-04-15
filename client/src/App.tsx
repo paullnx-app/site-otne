@@ -15,6 +15,7 @@ const BlogIndex = lazy(() => import("@/pages/blog/index"));
 const BlogPost = lazy(() => import("@/pages/blog/post"));
 const AdminWrite = lazy(() => import("@/pages/admin/write"));
 const NotFound = lazy(() => import("@/pages/not-found"));
+const RascunhoArtigo = lazy(() => import("@/data/RascunhoView"));
 
 function Router() {
   return (
@@ -27,6 +28,7 @@ function Router() {
         <Route path="/consultoria-seo" component={ConsultoriaSEO}/>
         <Route path="/quem-somos" component={QuemSomos}/>
         <Route path="/blog" component={BlogIndex}/>
+        <Route path="/blog/rascunho" component={RascunhoArtigo}/>
         <Route path="/blog/:slug" component={BlogPost}/>
         <Route path="/admin/write" component={AdminWrite}/>
         <Route component={NotFound} />

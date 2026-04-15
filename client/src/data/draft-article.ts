@@ -7,7 +7,7 @@ export const artigoSeoIa2026 = {
   slug: "seo-ou-inteligencia-artificial-2026",
   title: "SEO ou Inteligência Artificial? Por que você precisa dos dois em 2026",
   excerpt: "A Inteligência Artificial não matou o SEO, ela o transformou. Descubra como equilibrar conteúdo gerado por IA com a otimização para motores de busca e entenda por que a autenticidade humana é o seu maior diferencial competitivo hoje.",
-  content: \`
+  content: `
     <p class="lead">A Inteligência Artificial mudou as regras do jogo. Desde a popularização do ChatGPT e outras ferramentas de IA generativa, muitos empresários e até profissionais de marketing se perguntam: <strong>"O SEO morreu? A IA vai substituir as buscas no Google?"</strong> A resposta curta é não. Mas a forma como fazemos SEO mudou drasticamente. Em 2026, a pergunta não é mais "SEO ou IA?", mas sim "Como integrar os dois?".</p>
 
     <p>Se você tem acompanhado as mudanças no Google (como a Experiência Generativa de Pesquisa - SGE), já percebeu que as respostas estão ficando mais diretas e sintetizadas. Isso significa que o conteúdo raso e genérico, aquele que qualquer IA consegue produzir em 5 segundos, já não ranqueia mais. O Google quer <strong>experiência, especialização e autenticidade humana</strong>.</p>
@@ -98,7 +98,7 @@ export const artigoSeoIa2026 = {
         <p class="text-muted-foreground">O primeiro passo é revisar seu conteúdo existente. Melhore artigos rasos adicionando a sua perspectiva única, atualize informações defasadas e garanta que o seu SEO Técnico (velocidade, responsividade, marcação de schema) esteja impecável para que as IAs possam ler seu site facilmente.</p>
       </div>
     </div>
-  \`,
+  `,
   author: "Equipe Otne SEO",
   date: "15 Apr 2026",
   category: "Inteligência Artificial",
