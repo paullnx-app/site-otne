@@ -1,0 +1,20 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "H5weqrQr-42XhVnbQh3k2"
+uri = "file://client/src/assets/images/blog/seo-ou-ia-2026.jpg"
+type = "image"
+title = "Artificial intelligence digital brain concept background"
+
+[[outputs]]
+id = "dvBumc-UtnzyheeQa8-Pq"
+uri = "file://client/src/assets/images/blog/seo-ia-comparativo.jpg"
+type = "image"
+title = "business analytics dashboard comparison charts organic search"
+
+[[outputs]]
+id = "qbLyT6j4ahULJGndxXp74"
+uri = "file://client/src/assets/images/blog/seo-ia-framework.jpg"
+type = "image"
+title = "flowchart planning process diagram business technology"
