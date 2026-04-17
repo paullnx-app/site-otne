@@ -160,6 +160,139 @@ Objetivo: permitir que **ferramentas** (IA + scripts + CMS) gerem rascunhos e pu
 - **Privacidade e cookies:** regras de analytics e consentimento conforme a stack do site.
 - **Formato:** quando novos formatos (vídeo curto, schema adicional) forem adotados, **atualizar este documento** para o pipeline não ficar desatualizado.
 
+### Exemplo mínimo de *payload* (YAML) — contrato para briefing → redação → publicação
+
+Use um ficheiro YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script. Regras:
+
+- **Chaves estáveis:** não renomear campos à toa; scripts validam por chave.
+- **`conteudo_md`:** no briefing pode vir vazio; depois da redação, preenche com Markdown (H1 só se o CMS exigir no corpo; no site Otne o título costuma ser fora do corpo).
+- **`faq`:** mínimo **5** itens (regra do guia). Cada item com `pergunta` + `resposta` (1–3 frases para snippet).
+- **`imagens.corpo`:** cada `arquivo` uma vez; **não** repetir o mesmo ficheiro no corpo; hero separado (ver secção de performance).
+- **`links_internos`:** URLs relativas `https://www.otne.com.br` no site público; no código do projeto usar caminhos `/...` conforme o template.
+
+Abaixo: **Artigo 02** (o teu exemplo) já com **ajustes** (FAQ com 5 perguntas; meta de palavras até ~2.200 se precisar de profundidade; nota sobre ferramentas e tom sem promessa mágica).
+
+```yaml
+versao_contrato: "1.0"
+# Identificação interna (rascunho, card no Linear, etc.)
+rascunho_id: "artigo-02"
+
+artigo:
+  slug_sugerido: "empresa-aparece-chatgpt-como-testar"
+  meta_title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?"
+  meta_description: >-
+    Saiba como verificar se seu negócio é citado pelas inteligências artificiais
+    — e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.
+  palavra_chave_principal: "empresa no ChatGPT"
+  palavras_chave_secundarias:
+    - "GEO o que é"
+    - "aparecer no ChatGPT"
+    - "otimização para IA"
+    - "visibilidade nas inteligências artificiais"
+    - "Generative Engine Optimization"
+    - "minha empresa aparece na IA"
+  long_tail:
+    - "como fazer minha empresa aparecer no ChatGPT"
+    - "o que é GEO em marketing digital"
+    - "como monitorar presença da marca em IAs"
+  intencao_busca: ["informacional", "investigacional"]
+  autor: "Equipe Otne SEO"
+  categoria_sugerida: "Inteligência Artificial"
+  tempo_leitura_sugerido: "10 min"
+  palavras_alvo_min: 1600
+  palavras_alvo_max: 2200
+
+  ideia_central: >-
+    A maioria dos empresários brasileiros ainda não percebeu a "nova vitrine digital"
+    dentro das IAs. O artigo abre esse canal com um tutorial imediato: testar agora
+    se a empresa aparece quando alguém pergunta ao ChatGPT (e equivalentes).
+
+  estrategia:
+    seo: >-
+      Ranquear para buscas como "minha empresa aparece no ChatGPT" e "como aparecer nas IAs".
+      Tema em crescimento em PT-BR; priorizar experiência brasileira e passos verificáveis.
+    aeo: >-
+      O texto deve funcionar como resposta modelo para "como fazer minha empresa aparecer no ChatGPT",
+      com passos numerados e definições diretas sob cada H2/H3 em formato de pergunta quando couber.
+    geo: >-
+      Definir GEO (Generative Engine Optimization) com exemplos práticos no Brasil e vocabulário consistente
+      para associação como fonte.
+
+  estrutura_outline:
+    - "Introdução: a vitrine digital que você provavelmente não conhece"
+    - "Como funciona a busca dentro das IAs (explicado de forma simples)"
+    - "Tutorial: como testar se sua empresa aparece (ChatGPT, Gemini e Perplexity)"
+    - "Por que algumas empresas aparecem e outras não"
+    - "O que é GEO — Generative Engine Optimization"
+    - "5 ações concretas para aparecer nas respostas das IAs"
+    - "Ferramentas para monitorar sua presença nas IAs"
+    - "FAQ"
+    - "Conclusão com CTA"
+
+  elementos_apoio:
+    - "Tutorial visual: prints ou roteiro passo a passo nas 3 IAs"
+    - "Lista: 5 ações para melhorar presença nas IAs"
+    - "Tabela: ChatGPT vs Gemini vs Perplexity (como cada um cita fontes)"
+
+  links_internos_prioritarios:
+    - url: "/blog/seo-ou-inteligencia-artificial-onde-apostar-2026"
+      motivo: "Artigo pilar SEO vs IA; reforça cluster."
+    - url: "/blog/como-construir-confianca-conteudo-digital-ia"
+      motivo: "Confiança e E-E-A-T em conteúdo com IA."
+    - url: "/blog/erros-tecnicos-seo"
+      motivo: "Base técnica do site como pré-requisito de citabilidade."
+    - url: "/consultoria-seo"
+      motivo: "CTA de conversão."
+
+  imagens:
+    hero:
+      descricao_cena: "Empresário testando prompt no computador; ambiente de escritório BR."
+      arquivo_pt_sugerido: "" # preencher após produção do asset; nome em PT, ASCII
+    corpo:
+      - posicao: "apos_tutorial_chatgpt"
+        descricao_cena: "Print ou recorte de interface (sem dados sensíveis)."
+        arquivo_pt_sugerido: ""
+      - posicao: "apos_tabela_comparativa"
+        descricao_cena: "Ilustração conceito 'citação de fontes' / livros ou web."
+        arquivo_pt_sugerido: ""
+
+  faq:
+    - pergunta: "Como saber se minha empresa aparece no ChatGPT?"
+      resposta: >-
+        Faça perguntas neutras que imitem um comprador (sem citar sua marca), depois
+        perguntas que incluam seu segmento e região. Registre se a IA cita seu site,
+        Google Business Profile ou menções consistentes da marca.
+    - pergunta: "O ChatGPT sempre mostra as mesmas empresas?"
+      resposta: >-
+        Não. Respostas podem variar por modelo, data do conteúdo, idioma e contexto do prompt.
+        Por isso o teste deve ser repetível e documentado, não uma única tentativa.
+    - pergunta: "O que é GEO em marketing digital?"
+      resposta: >-
+        GEO (Generative Engine Optimization) é o conjunto de práticas para aumentar a chance
+        de sua marca ser citada ou recomendada em respostas geradas por IA, com conteúdo
+        claro, verificável e bem conectado a fontes públicas.
+    - pergunta: "Aparecer na IA substitui aparecer no Google?"
+      resposta: >-
+        São canais diferentes que se influenciam. Muitas IAs usam a web indexada como base;
+        um site bem estruturado e citável costuma ajudar em ambos, mas não há garantia única.
+    - pergunta: "Quanto tempo leva para melhorar após mudanças no site?"
+      resposta: >-
+        Depende de rastreamento, autoridade e consistência. Trate como projeto contínuo:
+        corrigir base técnica, publicar provas (cases, FAQs) e ganhar menções em fontes confiáveis.
+
+  cta_final: >-
+    Faça o teste agora com os prompts sugeridos no tutorial. Se quiser um plano priorizado
+    para citabilidade e SEO, peça uma conversa na consultoria Otne.
+
+  conteudo_md: "" # preencher na etapa de redação
+
+  notas_para_automacao_e_revisor:
+    - "FAQ com 5 itens (mínimo do guia); não usar só 4."
+    - "Secção 'Ferramentas': priorizar critérios do que medir; no máximo 2 exemplos nomeados para não envelhecer rápido."
+    - "Tom: aumentar probabilidade de citação; evitar promessa de 'vai aparecer com certeza'."
+    - "Após publicar: validar links internos, imagens sem duplicar ficheiro, Lighthouse mobile em amostra."
+```
+
 ---
 
 ## CHECKLIST FINAL ANTES DE ENTREGAR
@@ -173,6 +306,7 @@ Antes de finalizar o artigo, verificar:
 - ☐ Qualidade: E-E-A-T demonstrado, conteúdo original, sem plágio.
 - ☐ Imagens: meta de ~1/300 palavras **ou** menos se o texto já for visualmente denso; **sem repetir** o mesmo ficheiro no corpo; hero distinto; **alt** único; peso razoável (ver performance).
 - ☐ CTA: Claro e relevante no final.
+- ☐ (Se usar automação) *Payload* YAML com chaves completas: metadados, outline, FAQ (≥5), links internos sugeridos, notas de revisor.
 
 ---
-**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação).
+**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload).
