@@ -789,7 +789,7 @@ const posts: BlogPost[] = [
       <p><strong>A Solução:</strong> Verifique seu Google Search Console regularmente. Garanta que seu Sitemap XML esteja enviado e atualizado. Se o Google não indexa, você não existe.</p>
 
       <h3>3. Site Não Otimizado para Mobile (Mobile-First Indexing)</h3>
-      <p>O Google hoje prioriza a versão móvel do seu site. Se seu site quebra no celular, tem botões pequenos demais ou texto ilegível, você será penalizado no ranking — mesmo nas buscas feitas por computador.</p>
+      <p>O Google hoje prioriza a versão móvel do seu site. Se seu site quebra no celular, tem botões pequenos demais ou texto ilegível, você será penalizado no ranking, mesmo nas buscas feitas por computador.</p>
       
       <p><strong>A Solução:</strong> Adote design responsivo real. Teste seu site em telas pequenas e garanta que a navegação seja fluida no touch.</p>
 
@@ -882,7 +882,7 @@ const posts: BlogPost[] = [
       <p>Dados recentes indicam que <strong>31% dos brasileiros já verificam a reputação de uma marca em múltiplas fontes antes de considerar uma compra</strong>. O ceticismo é o novo padrão. Se o seu site parece genérico, "robotizado" ou superficial, você perde o cliente antes mesmo do primeiro clique.</p>
 
       <div class="bg-secondary/30 p-6 rounded-lg my-6 border-l-4 border-primary">
-        <strong>O Paradoxo da IA:</strong> Quanto mais fácil é criar conteúdo, menos valor ele tem. O que se torna escasso – e, portanto, valioso – é a experiência humana autêntica, verificável e empática.
+        <strong>O Paradoxo da IA:</strong> Quanto mais fácil é criar conteúdo, menos valor ele tem. O que se torna escasso, e, portanto, valioso, é a experiência humana autêntica, verificável e empática.
       </div>
 
       <h2>Por Que a Consultoria de SEO Mudou Radicalmente</h2>
@@ -1075,7 +1075,7 @@ const posts: BlogPost[] = [
     slug: "empresa-aparece-chatgpt-como-testar",
     title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?",
     excerpt:
-      "Saiba como verificar se seu negócio é citado pelas inteligências artificiais — e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.",
+      "Saiba como verificar se seu negócio é citado pelas inteligências artificiais e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.",
     content: empresaApareceChatgptHtml,
     author: "Equipe Otne SEO",
     date: "17 Abr 2026",
@@ -1089,7 +1089,7 @@ const posts: BlogPost[] = [
     slug: "seo-ou-inteligencia-artificial-onde-apostar-2026",
     title: "SEO ou IA: onde o seu negócio deve apostar agora?",
     excerpt:
-      "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial — com checklist e framework de decisão para 2026.",
+      "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial, com checklist e framework de decisão para 2026.",
     content: seoOuInteligenciaArtificialHtml,
     author: "Equipe Otne SEO",
     date: "17 Abr 2026",

@@ -58,14 +58,14 @@ export const seoOuInteligenciaArtificialFaqJsonLd = {
 } as const;
 
 const sections: string[] = [
-  `<p class="lead"><strong>SEO ou inteligência artificial</strong> — onde colocar o próximo real? Em 2026, essa pergunta aparece em reuniões, grupos de WhatsApp e orçamentos de marketing. <strong>Portanto</strong>, vamos responder com calma.</p>
+  `<p class="lead"><strong>SEO ou inteligência artificial</strong>, onde colocar o próximo real? Em 2026, essa pergunta aparece em reuniões, grupos de WhatsApp e orçamentos de marketing. <strong>Portanto</strong>, vamos responder com calma.</p>
 
 <h2>Introdução: o dilema real que todo empresário está enfrentando</h2>
 <p><strong>Resposta direta:</strong> não é escolha única. Na prática, <strong>SEO</strong> (aparecer bem na busca clássica) e <strong>uso estratégico de IA</strong> (conteúdo, análise, automação) convivem. O erro comum é tratar <strong>busca com IA</strong> como substituto total do trabalho de base.</p>
 
 <p><strong>Além disso</strong>, o mercado empurra dois extremos. De um lado, quem diz que “SEO morreu”. De outro, quem ignora que <strong>tráfego orgânico 2026</strong> ainda nasce de problema bem definido, página boa e autoridade. <strong>Assim</strong>, este texto entrega um <strong>framework de decisão</strong> e um <strong>checklist</strong> para o seu perfil.</p>
 
-<p><strong>Na prática</strong>, o que mais vemos em diagnósticos é decisão tomada por narrativa, não por dado. <strong>Enfim</strong>, você vai sair com critérios claros — não com “modinha”.</p>
+<p><strong>Na prática</strong>, o que mais vemos em diagnósticos é decisão tomada por narrativa, não por dado. <strong>Enfim</strong>, você vai sair com critérios claros, não com “modinha”.</p>
 
 <p>Se você quer um <strong>guia completo de SEO para 2026</strong> com visão macro, leia também o nosso <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">guia completo de SEO para 2026</a>. Aqui o foco é decidir investimento com método.</p>
 
@@ -76,12 +76,12 @@ const sections: string[] = [
 
 <p><strong>Em segundo lugar</strong>, a qualidade do sinal importa mais. Páginas genéricas perdem para conteúdo com <strong>experiência</strong> clara, fontes e utilidade. <strong>Da mesma forma</strong>, conteúdo feito só para volume sem revisão humana tende a irritar leitor e crawler.</p>
 
-<p><strong>Terceiro</strong>, a <strong>estratégia de marketing digital 2026</strong> precisa de métrica de negócio. Tráfego sem conversão não paga conta. <strong>Logo</strong>, o artigo ancora decisões em <strong>custo de aquisição</strong>, prazo e risco — não em hype.</p>
+<p><strong>Terceiro</strong>, a <strong>estratégia de marketing digital 2026</strong> precisa de métrica de negócio. Tráfego sem conversão não paga conta. <strong>Logo</strong>, o artigo ancora decisões em <strong>custo de aquisição</strong>, prazo e risco, não em hype.</p>
 
-<p>Para base técnica oficial sobre como o Google pensa busca e qualidade, use a documentação do <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">Google para desenvolvedores — Search Central</a>. <strong>Outrossim</strong>, evitamos prometer “fórmula mágica”: aqui há método.</p>`,
+<p>Para base técnica oficial sobre como o Google pensa busca e qualidade, use a documentação do <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">Google para desenvolvedores, Search Central</a>. <strong>Outrossim</strong>, evitamos prometer “fórmula mágica”: aqui há método.</p>`,
 
   `<h2>SEO ou inteligência artificial: o que os dados costumam mostrar (sem sensacionalismo)</h2>
-<p><strong>SEO ainda funciona?</strong> Em geral, sim — quando significa <strong>problema correto</strong>, página rápida, intenção atendida e reputação. <strong>Contudo</strong>, “funciona” não quer dizer “post de 300 palavras ranqueia amanhã”.</p>
+<p><strong>SEO ainda funciona?</strong> Em geral, sim, quando significa <strong>problema correto</strong>, página rápida, intenção atendida e reputação. <strong>Contudo</strong>, “funciona” não quer dizer “post de 300 palavras ranqueia amanhã”.</p>
 
 <p><strong>Na prática</strong>, vemos três padrões em projetos de <strong>consultoria de SEO</strong> para PMEs:</p>
 <ul class="space-y-2 list-disc pl-5 mb-6">
@@ -108,7 +108,7 @@ const sections: string[] = [
 
 <p>Leia o guia <a href="/blog/como-construir-confianca-conteudo-digital-ia" class="text-primary font-bold hover:underline">como construir confiança em conteúdo digital na era da IA</a>. <strong>Além disso</strong>, para intenção de compra, o artigo <a href="/blog/como-aparecer-nas-buscas-do-seu-cliente" class="text-primary font-bold hover:underline">por que o concorrente aparece no Google e você não</a> ajuda a alinhar mensagem à busca real do cliente.</p>
 
-<p><strong>Otimização para ChatGPT</strong> (e similares) não é “truque oculto”. <strong>Em outras palavras</strong>, é <strong>clareza</strong>, estrutura, dados e consistência — o mesmo espírito do bom <strong>SEO 2026</strong>, com formato que modelos conseguem extrair.</p>
+<p><strong>Otimização para ChatGPT</strong> (e similares) não é “truque oculto”. <strong>Em outras palavras</strong>, é <strong>clareza</strong>, estrutura, dados e consistência, o mesmo espírito do bom <strong>SEO 2026</strong>, com formato que modelos conseguem extrair.</p>
 
 <img src="${aiTrustImg}" alt="Confiança humana e conteúdo digital na era da inteligência artificial aplicada ao marketing" ${bodyImgClass} />`,
 

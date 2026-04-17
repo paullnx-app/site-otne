@@ -2,7 +2,7 @@
 artigo_id: "01"
 slug: "seo-ou-inteligencia-artificial-onde-apostar-2026"
 meta_title: "SEO ou IA: onde o seu negócio deve apostar agora?"
-meta_description: "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial — com checklist e framework de decisão para 2026."
+meta_description: "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial, com checklist e framework de decisão para 2026."
 palavra_chave_principal: "SEO ou inteligência artificial"
 autor: "Equipe Otne SEO"
 intencao_busca: "Informacional / investigacional"
@@ -13,13 +13,13 @@ data_publicacao_sugerida: "2026-04-17"
 
 **Autor:** Equipe Otne SEO  
 
-**Resumo para edição:** artigo pilar (2.000–2.500 palavras), intenção informacional, com **SEO**, **AEO** e **GEO**. Inclui framework, checklist, tabela comparativa, FAQ e CTA para [consultoria em SEO](https://www.otne.com.br/consultoria-seo).
+**Resumo para edição:** artigo pilar (2.000-2.500 palavras), intenção informacional, com **SEO**, **AEO** e **GEO**. Inclui framework, checklist, tabela comparativa, FAQ e CTA para [consultoria em SEO](https://www.otne.com.br/consultoria-seo).
 
 ---
 
 ## Introdução: o dilema real que todo empresário está enfrentando
 
-**SEO ou inteligência artificial** — onde colocar o próximo real? Em 2026, essa pergunta aparece em reuniões, grupos de WhatsApp e orçamentos de marketing. **Portanto**, vamos responder com calma.
+**SEO ou inteligência artificial**, onde colocar o próximo real? Em 2026, essa pergunta aparece em reuniões, grupos de WhatsApp e orçamentos de marketing. **Portanto**, vamos responder com calma.
 
 **Resposta direta:** não é escolha única. Na prática, **SEO** (aparecer bem na busca clássica) e **uso estratégico de IA** (conteúdo, análise, automação) convivem. O erro comum é tratar **busca com IA** como substituto total do trabalho de base.
 
@@ -27,7 +27,7 @@ data_publicacao_sugerida: "2026-04-17"
 
 Se você quer um **guia completo de SEO para 2026** com visão macro, leia também o nosso [guia completo de SEO para 2026](https://www.otne.com.br/blog/guia-seo-2026). **Enfim**, aqui o foco é decidir investimento com método.
 
-![Mulher em frente ao notebook analisando métricas de busca e relatórios de marketing — representa decisão entre SEO e IA](https://www.otne.com.br/og-image.png)  
+![Mulher em frente ao notebook analisando métricas de busca e relatórios de marketing, representa decisão entre SEO e IA](https://www.otne.com.br/og-image.png)  
 *Alt sugerido:* `Empresária analisando métricas de SEO e estratégia de marketing digital em 2026`
 
 ---
@@ -38,15 +38,15 @@ Se você quer um **guia completo de SEO para 2026** com visão macro, leia tamb�
 
 **Em segundo lugar**, a qualidade do sinal importa mais. Páginas genéricas perdem para conteúdo com **experiência** clara, fontes e utilidade. **Da mesma forma**, conteúdo feito só para volume sem revisão humana tende a irritar leitor e crawler.
 
-**Terceiro**, a **estratégia de marketing digital 2026** precisa de métrica de negócio. Tráfego sem conversão não paga conta. **Logo**, o artigo ancora decisões em **custo de aquisição**, prazo e risco — não em hype.
+**Terceiro**, a **estratégia de marketing digital 2026** precisa de métrica de negócio. Tráfego sem conversão não paga conta. **Logo**, o artigo ancora decisões em **custo de aquisição**, prazo e risco, não em hype.
 
-Para base técnica oficial sobre como o Google pensa busca e qualidade, use a documentação do <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google para desenvolvedores — Search Central</a>. **Outrossim**, evitamos prometer “fórmula mágica”: aqui há método.
+Para base técnica oficial sobre como o Google pensa busca e qualidade, use a documentação do <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google para desenvolvedores, Search Central</a>. **Outrossim**, evitamos prometer “fórmula mágica”: aqui há método.
 
 ---
 
 ## SEO ou inteligência artificial: o que os dados costumam mostrar (sem sensacionalismo)
 
-**SEO ainda funciona?** Em geral, sim — quando significa **problema correto**, página rápida, intenção atendida e reputação. **Contudo**, “funciona” não quer dizer “post de 300 palavras ranqueia amanhã”.
+**SEO ainda funciona?** Em geral, sim, quando significa **problema correto**, página rápida, intenção atendida e reputação. **Contudo**, “funciona” não quer dizer “post de 300 palavras ranqueia amanhã”.
 
 **Na prática**, vemos três padrões em projetos de **consultoria de SEO** para PMEs:
 
@@ -58,7 +58,7 @@ Se o tema é “**vale a pena investir em SEO em 2026**”, a resposta depende d
 
 Para aprofundar riscos técnicos, veja o artigo sobre [erros técnicos de SEO que drenam tráfego](https://www.otne.com.br/blog/erros-tecnicos-seo).
 
-![Ícone de gráfico subindo ao lado de lupa — metáfora de crescimento orgânico e busca](https://www.otne.com.br/og-image.png)  
+![Ícone de gráfico subindo ao lado de lupa, metáfora de crescimento orgânico e busca](https://www.otne.com.br/og-image.png)  
 *Alt sugerido:* `Ilustração de crescimento de tráfego orgânico e otimização para buscadores`
 
 ---
@@ -75,7 +75,7 @@ Para aprofundar riscos técnicos, veja o artigo sobre [erros técnicos de SEO qu
 
 Leia o guia [como construir confiança em conteúdo digital na era da IA](https://www.otne.com.br/blog/como-construir-confianca-conteudo-digital-ia). **Além disso**, para intenção de compra, o artigo [por que o concorrente aparece no Google e você não](https://www.otne.com.br/blog/como-aparecer-nas-buscas-do-seu-cliente) ajuda a alinhar mensagem à busca real do cliente.
 
-**Otimização para ChatGPT** (e similares) não é “truque oculto”. **Em outras palavras**, é **clareza**, estrutura, dados e consistência — o mesmo espírito do bom **SEO 2026**, com formato que modelos conseguem extrair.
+**Otimização para ChatGPT** (e similares) não é “truque oculto”. **Em outras palavras**, é **clareza**, estrutura, dados e consistência, o mesmo espírito do bom **SEO 2026**, com formato que modelos conseguem extrair.
 
 ---
 
@@ -132,7 +132,7 @@ Use como **roteiro interno**. **Além disso**, salve em planilha e revise trimes
 
 Para **marketing digital para empresários** com foco em plano e métricas, leia o [guia prático de marketing digital para empresários](https://www.otne.com.br/blog/marketing-digital-para-empresarios).
 
-![Checklist impresso ao lado de teclado — organização de prioridades entre SEO e IA](https://www.otne.com.br/og-image.png)  
+![Checklist impresso ao lado de teclado, organização de prioridades entre SEO e IA](https://www.otne.com.br/og-image.png)  
 *Alt sugerido:* `Checklist de marketing com itens sobre SEO, IA e métricas de resultado`
 
 ---
@@ -157,8 +157,8 @@ Para **marketing digital para empresários** com foco em plano e métricas, leia
 
 Conheça a [equipe e a abordagem da Otne](https://www.otne.com.br/quem-somos). **Enfim**, alinhar expectativa evita fricção com agência ou time interno.
 
-![Quatro ícones representando loja, carrinho, escritório e foguete — perfis de negócio](https://www.otne.com.br/og-image.png)  
-*Alt sugerido:* `Quatro perfis de negócio — local, e-commerce, B2B e startup — para orientação de SEO e IA`
+![Quatro ícones representando loja, carrinho, escritório e foguete, perfis de negócio](https://www.otne.com.br/og-image.png)  
+*Alt sugerido:* `Quatro perfis de negócio, local, e-commerce, B2B e startup, para orientação de SEO e IA`
 
 ---
 
@@ -174,7 +174,7 @@ Conheça a [equipe e a abordagem da Otne](https://www.otne.com.br/quem-somos). *
 
 **Em resumo**, os três se reforçam. **Todavia**, SEO sem página útil não sustenta os outros.
 
-![Tabela resumida em tela de laptop — comparação visual entre SEO, AEO e GEO](https://www.otne.com.br/og-image.png)  
+![Tabela resumida em tela de laptop, comparação visual entre SEO, AEO e GEO](https://www.otne.com.br/og-image.png)  
 *Alt sugerido:* `Tabela comparativa entre SEO, AEO e GEO para marketing digital em 2026`
 
 ---
@@ -221,7 +221,7 @@ Conheça a [equipe e a abordagem da Otne](https://www.otne.com.br/quem-somos). *
 
 `https://www.otne.com.br/blog/seo-ou-inteligencia-artificial-onde-apostar-2026`
 
-### Schema FAQ (JSON-LD) — colar no HTML da página
+### Schema FAQ (JSON-LD), colar no HTML da página
 
 ```json
 {
@@ -294,7 +294,7 @@ Conheça a [equipe e a abordagem da Otne](https://www.otne.com.br/quem-somos). *
 | Item | Meta do guia | Observação neste arquivo |
 |------|----------------|---------------------------|
 | Palavra-chave principal em H1, 1º parágrafo, H2, conclusão, meta, slug | Sim | H2 dedicado; slug no front matter |
-| Links internos | 3–8 por 1.000 palavras | Corpo com múltiplos links para `/blog/*`, `/consultoria-seo`, `/quem-somos` |
+| Links internos | 3-8 por 1.000 palavras | Corpo com múltiplos links para `/blog/*`, `/consultoria-seo`, `/quem-somos` |
 | Links externos | Máx. 2 | 1 link oficial Google Search Central |
 | FAQ | ≥ 5 perguntas | Cinco itens + JSON-LD |
 | Frases curtas / voz ativa / transições / Flesch | Ver ferramenta | Revisar no Yoast ou equivalente PT; transições alinhadas a `docs/transitionWords.js` |
