@@ -163,7 +163,7 @@ export const empresaApareceChatgptHtml = `
   Matérias em portais do seu setor, participações em podcasts, citações em artigos de terceiros, essas menções criam o rastro que as IAs seguem para identificar autoridade de marca.</p>
 
   <p><strong>4. Corrija inconsistências de NAP</strong><br>
-  Verifique que nome, endereço e telefone estão idênticos em todas as plataformas. Use uma planilha simples para mapear cada presença digital da empresa e eliminar variações.</p>
+  Verifique que nome, endereço e telefone estão idênticos em todas as plataformas. Use uma planilha simples para mapear cada presença digital da empresa e eliminar variações. Para empresas que operam de forma remota ou digital, entender <a href="https://www.enderecofiscal.srv.br/endereco-fiscal-e-inteligencia-artificial-2/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">como a IA está transformando o uso de endereços fiscais para empresas</a> ajuda a manter dados oficiais consistentes e rastreáveis pelas IAs.</p>
 
   <p><strong>5. Adicione schema markup ao seu site</strong><br>
   <code>Organization</code>, <code>LocalBusiness</code> e <code>FAQPage</code> em JSON-LD ajudam as IAs a identificar sua empresa com precisão. É uma ação técnica de configuração única que melhora a citabilidade de longo prazo.</p>

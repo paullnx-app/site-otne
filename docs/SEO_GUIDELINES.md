@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v1.6` |
+| **Revisão** | `v1.7` |
 | **Data** | 2026-04-17 |
-| **Alterações desta revisão** | Proibição de travessão em todo o texto e metadados |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido |
+| **Alterações desta revisão** | Links externos: seção 2.1 com programa de parceiros, registro de URLs e regras de matching topical |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -236,6 +236,43 @@ A linkagem interna é crucial para distribuir autoridade (link juice), melhorar 
 - Conectar tópicos relacionados (ex: Artigo de "SEO Técnico" deve linkar para "Velocidade de Site").
 - **Destinos prioritários:** Pillar pages, Artigos de conversão, Conteúdo relacionado.
 - **Atenção:** Verificar disponibilidade de links internos no site atual.
+
+### 2.1 Links externos: autoridade + parceiros
+
+Cada artigo deve ter exatamente **2 links externos**:
+
+| Posição | Tipo | Critério |
+|---|---|---|
+| 1 | Autoridade | Fonte externa de alta credibilidade diretamente relacionada ao tema (ex.: Google Search Central, estudos setoriais, documentação oficial) |
+| 2 | Parceiro | Uma das páginas do programa de parceria (ver tabela abaixo), somente se houver relevância temática comprovada. Sem encaixe real, use 2 links de autoridade |
+
+#### Regras de seleção do link parceiro
+
+1. Visite a página de destino e confirme o tema antes de decidir o encaixe.
+2. O tema da página parceira deve ter conexão editorial real com o artigo. Não force o link.
+3. Nunca repita a mesma URL de destino em artigos diferentes.
+4. Varie o domínio entre artigos consecutivos: evite usar o mesmo domínio em dois artigos seguidos (previne padrão de rede de links identificável pelo Google).
+5. Prefira páginas internas (posts de blog, páginas de serviço) em vez de apenas a home.
+6. Use sempre `target="_blank" rel="noopener noreferrer"` em todos os links externos.
+
+#### Parceiros autorizados (matching topical obrigatório)
+
+| Parceiro | Domínio | Temas elegíveis |
+|---|---|---|
+| ConsultingWeb | `consultingweb.com.br` | Sites profissionais, SEO para PMEs, presença digital, planos de site com SEO incluso |
+| Desk Coworking | `deskcoworking.com.br` | Coworking, ambiente de trabalho compartilhado, produtividade, escritório flexível |
+| Coworking BH | `coworkingbh.com.br` | Coworking em Belo Horizonte, salas corporativas, trabalho híbrido |
+| Escritório Virtual BH | `escritoriovirtualbh.com.br` | Escritório virtual, endereço comercial, atendimento presencial para negócios digitais |
+| Endereço Fiscal | `enderecofiscal.srv.br` | Endereço fiscal, formalização de empresa, CNPJ, IA aplicada a processos fiscais |
+
+#### Registro de URLs de parceiros já usadas
+
+> Regra: uma URL de destino só pode aparecer em **um único artigo**. Consulte esta tabela antes de escolher o destino e adicione uma nova linha ao publicar.
+
+| Artigo | Slug | Domínio parceiro | URL de destino |
+|---|---|---|---|
+| Artigo 01 | `seo-ou-inteligencia-artificial-onde-apostar-2026` | consultingweb.com.br | `https://www.consultingweb.com.br/planos` |
+| Artigo 02 | `empresa-aparece-chatgpt-como-testar` | enderecofiscal.srv.br | `https://www.enderecofiscal.srv.br/endereco-fiscal-e-inteligencia-artificial-2/` |
 
 ---
 
@@ -708,7 +745,8 @@ Antes de finalizar o artigo, verificar:
 - ☐ Palavra-chave no H1, 1º parágrafo, H2, Conclusão e Meta Descrição.
 - ☐ Legibilidade: Frases curtas, voz ativa, parágrafos curtos.
 - ☐ Estrutura: Apenas 1 H1, hierarquia H2/H3 correta.
-- ☐ Links: 3-8 links internos (início e corpo), 1-2 externos confiáveis.
+- ☐ Links internos: 3-8 por artigo (início e corpo).
+- ☐ Links externos: exatamente 2 (1 autoridade + 1 parceiro da Seção 2.1). Consultar registro de URLs antes de escolher o parceiro; atualizar a tabela após publicar.
 - ☐ AEO/GEO: FAQ presente (≥5 perguntas), definições claras.
 - ☐ Schema: `BlogPosting` + `BreadcrumbList` gerados; `FAQPage` se tiver FAQ; validado no Rich Results Test.
 - ☐ Qualidade: E-E-A-T demonstrado, conteúdo original, sem plágio.
@@ -720,4 +758,4 @@ Antes de finalizar o artigo, verificar:
 - ☐ (Se usar automação) *Payload* YAML com chaves completas: metadados, outline, FAQ (≥5), links internos sugeridos, notas de revisor.
 
 ---
-**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload, Schema Markup, voz humana e anti-IA, sentence case em títulos).
+**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload, Schema Markup, voz humana e anti-IA, sentence case em títulos, travessão proibido, links externos e programa de parceiros).

@@ -167,7 +167,7 @@ const sections: string[] = [
 <p><strong>B2B exige</strong> prova, cases e páginas por segmento. <strong>Logo</strong>, conteúdo profundo e linkagem interna sustentam autoridade. <strong>Veja</strong> também <a href="/blog/como-aumentar-autoridade-conquistar-links" class="text-primary font-bold hover:underline">como aumentar autoridade e conquistar links</a>.</p>
 
 <h3>Startup em fase de tração</h3>
-<p><strong>Startups</strong> precisam velocidade. <strong>Contudo</strong>, atalho sem mensagem clara queima orçamento. <strong>Por isso</strong>, use IA para experimentar, mas fixe <strong>posicionamento</strong> cedo.</p>
+<p><strong>Startups</strong> precisam velocidade. <strong>Contudo</strong>, atalho sem mensagem clara queima orçamento. <strong>Por isso</strong>, use IA para experimentar, mas fixe <strong>posicionamento</strong> cedo. Para quem está começando e precisa de <strong>site profissional com SEO configurado desde o início</strong>, veja como são estruturados <a href="https://www.consultingweb.com.br/planos" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">planos de site com SEO incluso para pequenas empresas</a> — útil para calibrar custo de entrada antes de escalar produção de conteúdo.</p>
 
 <p>Conheça a <a href="/quem-somos" class="text-primary font-bold hover:underline">equipe e a abordagem da Otne</a>. <strong>Enfim</strong>, alinhar expectativa evita fricção com agência ou time interno.</p>`,
 
