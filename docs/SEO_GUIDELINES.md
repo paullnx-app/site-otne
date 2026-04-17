@@ -86,6 +86,103 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 
 > **Como verificar antes de subir:** `md5 caminho/para/nova-imagem.jpg`. Se o hash já estiver na tabela acima, use o arquivo listado. Se for novo, adicione uma linha a esta tabela.
 
+### 1.2 Voz Humana e Escrita Anti-IA
+
+O objetivo desta seção é garantir que qualquer leitor — inclusive ferramentas de detecção — perceba o texto como escrito por um especialista humano, não por uma IA.
+
+#### Capitalização de títulos e subtítulos (sentence case)
+
+**Regra:** somente a **primeira letra do título é maiúscula**. Nomes próprios, marcas e siglas mantêm sua grafia usual. Todo o resto fica em minúscula.
+
+- ✅ `Como aparecer no Google Maps em 2026`
+- ✅ `O que é GEO — Generative Engine Optimization?`
+- ❌ `Como Aparecer No Google Maps Em 2026`
+- ❌ `O Que É GEO — Generative Engine Optimization?`
+
+Aplica-se a: H1, H2, H3, meta title, og:title, títulos de cards no blog e âncoras de links internos.
+
+---
+
+#### Frases-gatilho de IA — proibidas em qualquer parte do texto
+
+Estas expressões são marcadores reconhecíveis de texto gerado por IA. **Nunca usar:**
+
+| Proibido | Por que |
+|---|---|
+| "No mundo atual..." | Abertura genérica clássica de IA |
+| "Em um cenário cada vez mais..." | Idem |
+| "Você já se perguntou..." | Gancho vazio e previsível |
+| "É importante ressaltar que..." | Enchimento sem valor |
+| "Vale destacar que..." | Idem |
+| "Neste artigo, vamos explorar..." | Descreve o texto em vez de entrar nele |
+| "Isso posto..." | Formalismo artificial |
+| "Sem dúvida alguma..." | Certeza exagerada, típica de IA |
+| "É fundamental compreender que..." | Condescendente e previsível |
+| "Em última análise..." | Conclusão formulaica |
+| "Não podemos negar que..." | Construção vaga e passiva |
+| "Como já mencionado..." | Remissão circular |
+| "Certamente..." / "Evidentemente..." | Afirmações sem prova |
+| "Em termos de [substantivo]..." | Construção burocrática |
+| "É imperativo que..." | Tom inflado |
+| "Isso nos leva a refletir..." | Filosofia de almanaque |
+| "De fato, ..." (no início de frase) | Enchimento de transição |
+
+---
+
+#### Regras de voz humana (obrigatórias)
+
+**1. Ritmo irregular — varie o tamanho das frases**
+IA produz frases de comprimento médio constante. Humanos alternam: uma frase curtíssima. Depois uma mais longa, com mais contexto e nuance. Depois outra curta. O leitor sente o ritmo, mesmo sem perceber.
+
+**2. Opinião explícita da agência**
+Todo artigo deve ter pelo menos **uma afirmação de opinião real**, não apenas síntese de fatos:
+- ✅ *"Na nossa prática com clientes, o que funciona não é o que os estudos preveem — é [opinião específica]."*
+- ✅ *"Discordamos da abordagem mais comum aqui: [razão concreta]."*
+- ❌ *"Especialistas divergem sobre o tema."* (delegação de opinião)
+
+**3. Exemplos com especificidade brasileira**
+Não use exemplos genéricos que qualquer IA produziria. Prefira:
+- Referências a setores brasileiros reais (e-commerce nacional, escritórios de advocacia em SP, clínicas no interior)
+- Dados com fonte citável em PT-BR
+- Situações que um empresário brasileiro reconheceria de imediato
+
+**4. Admitir incerteza quando ela existe**
+IA tende a afirmar tudo com confiança igual. Humanos diferenciam:
+- ✅ *"Ainda não há consenso sobre isso, mas o que observamos é..."*
+- ✅ *"Pode variar muito dependendo do setor — não há resposta única."*
+- ❌ *"A solução é simples: basta seguir os passos abaixo."*
+
+**5. Abertura sem gancho de IA**
+Os três primeiros parágrafos nunca devem começar com:
+- Pergunta retórica genérica (*"Você sabia que...?"*)
+- Estatística solta sem contexto imediato
+- Definição de dicionário do tema principal
+
+Em vez disso: entre no problema real do leitor na primeira linha, sem rodeios.
+
+**6. Estrutura assimétrica**
+- Bullet points com itens de tamanhos diferentes (não todos com 1 linha)
+- H2s com seções de comprimentos variados (não todos com 3 parágrafos iguais)
+- Pelo menos uma seção sem lista alguma — só texto corrido
+
+**7. Tom conversacional direto (não apresentação corporativa)**
+- ✅ *"Isso custa caro. E a maioria das empresas descobre tarde."*
+- ✅ *"Simples assim."*
+- ❌ *"Portanto, conclui-se que a adoção de tais práticas é recomendável."*
+
+---
+
+#### Checklist de revisão anti-IA (aplicar antes de entregar)
+
+- ☐ Nenhuma frase da lista de proibidas acima está no texto
+- ☐ Há pelo menos uma opinião explícita da agência (não delegada a "especialistas")
+- ☐ Há pelo menos um exemplo com especificidade brasileira ou de cliente real
+- ☐ Os 3 primeiros parágrafos não começam com pergunta retórica nem estatística solta
+- ☐ O texto tem variação de ritmo — frases curtas intercaladas com longas
+- ☐ Todos os títulos (H1, H2, H3, meta title) estão em sentence case
+- ☐ Não há parágrafos com estrutura perfeitamente simétrica entre si
+
+
 ---
 
 ## 2. ESTRATÉGIA DE LINKAGEM INTERNA (Atualizado)
@@ -590,9 +687,11 @@ Antes de finalizar o artigo, verificar:
 - ☐ AEO/GEO: FAQ presente (≥5 perguntas), definições claras.
 - ☐ Schema: `BlogPosting` + `BreadcrumbList` gerados; `FAQPage` se tiver FAQ; validado no Rich Results Test.
 - ☐ Qualidade: E-E-A-T demonstrado, conteúdo original, sem plágio.
+- ☐ Voz humana: nenhuma frase-gatilho de IA (ver Seção 1.2); pelo menos uma opinião explícita da agência; exemplo com especificidade brasileira.
+- ☐ Títulos em sentence case: só a primeira letra maiúscula em H1, H2, H3 e meta title (exceto nomes próprios e siglas).
 - ☐ Imagens: meta de ~1/300 palavras **ou** menos se o texto já for visualmente denso; **sem repetir** o mesmo arquivo no corpo; hero distinto; **alt** único; peso razoável (ver performance).
 - ☐ CTA: Claro e relevante no final.
 - ☐ (Se usar automação) *Payload* YAML com chaves completas: metadados, outline, FAQ (≥5), links internos sugeridos, notas de revisor.
 
 ---
-**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload, seção completa de Schema Markup).
+**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload, Schema Markup, voz humana e anti-IA, sentence case em títulos).
