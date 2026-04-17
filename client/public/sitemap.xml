@@ -24,13 +24,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://www.otne.com.br/blog/como-aparecer-nas-buscas-do-seu-cliente</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <url>
     <loc>https://www.otne.com.br/blog/marketing-digital-para-empresarios</loc>
     <lastmod>2026-01-28</lastmod>
@@ -70,6 +63,12 @@
   <url>
     <loc>https://www.otne.com.br/blog/como-construir-confianca-conteudo-digital-ia</loc>
     <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.otne.com.br/blog/como-aparecer-nas-buscas-do-seu-cliente</loc>
+    <lastmod>2026-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

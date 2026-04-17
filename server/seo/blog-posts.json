@@ -46,13 +46,6 @@
       "robots": "noindex, nofollow"
     },
     {
-      "path": "/blog/como-aparecer-nas-buscas-do-seu-cliente",
-      "title": "Por que seu concorrente aparece no Google e você não? (E como mudar isso) | Blog Otne SEO",
-      "description": "Sabe quando você tem certeza de que o seu serviço é melhor, mas, na hora de fechar negócio, o cliente escolhe o concorrente? Descubra o que seu cliente realmente digita antes de comprar.",
-      "ogType": "article",
-      "image": "https://www.otne.com.br/og-image.png"
-    },
-    {
       "path": "/blog/marketing-digital-para-empresarios",
       "title": "Marketing digital para empresários: o guia prático para crescer sem desperdiçar verba | Blog Otne SEO",
       "description": "Marketing digital não é postar todo dia: é um sistema para atrair demanda, transformar visitas em leads e leads em vendas. Veja um plano prático para PMEs com métricas, canais e exemplos.",
@@ -98,6 +91,13 @@
       "path": "/blog/como-construir-confianca-conteudo-digital-ia",
       "title": "Como Construir Confiança em Conteúdo Digital na Era da Inteligência Artificial: Guia Completo 2026 | Blog Otne SEO",
       "description": "Em um mundo saturado de conteúdo gerado por IA, a confiança é a nova moeda valiosa. Descubra como diferenciar sua marca, dominar o E-E-A-T e por que uma Consultoria de SEO estratégica é vital para sua sobrevivência digital.",
+      "ogType": "article",
+      "image": "https://www.otne.com.br/og-image.png"
+    },
+    {
+      "path": "/blog/como-aparecer-nas-buscas-do-seu-cliente",
+      "title": "Por que seu concorrente aparece no Google e você não? (E como mudar isso) | Blog Otne SEO",
+      "description": "Sabe quando você tem certeza de que o seu serviço é melhor, mas, na hora de fechar negócio, o cliente escolhe o concorrente? Descubra o que seu cliente realmente digita antes de comprar.",
       "ogType": "article",
       "image": "https://www.otne.com.br/og-image.png"
     }

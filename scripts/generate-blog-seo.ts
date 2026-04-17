@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { blogPosts } from "../client/src/data/blog-posts.ts";
+import { blogPostsMeta as blogPosts } from "../client/src/data/blog-posts.meta.ts";
 
 const SITE_URL = "https://www.otne.com.br";
 

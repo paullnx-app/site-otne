@@ -1,1 +1,1 @@
-export { default as Rascunho } from './data/RascunhoView';
+export { default as Rascunho } from "../data/RascunhoView";
