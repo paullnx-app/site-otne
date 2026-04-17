@@ -1,5 +1,14 @@
 # INSTRUÇÕES COMPLETAS PUBLICAÇÃO DOS ARTIGOS - OTNE.SEO
 
+| Campo | Valor |
+|---|---|
+| **Revisão** | `v1.5` |
+| **Data** | 2026-04-17 |
+| **Alterações desta revisão** | Seção 1.2 (voz humana e anti-IA), sentence case em títulos, checklist atualizado |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana |
+
+> Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
+
 Este documento unifica todas as diretrizes de produção de conteúdo, SEO, linkagem interna e qualidade para a Otne.seo.
 
 ## FUNÇÃO E OBJETIVO
