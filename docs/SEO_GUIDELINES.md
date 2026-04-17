@@ -162,7 +162,11 @@ Objetivo: permitir que **ferramentas** (IA + scripts + CMS) gerem rascunhos e pu
 
 ### Exemplo mínimo de *payload* (YAML) — contrato para briefing → redação → publicação
 
-Use um ficheiro YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script. Regras:
+Use um ficheiro YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script.
+
+**Temas mudam; o contrato não:** o bloco YAML abaixo usa o **Artigo 02 só como ilustração**. Em cada novo tema você **mantém as mesmas chaves** (`slug_sugerido`, `ideia_central`, `estrutura_outline`, `faq`, etc.) e **troca só os valores** (título, palavras-chave, outline, perguntas do FAQ, links sugeridos). Scripts e validações devem depender do **nome das chaves** e de regras (ex.: FAQ ≥ 5), não do assunto específico.
+
+Regras:
 
 - **Chaves estáveis:** não renomear campos à toa; scripts validam por chave.
 - **`conteudo_md`:** no briefing pode vir vazio; depois da redação, preenche com Markdown (H1 só se o CMS exigir no corpo; no site Otne o título costuma ser fora do corpo).
