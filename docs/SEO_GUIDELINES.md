@@ -36,6 +36,7 @@ Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO 
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").
 - **Experiência Real:** Incluir exemplos práticos, estudos de caso ou opiniões baseadas na vivência da agência.
 - **Multimídia:** Usar imagens originais, prints de ferramentas e, se possível, vídeos.
+- **Nomes de ficheiros (imagens do blog):** usar **português** em slugs descritivos (palavras separadas por hífen; preferir **ASCII sem acentos** no nome do ficheiro para compatibilidade entre sistemas). Ex.: `equipe-autoridade.jpg`, `erros-seo-tecnicos.jpg`. Evite nomes genéricos só em inglês quando houver equivalente claro em PT.
 
 ---
 

@@ -1,6 +1,6 @@
-import aiImg from "@/assets/images/blog/seo-ou-ia-2026.jpg";
-import aiComparativoImg from "@/assets/images/blog/seo-ia-comparativo.jpg";
-import aiFrameworkImg from "@/assets/images/blog/seo-ia-framework.jpg";
+import aiImg from "@/assets/images/blog/capa-artigo-seo-ou-ia-2026.jpg";
+import aiComparativoImg from "@/assets/images/blog/comparativo-seo-ia.jpg";
+import aiFrameworkImg from "@/assets/images/blog/framework-decisao-seo-ia.jpg";
 
 export const artigoSeoIa2026 = {
   id: "9",

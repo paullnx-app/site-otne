@@ -1,10 +1,10 @@
 /**
- * Imagens do corpo: ficheiros distintos entre si e do hero do post (`future-seo-2026` em blog-posts.ts).
+ * Imagens do corpo: ficheiros distintos entre si e do hero do post (`tendencias-seo-2026` em blog-posts.ts).
  * Poucas imagens no corpo + lazy/async para não competir com o LCP do hero.
  */
-import teamImg from "@/assets/images/blog/team-authority.jpg";
-import technicalSeoImg from "@/assets/images/blog/technical-seo-errors.jpg";
-import aiTrustImg from "@/assets/images/blog/ai-trust-human.jpg";
+import teamImg from "@/assets/images/blog/equipe-autoridade.jpg";
+import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
+import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
