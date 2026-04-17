@@ -42,7 +42,7 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 
 ### Multimídia, performance e Core Web Vitals (obrigatório no site)
 - **Sem repetir o mesmo arquivo** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um arquivo — **não** volte a usar esse mesmo arquivo logo abaixo no corpo só para “cumprir meta” de imagens.
-- **Sem repetir hero entre artigos diferentes:** cada post deve ter um arquivo hero **exclusivo**. Antes de atribuir uma imagem como hero, consultar o **Registro de Imagens** (Seção 1.1). Verificar também por MD5/hash se dois arquivos com nomes diferentes são cópias idênticas — isso acontece e gera a mesma foto aparecendo em posts distintos.
+- **Sem duplicatas de arquivo em todo o site:** cada imagem deve existir em **uma única cópia** no repositório. Arquivos com conteúdo idêntico mas nomes diferentes são proibidos — causam a mesma foto aparecendo em contextos distintos e desperdiçam banda. Antes de subir uma nova imagem, verificar o MD5/hash contra o **Registro de Imagens** (Seção 1.1). Se o hash já existir, reutilizar o arquivo original com seu nome canônico — **não** criar cópia com novo nome.
 - **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade — não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
 - **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200–300 KB** quando possível; corpo **&lt; 150 KB** por imagem — ajustar ao orçamento de qualidade).
 - **Carregamento no corpo do artigo:** imagens abaixo da dobra devem usar **carregamento tardio** (`loading="lazy"`), **`decoding="async"`** e **`sizes`** adequado ao layout; evitar alturas gigantes só por estética se não trouxer informação.
@@ -50,30 +50,41 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Texto alternativo:** todo arquivo publicado com **alt** descritivo, único por imagem, alinhado ao conteúdo adjacente (acessibilidade + SEO imagem).
 
 
-### 1.1 Registro de Imagens (manter atualizado a cada novo artigo)
+### 1.1 Registro de Imagens — `client/src/assets/images/` (atualizar a cada novo artigo)
 
-Antes de publicar qualquer artigo, verificar este registro e **atualizar com a imagem hero atribuída**. Nunca usar como hero um arquivo que já consta na coluna "Hero de".
+**Regra:** cada MD5 deve aparecer **uma única vez** neste registro e no repositório. Antes de subir uma nova imagem, calcule o MD5 (`md5 <arquivo>` no terminal) e confirme que o hash não existe. Se já existir, use o arquivo canônico listado aqui — nunca crie cópia com nome diferente.
 
-| Arquivo | MD5 (8 chars) | Usado como hero em | Usado como corpo em |
+#### Blog (`/blog/`)
+
+| Arquivo | MD5 (8 chars) | Hero em | Corpo em |
 |---|---|---|---|
-| `tendencias-seo-2026.jpg` | beb2bf87 | guia-seo-2026, artigo-01-seo-ou-ia | — |
-| `erros-seo-tecnicos.jpg` | 673b27c5 | erros-tecnicos-seo | artigo-01 (corpo) |
-| `rede-construcao-links.jpg` | 1cf88f86 | como-aumentar-autoridade | artigo-02 (corpo) |
-| `confianca-conteudo-ia.jpg` | 20beed87 | como-construir-confianca-ia | artigo-01 (corpo) |
+| `tendencias-seo-2026.jpg` | beb2bf87 | guia-seo-2026, artigo-01 | — |
+| `erros-seo-tecnicos.jpg` | 673b27c5 | erros-tecnicos-seo | artigo-01 |
+| `rede-construcao-links.jpg` | 1cf88f86 | como-aumentar-autoridade | artigo-02 |
+| `confianca-conteudo-ia.jpg` | 20beed87 | como-construir-confianca-ia | artigo-01 |
 | `guia-seo-local-diferenciado.jpg` | b46a0efc | seo-local-para-pequenas-empresas | — |
 | `guia-google-maps.jpg` | 1e7d6f44 | como-aparecer-no-google-maps | — |
 | `marketing-digital-empreendedores.png` | 1e459906 | marketing-digital-para-empresarios | — |
 | `aparecer-nas-buscas.jpg` | 90b3d927 | como-aparecer-nas-buscas | — |
 | `midia-imprensa.jpg` | 9ffc00c1 | artigo-02-empresa-chatgpt | — |
-| `equipe-autoridade.jpg` | 8f562dbb | — | artigo-01 (corpo) |
-| `framework-decisao-seo-ia.jpg` | 76d1da0d | — | artigo-02 (corpo) |
+| `equipe-autoridade.jpg` | 8f562dbb | — | artigo-01 |
+| `framework-decisao-seo-ia.jpg` | 76d1da0d | — | artigo-02 |
 | `premios-reconhecimento.jpg` | 8f1f1930 | — | — |
 | `parceria-estrategica.jpg` | c46bb429 | — | — |
 | `loja-seo-local.jpg` | f0903f62 | — | — |
-| `capa-artigo-seo-ou-ia-2026.jpg` | afc93fe1 | — | — |
-| `comparativo-seo-ia.jpg` | beb2bf87 | ⚠️ DUPLICATA de `tendencias-seo-2026.jpg` — não usar | — |
+| `capa-artigo-seo-ou-ia-2026.jpg` | afc93fe1 | — | draft-article |
 
-> **Atenção MD5:** `comparativo-seo-ia.jpg` e `tendencias-seo-2026.jpg` são o mesmo arquivo com nomes diferentes. `guia-google-maps.jpg` e `local-search-mobile.jpg` também são idênticos. Ao adicionar novas imagens, confirmar que o MD5 é único antes de registrar.
+#### Outras pastas (`/consultoria/`, `/about/`, etc.)
+
+| Arquivo | MD5 (8 chars) | Usado em |
+|---|---|---|
+| `consultoria/empresario-resultados.jpg` | 5380c3a4 | página consultoria |
+| `consultoria/empresario-feliz.jpg` | 57b7819f | página consultoria |
+| `consultoria/equipe-resultados.jpg` | 9cf58513 | página consultoria |
+| `about/team-meeting.jpg` | c8ec276b | página sobre |
+| `about/office-space.jpg` | d56c279a | página sobre |
+
+> **Como verificar antes de subir:** `md5 caminho/para/nova-imagem.jpg`. Se o hash já estiver na tabela acima, use o arquivo listado. Se for novo, adicione uma linha a esta tabela.
 
 ---
 

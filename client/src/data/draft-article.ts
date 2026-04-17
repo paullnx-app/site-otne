@@ -1,5 +1,5 @@
 import aiImg from "@/assets/images/blog/capa-artigo-seo-ou-ia-2026.jpg";
-import aiComparativoImg from "@/assets/images/blog/comparativo-seo-ia.jpg";
+import aiComparativoImg from "@/assets/images/blog/tendencias-seo-2026.jpg";
 import aiFrameworkImg from "@/assets/images/blog/framework-decisao-seo-ia.jpg";
 
 export const artigoSeoIa2026 = {
