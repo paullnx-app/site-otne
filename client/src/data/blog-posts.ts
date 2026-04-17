@@ -19,7 +19,7 @@ import {
   empresaApareceChatgptHtml,
   empresaApareceChatgptFaqJsonLd,
 } from "./blog-post-content/empresa-aparece-chatgpt-como-testar";
-import comparativoSeoIaImg from "@/assets/images/blog/comparativo-seo-ia.jpg";
+import empresaChatgptHeroImg from "@/assets/images/blog/midia-imprensa.jpg";
 
 export interface BlogPost {
   id: string;
@@ -1081,7 +1081,7 @@ const posts: BlogPost[] = [
     date: "17 Abr 2026",
     category: "Inteligência Artificial",
     readTime: "10 min",
-    imageUrl: comparativoSeoIaImg,
+    imageUrl: empresaChatgptHeroImg,
     faqJsonLd: empresaApareceChatgptFaqJsonLd as unknown as Record<string, unknown>,
   },
   {

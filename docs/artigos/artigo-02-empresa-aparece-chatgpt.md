@@ -27,8 +27,8 @@ schema_extra:
     usar: true
 imagens:
   hero:
-    arquivo: "comparativo-seo-ia.jpg"
-    alt: "Comparativo visual entre ferramentas de IA — ChatGPT, Gemini e Perplexity — representando citabilidade de empresas"
+    arquivo: "midia-imprensa.jpg"
+    alt: "Profissional analisando menções e citações de marca em veículos digitais — representa presença da empresa nas IAs"
   corpo:
     - posicao: "apos_tutorial"
       arquivo: "framework-decisao-seo-ia.jpg"

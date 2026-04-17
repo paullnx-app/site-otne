@@ -1,6 +1,6 @@
 /**
  * Artigo 02 — "Sua empresa aparece quando alguém pergunta ao ChatGPT?"
- * Hero (em blog-posts.ts): comparativo-seo-ia.jpg
+ * Hero (em blog-posts.ts): midia-imprensa.jpg
  * Imagens do corpo: distintas do hero e entre si.
  *   1. framework-decisao-seo-ia.jpg — após o tutorial passo a passo
  *   2. rede-construcao-links.jpg    — após as 5 ações / antes da tabela
