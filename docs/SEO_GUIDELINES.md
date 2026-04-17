@@ -38,15 +38,15 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").
 - **Experiência Real:** Incluir exemplos práticos, estudos de caso ou opiniões baseadas na vivência da agência.
 - **Multimídia (conteúdo):** Usar imagens originais, prints de ferramentas e, se possível, vídeos. Cada imagem deve **ilustrar o parágrafo** (não encher página).
-- **Nomes de ficheiros (imagens do blog):** usar **português** em slugs descritivos (palavras separadas por hífen; preferir **ASCII sem acentos** no nome do ficheiro para compatibilidade entre sistemas). Ex.: `equipe-autoridade.jpg`, `erros-seo-tecnicos.jpg`. Evite nomes genéricos só em inglês quando houver equivalente claro em PT.
+- **Nomes de arquivos (imagens do blog):** usar **português** em slugs descritivos (palavras separadas por hífen; preferir **ASCII sem acentos** no nome do arquivo para compatibilidade entre sistemas). Ex.: `equipe-autoridade.jpg`, `erros-seo-tecnicos.jpg`. Evite nomes genéricos só em inglês quando houver equivalente claro em PT.
 
 ### Multimídia, performance e Core Web Vitals (obrigatório no site)
-- **Sem repetir o mesmo ficheiro** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um ficheiro — **não** volte a usar esse mesmo ficheiro logo abaixo no corpo só para “cumprir meta” de imagens.
+- **Sem repetir o mesmo arquivo** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um arquivo — **não** volte a usar esse mesmo arquivo logo abaixo no corpo só para “cumprir meta” de imagens.
 - **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade — não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
 - **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200–300 KB** quando possível; corpo **&lt; 150 KB** por imagem — ajustar ao orçamento de qualidade).
 - **Carregamento no corpo do artigo:** imagens abaixo da dobra devem usar **carregamento tardio** (`loading="lazy"`), **`decoding="async"`** e **`sizes`** adequado ao layout; evitar alturas gigantes só por estética se não trouxer informação.
 - **Hero (LCP):** a imagem principal do post deve ser tratada como **LCP** — priorizar carregamento (ex.: `fetchpriority="high"` no template quando aplicável) e não competir com várias imagens pesadas logo acima do texto.
-- **Texto alternativo:** todo ficheiro publicado com **alt** descritivo, único por imagem, alinhado ao conteúdo adjacente (acessibilidade + SEO imagem).
+- **Texto alternativo:** todo arquivo publicado com **alt** descritivo, único por imagem, alinhado ao conteúdo adjacente (acessibilidade + SEO imagem).
 
 ---
 
@@ -148,11 +148,11 @@ Objetivo: permitir que **ferramentas** (IA + scripts + CMS) gerem rascunhos e pu
 - **Metadados por artigo:** `slug`, `meta_title`, `meta_description`, `autor`, `data`, `categoria`, `tempo_de_leitura`, `palavra_chave_principal` (e secundárias opcionais).
 - **Corpo:** Markdown ou HTML semântico (H1 único no front; H2/H3 coerentes; listas; tabela quando fizer sentido; FAQ no fim).
 - **FAQ para rich results:** bloco de perguntas/respostas + **JSON-LD FAQPage** quando o template suportar.
-- **Imagens:** lista de `{ ficheiro_pt, alt, posição_aproximada }` ou equivalente; **nunca** reutilizar o mesmo `ficheiro_pt` duas vezes no corpo; hero separado.
-- **Links internos:** URLs relativas canónicas (`/blog/...`, `/consultoria-seo`) alinhadas ao domínio da seção *Domínio de publicação*.
+- **Imagens:** lista de `{ arquivo_pt, alt, posicao_aproximada }` ou equivalente; **nunca** reutilizar o mesmo `arquivo_pt` duas vezes no corpo; hero separado.
+- **Links internos:** URLs relativas canônicas (`/blog/...`, `/consultoria-seo`) alinhadas ao domínio da seção *Domínio de publicação*.
 
 ### Portões de qualidade (humano + máquina)
-- **Revisão humana obrigatória** antes de “publicar produção”: factos, tom, E-E-A-T, e verificação de links.
+- **Revisão humana obrigatória** antes de “publicar produção”: fatos, tom, E-E-A-T, e verificação de links.
 - **Validação automática sugerida:** contagem de palavras, densidade de keyword (faixa), número de links internos, presença de FAQ, duplicados de imagem, **Lighthouse mobile** em páginas piloto após mudanças de template.
 
 ### Acompanhar a tecnologia (revisitar o guia)
@@ -162,7 +162,7 @@ Objetivo: permitir que **ferramentas** (IA + scripts + CMS) gerem rascunhos e pu
 
 ### Exemplo mínimo de *payload* (YAML) — contrato para briefing → redação → publicação
 
-Use um ficheiro YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script.
+Use um arquivo YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script.
 
 **Temas mudam; o contrato não:** o bloco YAML abaixo usa o **Artigo 02 só como ilustração**. Em cada novo tema você **mantém as mesmas chaves** (`slug_sugerido`, `ideia_central`, `estrutura_outline`, `faq`, etc.) e **troca só os valores** (título, palavras-chave, outline, perguntas do FAQ, links sugeridos). Scripts e validações devem depender do **nome das chaves** e de regras (ex.: FAQ ≥ 5), não do assunto específico.
 
@@ -171,10 +171,10 @@ Regras:
 - **Chaves estáveis:** não renomear campos à toa; scripts validam por chave.
 - **`conteudo_md`:** no briefing pode vir vazio; depois da redação, preenche com Markdown (H1 só se o CMS exigir no corpo; no site Otne o título costuma ser fora do corpo).
 - **`faq`:** mínimo **5** itens (regra do guia). Cada item com `pergunta` + `resposta` (1–3 frases para snippet).
-- **`imagens.corpo`:** cada `arquivo` uma vez; **não** repetir o mesmo ficheiro no corpo; hero separado (ver secção de performance).
+- **`imagens.corpo`:** cada `arquivo` uma vez; **não** repetir o mesmo arquivo no corpo; hero separado (ver seção de performance).
 - **`links_internos`:** URLs relativas `https://www.otne.com.br` no site público; no código do projeto usar caminhos `/...` conforme o template.
 
-Abaixo: **Artigo 02** (o teu exemplo) já com **ajustes** (FAQ com 5 perguntas; meta de palavras até ~2.200 se precisar de profundidade; nota sobre ferramentas e tom sem promessa mágica).
+Abaixo: **Artigo 02** (usado como exemplo) já com **ajustes** (FAQ com 5 perguntas; meta de palavras até ~2.200 se precisar de profundidade; nota sobre ferramentas e tom sem promessa mágica).
 
 ```yaml
 versao_contrato: "1.0"
@@ -251,7 +251,7 @@ artigo:
   imagens:
     hero:
       descricao_cena: "Empresário testando prompt no computador; ambiente de escritório BR."
-      arquivo_pt_sugerido: "" # preencher após produção do asset; nome em PT, ASCII
+      arquivo_pt_sugerido: "" # preencher após produção do asset; nome em PT-BR, ASCII
     corpo:
       - posicao: "apos_tutorial_chatgpt"
         descricao_cena: "Print ou recorte de interface (sem dados sensíveis)."
@@ -292,10 +292,253 @@ artigo:
 
   notas_para_automacao_e_revisor:
     - "FAQ com 5 itens (mínimo do guia); não usar só 4."
-    - "Secção 'Ferramentas': priorizar critérios do que medir; no máximo 2 exemplos nomeados para não envelhecer rápido."
+    - "Seção 'Ferramentas': priorizar critérios do que medir; no máximo 2 exemplos nomeados para não envelhecer rápido."
     - "Tom: aumentar probabilidade de citação; evitar promessa de 'vai aparecer com certeza'."
-    - "Após publicar: validar links internos, imagens sem duplicar ficheiro, Lighthouse mobile em amostra."
+    - "Após publicar: validar links internos, imagens sem duplicar arquivo, Lighthouse mobile em amostra."
 ```
+
+---
+
+## 7. DADOS ESTRUTURADOS (SCHEMA MARKUP)
+
+Schema markup é o código que ajuda o Google — e as IAs — a entender **quem publica**, **o que é** aquela página e **qual autoridade** ela tem. Sem isso, rich results (FAQ, artigo, breadcrumb) e Knowledge Graph ficam comprometidos.
+
+### Regra geral: schema por tipo de página
+
+| Tipo de página | Schemas obrigatórios | Schemas opcionais |
+|---|---|---|
+| Post do blog | `BlogPosting` + `BreadcrumbList` | `FAQPage` (quando tiver FAQ), `Person` (autor) |
+| Home / institucional | `Organization` + `WebSite` | `SearchAction` (sitelinks search box) |
+| Página de serviço | `ProfessionalService` + `BreadcrumbList` | `FAQPage`, `Offer` |
+| Qualquer página | `BreadcrumbList` | — |
+
+> **Regra de ouro:** nunca marcar como schema algo que não está visível no conteúdo da página. O Google penaliza schema enganoso.
+
+---
+
+### 7.1 BlogPosting — template mínimo (por artigo)
+
+Injetar via `<script type="application/ld+json">` no `<head>` ou antes do `</body>`. No site Otne, o template de post deve gerar isso automaticamente a partir dos metadados do artigo.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Título do artigo (= meta_title, até 110 chars)",
+  "description": "Meta description do artigo (até 155 chars).",
+  "image": "https://www.otne.com.br/assets/images/blog/nome-do-hero.jpg",
+  "url": "https://www.otne.com.br/blog/slug-do-artigo",
+  "datePublished": "2026-04-17",
+  "dateModified": "2026-04-17",
+  "author": {
+    "@type": "Person",
+    "name": "Nome do Autor",
+    "url": "https://www.otne.com.br/sobre"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Otne SEO",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.otne.com.br/logo.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.otne.com.br/blog/slug-do-artigo"
+  }
+}
+```
+
+**Campos obrigatórios para rich results:** `headline`, `image`, `datePublished`, `author`.
+**Campos recomendados:** `dateModified`, `publisher`, `description`, `url`.
+
+---
+
+### 7.2 FAQPage — template mínimo (quando o artigo tiver FAQ)
+
+Adicionar **junto** ao `BlogPosting`, não no lugar dele. O bloco de FAQ do JSON-LD deve espelhar exatamente as perguntas e respostas visíveis na página.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Pergunta exatamente como aparece no texto?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Resposta direta, de 1 a 3 frases. Sem HTML complexo; pode usar <strong> e <a>."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Segunda pergunta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Resposta da segunda pergunta."
+      }
+    }
+  ]
+}
+```
+
+> **Atenção:** o Google limita a exibição de FAQs no resultado. Priorize as 3–5 perguntas mais relevantes para snippet. Mínimo do guia: **5 perguntas** no texto e no JSON-LD.
+
+---
+
+### 7.3 BreadcrumbList — template mínimo (todas as páginas)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.otne.com.br"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.otne.com.br/blog"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Título do Artigo",
+      "item": "https://www.otne.com.br/blog/slug-do-artigo"
+    }
+  ]
+}
+```
+
+---
+
+### 7.4 Organization + WebSite — configurar uma vez (home / global)
+
+Esses schemas descrevem **a empresa**, não o artigo. Devem ser injetados **uma única vez**, no template global ou na home. Não repetir em cada post.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Otne SEO",
+  "url": "https://www.otne.com.br",
+  "logo": "https://www.otne.com.br/logo.png",
+  "sameAs": [
+    "https://www.instagram.com/otne.seo",
+    "https://www.linkedin.com/company/otne"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer support",
+    "availableLanguage": "Portuguese"
+  }
+}
+```
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Otne SEO",
+  "url": "https://www.otne.com.br"
+}
+```
+
+> Preencha `sameAs` com as redes sociais oficiais verificadas. Isso alimenta o Knowledge Graph da marca.
+
+---
+
+### 7.5 LocalBusiness / ProfessionalService — para ranqueamento local
+
+Se a Otne atende clientes em uma cidade ou região específica, esse schema é fundamental para aparecer em buscas do tipo "agência SEO em São Paulo".
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Otne SEO",
+  "url": "https://www.otne.com.br",
+  "telephone": "+55-XX-XXXX-XXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Exemplo, 123",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "01000-000",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -23.55,
+    "longitude": -46.63
+  },
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "priceRange": "$$",
+  "areaServed": "Brasil",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Serviços de SEO"
+  }
+}
+```
+
+> Preencher com os dados reais da Otne antes de publicar. Manter **consistente** com Google Business Profile (mesmo nome, endereço e telefone — NAP).
+
+---
+
+### 7.6 Person — autor do artigo (reforço de E-E-A-T)
+
+Opcional, mas recomendado para artigos assinados por especialistas identificáveis.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nome do Autor",
+  "url": "https://www.otne.com.br/sobre",
+  "jobTitle": "Especialista em SEO",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Otne SEO"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/perfil-autor"
+  ]
+}
+```
+
+---
+
+### 7.7 Como validar (obrigatório antes de publicar)
+
+1. **Rich Results Test** — [search.google.com/test/rich-results](https://search.google.com/test/rich-results): cola a URL ou o código e verifica se o schema está elegível para rich result.
+2. **Schema Markup Validator** — [validator.schema.org](https://validator.schema.org): validação técnica completa do JSON-LD.
+3. **Google Search Console → Melhorias**: após publicar, monitorar erros de schema na propriedade `www.otne.com.br`.
+
+> **Regra de automação:** o script de publicação deve **rejeitar** artigos com JSON-LD inválido ou ausente nos campos obrigatórios (`headline`, `datePublished`, `author` no `BlogPosting`).
+
+---
+
+### 7.8 Chave `schema_extra` no payload YAML
+
+Adicionar ao contrato YAML de cada artigo para indicar schemas extras além do `BlogPosting` padrão:
+
+```yaml
+schema_extra:
+  - tipo: "FAQPage"
+    usar: true          # gerar JSON-LD a partir do bloco faq: acima
+  - tipo: "HowTo"
+    usar: false         # não aplicável neste artigo
+```
+
+Se `usar: true` e o tipo for `FAQPage`, o script deve gerar o JSON-LD automaticamente a partir do bloco `faq:` já existente no payload — sem duplicar dados.
 
 ---
 
@@ -306,11 +549,12 @@ Antes de finalizar o artigo, verificar:
 - ☐ Legibilidade: Frases curtas, voz ativa, parágrafos curtos.
 - ☐ Estrutura: Apenas 1 H1, hierarquia H2/H3 correta.
 - ☐ Links: 3-8 links internos (início e corpo), 1-2 externos confiáveis.
-- ☐ AEO/GEO: FAQ presente, definições claras.
+- ☐ AEO/GEO: FAQ presente (≥5 perguntas), definições claras.
+- ☐ Schema: `BlogPosting` + `BreadcrumbList` gerados; `FAQPage` se tiver FAQ; validado no Rich Results Test.
 - ☐ Qualidade: E-E-A-T demonstrado, conteúdo original, sem plágio.
-- ☐ Imagens: meta de ~1/300 palavras **ou** menos se o texto já for visualmente denso; **sem repetir** o mesmo ficheiro no corpo; hero distinto; **alt** único; peso razoável (ver performance).
+- ☐ Imagens: meta de ~1/300 palavras **ou** menos se o texto já for visualmente denso; **sem repetir** o mesmo arquivo no corpo; hero distinto; **alt** único; peso razoável (ver performance).
 - ☐ CTA: Claro e relevante no final.
 - ☐ (Se usar automação) *Payload* YAML com chaves completas: metadados, outline, FAQ (≥5), links internos sugeridos, notas de revisor.
 
 ---
-**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload).
+**Documento unificado. Última atualização relevante: abril de 2026** (performance, multimídia, pipeline de automação, exemplo YAML de payload, seção completa de Schema Markup).

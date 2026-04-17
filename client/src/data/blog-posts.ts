@@ -15,6 +15,11 @@ import {
   seoOuInteligenciaArtificialHtml,
   seoOuInteligenciaArtificialFaqJsonLd,
 } from "./blog-post-content/seo-ou-inteligencia-artificial-onde-apostar-2026";
+import {
+  empresaApareceChatgptHtml,
+  empresaApareceChatgptFaqJsonLd,
+} from "./blog-post-content/empresa-aparece-chatgpt-como-testar";
+import comparativoSeoIaImg from "@/assets/images/blog/comparativo-seo-ia.jpg";
 
 export interface BlogPost {
   id: string;
@@ -1064,6 +1069,20 @@ const posts: BlogPost[] = [
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
     imageUrl: aparecerNasBuscasImg
+  },
+  {
+    id: "11",
+    slug: "empresa-aparece-chatgpt-como-testar",
+    title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?",
+    excerpt:
+      "Saiba como verificar se seu negócio é citado pelas inteligências artificiais — e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.",
+    content: empresaApareceChatgptHtml,
+    author: "Equipe Otne SEO",
+    date: "17 Abr 2026",
+    category: "Inteligência Artificial",
+    readTime: "10 min",
+    imageUrl: comparativoSeoIaImg,
+    faqJsonLd: empresaApareceChatgptFaqJsonLd as unknown as Record<string, unknown>,
   },
   {
     id: "10",

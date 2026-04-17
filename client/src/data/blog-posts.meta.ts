@@ -22,6 +22,18 @@ export type BlogPostMeta = {
  */
 export const blogPostsMeta: BlogPostMeta[] = [
   {
+    id: "11",
+    slug: "empresa-aparece-chatgpt-como-testar",
+    title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?",
+    excerpt:
+      "Saiba como verificar se seu negócio é citado pelas inteligências artificiais — e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.",
+    author: "Equipe Otne SEO",
+    date: "17 Abr 2026",
+    category: "Inteligência Artificial",
+    readTime: "10 min",
+    imageUrl: "/og-image.png",
+  },
+  {
     id: "10",
     slug: "seo-ou-inteligencia-artificial-onde-apostar-2026",
     title: "SEO ou IA: onde o seu negócio deve apostar agora?",
