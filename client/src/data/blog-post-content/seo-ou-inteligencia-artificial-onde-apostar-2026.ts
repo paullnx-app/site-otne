@@ -1,5 +1,13 @@
-import futureSeoImg from "@/assets/images/blog/future-seo-2026.jpg";
+/**
+ * Imagens do corpo: ficheiros distintos entre si e do hero do post (`future-seo-2026` em blog-posts.ts).
+ * Poucas imagens no corpo + lazy/async para não competir com o LCP do hero.
+ */
+import teamImg from "@/assets/images/blog/team-authority.jpg";
+import technicalSeoImg from "@/assets/images/blog/technical-seo-errors.jpg";
 import aiTrustImg from "@/assets/images/blog/ai-trust-human.jpg";
+
+const bodyImgClass =
+  'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
 
 /** FAQPage JSON-LD (BlogPost pode referenciar em post.tsx). */
 export const seoOuInteligenciaArtificialFaqJsonLd = {
@@ -61,7 +69,7 @@ const sections: string[] = [
 
 <p>Se você quer um <strong>guia completo de SEO para 2026</strong> com visão macro, leia também o nosso <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">guia completo de SEO para 2026</a>. Aqui o foco é decidir investimento com método.</p>
 
-<img src="${futureSeoImg}" alt="Empresária analisando métricas de SEO e estratégia de marketing digital em 2026" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<img src="${teamImg}" alt="Equipe em reunião alinhando decisões de marketing e investimento em SEO" ${bodyImgClass} />`,
 
   `<h2>O que mudou na busca em 2026 (contexto em três blocos)</h2>
 <p><strong>Primeiro</strong>, a busca ganhou camadas. O usuário pesquisa no Google, em apps e em assistentes. <strong>Por isso</strong>, “ranquear” virou família de tarefas: clássica, com respostas geradas e com citação em ferramentas de IA.</p>
@@ -86,7 +94,7 @@ const sections: string[] = [
 
 <p>Para aprofundar riscos técnicos, veja o artigo sobre <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO que drenam tráfego</a>.</p>
 
-<img src="${aiTrustImg}" alt="Ilustração de crescimento de tráfego orgânico e otimização para buscadores" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<img src="${technicalSeoImg}" alt="Análise técnica de SEO: métricas, erros comuns e base para decisões de investimento" ${bodyImgClass} />`,
 
   `<h2>O que é busca por IA e como ela afeta negócios reais</h2>
 <p><strong>Busca por IA</strong> é o ato de pedir resposta a um modelo (resumo, comparação, roteiro) em interface de chat ou recurso integrado em buscador. <strong>Isto é</strong>, o usuário recebe texto sintetizado, nem sempre com link clicável como antes.</p>
@@ -100,7 +108,9 @@ const sections: string[] = [
 
 <p>Leia o guia <a href="/blog/como-construir-confianca-conteudo-digital-ia" class="text-primary font-bold hover:underline">como construir confiança em conteúdo digital na era da IA</a>. <strong>Além disso</strong>, para intenção de compra, o artigo <a href="/blog/como-aparecer-nas-buscas-do-seu-cliente" class="text-primary font-bold hover:underline">por que o concorrente aparece no Google e você não</a> ajuda a alinhar mensagem à busca real do cliente.</p>
 
-<p><strong>Otimização para ChatGPT</strong> (e similares) não é “truque oculto”. <strong>Em outras palavras</strong>, é <strong>clareza</strong>, estrutura, dados e consistência — o mesmo espírito do bom <strong>SEO 2026</strong>, com formato que modelos conseguem extrair.</p>`,
+<p><strong>Otimização para ChatGPT</strong> (e similares) não é “truque oculto”. <strong>Em outras palavras</strong>, é <strong>clareza</strong>, estrutura, dados e consistência — o mesmo espírito do bom <strong>SEO 2026</strong>, com formato que modelos conseguem extrair.</p>
+
+<img src="${aiTrustImg}" alt="Confiança humana e conteúdo digital na era da inteligência artificial aplicada ao marketing" ${bodyImgClass} />`,
 
   `<h2>Framework de decisão: cinco perguntas para responder antes de escolher</h2>
 <p>Responda com honestidade. <strong>Se acaso</strong> marque muitos “não”, priorize base antes de escalar IA.</p>
@@ -118,9 +128,7 @@ const sections: string[] = [
 <p><strong>Sem revisão</strong>, o risco é página “correta” e vazia de experiência. <strong>Dessa forma</strong>, combine IA com editor humano.</p>
 
 <h3>5) Você mede resultado em lead, não em “post publicado”?</h3>
-<p><strong>Por fim</strong>, métrica boa evita discussão ideológica entre times. <strong>Enfim</strong>, números cortam ruído.</p>
-
-<img src="${futureSeoImg}" alt="Fluxograma de decisão entre priorizar SEO tradicional, IA ou combinação dos dois no marketing" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<p><strong>Por fim</strong>, métrica boa evita discussão ideológica entre times. <strong>Enfim</strong>, números cortam ruído.</p>`,
 
   `<h2>Checklist: quando priorizar SEO, IA ou os dois</h2>
 <p>Use como <strong>roteiro interno</strong>. <strong>Além disso</strong>, salve em planilha e revise trimestralmente.</p>
@@ -145,9 +153,7 @@ const sections: string[] = [
 <li>Você testa landing pages com variações. <strong>Porém</strong>, sempre com checagem factual.</li>
 </ol>
 
-<p>Para <strong>marketing digital para empresários</strong> com foco em plano e métricas, leia o <a href="/blog/marketing-digital-para-empresarios" class="text-primary font-bold hover:underline">guia prático de marketing digital para empresários</a>.</p>
-
-<img src="${aiTrustImg}" alt="Checklist de marketing com itens sobre SEO, IA e métricas de resultado" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<p>Para <strong>marketing digital para empresários</strong> com foco em plano e métricas, leia o <a href="/blog/marketing-digital-para-empresarios" class="text-primary font-bold hover:underline">guia prático de marketing digital para empresários</a>.</p>`,
 
   `<h2>Orientação por perfil de negócio (local, e-commerce, B2B, startup)</h2>
 
@@ -163,9 +169,7 @@ const sections: string[] = [
 <h3>Startup em fase de tração</h3>
 <p><strong>Startups</strong> precisam velocidade. <strong>Contudo</strong>, atalho sem mensagem clara queima orçamento. <strong>Por isso</strong>, use IA para experimentar, mas fixe <strong>posicionamento</strong> cedo.</p>
 
-<p>Conheça a <a href="/quem-somos" class="text-primary font-bold hover:underline">equipe e a abordagem da Otne</a>. <strong>Enfim</strong>, alinhar expectativa evita fricção com agência ou time interno.</p>
-
-<img src="${futureSeoImg}" alt="Quatro perfis de negócio — local, e-commerce, B2B e startup — para orientação de SEO e IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<p>Conheça a <a href="/quem-somos" class="text-primary font-bold hover:underline">equipe e a abordagem da Otne</a>. <strong>Enfim</strong>, alinhar expectativa evita fricção com agência ou time interno.</p>`,
 
   `<h2>Tabela comparativa de referência rápida (SEO vs AEO vs GEO)</h2>
 <p><strong>SEO</strong> é o conjunto de práticas para melhorar visibilidade e relevância em buscadores tradicionais. <strong>AEO</strong> (<em>Answer Engine Optimization</em>) é o conjunto de práticas para respostas diretas, headings em pergunta e formato citável. <strong>GEO</strong> (<em>Generative Engine Optimization</em>, na definição usada aqui) é otimizar formato e clareza para síntese por modelos generativos (listas, definições, tabelas).</p>
@@ -203,9 +207,7 @@ const sections: string[] = [
 </table>
 </div>
 
-<p><strong>Em resumo</strong>, os três se reforçam. <strong>Todavia</strong>, SEO sem página útil não sustenta os outros.</p>
-
-<img src="${aiTrustImg}" alt="Tabela comparativa entre SEO, AEO e GEO para marketing digital em 2026" class="rounded-xl my-8 w-full object-cover h-[300px]" />`,
+<p><strong>Em resumo</strong>, os três se reforçam. <strong>Todavia</strong>, SEO sem página útil não sustenta os outros.</p>`,
 
   `<h2>FAQ: cinco perguntas frequentes (formato snippet)</h2>
 

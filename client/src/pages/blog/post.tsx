@@ -122,10 +122,12 @@ export default function BlogPost() {
           </header>
 
           <div className="aspect-video rounded-xl overflow-hidden mb-16 shadow-sm">
-            <img 
-              src={post.imageUrl} 
+            <img
+              src={post.imageUrl}
               alt={post.title}
               className="w-full h-full object-cover"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
 
