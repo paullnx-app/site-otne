@@ -17,7 +17,7 @@ Você é um redator / publicador altamente versátil, conhecedor de CMO, capaz d
 
 Seu objetivo é publicar os textos aqui solicitados, sempre otimizados para SEO (Search Engine Optimization), GEO (Generative Engine Optimization) e AEO (Answer Engine Optimization), garantindo máximo alcance e impacto.
 
-Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA e de **performance web** (Core Web Vitals, mobile-first). Será também a **base de regras** para automatizar redação e publicação no blog — por isso pedimos formato previsível (metadados, FAQ, slugs) além de qualidade editorial.
+Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA e de **performance web** (Core Web Vitals, mobile-first). Será também a **base de regras** para automatizar redação e publicação no blog, por isso pedimos formato previsível (metadados, FAQ, slugs) além de qualidade editorial.
 
 ## DOMÍNIO DE PUBLICAÇÃO (CANÔNICO)
 
@@ -50,38 +50,38 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Nomes de arquivos (imagens do blog):** usar **português** em slugs descritivos (palavras separadas por hífen; preferir **ASCII sem acentos** no nome do arquivo para compatibilidade entre sistemas). Ex.: `equipe-autoridade.jpg`, `erros-seo-tecnicos.jpg`. Evite nomes genéricos só em inglês quando houver equivalente claro em PT.
 
 ### Multimídia, performance e Core Web Vitals (obrigatório no site)
-- **Sem repetir o mesmo arquivo** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um arquivo — **não** volte a usar esse mesmo arquivo logo abaixo no corpo só para “cumprir meta” de imagens.
-- **Sem duplicatas de arquivo em todo o site:** cada imagem deve existir em **uma única cópia** no repositório. Arquivos com conteúdo idêntico mas nomes diferentes são proibidos — causam a mesma foto aparecendo em contextos distintos e desperdiçam banda. Antes de subir uma nova imagem, verificar o MD5/hash contra o **Registro de Imagens** (Seção 1.1). Se o hash já existir, reutilizar o arquivo original com seu nome canônico — **não** criar cópia com novo nome.
-- **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade — não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
-- **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200–300 KB** quando possível; corpo **&lt; 150 KB** por imagem — ajustar ao orçamento de qualidade).
+- **Sem repetir o mesmo arquivo** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um arquivo, **não** volte a usar esse mesmo arquivo logo abaixo no corpo só para “cumprir meta” de imagens.
+- **Sem duplicatas de arquivo em todo o site:** cada imagem deve existir em **uma única cópia** no repositório. Arquivos com conteúdo idêntico mas nomes diferentes são proibidos, causam a mesma foto aparecendo em contextos distintos e desperdiçam banda. Antes de subir uma nova imagem, verificar o MD5/hash contra o **Registro de Imagens** (Seção 1.1). Se o hash já existir, reutilizar o arquivo original com seu nome canônico, **não** criar cópia com novo nome.
+- **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade, não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
+- **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200-300 KB** quando possível; corpo **&lt; 150 KB** por imagem, ajustar ao orçamento de qualidade).
 - **Carregamento no corpo do artigo:** imagens abaixo da dobra devem usar **carregamento tardio** (`loading="lazy"`), **`decoding="async"`** e **`sizes`** adequado ao layout; evitar alturas gigantes só por estética se não trouxer informação.
-- **Hero (LCP):** a imagem principal do post deve ser tratada como **LCP** — priorizar carregamento (ex.: `fetchpriority="high"` no template quando aplicável) e não competir com várias imagens pesadas logo acima do texto.
+- **Hero (LCP):** a imagem principal do post deve ser tratada como **LCP**: priorizar carregamento (ex.: `fetchpriority="high"` no template quando aplicável) e não competir com várias imagens pesadas logo acima do texto.
 - **Texto alternativo:** todo arquivo publicado com **alt** descritivo, único por imagem, alinhado ao conteúdo adjacente (acessibilidade + SEO imagem).
 
 
-### 1.1 Registro de Imagens — `client/src/assets/images/` (atualizar a cada novo artigo)
+### 1.1 Registro de Imagens: `client/src/assets/images/` (atualizar a cada novo artigo)
 
-**Regra:** cada MD5 deve aparecer **uma única vez** neste registro e no repositório. Antes de subir uma nova imagem, calcule o MD5 (`md5 <arquivo>` no terminal) e confirme que o hash não existe. Se já existir, use o arquivo canônico listado aqui — nunca crie cópia com nome diferente.
+**Regra:** cada MD5 deve aparecer **uma única vez** neste registro e no repositório. Antes de subir uma nova imagem, calcule o MD5 (`md5 <arquivo>` no terminal) e confirme que o hash não existe. Se já existir, use o arquivo canônico listado aqui, nunca crie cópia com nome diferente.
 
 #### Blog (`/blog/`)
 
 | Arquivo | MD5 (8 chars) | Hero em | Corpo em |
 |---|---|---|---|
-| `tendencias-seo-2026.jpg` | beb2bf87 | guia-seo-2026, artigo-01 | — |
+| `tendencias-seo-2026.jpg` | beb2bf87 | guia-seo-2026, artigo-01 | (nenhum) |
 | `erros-seo-tecnicos.jpg` | 673b27c5 | erros-tecnicos-seo | artigo-01 |
 | `rede-construcao-links.jpg` | 1cf88f86 | como-aumentar-autoridade | artigo-02 |
 | `confianca-conteudo-ia.jpg` | 20beed87 | como-construir-confianca-ia | artigo-01 |
-| `guia-seo-local-diferenciado.jpg` | b46a0efc | seo-local-para-pequenas-empresas | — |
-| `guia-google-maps.jpg` | 1e7d6f44 | como-aparecer-no-google-maps | — |
-| `marketing-digital-empreendedores.png` | 1e459906 | marketing-digital-para-empresarios | — |
-| `aparecer-nas-buscas.jpg` | 90b3d927 | como-aparecer-nas-buscas | — |
-| `midia-imprensa.jpg` | 9ffc00c1 | artigo-02-empresa-chatgpt | — |
-| `equipe-autoridade.jpg` | 8f562dbb | — | artigo-01 |
-| `framework-decisao-seo-ia.jpg` | 76d1da0d | — | artigo-02 |
-| `premios-reconhecimento.jpg` | 8f1f1930 | — | — |
-| `parceria-estrategica.jpg` | c46bb429 | — | — |
-| `loja-seo-local.jpg` | f0903f62 | — | — |
-| `capa-artigo-seo-ou-ia-2026.jpg` | afc93fe1 | — | draft-article |
+| `guia-seo-local-diferenciado.jpg` | b46a0efc | seo-local-para-pequenas-empresas | (nenhum) |
+| `guia-google-maps.jpg` | 1e7d6f44 | como-aparecer-no-google-maps | (nenhum) |
+| `marketing-digital-empreendedores.png` | 1e459906 | marketing-digital-para-empresarios | (nenhum) |
+| `aparecer-nas-buscas.jpg` | 90b3d927 | como-aparecer-nas-buscas | (nenhum) |
+| `midia-imprensa.jpg` | 9ffc00c1 | artigo-02-empresa-chatgpt | (nenhum) |
+| `equipe-autoridade.jpg` | 8f562dbb | (nenhum) | artigo-01 |
+| `framework-decisao-seo-ia.jpg` | 76d1da0d | (nenhum) | artigo-02 |
+| `premios-reconhecimento.jpg` | 8f1f1930 | (nenhum) | (nenhum) |
+| `parceria-estrategica.jpg` | c46bb429 | (nenhum) | (nenhum) |
+| `loja-seo-local.jpg` | f0903f62 | (nenhum) | (nenhum) |
+| `capa-artigo-seo-ou-ia-2026.jpg` | afc93fe1 | (nenhum) | draft-article |
 
 #### Outras pastas (`/consultoria/`, `/about/`, etc.)
 
@@ -97,22 +97,22 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 
 ### 1.2 Voz Humana e Escrita Anti-IA
 
-O objetivo desta seção é garantir que qualquer leitor — inclusive ferramentas de detecção — perceba o texto como escrito por um especialista humano, não por uma IA.
+O objetivo desta seção é garantir que qualquer leitor, inclusive ferramentas de detecção, perceba o texto como escrito por um especialista humano, não por uma IA.
 
 #### Capitalização de títulos e subtítulos (sentence case)
 
 **Regra:** somente a **primeira letra do título é maiúscula**. Nomes próprios, marcas e siglas mantêm sua grafia usual. Todo o resto fica em minúscula.
 
 - ✅ `Como aparecer no Google Maps em 2026`
-- ✅ `O que é GEO — Generative Engine Optimization?`
+- ✅ `O que é GEO: Generative Engine Optimization?`
 - ❌ `Como Aparecer No Google Maps Em 2026`
-- ❌ `O Que É GEO — Generative Engine Optimization?`
+- ❌ `O Que É GEO: Generative Engine Optimization?`
 
 Aplica-se a: H1, H2, H3, meta title, og:title, títulos de cards no blog e âncoras de links internos.
 
 ---
 
-#### Pontuação — travessão proibido
+#### Pontuação: travessão proibido
 
 **Regra:** nunca usar travessão (`—` ou `–`) em nenhuma parte do texto, títulos, subtítulos ou metadados.
 
@@ -128,7 +128,7 @@ Aplica-se a: corpo do artigo, H1, H2, H3, meta title, meta description, alt text
 
 ---
 
-#### Frases-gatilho de IA — proibidas em qualquer parte do texto
+#### Frases-gatilho de IA: proibidas em qualquer parte do texto
 
 Estas expressões são marcadores reconhecíveis de texto gerado por IA. **Nunca usar:**
 
@@ -156,12 +156,12 @@ Estas expressões são marcadores reconhecíveis de texto gerado por IA. **Nunca
 
 #### Regras de voz humana (obrigatórias)
 
-**1. Ritmo irregular — varie o tamanho das frases**
+**1. Ritmo irregular, varie o tamanho das frases**
 IA produz frases de comprimento médio constante. Humanos alternam: uma frase curtíssima. Depois uma mais longa, com mais contexto e nuance. Depois outra curta. O leitor sente o ritmo, mesmo sem perceber.
 
 **2. Opinião explícita da agência**
 Todo artigo deve ter pelo menos **uma afirmação de opinião real**, não apenas síntese de fatos:
-- ✅ *"Na nossa prática com clientes, o que funciona não é o que os estudos preveem — é [opinião específica]."*
+- ✅ *"Na nossa prática com clientes, o que funciona não é o que os estudos preveem: é [opinião específica]."*
 - ✅ *"Discordamos da abordagem mais comum aqui: [razão concreta]."*
 - ❌ *"Especialistas divergem sobre o tema."* (delegação de opinião)
 
@@ -174,7 +174,7 @@ Não use exemplos genéricos que qualquer IA produziria. Prefira:
 **4. Admitir incerteza quando ela existe**
 IA tende a afirmar tudo com confiança igual. Humanos diferenciam:
 - ✅ *"Ainda não há consenso sobre isso, mas o que observamos é..."*
-- ✅ *"Pode variar muito dependendo do setor — não há resposta única."*
+- ✅ *"Pode variar muito dependendo do setor, não há resposta única."*
 - ❌ *"A solução é simples: basta seguir os passos abaixo."*
 
 **5. Abertura sem gancho de IA**
@@ -188,7 +188,7 @@ Em vez disso: entre no problema real do leitor na primeira linha, sem rodeios.
 **6. Estrutura assimétrica**
 - Bullet points com itens de tamanhos diferentes (não todos com 1 linha)
 - H2s com seções de comprimentos variados (não todos com 3 parágrafos iguais)
-- Pelo menos uma seção sem lista alguma — só texto corrido
+- Pelo menos uma seção sem lista alguma, só texto corrido
 
 **7. Tom conversacional direto (não apresentação corporativa)**
 - ✅ *"Isso custa caro. E a maioria das empresas descobre tarde."*
@@ -203,7 +203,7 @@ Em vez disso: entre no problema real do leitor na primeira linha, sem rodeios.
 - ☐ Há pelo menos uma opinião explícita da agência (não delegada a "especialistas")
 - ☐ Há pelo menos um exemplo com especificidade brasileira ou de cliente real
 - ☐ Os 3 primeiros parágrafos não começam com pergunta retórica nem estatística solta
-- ☐ O texto tem variação de ritmo — frases curtas intercaladas com longas
+- ☐ O texto tem variação de ritmo, frases curtas intercaladas com longas
 - ☐ Todos os títulos (H1, H2, H3, meta title) estão em sentence case
 - ☐ Não há parágrafos com estrutura perfeitamente simétrica entre si
 
@@ -254,7 +254,7 @@ A linkagem interna é crucial para distribuir autoridade (link juice), melhorar 
 - **Espaçamento:** Margens generosas entre parágrafos e seções (H2 com margem superior maior).
 - **Negrito:** Usar em 2-3 termos-chave por seção para escaneabilidade.
 - **Listas:** Usar bullets/listas numeradas quando houver 3+ itens.
-- **Imagens:** **Meta orientadora** — cerca de **1 imagem a cada ~300 palavras** quando o texto não tiver outros elementos visuais fortes (tabelas longas, listas comparativas, infográfico). Se já houver **muita** estrutura visual, pode-se **reduzir** o número de imagens para proteger **performance** e leitura (ver a seção *Multimídia, performance e Core Web Vitals*). **Alt** obrigatório e único por imagem.
+- **Imagens:** **Meta orientadora**: cerca de **1 imagem a cada ~300 palavras** quando o texto não tiver outros elementos visuais fortes (tabelas longas, listas comparativas, infográfico). Se já houver **muita** estrutura visual, pode-se **reduzir** o número de imagens para proteger **performance** e leitura (ver a seção *Multimídia, performance e Core Web Vitals*). **Alt** obrigatório e único por imagem.
 
 ---
 
@@ -320,7 +320,7 @@ Objetivo: permitir que **ferramentas** (IA + scripts + CMS) gerem rascunhos e pu
 - **Privacidade e cookies:** regras de analytics e consentimento conforme a stack do site.
 - **Formato:** quando novos formatos (vídeo curto, schema adicional) forem adotados, **atualizar este documento** para o pipeline não ficar desatualizado.
 
-### Exemplo mínimo de *payload* (YAML) — contrato para briefing → redação → publicação
+### Exemplo mínimo de *payload* (YAML): contrato para briefing → redação → publicação
 
 Use um arquivo YAML (ou o mesmo bloco dentro de uma *issue* / *card*) para **entregar o briefing** a quem redige, à IA ou ao script.
 
@@ -330,7 +330,7 @@ Regras:
 
 - **Chaves estáveis:** não renomear campos à toa; scripts validam por chave.
 - **`conteudo_md`:** no briefing pode vir vazio; depois da redação, preenche com Markdown (H1 só se o CMS exigir no corpo; no site Otne o título costuma ser fora do corpo).
-- **`faq`:** mínimo **5** itens (regra do guia). Cada item com `pergunta` + `resposta` (1–3 frases para snippet).
+- **`faq`:** mínimo **5** itens (regra do guia). Cada item com `pergunta` + `resposta` (1-3 frases para snippet).
 - **`imagens.corpo`:** cada `arquivo` uma vez; **não** repetir o mesmo arquivo no corpo; hero separado (ver seção de performance).
 - **`links_internos`:** URLs relativas `https://www.otne.com.br` no site público; no código do projeto usar caminhos `/...` conforme o template.
 
@@ -346,7 +346,7 @@ artigo:
   meta_title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?"
   meta_description: >-
     Saiba como verificar se seu negócio é citado pelas inteligências artificiais
-    — e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.
+    e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.
   palavra_chave_principal: "empresa no ChatGPT"
   palavras_chave_secundarias:
     - "GEO o que é"
@@ -387,7 +387,7 @@ artigo:
     - "Como funciona a busca dentro das IAs (explicado de forma simples)"
     - "Tutorial: como testar se sua empresa aparece (ChatGPT, Gemini e Perplexity)"
     - "Por que algumas empresas aparecem e outras não"
-    - "O que é GEO — Generative Engine Optimization"
+    - "O que é GEO, Generative Engine Optimization"
     - "5 ações concretas para aparecer nas respostas das IAs"
     - "Ferramentas para monitorar sua presença nas IAs"
     - "FAQ"
@@ -461,7 +461,7 @@ artigo:
 
 ## 7. DADOS ESTRUTURADOS (SCHEMA MARKUP)
 
-Schema markup é o código que ajuda o Google — e as IAs — a entender **quem publica**, **o que é** aquela página e **qual autoridade** ela tem. Sem isso, rich results (FAQ, artigo, breadcrumb) e Knowledge Graph ficam comprometidos.
+Schema markup é o código que ajuda o Google e as IAs, a entender **quem publica**, **o que é** aquela página e **qual autoridade** ela tem. Sem isso, rich results (FAQ, artigo, breadcrumb) e Knowledge Graph ficam comprometidos.
 
 ### Regra geral: schema por tipo de página
 
@@ -470,13 +470,13 @@ Schema markup é o código que ajuda o Google — e as IAs — a entender **quem
 | Post do blog | `BlogPosting` + `BreadcrumbList` | `FAQPage` (quando tiver FAQ), `Person` (autor) |
 | Home / institucional | `Organization` + `WebSite` | `SearchAction` (sitelinks search box) |
 | Página de serviço | `ProfessionalService` + `BreadcrumbList` | `FAQPage`, `Offer` |
-| Qualquer página | `BreadcrumbList` | — |
+| Qualquer página | `BreadcrumbList` | (nenhum) |
 
 > **Regra de ouro:** nunca marcar como schema algo que não está visível no conteúdo da página. O Google penaliza schema enganoso.
 
 ---
 
-### 7.1 BlogPosting — template mínimo (por artigo)
+### 7.1 BlogPosting: template mínimo (por artigo)
 
 Injetar via `<script type="application/ld+json">` no `<head>` ou antes do `</body>`. No site Otne, o template de post deve gerar isso automaticamente a partir dos metadados do artigo.
 
@@ -515,7 +515,7 @@ Injetar via `<script type="application/ld+json">` no `<head>` ou antes do `</bod
 
 ---
 
-### 7.2 FAQPage — template mínimo (quando o artigo tiver FAQ)
+### 7.2 FAQPage: template mínimo (quando o artigo tiver FAQ)
 
 Adicionar **junto** ao `BlogPosting`, não no lugar dele. O bloco de FAQ do JSON-LD deve espelhar exatamente as perguntas e respostas visíveis na página.
 
@@ -544,11 +544,11 @@ Adicionar **junto** ao `BlogPosting`, não no lugar dele. O bloco de FAQ do JSON
 }
 ```
 
-> **Atenção:** o Google limita a exibição de FAQs no resultado. Priorize as 3–5 perguntas mais relevantes para snippet. Mínimo do guia: **5 perguntas** no texto e no JSON-LD.
+> **Atenção:** o Google limita a exibição de FAQs no resultado. Priorize as 3-5 perguntas mais relevantes para snippet. Mínimo do guia: **5 perguntas** no texto e no JSON-LD.
 
 ---
 
-### 7.3 BreadcrumbList — template mínimo (todas as páginas)
+### 7.3 BreadcrumbList: template mínimo (todas as páginas)
 
 ```json
 {
@@ -579,7 +579,7 @@ Adicionar **junto** ao `BlogPosting`, não no lugar dele. O bloco de FAQ do JSON
 
 ---
 
-### 7.4 Organization + WebSite — configurar uma vez (home / global)
+### 7.4 Organization + WebSite: configurar uma vez (home / global)
 
 Esses schemas descrevem **a empresa**, não o artigo. Devem ser injetados **uma única vez**, no template global ou na home. Não repetir em cada post.
 
@@ -615,7 +615,7 @@ Esses schemas descrevem **a empresa**, não o artigo. Devem ser injetados **uma 
 
 ---
 
-### 7.5 LocalBusiness / ProfessionalService — para ranqueamento local
+### 7.5 LocalBusiness / ProfessionalService: para ranqueamento local
 
 Se a Otne atende clientes em uma cidade ou região específica, esse schema é fundamental para aparecer em buscas do tipo "agência SEO em São Paulo".
 
@@ -649,11 +649,11 @@ Se a Otne atende clientes em uma cidade ou região específica, esse schema é f
 }
 ```
 
-> Preencher com os dados reais da Otne antes de publicar. Manter **consistente** com Google Business Profile (mesmo nome, endereço e telefone — NAP).
+> Preencher com os dados reais da Otne antes de publicar. Manter **consistente** com Google Business Profile (mesmo nome, endereço e telefone, NAP).
 
 ---
 
-### 7.6 Person — autor do artigo (reforço de E-E-A-T)
+### 7.6 Person: autor do artigo (reforço de E-E-A-T)
 
 Opcional, mas recomendado para artigos assinados por especialistas identificáveis.
 
@@ -678,8 +678,8 @@ Opcional, mas recomendado para artigos assinados por especialistas identificáve
 
 ### 7.7 Como validar (obrigatório antes de publicar)
 
-1. **Rich Results Test** — [search.google.com/test/rich-results](https://search.google.com/test/rich-results): cola a URL ou o código e verifica se o schema está elegível para rich result.
-2. **Schema Markup Validator** — [validator.schema.org](https://validator.schema.org): validação técnica completa do JSON-LD.
+1. **Rich Results Test**: [search.google.com/test/rich-results](https://search.google.com/test/rich-results): cola a URL ou o código e verifica se o schema está elegível para rich result.
+2. **Schema Markup Validator**: [validator.schema.org](https://validator.schema.org): validação técnica completa do JSON-LD.
 3. **Google Search Console → Melhorias**: após publicar, monitorar erros de schema na propriedade `www.otne.com.br`.
 
 > **Regra de automação:** o script de publicação deve **rejeitar** artigos com JSON-LD inválido ou ausente nos campos obrigatórios (`headline`, `datePublished`, `author` no `BlogPosting`).
@@ -698,7 +698,7 @@ schema_extra:
     usar: false         # não aplicável neste artigo
 ```
 
-Se `usar: true` e o tipo for `FAQPage`, o script deve gerar o JSON-LD automaticamente a partir do bloco `faq:` já existente no payload — sem duplicar dados.
+Se `usar: true` e o tipo for `FAQPage`, o script deve gerar o JSON-LD automaticamente a partir do bloco `faq:` já existente no payload, sem duplicar dados.
 
 ---
 
