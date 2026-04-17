@@ -83,6 +83,7 @@ export default function BlogPost() {
     <div className="min-h-screen bg-background relative">
       <ScrollProgress />
       <SchemaMarkup data={articleSchema} />
+      {post.faqJsonLd ? <SchemaMarkup data={post.faqJsonLd} /> : null}
       <Navbar />
       
       <main className="pt-32 pb-20 container mx-auto px-6">

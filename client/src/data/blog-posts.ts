@@ -11,6 +11,10 @@ import linkBuildingImg from "@/assets/images/blog/link-building-network.jpg";
 import aiTrustImg from "@/assets/images/blog/ai-trust-human.jpg";
 import marketingDigitalImg from "@/assets/images/blog/marketing-digital-empreendedores.png";
 import aparecerNasBuscasImg from "@/assets/images/blog/aparecer-nas-buscas.jpg";
+import {
+  seoOuInteligenciaArtificialHtml,
+  seoOuInteligenciaArtificialFaqJsonLd,
+} from "./blog-post-content/seo-ou-inteligencia-artificial-onde-apostar-2026";
 
 export interface BlogPost {
   id: string;
@@ -23,6 +27,8 @@ export interface BlogPost {
   category: string;
   readTime: string;
   imageUrl: string;
+  /** JSON-LD opcional (ex.: FAQPage) renderizado em `BlogPost` além do BlogPosting. */
+  faqJsonLd?: Record<string, unknown>;
 }
 
 // Helper function to parse date string to Date object for sorting
@@ -1058,7 +1064,24 @@ const posts: BlogPost[] = [
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
     imageUrl: aparecerNasBuscasImg
-  }
+  },
+  {
+    id: "10",
+    slug: "seo-ou-inteligencia-artificial-onde-apostar-2026",
+    title: "SEO ou IA: onde o seu negócio deve apostar agora?",
+    excerpt:
+      "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial — com checklist e framework de decisão para 2026.",
+    content: seoOuInteligenciaArtificialHtml,
+    author: "Equipe Otne SEO",
+    date: "17 Abr 2026",
+    category: "Tendências",
+    readTime: "12 min",
+    imageUrl: futureSeoImg,
+    faqJsonLd: seoOuInteligenciaArtificialFaqJsonLd as unknown as Record<
+      string,
+      unknown
+    >,
+  },
 ];
 
 export const blogPosts = [...posts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());

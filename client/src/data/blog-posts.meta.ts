@@ -22,6 +22,18 @@ export type BlogPostMeta = {
  */
 export const blogPostsMeta: BlogPostMeta[] = [
   {
+    id: "10",
+    slug: "seo-ou-inteligencia-artificial-onde-apostar-2026",
+    title: "SEO ou IA: onde o seu negócio deve apostar agora?",
+    excerpt:
+      "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial — com checklist e framework de decisão para 2026.",
+    author: "Equipe Otne SEO",
+    date: "17 Abr 2026",
+    category: "Tendências",
+    readTime: "12 min",
+    imageUrl: "/og-image.png",
+  },
+  {
     id: "8",
     slug: "marketing-digital-para-empresarios",
     title:
