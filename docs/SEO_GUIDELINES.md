@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v1.5` |
+| **Revisão** | `v1.6` |
 | **Data** | 2026-04-17 |
-| **Alterações desta revisão** | Seção 1.2 (voz humana e anti-IA), sentence case em títulos, checklist atualizado |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana |
+| **Alterações desta revisão** | Proibição de travessão em todo o texto e metadados |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -109,6 +109,22 @@ O objetivo desta seção é garantir que qualquer leitor — inclusive ferrament
 - ❌ `O Que É GEO — Generative Engine Optimization?`
 
 Aplica-se a: H1, H2, H3, meta title, og:title, títulos de cards no blog e âncoras de links internos.
+
+---
+
+#### Pontuação — travessão proibido
+
+**Regra:** nunca usar travessão (`—` ou `–`) em nenhuma parte do texto, títulos, subtítulos ou metadados.
+
+O travessão é uma marca forte de texto gerado por IA e soa artificial na leitura em PT-BR. Substituir por:
+
+| Em vez de | Usar |
+|---|---|
+| `SEO — o que você precisa saber` | vírgula, dois-pontos ou reescrever a frase |
+| `Resultado — mais tráfego e vendas` | `: resultado: mais tráfego e vendas` |
+| `Ele disse — e repetiu — que...` | vírgulas ou parênteses |
+
+Aplica-se a: corpo do artigo, H1, H2, H3, meta title, meta description, alt text e YAML de briefing.
 
 ---
 
@@ -698,6 +714,7 @@ Antes de finalizar o artigo, verificar:
 - ☐ Qualidade: E-E-A-T demonstrado, conteúdo original, sem plágio.
 - ☐ Voz humana: nenhuma frase-gatilho de IA (ver Seção 1.2); pelo menos uma opinião explícita da agência; exemplo com especificidade brasileira.
 - ☐ Títulos em sentence case: só a primeira letra maiúscula em H1, H2, H3 e meta title (exceto nomes próprios e siglas).
+- ☐ Sem travessão: nenhum `—` ou `–` no texto, títulos, metadados ou alt text.
 - ☐ Imagens: meta de ~1/300 palavras **ou** menos se o texto já for visualmente denso; **sem repetir** o mesmo arquivo no corpo; hero distinto; **alt** único; peso razoável (ver performance).
 - ☐ CTA: Claro e relevante no final.
 - ☐ (Se usar automação) *Payload* YAML com chaves completas: metadados, outline, FAQ (≥5), links internos sugeridos, notas de revisor.
