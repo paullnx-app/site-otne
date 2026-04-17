@@ -22,7 +22,9 @@ export default function BlogPost() {
     title: post ? `${post.title} | Blog Otne SEO` : "Artigo não encontrado",
     description: post ? post.excerpt : "Artigo não encontrado",
     image: post?.imageUrl,
-    type: "article"
+    type: "article",
+    canonicalPath: post ? `/blog/${post.slug}` : undefined,
+    robots: post ? undefined : "noindex, nofollow",
   });
 
   const { content: processedContent, toc } = useMemo(() => {

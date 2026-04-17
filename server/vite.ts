@@ -5,6 +5,7 @@ import { createServer as createViteServer, createLogger } from "vite";
 import { type Server } from "http";
 import viteConfig from "../vite.config";
 import { nanoid } from "nanoid";
+import { installSeoBotHtmlInjection } from "./seo-meta";
 
 const viteLogger = createLogger();
 
@@ -75,6 +76,10 @@ export function serveStatic(app: Express) {
       `Could not find the build directory: ${distPath}, make sure to build the client first`,
     );
   }
+
+  // For crawlers/social preview fetchers, patch the HTML shell with route-specific SEO
+  // (SPA meta tags are primarily updated client-side via `useSEO`).
+  installSeoBotHtmlInjection(app);
 
   app.use(express.static(distPath));
 

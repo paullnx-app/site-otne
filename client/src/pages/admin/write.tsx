@@ -11,7 +11,9 @@ import { useToast } from "@/hooks/use-toast";
 export default function AdminWrite() {
   useSEO({
     title: "Escrever Artigo | Rank.ai Admin",
-    description: "Área administrativa para redação de conteúdo."
+    description: "Área administrativa para redação de conteúdo.",
+    canonicalPath: "/admin/write",
+    robots: "noindex, nofollow",
   });
 
   const { toast } = useToast();

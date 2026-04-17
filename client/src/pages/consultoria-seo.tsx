@@ -137,7 +137,8 @@ const benefits = [
 export default function ConsultoriaSEO() {
   useSEO({
     title: "Consultoria de SEO Estratégica para Empresas | Otne SEO",
-    description: "Aumente seu tráfego orgânico e vendas com nossa Consultoria de SEO. Diagnóstico técnico, estratégia de conteúdo e SEO Local para PMEs."
+    description: "Aumente seu tráfego orgânico e vendas com nossa Consultoria de SEO. Diagnóstico técnico, estratégia de conteúdo e SEO Local para PMEs.",
+    canonicalPath: "/consultoria-seo",
   });
 
   const serviceSchema = {

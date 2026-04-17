@@ -11,7 +11,8 @@ import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
 export default function QuemSomos() {
   useSEO({
     title: "Quem Somos | Otne SEO - Consultoria de SEO Especializada",
-    description: "Conheça a Otne SEO, consultoria focada em resultados reais para PMEs. Nossa missão, valores e por que somos diferentes das agências tradicionais."
+    description: "Conheça a Otne SEO, consultoria focada em resultados reais para PMEs. Nossa missão, valores e por que somos diferentes das agências tradicionais.",
+    canonicalPath: "/quem-somos",
   });
 
   const organizationSchema = {

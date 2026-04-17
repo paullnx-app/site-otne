@@ -8,13 +8,19 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 
 export default function BlogIndex() {
-  useSEO({
-    title: "Blog de SEO | Dicas e Estratégias - Otne SEO",
-    description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google."
-  });
-
   const search = useSearch();
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const canonicalPath =
+    selectedCategory != null
+      ? `/blog?category=${encodeURIComponent(selectedCategory)}`
+      : "/blog";
+
+  useSEO({
+    title: "Blog de SEO | Dicas e Estratégias - Otne SEO",
+    description: "Artigos sobre SEO, Marketing de Conteúdo e Estratégias Digitais para fazer sua empresa crescer no Google.",
+    canonicalPath,
+  });
 
   // Parse category from URL query parameters
   useEffect(() => {

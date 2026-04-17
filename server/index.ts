@@ -85,11 +85,13 @@ app.use((req, res, next) => {
   }
 
   const port = parseInt(process.env.PORT || "5000", 10);
+  // `reusePort` is a Linux-oriented option; on macOS it can throw `ENOTSUP`.
+  const reusePort = process.platform === "linux";
   server.listen(
     {
       port,
       host: "0.0.0.0",
-      reusePort: true,
+      reusePort,
     },
     () => {
       log(`serving on port ${port}`);

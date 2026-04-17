@@ -14,7 +14,8 @@ import { motion } from "framer-motion";
 export default function Home() {
   useSEO({
     title: "Otne SEO | Consultoria de SEO Especializada em PMEs",
-    description: "Aumente suas vendas com SEO estratégico. Consultoria especializada para pequenas e médias empresas que buscam crescimento orgânico real e previsível."
+    description: "Aumente suas vendas com SEO estratégico. Consultoria especializada para pequenas e médias empresas que buscam crescimento orgânico real e previsível.",
+    canonicalPath: "/",
   });
 
   const organizationSchema = {
@@ -126,7 +127,7 @@ export default function Home() {
       <footer className="py-12 border-t border-border bg-secondary/30">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
+            © 2026 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
           </p>
         </div>
       </footer>

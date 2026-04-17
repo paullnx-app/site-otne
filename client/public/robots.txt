@@ -3,6 +3,10 @@ Sitemap: https://www.otne.com.br/sitemap.xml
 # Regras gerais
 User-agent: *
 
+# Áreas internas / rascunhos (não devem ser indexadas)
+Disallow: /admin/
+Disallow: /blog/rascunho
+
 # Permitir LLMs e buscadores modernos
 
 User-agent: OAI-SearchBot
@@ -24,4 +28,4 @@ User-agent: CCBot
 Allow: /
 
 User-agent: GPTBot
-Disallow: /
+Allow: /

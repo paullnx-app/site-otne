@@ -1,50 +1,89 @@
 import { useEffect } from "react";
+import { absoluteUrl } from "@/lib/site";
 
 interface SEOProps {
   title: string;
   description: string;
   image?: string;
   type?: string;
+  robots?: string;
+  canonicalPath?: string;
 }
 
-export function useSEO({ title, description, image, type = "website" }: SEOProps) {
+function upsertMeta(attrs: Record<string, string>) {
+  const selector = Object.entries(attrs)
+    .map(([k, v]) => `[${CSS.escape(k)}="${CSS.escape(v)}"]`)
+    .join("");
+
+  let el = document.head.querySelector(`meta${selector}`) as HTMLMetaElement | null;
+
+  if (!el) {
+    el = document.createElement("meta");
+    for (const [k, v] of Object.entries(attrs)) {
+      el.setAttribute(k, v);
+    }
+    document.head.appendChild(el);
+  }
+
+  return el;
+}
+
+function setMetaContent(attrs: Record<string, string>, content: string) {
+  const el = upsertMeta(attrs);
+  el.setAttribute("content", content);
+}
+
+function upsertLink(rel: string, href: string) {
+  let el = document.head.querySelector(`link[rel="${rel}"]`) as HTMLLinkElement | null;
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", rel);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", href);
+}
+
+export function useSEO({
+  title,
+  description,
+  image,
+  type = "website",
+  robots,
+  canonicalPath,
+}: SEOProps) {
   useEffect(() => {
     // Atualiza título da página
     document.title = title;
-    
-    // Helper para atualizar ou criar meta tags
-    const updateMetaTag = (selector: string, attributeName: string, attributeValue: string, content: string) => {
-      let element = document.querySelector(`meta[${selector}]`);
-      
-      if (!element) {
-        element = document.createElement('meta');
-        element.setAttribute(attributeName, attributeValue);
-        document.head.appendChild(element);
-      }
-      
-      element.setAttribute('content', content);
-    };
+
+    const canonicalUrl = absoluteUrl((canonicalPath ?? window.location.pathname) || "/");
+    const ogImage = image ? absoluteUrl(image) : absoluteUrl("/og-image.png");
+
+    upsertLink("canonical", canonicalUrl);
 
     // Meta Description Padrão
-    updateMetaTag('name="description"', 'name', 'description', description);
+    setMetaContent({ name: "description" }, description);
 
     // Open Graph (Facebook, LinkedIn, WhatsApp)
-    updateMetaTag('property="og:title"', 'property', 'og:title', title);
-    updateMetaTag('property="og:description"', 'property', 'og:description', description);
-    updateMetaTag('property="og:type"', 'property', 'og:type', type);
-    
-    if (image) {
-      updateMetaTag('property="og:image"', 'property', 'og:image', image);
-    }
+    setMetaContent({ property: "og:title" }, title);
+    setMetaContent({ property: "og:description" }, description);
+    setMetaContent({ property: "og:type" }, type);
+    setMetaContent({ property: "og:url" }, canonicalUrl);
+    setMetaContent({ property: "og:site_name" }, "Otne SEO");
+    setMetaContent({ property: "og:locale" }, "pt_BR");
+    setMetaContent({ property: "og:image" }, ogImage);
 
     // Twitter Cards
-    updateMetaTag('name="twitter:title"', 'name', 'twitter:title', title);
-    updateMetaTag('name="twitter:description"', 'name', 'twitter:description', description);
-    
-    if (image) {
-      updateMetaTag('name="twitter:image"', 'name', 'twitter:image', image);
-      updateMetaTag('name="twitter:card"', 'name', 'twitter:card', 'summary_large_image');
-    }
+    setMetaContent({ name: "twitter:title" }, title);
+    setMetaContent({ name: "twitter:description" }, description);
+    setMetaContent({ name: "twitter:image" }, ogImage);
+    setMetaContent({ name: "twitter:card" }, "summary_large_image");
+    setMetaContent({ name: "twitter:url" }, canonicalUrl);
 
-  }, [title, description, image, type]);
+    if (robots) {
+      setMetaContent({ name: "robots" }, robots);
+    } else {
+      const robotsEl = document.head.querySelector('meta[name="robots"]');
+      robotsEl?.remove();
+    }
+  }, [title, description, image, type, robots, canonicalPath]);
 }
