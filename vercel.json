@@ -9,7 +9,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "<https://www.otne.com.br/sitemap.xml>; rel=\"sitemap\", <https://www.otne.com.br/>; rel=\"canonical\""
+          "value": "</.well-known/agent-card.json>; rel=\"describedby\", <https://www.otne.com.br/sitemap.xml>; rel=\"sitemap\""
         }
       ]
     },
