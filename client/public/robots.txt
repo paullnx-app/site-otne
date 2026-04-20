@@ -1,5 +1,8 @@
 Sitemap: https://www.otne.com.br/sitemap.xml
 
+# Preferências de uso por IA (Content Signals — contentsignals.org)
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
 # Regras gerais
 User-agent: *
 
