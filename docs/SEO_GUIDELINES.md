@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v1.7` |
-| **Data** | 2026-04-17 |
-| **Alterações desta revisão** | Links externos: seção 2.1 com programa de parceiros, registro de URLs e regras de matching topical |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros |
+| **Revisão** | `v1.8` |
+| **Data** | 2026-04-21 |
+| **Alterações desta revisão** | Regra **obrigatória** de acentuação/gramática pt-BR (seção 1.2) + validação automática `scripts/validate-ptbr.ts` rodando no `check` |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -42,6 +42,13 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - Sempre que possível, **linke para fontes oficiais, estudos e pesquisas**. Crie o hyperlink para nova aba no local correto. Para links externos, no máximo 2 links.
 - Ao escrever, tenha calma, relaxe, ative seus modos mais humanos, criativos e inteligentes e evite fazer a criação com pressa.
 - Revise erros de português antes da entrega final. Não falhe nisso.
+
+### 1.2. Acentuação, gramática e concordância em pt-BR (obrigatório)
+- **Idioma:** todo o texto (títulos, excerpts, corpo, FAQ, CTAs, alt text, schema) deve ser redigido em **português brasileiro**, com **acentuação completa e correta**. Nunca publicar conteúdo sem os acentos (ex.: "nao", "voce", "tambem", "trafego", "tecnica", "pagina", "acao", "conteudo") ou trocando "ç" por "c".
+- **Concordância e regência:** revise concordância nominal e verbal e o uso de crase antes de publicar. Ex.: "orientadas à tarefa" (não "a tarefa"), "às dúvidas reais", "à frente".
+- **Ortografia:** use o novo acordo ortográfico. Ex.: "ideia" (sem trema), "março" com ç e cedilha, "análise" com acento, "técnico/técnica" com acento.
+- **Coerência de termos:** nomes de produtos do Google devem ser escritos conforme o padrão oficial (Google Search Console, Core Web Vitals, Google Search Central, Helpful Content, Spam Policies). Se um termo é usado em inglês, mantenha a capitalização original.
+- **Validação automática:** o script `scripts/validate-ptbr.ts` é executado dentro de `npm run check` e bloqueia o build quando encontra palavras comuns sem acentuação nos arquivos `src/data/blog-post-content/*.ts`, `src/data/blog-posts.ts` e `src/data/blog-posts.meta.ts`. Se algum termo for um falso positivo legítimo (nome de arquivo, slug de URL, código, verbo no imperativo), trate na lista de exceções do próprio script, não ignorando o erro.
 
 ### Padrões de E-E-A-T (Experiência, Especialização, Autoridade, Confiança):
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").

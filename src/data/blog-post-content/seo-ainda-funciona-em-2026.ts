@@ -17,23 +17,23 @@ export const seoAindaFuncionaEm2026FaqJsonLd = {
       name: "SEO ainda funciona em 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sim, funciona, desde que voce trate SEO como sistema e nao como truque. Em 2026, o que funciona e base tecnica, conteudo de especialista e paginas feitas para converter, nao apenas para atrair visitas.",
+        text: "Sim, funciona, desde que você trate SEO como sistema e não como truque. Em 2026, o que funciona é base técnica, conteúdo de especialista e páginas feitas para converter, não apenas para atrair visitas.",
       },
     },
     {
       "@type": "Question",
-      name: "O que nao funciona mais em SEO?",
+      name: "O que não funciona mais em SEO?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nao funciona bem publicar conteudo raso em escala, ignorar mobile e depender de paginas genericas. Tambem perdeu forca a estrategia de ranquear sem prova real, sem autoria e sem atualizacao.",
+        text: "Não funciona bem publicar conteúdo raso em escala, ignorar mobile e depender de páginas genéricas. Também perdeu força a estratégia de ranquear sem prova real, sem autoria e sem atualização.",
       },
     },
     {
       "@type": "Question",
-      name: "O que e E-E-A-T na pratica?",
+      name: "O que é E-E-A-T na prática?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "E-E-A-T e mostrar experiencia, especializacao, autoridade e confianca. Na pratica, isso aparece em autoria clara, cases, dados verificaveis, paginas transparentes e reputacao fora do seu site.",
+        text: "E-E-A-T é mostrar experiência, especialização, autoridade e confiança. Na prática, isso aparece em autoria clara, cases, dados verificáveis, páginas transparentes e reputação fora do seu site.",
       },
     },
     {
@@ -41,81 +41,81 @@ export const seoAindaFuncionaEm2026FaqJsonLd = {
       name: "SEO local ainda vale a pena no Brasil?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Vale muito para negocios que atendem cidade ou bairro. Perfil da empresa, reviews e paginas por servico e regiao costumam trazer demanda pronta para compra.",
+        text: "Vale muito para negócios que atendem cidade ou bairro. Perfil da empresa, reviews e páginas por serviço e região costumam trazer demanda pronta para compra.",
       },
     },
     {
       "@type": "Question",
-      name: "Como comecar um plano de 90 dias?",
+      name: "Como começar um plano de 90 dias?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Comece com diagnostico tecnico, ajuste paginas de servico e publique um cluster de conteudo baseado em perguntas reais. Meça por lead e revise semanalmente.",
+        text: "Comece com diagnóstico técnico, ajuste as páginas de serviço e publique um cluster de conteúdo baseado em perguntas reais. Meça por lead e revise semanalmente.",
       },
     },
   ],
 } as const;
 
 const sections: string[] = [
-  `<p class="lead"><strong>SEO ainda funciona em 2026?</strong> Sim, com uma condicao: voce precisa parar de tratar SEO como lista de hacks. O SEO que funciona hoje e o que melhora a experiencia do usuario e deixa claro por que sua empresa e a escolha certa.</p>
+  `<p class="lead"><strong>SEO ainda funciona em 2026?</strong> Sim, com uma condição: você precisa parar de tratar SEO como lista de hacks. O SEO que funciona hoje é o que melhora a experiência do usuário e deixa claro por que sua empresa é a escolha certa.</p>
 
-<p>Se voce quer o panorama do ano, aqui esta o pilar: <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">guia completo de SEO para 2026</a>.</p>`,
+<p>Se você quer o panorama do ano, aqui está o pilar: <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">guia completo de SEO para 2026</a>.</p>`,
 
   `<h2>A resposta direta</h2>
-<p><strong>Sim, SEO funciona.</strong> O que mudou foi o filtro. Conteudo raso perdeu espaco. Paginas que resolvem a intencao e convertem ganharam valor.</p>
+<p><strong>Sim, SEO funciona.</strong> O que mudou foi o filtro. Conteúdo raso perdeu espaço. Páginas que resolvem a intenção e convertem ganharam valor.</p>
 
-<p>Para referencia oficial sobre como o Google orienta criacao de conteudo util, use: <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">helpful content no Search Central</a>.</p>`,
+<p>Para referência oficial sobre como o Google orienta a criação de conteúdo útil, use: <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">Helpful Content no Search Central</a>.</p>`,
 
-  `<h2>O que nao funciona mais</h2>
+  `<h2>O que não funciona mais</h2>
 <ul class="space-y-2 list-disc pl-5 mb-6">
-  <li>publicar volume sem revisao e sem experiencia real</li>
-  <li>site lento e ruim no celular</li>
-  <li>pagina de servico generica, sem prova e sem processo</li>
+  <li>publicar volume sem revisão e sem experiência real;</li>
+  <li>site lento e ruim no celular;</li>
+  <li>página de serviço genérica, sem prova e sem processo.</li>
 </ul>`,
 
-  `<h2>Estrategia 1: E-E-A-T com prova verificavel</h2>
-<p>O caminho mais curto para fortalecer E-E-A-T e mostrar prova: quem escreve, o que ja fez e como entrega. Conteudo que parece catalogo de promessas nao sustenta.</p>
+  `<h2>Estratégia 1: E-E-A-T com prova verificável</h2>
+<p>O caminho mais curto para fortalecer E-E-A-T é mostrar prova: quem escreve, o que já fez e como entrega. Conteúdo que parece catálogo de promessas não sustenta.</p>
 
-<img src="${teamImg.src}" alt="Equipe e autoria clara como sinal de experiencia e confianca em SEO" ${bodyImgClass} />`,
+<img src="${teamImg.src}" alt="Equipe e autoria clara como sinal de experiência e confiança em SEO" ${bodyImgClass} />`,
 
-  `<h2>Estrategia 2: SEO local como oportunidade subestimada</h2>
-<p>Para negocio local, o melhor SEO e o que coloca voce no mapa e no top 3. Se isso vale para seu caso, este guia e o ponto de partida: <a href="/blog/seo-local-para-pequenas-empresas" class="text-primary font-bold hover:underline">SEO local para pequenas empresas</a>.</p>
+  `<h2>Estratégia 2: SEO local como oportunidade subestimada</h2>
+<p>Para negócio local, o melhor SEO é o que coloca você no mapa e no top 3. Se isso vale para seu caso, este guia é o ponto de partida: <a href="/blog/seo-local-para-pequenas-empresas" class="text-primary font-bold hover:underline">SEO local para pequenas empresas</a>.</p>
 
-<img src="${localSearchImg.src}" alt="Busca local e mapa como canal de aquisicao em SEO local" ${bodyImgClass} />`,
+<img src="${localSearchImg.src}" alt="Busca local e mapa como canal de aquisição em SEO local" ${bodyImgClass} />`,
 
-  `<h2>Estrategia 3: conteudo baseado em perguntas reais</h2>
-<p>O conteudo que funciona em 2026 nasce do que o cliente pergunta no WhatsApp. Estruture H2 como perguntas e responda em 2 a 3 frases antes de aprofundar. Isso ajuda SEO, AEO e GEO ao mesmo tempo.</p>`,
+  `<h2>Estratégia 3: conteúdo baseado em perguntas reais</h2>
+<p>O conteúdo que funciona em 2026 nasce do que o cliente pergunta no WhatsApp. Estruture H2 como perguntas e responda em 2 ou 3 frases antes de aprofundar. Isso ajuda SEO, AEO e GEO ao mesmo tempo.</p>`,
 
-  `<h2>Roteiro de 90 dias para comecar</h2>
+  `<h2>Roteiro de 90 dias para começar</h2>
 <ol class="space-y-2 list-decimal pl-5 mb-6">
-  <li><strong>Semana 1 a 2:</strong> diagnostico tecnico e correcoes criticas.</li>
-  <li><strong>Semana 3 a 6:</strong> reescrever paginas de servico e criar FAQ.</li>
-  <li><strong>Semana 7 a 12:</strong> publicar 6 conteudos do mesmo cluster e conectar com linkagem interna.</li>
+  <li><strong>Semana 1 a 2:</strong> diagnóstico técnico e correções críticas.</li>
+  <li><strong>Semana 3 a 6:</strong> reescrever as páginas de serviço e criar o FAQ.</li>
+  <li><strong>Semana 7 a 12:</strong> publicar 6 conteúdos do mesmo cluster e conectar com linkagem interna.</li>
 </ol>
 
-<p>Se voce precisa de um site bem estruturado desde a base, um exemplo de referencia de como isso e vendido para PMEs e o portifolio da ConsultingWeb: <a href="https://www.consultingweb.com.br/portfolio" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">sites que ranqueiam no Google</a>.</p>`,
+<p>Se você precisa de um site bem estruturado desde a base, um exemplo de referência de como isso é vendido para PMEs é o portfólio da ConsultingWeb: <a href="https://www.consultingweb.com.br/portfolio" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">sites que ranqueiam no Google</a>.</p>`,
 
   `<h2>FAQ</h2>
 <h3>SEO ainda funciona em 2026?</h3>
-<p>Sim, funciona quando voce trata SEO como sistema: tecnico, conteudo de especialista e paginas feitas para converter.</p>
+<p>Sim, funciona quando você trata SEO como sistema: técnico, conteúdo de especialista e páginas feitas para converter.</p>
 
-<h3>O que nao funciona mais em SEO?</h3>
-<p>Conteudo raso em escala, mobile ruim e paginas genericas sem prova e sem atualizacao.</p>
+<h3>O que não funciona mais em SEO?</h3>
+<p>Conteúdo raso em escala, mobile ruim e páginas genéricas sem prova e sem atualização.</p>
 
-<h3>O que e E-E-A-T na pratica?</h3>
-<p>Autoria clara, cases, dados verificaveis, paginas transparentes e reputacao fora do seu site.</p>
+<h3>O que é E-E-A-T na prática?</h3>
+<p>Autoria clara, cases, dados verificáveis, páginas transparentes e reputação fora do seu site.</p>
 
 <h3>SEO local ainda vale a pena no Brasil?</h3>
-<p>Vale muito para negocio que atende cidade ou bairro, com perfil, reviews e paginas por servico.</p>
+<p>Vale muito para o negócio que atende cidade ou bairro, com perfil, reviews e páginas por serviço.</p>
 
-<h3>Como comecar um plano de 90 dias?</h3>
-<p>Diagnostico tecnico, ajuste paginas de servico e cluster de conteudo baseado em perguntas reais, medindo por lead.</p>`,
+<h3>Como começar um plano de 90 dias?</h3>
+<p>Diagnóstico técnico, ajuste das páginas de serviço e cluster de conteúdo baseado em perguntas reais, medindo por lead.</p>`,
 
-  `<h2>Conclusao com CTA</h2>
-<p>SEO ainda vale a pena. O que nao vale e insistir em estrategia velha com cara de 2020. Se voce quer escolher o que fazer primeiro, com impacto em caixa, fale com a Otne.</p>
+  `<h2>Conclusão com CTA</h2>
+<p>SEO ainda vale a pena. O que não vale é insistir em estratégia velha com cara de 2020. Se você quer escolher o que fazer primeiro, com impacto em caixa, fale com a Otne.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
-  <h3 class="text-2xl font-bold mb-4 text-primary">Veja qual estrategia se aplica ao seu negocio</h3>
-  <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">A gente define prioridades e cronograma realista. Sem promessa magica.</p>
+  <h3 class="text-2xl font-bold mb-4 text-primary">Veja qual estratégia se aplica ao seu negócio</h3>
+  <p class="mb-6 text-muted-foreground max-w-2xl mx-auto">A gente define prioridades e cronograma realista. Sem promessa mágica.</p>
   <div class="flex flex-col sm:flex-row gap-4 justify-center">
     <a href="/consultoria-seo" class="inline-flex items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">Quero um plano de 90 dias</a>
     <a href="/blog" class="inline-flex items-center justify-center border-2 border-primary text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/10 transition-all">Ler mais</a>
@@ -124,4 +124,3 @@ const sections: string[] = [
 ];
 
 export const seoAindaFuncionaEm2026Html = sections.join("\n\n");
-

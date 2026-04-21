@@ -1106,9 +1106,9 @@ const posts: BlogPost[] = [
     id: "19",
     slug: "como-o-google-vai-funcionar-em-2027",
     title:
-      "Como o Google vai funcionar em 2027 e o que seu negocio precisa fazer agora",
+      "Como o Google vai funcionar em 2027 e o que seu negócio precisa fazer agora",
     excerpt:
-      "O CEO do Google apontou a busca agntica como virada. Entenda o impacto no trafego organico e o plano pratico para se preparar no Brasil.",
+      "O CEO do Google apontou a busca agêntica como virada. Entenda o impacto no tráfego orgânico e o plano prático para se preparar no Brasil.",
     content: comoOGoogleVaiFuncionarEm2027Html,
     author: "Equipe Otne SEO",
     date: "20 Fev 2026",
@@ -1125,9 +1125,9 @@ const posts: BlogPost[] = [
     id: "18",
     slug: "core-update-marco-2026",
     title:
-      "Core update de marco de 2026: quem ganhou, quem perdeu e como se recuperar",
+      "Core update de março de 2026: quem ganhou, quem perdeu e como se recuperar",
     excerpt:
-      "O maior update do Google no Q1 de 2026 mudou rankings. Veja sinais no Search Console e um checklist de recuperacao em 30 dias.",
+      "O maior update do Google no Q1 de 2026 mudou rankings. Veja sinais no Search Console e um checklist de recuperação em 30 dias.",
     content: coreUpdateMarco2026Html,
     author: "Equipe Otne SEO",
     date: "27 Fev 2026",
@@ -1140,9 +1140,9 @@ const posts: BlogPost[] = [
   {
     id: "17",
     slug: "5-caracteristicas-sites-cresceram-no-google-2026",
-    title: "5 caracteristicas de sites que cresceram no Google em 2026",
+    title: "5 características de sites que cresceram no Google em 2026",
     excerpt:
-      "O que sites com crescimento organico real tem em comum. Veja 5 padroes e como aplicar no seu negocio com foco em resultado.",
+      "O que sites com crescimento orgânico real têm em comum. Veja 5 padrões e como aplicar no seu negócio com foco em resultado.",
     content: cincoCaracteristicasSitesCresceramGoogle2026Html,
     author: "Equipe Otne SEO",
     date: "06 Mar 2026",
@@ -1161,7 +1161,7 @@ const posts: BlogPost[] = [
     title:
       "Por que o ChatGPT cita alguns sites e ignora outros e como entrar nessa lista",
     excerpt:
-      "Entenda como IAs escolhem fontes para citar e siga um guia pratico para otimizar seu site e ser referenciado por ChatGPT e Gemini.",
+      "Entenda como as IAs escolhem fontes para citar e siga um guia prático para otimizar seu site e ser referenciado por ChatGPT e Gemini.",
     content: porQueChatgptCitaAlgunsSitesHtml,
     author: "Equipe Otne SEO",
     date: "13 Mar 2026",
@@ -1175,9 +1175,9 @@ const posts: BlogPost[] = [
     id: "15",
     slug: "o-que-mudou-na-busca-no-inicio-de-2026",
     title:
-      "O que mudou na busca no inicio de 2026: o resumo que todo empresario precisa ler",
+      "O que mudou na busca no início de 2026: o resumo que todo empresário precisa ler",
     excerpt:
-      "Core update, spam update e busca com IA: o que mudou no Q1 de 2026 e como isso afeta trafego e vendas de negocios no Brasil.",
+      "Core update, spam update e busca com IA: o que mudou no Q1 de 2026 e como isso afeta tráfego e vendas de negócios no Brasil.",
     content: oQueMudouNaBuscaNoInicioDe2026Html,
     author: "Equipe Otne SEO",
     date: "20 Mar 2026",
@@ -1194,9 +1194,9 @@ const posts: BlogPost[] = [
     id: "14",
     slug: "seo-ainda-funciona-em-2026",
     title:
-      "SEO ainda funciona em 2026? A resposta honesta com 3 estrategias que estao dando resultado",
+      "SEO ainda funciona em 2026? A resposta honesta com 3 estratégias que estão dando resultado",
     excerpt:
-      "SEO funciona em 2026 quando voce faz o basico muito bem. Veja 3 estrategias e um roteiro de 90 dias para gerar lead e venda.",
+      "SEO funciona em 2026 quando você faz o básico muito bem. Veja 3 estratégias e um roteiro de 90 dias para gerar lead e venda.",
     content: seoAindaFuncionaEm2026Html,
     author: "Equipe Otne SEO",
     date: "27 Mar 2026",
@@ -1212,9 +1212,9 @@ const posts: BlogPost[] = [
     id: "13",
     slug: "spam-update-marco-2026",
     title:
-      "Spam update de marco de 2026: seu site foi penalizado e como identificar e se recuperar",
+      "Spam update de março de 2026: seu site foi penalizado? Como identificar e se recuperar",
     excerpt:
-      "O Google ficou mais rigido com conteudo sem qualidade. Aprenda a diagnosticar no Search Console e siga um plano de recuperacao.",
+      "O Google ficou mais rígido com conteúdo sem qualidade. Aprenda a diagnosticar no Search Console e siga um plano de recuperação.",
     content: spamUpdateMarco2026Html,
     author: "Equipe Otne SEO",
     date: "03 Abr 2026",
@@ -1227,9 +1227,9 @@ const posts: BlogPost[] = [
   {
     id: "12",
     slug: "turboquant-tecnologia-que-pode-mudar-seo",
-    title: "TurboQuant: a tecnologia que pode mudar tudo que voce sabe sobre SEO",
+    title: "TurboQuant: a tecnologia que pode mudar tudo o que você sabe sobre SEO",
     excerpt:
-      "Entenda o conceito por tras do TurboQuant e use um metodo para avaliar tecnologias emergentes e se preparar sem cair em hype.",
+      "Entenda o conceito por trás do TurboQuant e use um método para avaliar tecnologias emergentes e se preparar sem cair no hype.",
     content: turboquantTecnologiaPodeMudarSeoHtml,
     author: "Equipe Otne SEO",
     date: "10 Abr 2026",
