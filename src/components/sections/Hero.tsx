@@ -1,23 +1,28 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
-import Link from "next/link";
+import heroWebp from "@assets/generated_images/hero-bg.webp";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
-        <Image
-          src={heroBg}
-          alt=""
-          fill
-          priority
-          sizes="100vw"
-          quality={70}
-          placeholder="blur"
-          className="object-cover opacity-30"
-        />
+        <picture className="absolute inset-0 block h-full w-full">
+          {/* AVIF em public/ — Turbopack não optimiza import .avif */}
+          <source srcSet="/hero/hero-bg.avif" type="image/avif" sizes="100vw" />
+          <source srcSet={heroWebp.src} type="image/webp" sizes="100vw" />
+          <Image
+            src={heroWebp}
+            alt=""
+            fill
+            priority
+            fetchPriority="high"
+            sizes="100vw"
+            quality={85}
+            placeholder="blur"
+            className="object-cover opacity-30"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
       </div>
       <div className="container mx-auto px-6 relative z-10 text-center">
@@ -47,7 +52,7 @@ export function Hero() {
           <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
             <Button
               size="lg"
-              className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg w-full shadow-lg shadow-primary/20"
+              className="h-14 px-8 bg-primary text-primary-foreground font-bold hover:bg-primary/90 rounded-xl text-lg w-full shadow-lg shadow-primary/20"
             >
               Quero um diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
