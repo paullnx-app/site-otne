@@ -1,0 +1,13 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/admin/write/page": "/admin/write",
+  "/blog/[slug]/page": "/blog/[slug]",
+  "/blog/page": "/blog",
+  "/blog/rascunho/page": "/blog/rascunho",
+  "/consultoria-seo/page": "/consultoria-seo",
+  "/page": "/",
+  "/quem-somos/page": "/quem-somos",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml"
+}
