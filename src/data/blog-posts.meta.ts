@@ -22,6 +22,108 @@ export type BlogPostMeta = {
  */
 export const blogPostsMeta: BlogPostMeta[] = [
   {
+    id: "19",
+    slug: "como-o-google-vai-funcionar-em-2027",
+    title:
+      "Como o Google vai funcionar em 2027 e o que seu negocio precisa fazer agora",
+    excerpt:
+      "O CEO do Google apontou a busca agntica como virada. Entenda o impacto no trafego organico e o plano pratico para se preparar no Brasil.",
+    author: "Equipe Otne SEO",
+    date: "20 Fev 2026",
+    category: "Tendências",
+    readTime: "10 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "18",
+    slug: "core-update-marco-2026",
+    title:
+      "Core update de marco de 2026: quem ganhou, quem perdeu e como se recuperar",
+    excerpt:
+      "O maior update do Google no Q1 de 2026 mudou rankings. Veja sinais no Search Console e um checklist de recuperacao em 30 dias.",
+    author: "Equipe Otne SEO",
+    date: "27 Fev 2026",
+    category: "Atualizações do Google",
+    readTime: "12 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "17",
+    slug: "5-caracteristicas-sites-cresceram-no-google-2026",
+    title: "5 caracteristicas de sites que cresceram no Google em 2026",
+    excerpt:
+      "O que sites com crescimento organico real tem em comum. Veja 5 padroes e como aplicar no seu negocio com foco em resultado.",
+    author: "Equipe Otne SEO",
+    date: "06 Mar 2026",
+    category: "Estudos",
+    readTime: "11 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "16",
+    slug: "por-que-chatgpt-cita-alguns-sites",
+    title:
+      "Por que o ChatGPT cita alguns sites e ignora outros e como entrar nessa lista",
+    excerpt:
+      "Entenda como IAs escolhem fontes para citar e siga um guia pratico para otimizar seu site e ser referenciado por ChatGPT e Gemini.",
+    author: "Equipe Otne SEO",
+    date: "13 Mar 2026",
+    category: "Inteligência Artificial",
+    readTime: "12 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "15",
+    slug: "o-que-mudou-na-busca-no-inicio-de-2026",
+    title:
+      "O que mudou na busca no inicio de 2026: o resumo que todo empresario precisa ler",
+    excerpt:
+      "Core update, spam update e busca com IA: o que mudou no Q1 de 2026 e como isso afeta trafego e vendas de negocios no Brasil.",
+    author: "Equipe Otne SEO",
+    date: "20 Mar 2026",
+    category: "Tendências",
+    readTime: "9 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "14",
+    slug: "seo-ainda-funciona-em-2026",
+    title:
+      "SEO ainda funciona em 2026? A resposta honesta com 3 estrategias que estao dando resultado",
+    excerpt:
+      "SEO funciona em 2026 quando voce faz o basico muito bem. Veja 3 estrategias e um roteiro de 90 dias para gerar lead e venda.",
+    author: "Equipe Otne SEO",
+    date: "27 Mar 2026",
+    category: "Estratégia",
+    readTime: "10 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "13",
+    slug: "spam-update-marco-2026",
+    title:
+      "Spam update de marco de 2026: seu site foi penalizado e como identificar e se recuperar",
+    excerpt:
+      "O Google ficou mais rigido com conteudo sem qualidade. Aprenda a diagnosticar no Search Console e siga um plano de recuperacao.",
+    author: "Equipe Otne SEO",
+    date: "03 Abr 2026",
+    category: "Atualizações do Google",
+    readTime: "11 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
+    id: "12",
+    slug: "turboquant-tecnologia-que-pode-mudar-seo",
+    title: "TurboQuant: a tecnologia que pode mudar tudo que voce sabe sobre SEO",
+    excerpt:
+      "Entenda o conceito por tras do TurboQuant e use um metodo para avaliar tecnologias emergentes e se preparar sem cair em hype.",
+    author: "Equipe Otne SEO",
+    date: "10 Abr 2026",
+    category: "Tecnologia",
+    readTime: "9 min",
+    imageUrl: "/opengraph.jpg",
+  },
+  {
     id: "11",
     slug: "empresa-aparece-chatgpt-como-testar",
     title: "Sua empresa aparece quando alguém pergunta ao ChatGPT?",

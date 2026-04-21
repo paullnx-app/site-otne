@@ -4,6 +4,7 @@ dist
 .DS_Store
 *.tar.gz
 next-env.d.ts
+tsconfig.tsbuildinfo
 
 # iCloud Drive duplicates
 * 2.*

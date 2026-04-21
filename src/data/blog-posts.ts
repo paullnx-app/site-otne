@@ -19,6 +19,38 @@ import {
   empresaApareceChatgptHtml,
   empresaApareceChatgptFaqJsonLd,
 } from "./blog-post-content/empresa-aparece-chatgpt-como-testar";
+import {
+  comoOGoogleVaiFuncionarEm2027Html,
+  comoOGoogleVaiFuncionarEm2027FaqJsonLd,
+} from "./blog-post-content/como-o-google-vai-funcionar-em-2027";
+import {
+  coreUpdateMarco2026Html,
+  coreUpdateMarco2026FaqJsonLd,
+} from "./blog-post-content/core-update-marco-2026-quem-ganhou-quem-perdeu";
+import {
+  cincoCaracteristicasSitesCresceramGoogle2026Html,
+  cincoCaracteristicasSitesCresceramGoogle2026FaqJsonLd,
+} from "./blog-post-content/5-caracteristicas-sites-cresceram-no-google-2026";
+import {
+  porQueChatgptCitaAlgunsSitesHtml,
+  porQueChatgptCitaAlgunsSitesFaqJsonLd,
+} from "./blog-post-content/por-que-chatgpt-cita-alguns-sites";
+import {
+  oQueMudouNaBuscaNoInicioDe2026Html,
+  oQueMudouNaBuscaNoInicioDe2026FaqJsonLd,
+} from "./blog-post-content/o-que-mudou-na-busca-no-inicio-de-2026";
+import {
+  seoAindaFuncionaEm2026Html,
+  seoAindaFuncionaEm2026FaqJsonLd,
+} from "./blog-post-content/seo-ainda-funciona-em-2026";
+import {
+  spamUpdateMarco2026Html,
+  spamUpdateMarco2026FaqJsonLd,
+} from "./blog-post-content/spam-update-marco-2026-como-identificar-recuperar";
+import {
+  turboquantTecnologiaPodeMudarSeoHtml,
+  turboquantTecnologiaPodeMudarSeoFaqJsonLd,
+} from "./blog-post-content/turboquant-tecnologia-que-pode-mudar-seo";
 import empresaChatgptHeroImg from "@/assets/images/blog/midia-imprensa.jpg";
 
 export interface BlogPost {
@@ -1069,6 +1101,146 @@ const posts: BlogPost[] = [
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
     imageUrl: aparecerNasBuscasImg.src
+  },
+  {
+    id: "19",
+    slug: "como-o-google-vai-funcionar-em-2027",
+    title:
+      "Como o Google vai funcionar em 2027 e o que seu negocio precisa fazer agora",
+    excerpt:
+      "O CEO do Google apontou a busca agntica como virada. Entenda o impacto no trafego organico e o plano pratico para se preparar no Brasil.",
+    content: comoOGoogleVaiFuncionarEm2027Html,
+    author: "Equipe Otne SEO",
+    date: "20 Fev 2026",
+    category: "Tendências",
+    readTime: "10 min",
+    imageUrl: futureSeoImg.src,
+    faqJsonLd:
+      comoOGoogleVaiFuncionarEm2027FaqJsonLd as unknown as Record<
+        string,
+        unknown
+      >,
+  },
+  {
+    id: "18",
+    slug: "core-update-marco-2026",
+    title:
+      "Core update de marco de 2026: quem ganhou, quem perdeu e como se recuperar",
+    excerpt:
+      "O maior update do Google no Q1 de 2026 mudou rankings. Veja sinais no Search Console e um checklist de recuperacao em 30 dias.",
+    content: coreUpdateMarco2026Html,
+    author: "Equipe Otne SEO",
+    date: "27 Fev 2026",
+    category: "Atualizações do Google",
+    readTime: "12 min",
+    imageUrl: technicalSeoImg.src,
+    faqJsonLd:
+      coreUpdateMarco2026FaqJsonLd as unknown as Record<string, unknown>,
+  },
+  {
+    id: "17",
+    slug: "5-caracteristicas-sites-cresceram-no-google-2026",
+    title: "5 caracteristicas de sites que cresceram no Google em 2026",
+    excerpt:
+      "O que sites com crescimento organico real tem em comum. Veja 5 padroes e como aplicar no seu negocio com foco em resultado.",
+    content: cincoCaracteristicasSitesCresceramGoogle2026Html,
+    author: "Equipe Otne SEO",
+    date: "06 Mar 2026",
+    category: "Estudos",
+    readTime: "11 min",
+    imageUrl: linkBuildingImg.src,
+    faqJsonLd:
+      cincoCaracteristicasSitesCresceramGoogle2026FaqJsonLd as unknown as Record<
+        string,
+        unknown
+      >,
+  },
+  {
+    id: "16",
+    slug: "por-que-chatgpt-cita-alguns-sites",
+    title:
+      "Por que o ChatGPT cita alguns sites e ignora outros e como entrar nessa lista",
+    excerpt:
+      "Entenda como IAs escolhem fontes para citar e siga um guia pratico para otimizar seu site e ser referenciado por ChatGPT e Gemini.",
+    content: porQueChatgptCitaAlgunsSitesHtml,
+    author: "Equipe Otne SEO",
+    date: "13 Mar 2026",
+    category: "Inteligência Artificial",
+    readTime: "12 min",
+    imageUrl: mediaImg.src,
+    faqJsonLd:
+      porQueChatgptCitaAlgunsSitesFaqJsonLd as unknown as Record<string, unknown>,
+  },
+  {
+    id: "15",
+    slug: "o-que-mudou-na-busca-no-inicio-de-2026",
+    title:
+      "O que mudou na busca no inicio de 2026: o resumo que todo empresario precisa ler",
+    excerpt:
+      "Core update, spam update e busca com IA: o que mudou no Q1 de 2026 e como isso afeta trafego e vendas de negocios no Brasil.",
+    content: oQueMudouNaBuscaNoInicioDe2026Html,
+    author: "Equipe Otne SEO",
+    date: "20 Mar 2026",
+    category: "Tendências",
+    readTime: "9 min",
+    imageUrl: aparecerNasBuscasImg.src,
+    faqJsonLd:
+      oQueMudouNaBuscaNoInicioDe2026FaqJsonLd as unknown as Record<
+        string,
+        unknown
+      >,
+  },
+  {
+    id: "14",
+    slug: "seo-ainda-funciona-em-2026",
+    title:
+      "SEO ainda funciona em 2026? A resposta honesta com 3 estrategias que estao dando resultado",
+    excerpt:
+      "SEO funciona em 2026 quando voce faz o basico muito bem. Veja 3 estrategias e um roteiro de 90 dias para gerar lead e venda.",
+    content: seoAindaFuncionaEm2026Html,
+    author: "Equipe Otne SEO",
+    date: "27 Mar 2026",
+    category: "Estratégia",
+    readTime: "10 min",
+    imageUrl: marketingDigitalImg.src,
+    faqJsonLd: seoAindaFuncionaEm2026FaqJsonLd as unknown as Record<
+      string,
+      unknown
+    >,
+  },
+  {
+    id: "13",
+    slug: "spam-update-marco-2026",
+    title:
+      "Spam update de marco de 2026: seu site foi penalizado e como identificar e se recuperar",
+    excerpt:
+      "O Google ficou mais rigido com conteudo sem qualidade. Aprenda a diagnosticar no Search Console e siga um plano de recuperacao.",
+    content: spamUpdateMarco2026Html,
+    author: "Equipe Otne SEO",
+    date: "03 Abr 2026",
+    category: "Atualizações do Google",
+    readTime: "11 min",
+    imageUrl: aiTrustImg.src,
+    faqJsonLd:
+      spamUpdateMarco2026FaqJsonLd as unknown as Record<string, unknown>,
+  },
+  {
+    id: "12",
+    slug: "turboquant-tecnologia-que-pode-mudar-seo",
+    title: "TurboQuant: a tecnologia que pode mudar tudo que voce sabe sobre SEO",
+    excerpt:
+      "Entenda o conceito por tras do TurboQuant e use um metodo para avaliar tecnologias emergentes e se preparar sem cair em hype.",
+    content: turboquantTecnologiaPodeMudarSeoHtml,
+    author: "Equipe Otne SEO",
+    date: "10 Abr 2026",
+    category: "Tecnologia",
+    readTime: "9 min",
+    imageUrl: futureSeoImg.src,
+    faqJsonLd:
+      turboquantTecnologiaPodeMudarSeoFaqJsonLd as unknown as Record<
+        string,
+        unknown
+      >,
   },
   {
     id: "11",
