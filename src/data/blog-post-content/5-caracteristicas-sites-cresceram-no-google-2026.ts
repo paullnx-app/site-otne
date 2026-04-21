@@ -168,8 +168,7 @@ const sections: string[] = [
 <h3>Como aplicar isso em um site pequeno?</h3>
 <p>Comece com 10 páginas que geram receita ou lead, ajuste a parte técnica, crie FAQ e conecte com linkagem interna.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Se você quer crescer no Google em 2026, o caminho passa menos por volume e mais por consistência. Quando esses cinco pontos entram em rotina, o resultado costuma aparecer.</p>
+  `<p>Se você quer crescer no Google em 2026, o caminho passa menos por volume e mais por consistência. Quando esses cinco pontos entram em rotina, o resultado costuma aparecer.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Faça a auditoria gratuita do seu site</h3>

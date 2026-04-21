@@ -110,8 +110,7 @@ const sections: string[] = [
 <h3>Como começar um plano de 90 dias?</h3>
 <p>Diagnóstico técnico, ajuste das páginas de serviço e cluster de conteúdo baseado em perguntas reais, medindo por lead.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>SEO ainda vale a pena. O que não vale é insistir em estratégia velha com cara de 2020. Se você quer escolher o que fazer primeiro, com impacto em caixa, fale com a Otne.</p>
+  `<p>SEO ainda vale a pena. O que não vale é insistir em estratégia velha com cara de 2020. Se você quer escolher o que fazer primeiro, com impacto em caixa, fale com a Otne.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Veja qual estratégia se aplica ao seu negócio</h3>

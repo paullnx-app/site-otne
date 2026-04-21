@@ -213,6 +213,19 @@ interface Issue {
   context: string;
 }
 
+/**
+ * Rótulos da instrução de produção que NUNCA podem virar heading do artigo.
+ * São nomes de seções do briefing interno, não títulos para o leitor.
+ */
+const INSTRUCTION_LABEL_HEADINGS: RegExp[] = [
+  /<h[1-6][^>]*>\s*Conclus(?:ão|ao)\s+com\s+CTA\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*Introdu(?:ção|cao)\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*Desenvolvimento\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*Gancho\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*Lead\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*CTA\s+final\s*<\/h[1-6]>/i,
+];
+
 function validateFile(relPath: string): Issue[] {
   const abs = join(ROOT, relPath);
   const text = readFileSync(abs, "utf8");
@@ -220,6 +233,18 @@ function validateFile(relPath: string): Issue[] {
 
   text.split("\n").forEach((rawLine, idx) => {
     if (IGNORE_LINE_PATTERNS.some((re) => re.test(rawLine))) return;
+
+    for (const pattern of INSTRUCTION_LABEL_HEADINGS) {
+      const m = rawLine.match(pattern);
+      if (m) {
+        issues.push({
+          file: relPath,
+          line: idx + 1,
+          word: `rótulo-de-instrução: "${m[0]}"`,
+          context: rawLine.trim().slice(0, 160),
+        });
+      }
+    }
 
     let stripped = rawLine;
     for (const pattern of INLINE_STRIP_PATTERNS) {

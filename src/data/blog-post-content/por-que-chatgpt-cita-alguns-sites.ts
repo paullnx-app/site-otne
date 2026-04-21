@@ -117,8 +117,7 @@ const sections: string[] = [
 <h3>Em quanto tempo dá para ver melhora?</h3>
 <p>As melhorias técnicas e de estrutura aparecem antes. Para virar referência, pense em 60 a 120 dias de consistência.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Ser citado por IA é consequência de ser fonte. E fonte se constrói com método. Se você quer um plano de GEO e SEO que dê para executar, fale com a Otne.</p>
+  `<p>Ser citado por IA é consequência de ser fonte. E fonte se constrói com método. Se você quer um plano de GEO e SEO que dê para executar, fale com a Otne.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Baixe o guia de otimização GEO para seu site</h3>

@@ -120,8 +120,7 @@ const sections: string[] = [
 <h3>Quanto tempo leva para recuperar?</h3>
 <p>Em geral, de 60 a 120 dias de consistência, dependendo do tamanho e do nível de limpeza.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Se o seu site foi atingido, a saída é limpar e reforçar utilidade, e não maquiar. Quem corrige agora costuma sair mais forte no próximo ciclo.</p>
+  `<p>Se o seu site foi atingido, a saída é limpar e reforçar utilidade, e não maquiar. Quem corrige agora costuma sair mais forte no próximo ciclo.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Faça a auditoria de conteúdo do seu site</h3>

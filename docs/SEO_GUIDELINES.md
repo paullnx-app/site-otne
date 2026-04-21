@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v1.8` |
+| **Revisão** | `v1.9` |
 | **Data** | 2026-04-21 |
-| **Alterações desta revisão** | Regra **obrigatória** de acentuação/gramática pt-BR (seção 1.2) + validação automática `scripts/validate-ptbr.ts` rodando no `check` |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória |
+| **Alterações desta revisão** | Proibição explícita de rótulos da instrução de produção (ex.: "Conclusão com CTA", "Introdução", "Gancho", "Lead", "CTA final") como headings visíveis no artigo publicado (seção 1.3) + validação automática no `validate-ptbr.ts` |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória · v1.9 rótulos de instrução proibidos como heading |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -49,6 +49,12 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Ortografia:** use o novo acordo ortográfico. Ex.: "ideia" (sem trema), "março" com ç e cedilha, "análise" com acento, "técnico/técnica" com acento.
 - **Coerência de termos:** nomes de produtos do Google devem ser escritos conforme o padrão oficial (Google Search Console, Core Web Vitals, Google Search Central, Helpful Content, Spam Policies). Se um termo é usado em inglês, mantenha a capitalização original.
 - **Validação automática:** o script `scripts/validate-ptbr.ts` é executado dentro de `npm run check` e bloqueia o build quando encontra palavras comuns sem acentuação nos arquivos `src/data/blog-post-content/*.ts`, `src/data/blog-posts.ts` e `src/data/blog-posts.meta.ts`. Se algum termo for um falso positivo legítimo (nome de arquivo, slug de URL, código, verbo no imperativo), trate na lista de exceções do próprio script, não ignorando o erro.
+
+### 1.3. Rótulos da instrução de produção não vão para o artigo
+- A estrutura do briefing usa nomes como **"Gancho"**, **"Lead"**, **"Introdução"**, **"Desenvolvimento"**, **"Conclusão com CTA"**, **"CTA final"** para orientar quem escreve. Esses rótulos **nunca** podem aparecer como heading (`<h1>`…`<h6>`) ou como título visível no artigo publicado.
+- O que entra no artigo é o conteúdo da seção, não o nome da caixa. Se a seção de fechamento termina com um bloco de CTA, ela não precisa (nem deve) carregar um heading "Conclusão com CTA" antes — basta o parágrafo final + o bloco do CTA.
+- Headings válidos são aqueles que o leitor reconheceria em uma revista ou enciclopédia (temas, perguntas, comparações, checklists). Se você está prestes a escrever um heading que repete um nome de seção do briefing, reformule: ou remova o heading, ou transforme-o em uma pergunta/afirmação útil para o leitor.
+- **Validação automática:** o mesmo `scripts/validate-ptbr.ts` detecta rótulos proibidos em tags de heading e falha o `check` se algum aparecer.
 
 ### Padrões de E-E-A-T (Experiência, Especialização, Autoridade, Confiança):
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").

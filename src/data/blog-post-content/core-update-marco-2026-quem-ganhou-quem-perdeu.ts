@@ -145,8 +145,7 @@ const sections: string[] = [
 <h3>Em quanto tempo dá para recuperar depois de um core update?</h3>
 <p>Melhoras pontuais podem estabilizar em 30 dias, mas a recuperação completa costuma exigir consistência por 60 a 120 dias.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Core update não perdoa site sem método. Se você quer sair do modo reativo e montar um plano de recuperação com prioridades claras, fale com a Otne.</p>
+  `<p>Core update não perdoa site sem método. Se você quer sair do modo reativo e montar um plano de recuperação com prioridades claras, fale com a Otne.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Analise se seu site foi impactado</h3>

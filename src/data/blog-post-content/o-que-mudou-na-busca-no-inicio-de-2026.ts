@@ -106,8 +106,7 @@ const sections: string[] = [
 <h3>Quais são as 3 prioridades para o próximo trimestre?</h3>
 <p>Corrigir a base técnica, fortalecer as páginas que geram lead e criar um cluster de autoridade com perguntas reais.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>O resumo executivo do Q1 de 2026 é simples: quem trabalha com método ganha respiro, quem vive de atalho sofre. Se você quer montar um plano trimestral e medir por lead, fale com a Otne.</p>
+  `<p>O resumo executivo do Q1 de 2026 é simples: quem trabalha com método ganha respiro, quem vive de atalho sofre. Se você quer montar um plano trimestral e medir por lead, fale com a Otne.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Assine e receba o próximo resumo trimestral</h3>

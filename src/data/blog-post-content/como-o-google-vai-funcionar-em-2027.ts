@@ -178,8 +178,7 @@ const sections: string[] = [
 <h3>O que um negócio brasileiro pode fazer agora para se preparar?</h3>
 <p>Fortalecer a base técnica, publicar conteúdo de especialista com dados verificáveis, manter consistência de marca e construir autoridade com menções externas.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Se 2027 for mesmo o ponto em que a busca vira tarefa, a pergunta muda: você quer disputar clique ou quer ser a fonte em que o sistema confia? Quem começa agora tem vantagem de composto.</p>
+  `<p>Se 2027 for mesmo o ponto em que a busca vira tarefa, a pergunta muda: você quer disputar clique ou quer ser a fonte em que o sistema confia? Quem começa agora tem vantagem de composto.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Prepare seu conteúdo para a busca do futuro</h3>

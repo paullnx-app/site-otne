@@ -120,8 +120,7 @@ const sections: string[] = [
 <h3>O que fazer agora para não ser pego de surpresa?</h3>
 <p>Base técnica, cluster de autoridade e menções externas. Esses ativos tendem a continuar valendo.</p>`,
 
-  `<h2>Conclusão com CTA</h2>
-<p>Se você quer ficar à frente, a estratégia não é apostar em nomes. É construir ativos que sobrevivem à mudança de interface.</p>
+  `<p>Se você quer ficar à frente, a estratégia não é apostar em nomes. É construir ativos que sobrevivem à mudança de interface.</p>
 
 <div class="bg-primary/5 p-8 rounded-lg my-10 text-center border border-primary/20 shadow-sm">
   <h3 class="text-2xl font-bold mb-4 text-primary">Assine e receba alertas sobre tecnologia e SEO</h3>
