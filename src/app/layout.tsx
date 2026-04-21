@@ -11,8 +11,8 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 const roboto = Roboto({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  weight: ["400", "700"],
   variable: "--font-roboto",
   display: "swap",
 });

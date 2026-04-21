@@ -1,7 +1,5 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { Search, Map, Settings, TrendingUp, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import prismImg from "@assets/generated_images/3D_glass_prism_on_white_background_with_orange_light_4ab32b32.png";
 
@@ -32,14 +30,19 @@ const steps = [
   }
 ];
 
-import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
-
 export function Methodology() {
   return (
     <section id="metodologia" className="py-24 bg-secondary/30 relative overflow-hidden">
       {/* Decorative Prism Background */}
-      <div className="absolute left-0 top-1/4 w-1/3 opacity-10 pointer-events-none">
-        <img src={prismImg.src} alt="" className="w-full h-auto mix-blend-multiply" />
+      <div className="absolute left-0 top-1/4 w-1/3 opacity-10 pointer-events-none select-none" aria-hidden="true">
+        <Image
+          src={prismImg}
+          alt=""
+          loading="lazy"
+          sizes="33vw"
+          placeholder="blur"
+          className="w-full h-auto mix-blend-multiply"
+        />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -57,46 +60,42 @@ export function Methodology() {
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
-            <motion.div
-              key={step.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="flex bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group"
-            >
-              <div className="flex flex-col gap-6 w-full">
-                <div className="flex items-center justify-between">
+              <div
+                key={step.id}
+                className="reveal-up flex bg-white p-8 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group"
+              >
+                <div className="flex flex-col gap-6 w-full">
+                  <div className="flex items-center justify-between">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
-                        <Icon className="w-7 h-7" />
+                      <Icon className="w-7 h-7" />
                     </div>
                     <span className="text-5xl font-display font-bold text-slate-100 select-none">
-                        {step.id}
+                      {step.id}
                     </span>
-                </div>
-                
-                <div>
+                  </div>
+
+                  <div>
                     <h3 className="text-xl font-display font-bold text-foreground mb-3">
-                        {step.title}
+                      {step.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                        {step.desc}
+                      {step.desc}
                     </p>
+                  </div>
                 </div>
               </div>
-            </motion.div>
-          )})}
+            );
+          })}
         </div>
 
         <div className="mt-16 text-center">
-           <p className="text-foreground mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
-           <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="inline-block">
-             <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20">
-               Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
-             </Button>
-           </a>
+          <p className="text-foreground mb-6 font-medium">Quer ver como isso se aplica ao seu negócio?</p>
+          <a href="https://wa.me/553133609525" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <Button size="lg" className="h-14 px-8 bg-primary text-white font-bold hover:bg-primary/90 rounded-xl text-lg shadow-lg shadow-primary/20">
+              Solicitar diagnóstico gratuito <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </a>
         </div>
-
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description:
       "Consultoria de SEO estratégica para pequenas e médias empresas.",
     url: "https://www.otne.com.br/consultoria-seo",
-    images: [{ url: "https://www.otne.com.br/og-image.png" }],
+    images: [{ url: "https://www.otne.com.br/opengraph.jpg" }],
   },
 };
 

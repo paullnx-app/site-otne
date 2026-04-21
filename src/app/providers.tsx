@@ -1,7 +1,5 @@
 "use client";
 
-import { QueryClientProvider } from "@tanstack/react-query";
-import { queryClient } from "@/lib/queryClient";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/toaster";
 import dynamic from "next/dynamic";
@@ -14,12 +12,10 @@ const SmoothScroll = dynamic(
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <SmoothScroll />
-        <Toaster />
-        {children}
-      </TooltipProvider>
-    </QueryClientProvider>
+    <TooltipProvider>
+      <SmoothScroll />
+      <Toaster />
+      {children}
+    </TooltipProvider>
   );
 }

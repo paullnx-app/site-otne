@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import { Calendar, ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
 import type { BlogPost } from "@/data/blog-posts";
 
 export function RecentPosts({ posts }: { posts: BlogPost[] }) {
@@ -26,13 +23,9 @@ export function RecentPosts({ posts }: { posts: BlogPost[] }) {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post, index) => (
-            <motion.article
+            <article
               key={post.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all group"
+              className="reveal-up bg-white rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all group"
             >
               <Link href={`/blog/${post.slug}`}>
                 <div className="aspect-video overflow-hidden cursor-pointer bg-muted">
@@ -66,7 +59,7 @@ export function RecentPosts({ posts }: { posts: BlogPost[] }) {
                   </div>
                 </div>
               </Link>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>

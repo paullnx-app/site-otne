@@ -31,7 +31,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "17 Abr 2026",
     category: "Inteligência Artificial",
     readTime: "10 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "10",
@@ -43,7 +43,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "17 Abr 2026",
     category: "Tendências",
     readTime: "12 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "8",
@@ -56,7 +56,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "28 Jan 2026",
     category: "Marketing",
     readTime: "8 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "7",
@@ -68,7 +68,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "02 Fev 2026",
     category: "Tutorial",
     readTime: "7 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "6",
@@ -80,7 +80,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "28 Jan 2026",
     category: "SEO Local",
     readTime: "6 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "4",
@@ -92,7 +92,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "25 Jan 2025",
     category: "Link Building",
     readTime: "8 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "1",
@@ -104,7 +104,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "22 Jan 2026",
     category: "Tendências",
     readTime: "10 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "3",
@@ -116,7 +116,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "15 Nov 2025",
     category: "Técnico",
     readTime: "8 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "5",
@@ -129,7 +129,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "22 Jan 2026",
     category: "Inteligência Artificial",
     readTime: "15 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
   {
     id: "9",
@@ -141,7 +141,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "03 Mar 2026",
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
-    imageUrl: "/og-image.png",
+    imageUrl: "/opengraph.jpg",
   },
 ];
 

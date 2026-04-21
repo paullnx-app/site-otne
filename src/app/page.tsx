@@ -1,23 +1,13 @@
 import type { Metadata } from "next";
-import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
+import { Benefits } from "@/components/sections/Benefits";
+import { TargetAudience } from "@/components/sections/TargetAudience";
+import { Methodology } from "@/components/sections/Methodology";
+import { Trust } from "@/components/sections/Trust";
+import { RecentPosts } from "@/components/sections/RecentPosts";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { blogPosts } from "@/data/blog-posts";
-
-const Benefits = dynamic(() =>
-  import("@/components/sections/Benefits").then((m) => ({ default: m.Benefits }))
-);
-const TargetAudience = dynamic(() =>
-  import("@/components/sections/TargetAudience").then((m) => ({ default: m.TargetAudience }))
-);
-const Methodology = dynamic(() =>
-  import("@/components/sections/Methodology").then((m) => ({ default: m.Methodology }))
-);
-const Trust = dynamic(() => import("@/components/sections/Trust").then((m) => ({ default: m.Trust })));
-const RecentPosts = dynamic(() =>
-  import("@/components/sections/RecentPosts").then((m) => ({ default: m.RecentPosts }))
-);
 
 export const metadata: Metadata = {
   title: "Otne SEO | Consultoria de SEO Especializada em PMEs",
@@ -29,7 +19,7 @@ export const metadata: Metadata = {
     description:
       "Aumente suas vendas com SEO estratégico. Consultoria especializada para pequenas e médias empresas.",
     url: "https://www.otne.com.br/",
-    images: [{ url: "https://www.otne.com.br/og-image.png" }],
+    images: [{ url: "https://www.otne.com.br/opengraph.jpg", width: 1200, height: 630 }],
   },
 };
 
@@ -38,7 +28,6 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Otne SEO",
   url: "https://www.otne.com.br",
-  logo: "https://www.otne.com.br/logo.png",
   description: "Consultoria de SEO especializada em pequenas e médias empresas.",
   contactPoint: {
     "@type": "ContactPoint",

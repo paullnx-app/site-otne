@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Quem Somos | Otne SEO",
     description: "Conheça a Otne SEO, consultoria focada em resultados reais para PMEs.",
     url: "https://www.otne.com.br/quem-somos",
-    images: [{ url: "https://www.otne.com.br/og-image.png" }],
+    images: [{ url: "https://www.otne.com.br/opengraph.jpg" }],
   },
 };
 

@@ -1,6 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { BarChart3, Target, Users, Zap, Search, FileText } from "lucide-react";
 
 const benefits = [
@@ -54,23 +51,20 @@ export function Benefits() {
           {benefits.map((item, index) => {
             const Icon = item.icon;
             return (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group p-8 rounded-2xl bg-white border border-border hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-            >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-primary">
-                <Icon className="w-6 h-6" />
+              <div
+                key={index}
+                className="reveal-up group p-8 rounded-2xl bg-white border border-border hover:border-primary/50 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors duration-300 text-primary">
+                  <Icon className="w-6 h-6" />
+                </div>
+                <h3 className="text-xl font-display font-bold text-foreground mb-3">{item.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {item.description}
+                </p>
               </div>
-              <h3 className="text-xl font-display font-bold text-foreground mb-3">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.description}
-              </p>
-            </motion.div>
-          )})}
+            );
+          })}
         </div>
       </div>
     </section>

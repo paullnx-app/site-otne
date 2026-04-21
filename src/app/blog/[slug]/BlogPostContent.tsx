@@ -22,7 +22,7 @@ const articleSchema = (post: BlogPost) => ({
   publisher: {
     "@type": "Organization",
     name: "Otne SEO",
-    logo: { "@type": "ImageObject", url: "https://www.otne.com.br/logo.png" },
+    logo: { "@type": "ImageObject", url: "https://www.otne.com.br/opengraph.jpg" },
   },
   datePublished: post.date,
   description: post.excerpt,
