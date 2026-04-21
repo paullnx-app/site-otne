@@ -1,13 +1,23 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { Navbar } from "@/components/layout/Navbar";
 import { Hero } from "@/components/sections/Hero";
-import { Benefits } from "@/components/sections/Benefits";
-import { TargetAudience } from "@/components/sections/TargetAudience";
-import { Methodology } from "@/components/sections/Methodology";
-import { Trust } from "@/components/sections/Trust";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { blogPosts } from "@/data/blog-posts";
-import { RecentPosts } from "@/components/sections/RecentPosts";
+
+const Benefits = dynamic(() =>
+  import("@/components/sections/Benefits").then((m) => ({ default: m.Benefits }))
+);
+const TargetAudience = dynamic(() =>
+  import("@/components/sections/TargetAudience").then((m) => ({ default: m.TargetAudience }))
+);
+const Methodology = dynamic(() =>
+  import("@/components/sections/Methodology").then((m) => ({ default: m.Methodology }))
+);
+const Trust = dynamic(() => import("@/components/sections/Trust").then((m) => ({ default: m.Trust })));
+const RecentPosts = dynamic(() =>
+  import("@/components/sections/RecentPosts").then((m) => ({ default: m.RecentPosts }))
+);
 
 export const metadata: Metadata = {
   title: "Otne SEO | Consultoria de SEO Especializada em PMEs",

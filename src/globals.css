@@ -4,11 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* Google Branding Style: Plus Jakarta Sans */
-  --font-display: 'Plus Jakarta Sans', sans-serif;
-  
-  /* Google Interface Style: Roboto */
-  --font-body: 'Roboto', sans-serif;
+  /* next/font/google — see layout.tsx */
+  --font-display: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
 
   /* LIGHT MODE PALETTE - Clean, White, Professional */
   --color-background: hsl(0 0% 100%);
@@ -96,4 +94,19 @@
     padding-left: 3rem; /* px-12 */
     padding-right: 3rem;
   }
+}
+
+@keyframes nav-menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-nav-menu-in {
+  animation: nav-menu-in 0.2s ease-out both;
 }
