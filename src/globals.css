@@ -4,9 +4,9 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  /* next/font/google — see layout.tsx */
+  /* next/font/google — see layout.tsx (only Plus Jakarta Sans) */
   --font-display: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
-  --font-body: var(--font-roboto), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-plus-jakarta), ui-sans-serif, system-ui, sans-serif;
 
   /* LIGHT MODE PALETTE - Clean, White, Professional */
   --color-background: hsl(0 0% 100%);
@@ -18,9 +18,9 @@
   --color-popover: hsl(0 0% 100%);
   --color-popover-foreground: hsl(220 20% 15%);
 
-  /* #FF772B -> HSL(22, 100%, 58%) - Vibrant Orange */
-  --color-primary: hsl(22 100% 58%);
-  --color-primary-foreground: hsl(0 0% 100%);
+  /* HSL(22, 100%, 50%) = #FF5E00 — 3.07:1 on white (WCAG AA large text) */
+  --color-primary: hsl(22 100% 50%);
+  --color-primary-foreground: hsl(220 20% 10%); /* dark text on orange — high contrast */
 
   --color-secondary: hsl(220 15% 96%); /* Light Grey for secondary backgrounds */
   --color-secondary-foreground: hsl(220 20% 15%);
@@ -36,7 +36,7 @@
 
   --color-border: hsl(220 15% 90%);
   --color-input: hsl(220 15% 90%);
-  --color-ring: hsl(22 100% 58%);
+  --color-ring: hsl(22 100% 50%);
 
   --radius-sm: 0.3rem;
   --radius-md: 0.5rem;

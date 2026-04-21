@@ -67,6 +67,20 @@
     "zod": "^3.25.76",
     "zod-validation-error": "^3.4.0"
   },
+  "browserslist": {
+    "production": [
+      "chrome >= 93",
+      "firefox >= 92",
+      "safari >= 15",
+      "edge >= 93",
+      "not dead"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
     "@types/node": "^20.19.0",
     "@types/react": "^19.2.0",
