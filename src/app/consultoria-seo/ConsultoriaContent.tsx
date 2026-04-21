@@ -1,6 +1,7 @@
 "use client";
 
 import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, BarChart3, FileText, Globe, Layout, Search, Settings, Zap, Users, TrendingUp, ShieldCheck, Award, MapPin, LineChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -449,13 +450,7 @@ export default function ConsultoriaSEO() {
         </section>
       </main>
       
-      <footer className="py-12 border-t border-border bg-secondary/30">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -10,6 +10,12 @@ export type BlogPostMeta = {
   category: string;
   readTime: string;
   /**
+   * Palavra-chave principal do artigo (única no site).
+   * Deve ser preenchida em todo novo post. O validador `scripts/validate-keywords.ts`
+   * falha o build se dois posts tiverem a mesma keywordPrincipal.
+   */
+  keywordPrincipal?: string;
+  /**
    * Stable path used by server-side SEO generation scripts.
    * Client pages can still use their own imported images for rendering.
    */
@@ -34,6 +40,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "20 Fev 2026",
     category: "Tendências",
     readTime: "10 min",
+        keywordPrincipal: "como o Google vai funcionar em 2027",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -47,6 +54,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "27 Fev 2026",
     category: "Atualizações do Google",
     readTime: "12 min",
+        keywordPrincipal: "core update março 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -59,6 +67,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "06 Mar 2026",
     category: "Estudos",
     readTime: "11 min",
+        keywordPrincipal: "sites que cresceram no Google 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -72,6 +81,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "13 Mar 2026",
     category: "Inteligência Artificial",
     readTime: "12 min",
+        keywordPrincipal: "por que o ChatGPT cita alguns sites",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -85,6 +95,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "20 Mar 2026",
     category: "Tendências",
     readTime: "9 min",
+        keywordPrincipal: "o que mudou na busca 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -98,6 +109,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "27 Mar 2026",
     category: "Estratégia",
     readTime: "10 min",
+        keywordPrincipal: "SEO ainda funciona em 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -111,6 +123,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "03 Abr 2026",
     category: "Atualizações do Google",
     readTime: "11 min",
+        keywordPrincipal: "spam update março 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -123,6 +136,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "10 Abr 2026",
     category: "Tecnologia",
     readTime: "9 min",
+        keywordPrincipal: "turboquant SEO",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -135,6 +149,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "17 Abr 2026",
     category: "Inteligência Artificial",
     readTime: "10 min",
+        keywordPrincipal: "empresa no ChatGPT",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -147,6 +162,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "17 Abr 2026",
     category: "Tendências",
     readTime: "12 min",
+        keywordPrincipal: "seo vs inteligência artificial",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -160,6 +176,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "28 Jan 2026",
     category: "Marketing",
     readTime: "8 min",
+        keywordPrincipal: "marketing digital para empresários",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -172,6 +189,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "02 Fev 2026",
     category: "Tutorial",
     readTime: "7 min",
+        keywordPrincipal: "como aparecer no Google Maps",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -184,6 +202,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "28 Jan 2026",
     category: "SEO Local",
     readTime: "6 min",
+        keywordPrincipal: "SEO local para pequenas empresas",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -196,6 +215,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "25 Jan 2025",
     category: "Link Building",
     readTime: "8 min",
+        keywordPrincipal: "autoridade e links",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -208,6 +228,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "22 Jan 2026",
     category: "Tendências",
     readTime: "10 min",
+        keywordPrincipal: "guia de SEO 2026",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -220,6 +241,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "15 Nov 2025",
     category: "Técnico",
     readTime: "8 min",
+        keywordPrincipal: "erros técnicos de SEO",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -233,6 +255,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "22 Jan 2026",
     category: "Inteligência Artificial",
     readTime: "15 min",
+        keywordPrincipal: "confiança em conteúdo digital na era da IA",
     imageUrl: "/opengraph.jpg",
   },
   {
@@ -245,6 +268,7 @@ export const blogPostsMeta: BlogPostMeta[] = [
     date: "03 Mar 2026",
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
+        keywordPrincipal: "como aparecer nas buscas",
     imageUrl: "/opengraph.jpg",
   },
 ];

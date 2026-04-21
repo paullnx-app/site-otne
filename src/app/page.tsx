@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
 import { Benefits } from "@/components/sections/Benefits";
 import { TargetAudience } from "@/components/sections/TargetAudience";
@@ -72,13 +73,7 @@ export default function Home() {
         <Trust />
         <RecentPosts posts={latestPosts} />
       </main>
-      <footer className="py-12 border-t border-border bg-secondary/30">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2026 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
 import { motion } from "framer-motion";
 import { Target, Lightbulb, Users, Trophy, Handshake, ArrowRight } from "lucide-react";
+import { Footer } from "@/components/layout/Footer";
 import teamImg from "@/assets/images/about/team-meeting.jpg";
 import officeImg from "@/assets/images/about/office-space.jpg";
 import { Button } from "@/components/ui/button";
@@ -191,13 +192,7 @@ export default function QuemSomos() {
         </section>
       </main>
 
-      <footer className="py-12 border-t border-border bg-secondary/30">
-        <div className="container mx-auto px-6 text-center">
-          <p className="text-muted-foreground text-sm">
-            © 2025 Otne SEO - Consultoria de SEO. Todos os direitos reservados.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

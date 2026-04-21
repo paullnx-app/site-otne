@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint src/data/blog-post-content/**/*.ts src/data/blog-posts.ts src/data/blog-posts.meta.ts",
     "validate:ptbr": "tsx scripts/validate-ptbr.ts",
-    "check": "tsc --noEmit && npm run validate:ptbr"
+    "validate:keywords": "tsx scripts/validate-keywords.ts",
+    "check": "tsc --noEmit && npm run validate:ptbr && npm run validate:keywords"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
