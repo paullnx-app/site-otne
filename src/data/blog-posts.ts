@@ -96,7 +96,7 @@ const posts: BlogPost[] = [
 
       <p>O erro comum é tratar marketing digital como “postar” ou “impulsionar”. Postar é tática. Marketing digital é estratégia + execução + medição. Sem isso, você fica refém de sorte e de picos momentâneos.</p>
 
-      <img src="${marketingDigitalImg.src}" alt="Empresário analisando métricas de marketing digital no notebook" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${teamImg.src}" alt="Equipe trabalhando em planejamento de marketing digital para empresas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Qual é a intenção de busca por “marketing digital”?</h2>
       <p>Quem pesquisa <strong>marketing digital</strong> geralmente está em um destes momentos:</p>
