@@ -121,7 +121,7 @@ export function BlogPostContent({ post }: { post: BlogPost }) {
                 [&_h3]:text-[26px] [&_h3]:leading-[1.35] [&_h3]:tracking-tight [&_h3]:!mt-[30px] [&_h3]:!mb-[15px]
                 [&_p]:text-[20px] [&_p]:text-[#2d2d2d] [&_p]:leading-[1.8] [&_p]:!mb-[28px]
                 [&_ul]:!my-[28px] [&_li]:text-[#2d2d2d] [&_li]:text-[20px] [&_li]:leading-[1.8] [&_li]:mb-3
-                [&_a]:text-primary [&_a]:font-semibold [&_a]:no-underline hover:[&_a]:underline hover:[&_a]:text-primary/90"
+                [&_a:not(.inline-flex)]:text-primary [&_a:not(.inline-flex)]:font-semibold [&_a:not(.inline-flex)]:no-underline hover:[&_a:not(.inline-flex)]:underline hover:[&_a:not(.inline-flex)]:text-primary/90"
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 
