@@ -64,7 +64,7 @@ const posts: BlogPost[] = [
 
       <p>O erro comum é tratar marketing digital como “postar” ou “impulsionar”. Postar é tática. Marketing digital é estratégia + execução + medição. Sem isso, você fica refém de sorte e de picos momentâneos.</p>
 
-      <img src="${marketingDigitalImg}" alt="Empresário analisando métricas de marketing digital no notebook" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${marketingDigitalImg.src}" alt="Empresário analisando métricas de marketing digital no notebook" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Qual é a intenção de busca por “marketing digital”?</h2>
       <p>Quem pesquisa <strong>marketing digital</strong> geralmente está em um destes momentos:</p>
@@ -205,7 +205,7 @@ const posts: BlogPost[] = [
         <li>Avaliações de clientes.</li>
       </ul>
 
-      <img src="${googleMapsImg}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${googleMapsImg.src}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Como Aparecer no Google Maps: Passo a Passo</h2>
 
@@ -327,7 +327,7 @@ const posts: BlogPost[] = [
 
       <p>SEO Local é um conjunto de estratégias para otimizar sua visibilidade online em pesquisas locais. Diferente do SEO tradicional, que foca em ranquear globalmente ou nacionalmente, o SEO Local foca na proximidade, relevância e proeminência na sua cidade ou bairro.</p>
 
-      <img src="${localSearchImg}" alt="Busca local no celular e mapas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${localSearchImg.src}" alt="Busca local no celular e mapas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>O algoritmo local leva em conta três fatores principais:</p>
       <ul class="space-y-2 list-disc pl-5 mb-6">
@@ -357,7 +357,7 @@ const posts: BlogPost[] = [
 
       <h2>Avaliações: A Prova Social que o Google Ama</h2>
 
-      <img src="${localStoreImg}" alt="Fachada de loja local de sucesso" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${localStoreImg.src}" alt="Fachada de loja local de sucesso" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Avaliações (Reviews) são um dos fatores de ranqueamento mais fortes. E não é só sobre a nota média (que deve ser acima de 4.0), mas também sobre a <strong>frequência</strong> e o <strong>texto</strong> das avaliações. Isso é parte essencial de <a href="/blog/como-construir-confianca-conteudo-digital-ia" class="text-primary font-bold hover:underline">construir uma reputação digital sólida</a>.</p>
 
@@ -442,7 +442,7 @@ const posts: BlogPost[] = [
 
       <h3>1. Conquiste Prêmios e Reconhecimentos</h3>
       
-      <img src="${awardsImg}" alt="Prêmios e reconhecimento corporativo" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${awardsImg.src}" alt="Prêmios e reconhecimento corporativo" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Prêmios são sinais instantâneos de legitimidade. Quando você menciona que sua empresa ganhou reconhecimento em determinada área, automaticamente eleva a percepção de autoridade.</p>
 
@@ -456,7 +456,7 @@ const posts: BlogPost[] = [
 
       <h3>2. Apareça na Mídia e Construa Menções</h3>
 
-      <img src="${mediaImg}" alt="Entrevista para mídia e podcasts" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${mediaImg.src}" alt="Entrevista para mídia e podcasts" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Aparições em veículos de comunicação estabelecem autoridade como poucos recursos conseguem. Seja em portais de notícias, podcasts, canais do YouTube ou programas de TV - cada menção funciona como um selo de aprovação.</p>
 
@@ -476,7 +476,7 @@ const posts: BlogPost[] = [
 
       <p>Embora você não receba um backlink direto, ganha algo melhor - credibilidade para mencionar em suas comunicações. Imagine dizer em um email: "Já publiquei artigos na revista da ABRADI" ou "Fui colunista do boletim da Associação Brasileira de Marketing Digital".</p>
 
-      <img src="${partnershipImg}" alt="Parcerias e associações comerciais" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${partnershipImg.src}" alt="Parcerias e associações comerciais" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Esse tipo de associação com marcas estabelecidas transfere autoridade imediatamente. Sobretudo quando você entra em contato com alguém que também é membro dessa organização.</p>
 
@@ -494,7 +494,7 @@ const posts: BlogPost[] = [
 
       <h3>5. Destaque a Autoridade dos Autores do Seu Site</h3>
 
-      <img src="${teamImg}" alt="Equipe profissional e autores especialistas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${teamImg.src}" alt="Equipe profissional e autores especialistas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>A credibilidade não vem apenas da marca - vem também das pessoas por trás dela. Quando seus autores possuem experiência reconhecida, isso abre portas.</p>
 
@@ -623,7 +623,7 @@ const posts: BlogPost[] = [
 
       <p>Uma <strong>Consultoria de SEO</strong> moderna não olha apenas para o Google Search Console; ela analisa como sua marca está sendo percebida e citada pelos modelos de linguagem.</p>
 
-      <img src="${futureSeoImg}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${futureSeoImg.src}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>3. E-E-A-T: A Moeda Mais Forte de 2026</h2>
 
@@ -655,7 +655,7 @@ const posts: BlogPost[] = [
 
       <p>Não tente "vender" nesses espaços. Tente ajudar. A venda será consequência da sua autoridade percebida.</p>
 
-      <img src="${aiTrustImg}" alt="Estratégia de conteúdo humano e IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${aiTrustImg.src}" alt="Estratégia de conteúdo humano e IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>6. A Morte das Palavras-Chave de Cauda Longa?</h2>
 
@@ -774,7 +774,7 @@ const posts: BlogPost[] = [
 
       <p>Com as <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">exigências de UX do Google para 2026</a>, a performance técnica deixou de ser diferencial para virar pré-requisito de sobrevivência.</p>
 
-      <img src="${technicalSeoImg}" alt="Analista verificando erros de código em monitor" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${technicalSeoImg.src}" alt="Analista verificando erros de código em monitor" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Os 5 Erros Técnicos que Você Precisa Corrigir Agora</h2>
 
@@ -891,7 +891,7 @@ const posts: BlogPost[] = [
 
       <p>O Google atualizou seus algoritmos para penalizar conteúdo puramente gerado por IA sem supervisão humana. O foco agora é premiar conteúdo que demonstra <em>Experience</em> (Experiência real). É aqui que muitas PMEs falham: elas têm a experiência, mas não sabem como comunicá-la digitalmente.</p>
 
-      <img src="${aiTrustImg}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${aiTrustImg.src}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Desvendando o E-E-A-T: A Bússola da Confiança</h2>
 
@@ -928,7 +928,7 @@ const posts: BlogPost[] = [
       <h3>Invista em Consultoria de SEO Especializada</h3>
       <p>Muitas PMEs tentam fazer SEO sozinhas ou com ferramentas automáticas. O resultado geralmente é um site tecnicamente correto, mas sem alma e sem autoridade. Uma <strong>Consultoria de SEO</strong> profissional vai além do código: ela ajuda a estruturar a narrativa da sua marca para que ela ressoe tanto com os algoritmos quanto com os humanos.</p>
 
-      <img src="${teamImg}" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${teamImg.src}" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>O Papel da IA: Ferramenta, Não Autor</h2>
 
