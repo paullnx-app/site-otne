@@ -1,5 +1,4 @@
 import { ArrowRight } from "lucide-react";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import heroWebp from "@assets/generated_images/hero-bg.webp";
 
@@ -7,20 +6,19 @@ export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       <div className="absolute inset-0 z-0">
+        {/* <picture> exige <img> como filho directo — next/image com fill envolve em <span> e quebra o spec */}
         <picture className="absolute inset-0 block h-full w-full">
-          {/* AVIF em public/ — Turbopack não optimiza import .avif */}
           <source srcSet="/hero/hero-bg.avif" type="image/avif" sizes="100vw" />
           <source srcSet={heroWebp.src} type="image/webp" sizes="100vw" />
-          <Image
-            src={heroWebp}
+          <img
+            src={heroWebp.src}
+            width={heroWebp.width}
+            height={heroWebp.height}
             alt=""
-            fill
-            priority
+            decoding="async"
             fetchPriority="high"
             sizes="100vw"
-            quality={85}
-            placeholder="blur"
-            className="object-cover opacity-30"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
           />
         </picture>
         <div className="absolute inset-0 bg-gradient-to-b from-white/0 via-white/50 to-white" />
