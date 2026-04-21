@@ -4,4 +4,5 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
-.upm/
+.upm/.next/
+next-env.d.ts

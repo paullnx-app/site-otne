@@ -1,0 +1,26 @@
+User-Agent: *
+Disallow: /admin/
+Disallow: /blog/rascunho
+
+User-Agent: OAI-SearchBot
+Allow: /
+
+User-Agent: ChatGPT-User
+Allow: /
+
+User-Agent: ClaudeBot
+Allow: /
+
+User-Agent: PerplexityBot
+Allow: /
+
+User-Agent: Google-Extended
+Allow: /
+
+User-Agent: CCBot
+Allow: /
+
+User-Agent: GPTBot
+Allow: /
+
+Sitemap: https://www.otne.com.br/sitemap.xml

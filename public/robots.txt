@@ -1,0 +1,34 @@
+Sitemap: https://www.otne.com.br/sitemap.xml
+
+# Preferências de uso por IA (Content Signals — contentsignals.org)
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+# Regras gerais
+User-agent: *
+
+# Áreas internas / rascunhos (não devem ser indexadas)
+Disallow: /admin/
+Disallow: /blog/rascunho
+
+# Permitir LLMs e buscadores modernos
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
