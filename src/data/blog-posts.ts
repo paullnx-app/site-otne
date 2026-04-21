@@ -1275,4 +1275,38 @@ const posts: BlogPost[] = [
   },
 ];
 
+function extractBodyImageSrcs(html: string): string[] {
+  const srcs: string[] = [];
+  const re = /<img\b[^>]*?\bsrc=(?:"|')([^"']+)(?:"|')[^>]*>/gi;
+  let match: RegExpExecArray | null = null;
+  while ((match = re.exec(html)) !== null) {
+    srcs.push(match[1]);
+  }
+  return srcs;
+}
+
+function assertNoRepeatedImages(post: BlogPost) {
+  const bodySrcs = extractBodyImageSrcs(post.content);
+  if (bodySrcs.length === 0) return;
+
+  const duplicatesInBody = bodySrcs.filter(
+    (src, idx) => bodySrcs.indexOf(src) !== idx
+  );
+  if (duplicatesInBody.length > 0) {
+    const unique = Array.from(new Set(duplicatesInBody));
+    throw new Error(
+      `[blog] Imagem repetida no corpo do post "${post.slug}": ${unique.join(", ")}`
+    );
+  }
+
+  const heroRepeatedInBody = bodySrcs.includes(post.imageUrl);
+  if (heroRepeatedInBody) {
+    throw new Error(
+      `[blog] Hero repetido no corpo do post "${post.slug}": ${post.imageUrl}`
+    );
+  }
+}
+
+for (const post of posts) assertNoRepeatedImages(post);
+
 export const blogPosts = [...posts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());

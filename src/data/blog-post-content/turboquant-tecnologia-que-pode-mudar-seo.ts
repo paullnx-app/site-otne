@@ -4,8 +4,8 @@
  * Este artigo trata o tema como conceito emergente e ensina como avaliar alegacoes.
  * Links externos: exatamente 2 (2 autoridade).
  */
-import futureSeoImg from "@/assets/images/blog/tendencias-seo-2026.jpg";
 import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
+import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -65,7 +65,7 @@ const sections: string[] = [
   `<h2>O que e TurboQuant, explicado para nao tecnicos</h2>
 <p><strong>Definicao de trabalho:</strong> TurboQuant representa um cenario em que buscadores e sistemas de IA conseguem recuperar informacao com mais contexto e responder com mais confianca. Quando isso acontece, a busca fica mais orientada a tarefa e menos orientada a lista de links.</p>
 
-<img src="${futureSeoImg.src}" alt="Mudanca estrutural na busca e impacto em SEO ao longo do tempo" ${bodyImgClass} />`,
+<img src="${aiTrustImg.src}" alt="Confianca e verificacao como base para mudancas na busca" ${bodyImgClass} />`,
 
   `<h2>Como isso poderia mudar buscadores e IAs</h2>
 <p>Se a resposta fica mais direta, dois efeitos aparecem:</p>

@@ -2,8 +2,8 @@
  * Artigo 09
  * Links externos: exatamente 2 (2 autoridade).
  */
-import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
 import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
+import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -63,7 +63,7 @@ const sections: string[] = [
   `<h2>O que o Google combate em um spam update</h2>
 <p>O alvo e simples: conteudo que existe para manipular ranking, nao para ajudar o usuario. Isso inclui paginas geradas em escala sem valor, copias com pequenas mudancas e taticas enganosas.</p>
 
-<img src="${aiTrustImg.src}" alt="Confianca e revisao humana como protecao contra queda por spam update" ${bodyImgClass} />`,
+<img src="${linkBuildingImg.src}" alt="Sinais de autoridade e mencoes externas como protecao contra queda por spam" ${bodyImgClass} />`,
 
   `<h2>Como verificar se seu site foi afetado</h2>
 <ol class="space-y-2 list-decimal pl-5 mb-6">
