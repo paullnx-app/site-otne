@@ -237,7 +237,7 @@ const posts: BlogPost[] = [
         <li>Avaliações de clientes.</li>
       </ul>
 
-      <img src="${googleMapsImg.src}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${aparecerNasBuscasImg.src}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Como Aparecer no Google Maps: Passo a Passo</h2>
 
@@ -359,7 +359,7 @@ const posts: BlogPost[] = [
 
       <p>SEO Local é um conjunto de estratégias para otimizar sua visibilidade online em pesquisas locais. Diferente do SEO tradicional, que foca em ranquear globalmente ou nacionalmente, o SEO Local foca na proximidade, relevância e proeminência na sua cidade ou bairro.</p>
 
-      <img src="${localSearchImg.src}" alt="Busca local no celular e mapas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${googleMapsImg.src}" alt="Busca local no celular e mapas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>O algoritmo local leva em conta três fatores principais:</p>
       <ul class="space-y-2 list-disc pl-5 mb-6">
@@ -655,7 +655,7 @@ const posts: BlogPost[] = [
 
       <p>Uma <strong>Consultoria de SEO</strong> moderna não olha apenas para o Google Search Console; ela analisa como sua marca está sendo percebida e citada pelos modelos de linguagem.</p>
 
-      <img src="${futureSeoImg.src}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${linkBuildingImg.src}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>3. E-E-A-T: A Moeda Mais Forte de 2026</h2>
 
@@ -806,7 +806,7 @@ const posts: BlogPost[] = [
 
       <p>Com as <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">exigências de UX do Google para 2026</a>, a performance técnica deixou de ser diferencial para virar pré-requisito de sobrevivência.</p>
 
-      <img src="${technicalSeoImg.src}" alt="Analista verificando erros de código em monitor" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${partnershipImg.src}" alt="Analista verificando erros de código em monitor" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Os 5 Erros Técnicos que Você Precisa Corrigir Agora</h2>
 
@@ -923,7 +923,7 @@ const posts: BlogPost[] = [
 
       <p>O Google atualizou seus algoritmos para penalizar conteúdo puramente gerado por IA sem supervisão humana. O foco agora é premiar conteúdo que demonstra <em>Experience</em> (Experiência real). É aqui que muitas PMEs falham: elas têm a experiência, mas não sabem como comunicá-la digitalmente.</p>
 
-      <img src="${aiTrustImg.src}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${linkBuildingImg.src}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Desvendando o E-E-A-T: A Bússola da Confiança</h2>
 
@@ -1285,28 +1285,35 @@ function extractBodyImageSrcs(html: string): string[] {
   return srcs;
 }
 
-function assertNoRepeatedImages(post: BlogPost) {
+function collectImageIssues(post: BlogPost): string[] {
+  const issues: string[] = [];
   const bodySrcs = extractBodyImageSrcs(post.content);
-  if (bodySrcs.length === 0) return;
+  if (bodySrcs.length === 0) return issues;
 
   const duplicatesInBody = bodySrcs.filter(
     (src, idx) => bodySrcs.indexOf(src) !== idx
   );
   if (duplicatesInBody.length > 0) {
     const unique = Array.from(new Set(duplicatesInBody));
-    throw new Error(
-      `[blog] Imagem repetida no corpo do post "${post.slug}": ${unique.join(", ")}`
+    issues.push(
+      `Imagem repetida no corpo do post "${post.slug}": ${unique.join(", ")}`
     );
   }
 
-  const heroRepeatedInBody = bodySrcs.includes(post.imageUrl);
-  if (heroRepeatedInBody) {
-    throw new Error(
-      `[blog] Hero repetido no corpo do post "${post.slug}": ${post.imageUrl}`
+  if (bodySrcs.includes(post.imageUrl)) {
+    issues.push(
+      `Hero repetido no corpo do post "${post.slug}": ${post.imageUrl}`
     );
   }
+
+  return issues;
 }
 
-for (const post of posts) assertNoRepeatedImages(post);
+const imageIssues = posts.flatMap(collectImageIssues);
+if (imageIssues.length > 0) {
+  throw new Error(
+    `[blog] Problemas de imagens detectados (${imageIssues.length}):\n- ${imageIssues.join("\n- ")}`
+  );
+}
 
 export const blogPosts = [...posts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime());
