@@ -81,12 +81,6 @@
       "namedRegex": "^/quem\\-somos(?:/)?$"
     },
     {
-      "page": "/robots.txt",
-      "regex": "^/robots\\.txt(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/robots\\.txt(?:/)?$"
-    },
-    {
       "page": "/sitemap.xml",
       "regex": "^/sitemap\\.xml(?:/)?$",
       "routeKeys": {},

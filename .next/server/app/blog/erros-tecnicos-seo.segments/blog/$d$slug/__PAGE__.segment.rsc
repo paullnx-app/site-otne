@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T1e1f,
@@ -96,7 +96,7 @@
           <p class="text-muted-foreground">Sim, mas exige cuidado. O excesso de plugins pode deixar o site lento. É preciso uma configuração profissional de cache e otimização para manter a performance alta.</p>
         </div>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"3","slug":"erros-tecnicos-seo","title":"5 Erros Técnicos de SEO que matam seu tráfego: Guia de Correção","excerpt":"Links quebrados, site lento e falta de sitemap invisibilizam seu negócio. Descubra os 5 erros técnicos mais comuns e como blindar seu site para o Google.","content":"$3","author":"Equipe Otne SEO","date":"15 Nov 2025","category":"Técnico","readTime":"8 min","imageUrl":"/_next/static/media/erros-seo-tecnicos.17io9ip0_~n~o.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"3","slug":"erros-tecnicos-seo","title":"5 Erros Técnicos de SEO que matam seu tráfego: Guia de Correção","excerpt":"Links quebrados, site lento e falta de sitemap invisibilizam seu negócio. Descubra os 5 erros técnicos mais comuns e como blindar seu site para o Google.","content":"$3","author":"Equipe Otne SEO","date":"15 Nov 2025","category":"Técnico","readTime":"8 min","imageUrl":"/_next/static/media/erros-seo-tecnicos.17io9ip0_~n~o.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

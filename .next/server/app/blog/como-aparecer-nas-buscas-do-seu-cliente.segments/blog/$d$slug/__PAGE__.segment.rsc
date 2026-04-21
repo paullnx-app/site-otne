@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T16e9,
@@ -64,7 +64,7 @@
         </div>
         <p class="mt-4 text-sm text-muted-foreground">Pare de depender apenas de indicações boca a boca. Solicite agora mesmo.</p>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"9","slug":"como-aparecer-nas-buscas-do-seu-cliente","title":"Por que seu concorrente aparece no Google e você não? (E como mudar isso)","excerpt":"Sabe quando você tem certeza de que o seu serviço é melhor, mas, na hora de fechar negócio, o cliente escolhe o concorrente? Descubra o que seu cliente realmente digita antes de comprar.","content":"$3","author":"Equipe Otne SEO","date":"03 Mar 2026","category":"Estratégia de Conteúdo","readTime":"6 min","imageUrl":"/_next/static/media/aparecer-nas-buscas.0c-8fx5t58c7t.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"9","slug":"como-aparecer-nas-buscas-do-seu-cliente","title":"Por que seu concorrente aparece no Google e você não? (E como mudar isso)","excerpt":"Sabe quando você tem certeza de que o seu serviço é melhor, mas, na hora de fechar negócio, o cliente escolhe o concorrente? Descubra o que seu cliente realmente digita antes de comprar.","content":"$3","author":"Equipe Otne SEO","date":"03 Mar 2026","category":"Estratégia de Conteúdo","readTime":"6 min","imageUrl":"/_next/static/media/aparecer-nas-buscas.0c-8fx5t58c7t.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

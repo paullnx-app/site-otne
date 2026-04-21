@@ -1,4 +1,6 @@
-import { Link } from "wouter";
+"use client";
+
+import Link from "next/link";
 import { blogPosts } from "@/data/blog-posts";
 import { useMemo } from "react";
 

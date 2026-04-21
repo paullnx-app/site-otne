@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroBg from "@assets/generated_images/Clean_white_abstract_background_with_orange_data_lines_b69012b2.png";
 import { LeadFormDialog } from "@/components/forms/lead-form-dialog";
-import { Link } from "wouter";
+import Link from "next/link";
 
 export function Hero() {
   return (

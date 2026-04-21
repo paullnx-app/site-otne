@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T2b4e,
@@ -123,7 +123,7 @@
           <p class="text-muted-foreground">Acompanhe leads qualificados, taxa de conversão e CAC. Se você sabe quanto custa um cliente e quanto ele deixa ao longo do tempo (LTV), você consegue investir com segurança e previsibilidade.</p>
         </div>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"8","slug":"marketing-digital-para-empresarios","title":"Marketing digital para empresários: o guia prático para crescer sem desperdiçar verba","excerpt":"Marketing digital não é postar todo dia: é um sistema para atrair demanda, transformar visitas em leads e leads em vendas. Veja um plano prático para PMEs com métricas, canais e exemplos.","content":"$3","author":"Equipe Otne SEO","date":"28 Jan 2026","category":"Marketing","readTime":"8 min","imageUrl":"/_next/static/media/marketing-digital-empreendedores.0x_s0nrueoxkv.png"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"8","slug":"marketing-digital-para-empresarios","title":"Marketing digital para empresários: o guia prático para crescer sem desperdiçar verba","excerpt":"Marketing digital não é postar todo dia: é um sistema para atrair demanda, transformar visitas em leads e leads em vendas. Veja um plano prático para PMEs com métricas, canais e exemplos.","content":"$3","author":"Equipe Otne SEO","date":"28 Jan 2026","category":"Marketing","readTime":"8 min","imageUrl":"/_next/static/media/marketing-digital-empreendedores.0x_s0nrueoxkv.png"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

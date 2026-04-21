@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T34f6,
@@ -160,7 +160,7 @@
           <p class="text-muted-foreground">Seja objetivo e factual. Em vez de "sou o melhor especialista", diga "já publiquei em X, Y e Z". Deixe as conquistas falarem por si e foque em como você pode agregar valor ao editor.</p>
         </div>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"4","slug":"como-aumentar-autoridade-conquistar-links","title":"Como Aumentar a Autoridade e Conquistar Links: 5 Estratégias Comprovadas","excerpt":"Descubra táticas práticas para estabelecer credibilidade instantânea e atrair backlinks de qualidade para o seu site através da construção de autoridade.","content":"$3","author":"Equipe Otne SEO","date":"25 Jan 2025","category":"Link Building","readTime":"8 min","imageUrl":"/_next/static/media/rede-construcao-links.09x4iitn6_37j.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"4","slug":"como-aumentar-autoridade-conquistar-links","title":"Como Aumentar a Autoridade e Conquistar Links: 5 Estratégias Comprovadas","excerpt":"Descubra táticas práticas para estabelecer credibilidade instantânea e atrair backlinks de qualidade para o seu site através da construção de autoridade.","content":"$3","author":"Equipe Otne SEO","date":"25 Jan 2025","category":"Link Building","readTime":"8 min","imageUrl":"/_next/static/media/rede-construcao-links.09x4iitn6_37j.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

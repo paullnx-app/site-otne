@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T205f,
@@ -121,7 +121,7 @@
           <p class="text-muted-foreground">Você não pode apagar avaliações, apenas denunciá-las se violarem as regras (discurso de ódio, spam). A melhor defesa é responder educadamente e conquistar mais avaliações positivas para diluir a nota.</p>
         </div>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"7","slug":"como-aparecer-no-google-maps","title":"Como Aparecer no Google Maps: Guia Passo a Passo para 2026","excerpt":"Sua empresa não aparece no mapa? Descubra como cadastrar, verificar e otimizar seu perfil no Google Maps para atrair clientes locais hoje mesmo.","content":"$3","author":"Equipe Otne SEO","date":"02 Fev 2026","category":"Tutorial","readTime":"7 min","imageUrl":"/_next/static/media/guia-google-maps.17w2vycruu6wj.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"7","slug":"como-aparecer-no-google-maps","title":"Como Aparecer no Google Maps: Guia Passo a Passo para 2026","excerpt":"Sua empresa não aparece no mapa? Descubra como cadastrar, verificar e otimizar seu perfil no Google Maps para atrair clientes locais hoje mesmo.","content":"$3","author":"Equipe Otne SEO","date":"02 Fev 2026","category":"Tutorial","readTime":"7 min","imageUrl":"/_next/static/media/guia-google-maps.17w2vycruu6wj.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

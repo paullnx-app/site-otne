@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
-2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/04irf0uviepy..js"],"BlogPostLoader"]
+2:I[1430,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js","/_next/static/chunks/14x7u6xj3fay..js"],"BlogPostLoader"]
 6:I[97367,["/_next/static/chunks/0pgc2y7n7gcv3.js","/_next/static/chunks/14xybmpjjhz4c.js","/_next/static/chunks/0iy2o1m9qj-p1.js","/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
 3:T2e3d,
@@ -159,7 +159,7 @@
           <p class="text-muted-foreground">Sim, mas não como antes. Blogs de conteúdo raso morreram. Blogs de conteúdo profundo, opinativo e baseado em experiência real estão mais fortes do que nunca.</p>
         </div>
       </div>
-    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"1","slug":"guia-seo-2026","title":"Guia Completo de SEO para 2026: O que muda? (E como sobreviver)","excerpt":"O SEO morreu? Não, ele evoluiu. Descubra como a IA, o Search Generative Experience (SGE) e os novos fatores de ranqueamento vão impactar seu negócio em 2026.","content":"$3","author":"Equipe Rank.AI","date":"22 Jan 2026","category":"Tendências","readTime":"10 min","imageUrl":"/_next/static/media/tendencias-seo-2026.0cb7s7-vk~n.3.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"CIQjvJI7kJPLn3t8rjqnF"}
-4:["$","script","script-0",{"src":"/_next/static/chunks/04irf0uviepy..js","async":true}]
+    0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"post":{"id":"1","slug":"guia-seo-2026","title":"Guia Completo de SEO para 2026: O que muda? (E como sobreviver)","excerpt":"O SEO morreu? Não, ele evoluiu. Descubra como a IA, o Search Generative Experience (SGE) e os novos fatores de ranqueamento vão impactar seu negócio em 2026.","content":"$3","author":"Equipe Rank.AI","date":"22 Jan 2026","category":"Tendências","readTime":"10 min","imageUrl":"/_next/static/media/tendencias-seo-2026.0cb7s7-vk~n.3.jpg"}}],["$L4"],"$L5"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"XasPy6H__o95ijz-EBfOg"}
+4:["$","script","script-0",{"src":"/_next/static/chunks/14x7u6xj3fay..js","async":true}]
 5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
 8:null

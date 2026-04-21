@@ -4,21 +4,11 @@ import React from 'react';
 import { artigoSeoIa2026 } from './draft-article';
 import { Share2, Twitter, Linkedin, Facebook, ArrowLeft, Calendar, Clock } from 'lucide-react';
 import { ScrollProgress } from '@/components/blog/scroll-progress';
-import { useSEO } from '@/hooks/use-seo';
 
-// Um componente temporário apenas para visualizar o rascunho
+// Visualizador de rascunho — metadata gerenciada em app/blog/rascunho/page.tsx
 export default function RascunhoArtigo() {
   const post = artigoSeoIa2026;
-  const shareUrl = "https://otneseo.com.br/blog/seo-ou-inteligencia-artificial-2026"; // Mock url
-
-  useSEO({
-    title: `${post.title} (Rascunho) | Otne SEO`,
-    description: post.excerpt,
-    image: post.imageUrl,
-    type: "article",
-    canonicalPath: "/blog/rascunho",
-    robots: "noindex, nofollow",
-  });
+  const shareUrl = "https://www.otne.com.br/blog/seo-ou-inteligencia-artificial-2026";
 
   return (
     <div className="min-h-screen bg-background relative">

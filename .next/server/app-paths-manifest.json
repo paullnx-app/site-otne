@@ -8,6 +8,5 @@
   "/consultoria-seo/page": "app/consultoria-seo/page.js",
   "/page": "app/page.js",
   "/quem-somos/page": "app/quem-somos/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
   "/sitemap.xml/route": "app/sitemap.xml/route.js"
 }
