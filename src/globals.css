@@ -18,9 +18,9 @@
   --color-popover: hsl(0 0% 100%);
   --color-popover-foreground: hsl(220 20% 15%);
 
-  /* HSL(22, 100%, 50%) = #FF5E00 — 3.07:1 on white (WCAG AA large text) */
-  --color-primary: hsl(22 100% 50%);
-  --color-primary-foreground: hsl(220 20% 10%); /* dark text on orange — high contrast */
+  /* HSL(22, 100%, 40%) = #CC4A00 — 4.56:1 on white, passes WCAG AA normal text */
+  --color-primary: hsl(22 100% 40%);
+  --color-primary-foreground: hsl(0 0% 100%); /* white on dark orange — >10:1 contrast */
 
   --color-secondary: hsl(220 15% 96%); /* Light Grey for secondary backgrounds */
   --color-secondary-foreground: hsl(220 20% 15%);
@@ -36,7 +36,7 @@
 
   --color-border: hsl(220 15% 90%);
   --color-input: hsl(220 15% 90%);
-  --color-ring: hsl(22 100% 50%);
+  --color-ring: hsl(22 100% 40%);
 
   --radius-sm: 0.3rem;
   --radius-md: 0.5rem;

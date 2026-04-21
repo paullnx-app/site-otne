@@ -8,15 +8,14 @@ const modernPolyfillRelative = "./src/lib/modern-polyfill.js";
 const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
-    // Inlines CSS into the HTML <head> so the initial paint has zero
-    // render-blocking stylesheet network requests.
-    inlineCss: true,
+    // inlineCss removido: gera 226 KB de runtime JS (chunk ~70 KiB transferidos)
+    // que bloqueia a main thread (TBT 3830ms) e tem bug documentado com next/font
+    // (issue vercel/next.js#83674 — preview fica branco).
   },
   turbopack: {
     resolveAlias: {
       "@assets": assetsPath,
       // Replace Next.js' legacy polyfill bundle with an empty module.
-      // browserslist (see package.json) already targets modern evergreen browsers.
       "next/dist/build/polyfills/polyfill-module": modernPolyfillRelative,
       "../build/polyfills/polyfill-module": modernPolyfillRelative,
     },

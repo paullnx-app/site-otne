@@ -69,7 +69,7 @@ export function Methodology() {
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center text-primary shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                       <Icon className="w-7 h-7" />
                     </div>
-                    <span className="text-5xl font-display font-bold text-slate-100 select-none" aria-hidden="true">
+                    <span className="text-5xl font-display font-bold select-none text-transparent [text-shadow:none] opacity-20 [-webkit-text-stroke:2px_theme(colors.slate.300)]" aria-hidden="true">
                       {step.id}
                     </span>
                   </div>

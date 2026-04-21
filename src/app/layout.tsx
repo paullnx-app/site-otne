@@ -8,6 +8,7 @@ const plusJakarta = Plus_Jakarta_Sans({
   weight: ["400", "500", "600", "700"],
   variable: "--font-plus-jakarta",
   display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -31,6 +32,18 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={plusJakarta.variable}>
+      <head>
+        {/* Preconnect para Google Fonts CDN (next/font usa fonts.gstatic.com) */}
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload da imagem LCP — hero background (AVIF para Chrome, WebP para outros) */}
+        <link
+          rel="preload"
+          as="image"
+          href="/hero/hero-bg.avif"
+          type="image/avif"
+          fetchPriority="high"
+        />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>
