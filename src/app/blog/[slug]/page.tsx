@@ -34,6 +34,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       modifiedTime: post.updatedDate ?? post.date,
+      authors: ["https://www.otne.com.br/autor/paul-leite"],
+      section: post.category,
       url: `https://www.otne.com.br/blog/${post.slug}`,
       images: post.imageUrl
         ? [{ url: post.imageUrl, width: 1200, height: 630, alt: post.title }]

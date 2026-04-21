@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     description:
       "Paul Leite é consultor de SEO com mais de 8 anos de experiência, especializado em PMEs brasileiras.",
     url: "https://www.otne.com.br/autor/paul-leite",
+    type: "profile",
     images: [
       {
         url: "https://www.otne.com.br/opengraph.jpg",
@@ -25,6 +26,7 @@ export const metadata: Metadata = {
     title: "Paul Leite — especialista em SEO | Otne SEO",
     description:
       "Paul Leite é consultor de SEO com mais de 8 anos de experiência, especializado em PMEs brasileiras.",
+    images: ["https://www.otne.com.br/opengraph.jpg"],
   },
 };
 
