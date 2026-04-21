@@ -117,11 +117,11 @@ export function BlogPostContent({ post }: { post: BlogPost }) {
               ref={contentRef}
               className="prose prose-lg max-w-none
                 prose-headings:font-display prose-headings:font-bold prose-headings:text-foreground
-                [&>h2]:text-[32px] [&>h2]:leading-[1.3] [&>h2]:tracking-tight [&>h2]:!mt-[40px] [&>h2]:!mb-[20px]
-                [&>h3]:text-[26px] [&>h3]:leading-[1.35] [&>h3]:tracking-tight [&>h3]:!mt-[30px] [&>h3]:!mb-[15px]
-                [&>p]:text-[20px] [&>p]:text-[#2d2d2d] [&>p]:leading-[1.8] [&>p]:!mb-[28px]
-                [&>ul]:!my-[28px] [&>li]:text-[#2d2d2d] [&>li]:text-[20px] [&>li]:leading-[1.8] [&>li]:mb-3
-                [&>a]:text-primary [&>a]:font-semibold [&>a]:no-underline hover:[&>a]:underline hover:[&>a]:text-primary/90"
+                [&_h2]:text-[32px] [&_h2]:leading-[1.3] [&_h2]:tracking-tight [&_h2]:!mt-[40px] [&_h2]:!mb-[20px]
+                [&_h3]:text-[26px] [&_h3]:leading-[1.35] [&_h3]:tracking-tight [&_h3]:!mt-[30px] [&_h3]:!mb-[15px]
+                [&_p]:text-[20px] [&_p]:text-[#2d2d2d] [&_p]:leading-[1.8] [&_p]:!mb-[28px]
+                [&_ul]:!my-[28px] [&_li]:text-[#2d2d2d] [&_li]:text-[20px] [&_li]:leading-[1.8] [&_li]:mb-3
+                [&_a]:text-primary [&_a]:font-semibold [&_a]:no-underline hover:[&_a]:underline hover:[&_a]:text-primary/90"
               dangerouslySetInnerHTML={{ __html: processedContent }}
             />
 

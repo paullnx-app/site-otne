@@ -56,6 +56,12 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - Headings válidos são aqueles que o leitor reconheceria em uma revista ou enciclopédia (temas, perguntas, comparações, checklists). Se você está prestes a escrever um heading que repete um nome de seção do briefing, reformule: ou remova o heading, ou transforme-o em uma pergunta/afirmação útil para o leitor.
 - **Validação automática:** o mesmo `scripts/validate-ptbr.ts` detecta rótulos proibidos em tags de heading e falha o `check` se algum aparecer.
 
+### 1.4. FAQ (conteúdo + Schema) — padrão obrigatório
+- **Schema é a fonte de verdade:** todo post que tiver FAQ deve preencher `faqJsonLd` (tipo `FAQPage`). O site injeta esse JSON-LD via `SchemaMarkup`; a formatação visual do FAQ no HTML não muda nada no Schema.
+- **Padrão de escrita do FAQ no corpo:** use exatamente um heading `<h2>Perguntas Frequentes (FAQ)</h2>` e, abaixo, pares de `<h3>Pergunta</h3>` + `<p>Resposta</p>`, sem inventar headings de instrução e sem “widgets” com marcação alternativa.
+- **Evite divergência:** as perguntas/respostas do HTML devem bater com o `faqJsonLd` (mesmo sentido e termos). Se houver update no texto, atualize o `faqJsonLd` junto.
+- **Consistência visual:** não dependa de wrappers e classes para o FAQ “parecer certo”. O template do blog já aplica tipografia/spacing padronizados em `h2/h3/p` em qualquer profundidade do HTML.
+
 ### Padrões de E-E-A-T (Experiência, Especialização, Autoridade, Confiança):
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").
 - **Experiência Real:** Incluir exemplos práticos, estudos de caso ou opiniões baseadas na vivência da agência.
