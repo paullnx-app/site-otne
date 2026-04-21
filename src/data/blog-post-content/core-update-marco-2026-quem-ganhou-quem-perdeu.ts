@@ -3,7 +3,6 @@
  * Links externos: exatamente 2 (1 autoridade + 1 parceiro).
  * Imagens do corpo: distintas entre si e do hero do post.
  */
-import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
 import frameworkImg from "@/assets/images/blog/framework-decisao-seo-ia.jpg";
 
 const bodyImgClass =
@@ -96,8 +95,7 @@ const sections: string[] = [
   <li><strong>Conteúdo útil:</strong> exemplos, checklist, comparação, definição clara.</li>
   <li><strong>UX:</strong> página rápida no celular e leitura fácil.</li>
 </ul>
-
-<img src="${linkBuildingImg.src}" alt="Autoridade e menções externas como sinal de confiança em SEO" ${bodyImgClass} />`,
+`,
 
   `<h2>Como verificar se seu site foi afetado no Google Search Console</h2>
 <p>Esse passo a passo evita achismo:</p>

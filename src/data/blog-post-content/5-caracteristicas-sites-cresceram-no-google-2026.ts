@@ -3,8 +3,7 @@
  * Links externos: exatamente 2 (2 autoridade, sem parceiro por falta de encaixe real).
  * Imagens do corpo: distintas entre si e do hero do post.
  */
-import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
-import teamImg from "@/assets/images/blog/equipe-autoridade.jpg";
+import crescimentoOrganicoImg from "@/assets/images/blog/crescimento-organico-site.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -83,7 +82,7 @@ const sections: string[] = [
 
 <p>Se você quer atacar o básico rápido, aqui está o ponto de entrada: <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO</a>.</p>
 
-<img src="${technicalSeoImg.src}" alt="Auditoria técnica com foco em performance e problemas que travam crescimento orgânico" ${bodyImgClass} />`,
+<img src="${crescimentoOrganicoImg.src}" alt="Crescimento orgânico de site sustentado por conteúdo, autoridade e base técnica sólida" ${bodyImgClass} />`,
 
   `<h2>Característica 3: autoridade construída de forma consistente</h2>
 <p>Autoridade não é um número mágico. É um rastro público de confiança. Sites que crescem têm menções, citações e links que fazem sentido editorial.</p>
@@ -101,8 +100,7 @@ const sections: string[] = [
 <p>O usuário pesquisa no Google, no Maps, em redes e em IAs. Sites que crescem têm sinais consistentes em várias fontes. Isso melhora tanto a descoberta quanto a confiança.</p>
 
 <p>Se você quer testar sua presença em IAs agora, este tutorial ajuda: <a href="/blog/empresa-aparece-chatgpt-como-testar" class="text-primary font-bold hover:underline">sua empresa aparece quando alguém pergunta ao ChatGPT</a>.</p>
-
-<img src="${teamImg.src}" alt="Equipe revisando conteúdo e estratégia de autoridade com foco em crescimento orgânico" ${bodyImgClass} />`,
+`,
 
   `<h2>Como aplicar os 5 pontos: autoavaliação rápida</h2>
 <div class="overflow-x-auto my-8">

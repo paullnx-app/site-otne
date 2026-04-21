@@ -2,8 +2,7 @@
  * Artigo 09
  * Links externos: exatamente 2 (2 autoridade).
  */
-import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
-import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
+import spamUpdateConteudoImg from "@/assets/images/blog/spam-update-conteudo.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -63,7 +62,7 @@ const sections: string[] = [
   `<h2>O que o Google combate em um spam update</h2>
 <p>O alvo é simples: conteúdo que existe para manipular ranking, e não para ajudar o usuário. Isso inclui páginas geradas em escala sem valor, cópias com pequenas mudanças e táticas enganosas.</p>
 
-<img src="${linkBuildingImg.src}" alt="Sinais de autoridade e menções externas como proteção contra queda por spam" ${bodyImgClass} />`,
+<img src="${spamUpdateConteudoImg.src}" alt="Comparação entre conteúdo limpo de qualidade e conteúdo marcado por spam, e o caminho da recuperação" ${bodyImgClass} />`,
 
   `<h2>Como verificar se seu site foi afetado</h2>
 <ol class="space-y-2 list-decimal pl-5 mb-6">
@@ -74,8 +73,7 @@ const sections: string[] = [
 </ol>
 
 <p>Se você quer reforçar a base técnica para não perder rastreio e conversão, comece aqui: <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO</a>.</p>
-
-<img src="${technicalSeoImg.src}" alt="Checklist técnico de SEO para reduzir risco de queda e melhorar rastreabilidade" ${bodyImgClass} />`,
+`,
 
   `<h2>Os 5 tipos de conteúdo mais penalizados</h2>
 <ol class="space-y-2 list-decimal pl-5 mb-6">

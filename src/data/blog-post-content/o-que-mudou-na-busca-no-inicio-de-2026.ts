@@ -2,8 +2,7 @@
  * Artigo 07
  * Links externos: exatamente 2 (2 autoridade).
  */
-import marketingDigitalImg from "@/assets/images/blog/marketing-digital-empreendedores.png";
-import futureSeoImg from "@/assets/images/blog/tendencias-seo-2026.jpg";
+import novaBuscaGoogleImg from "@/assets/images/blog/nova-busca-google-2026.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -65,7 +64,7 @@ const sections: string[] = [
 
 <p>Para acompanhar comunicações oficiais das atualizações e incidentes, use: <a href="https://status.search.google.com/" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">Google Search Status Dashboard</a>.</p>
 
-<img src="${futureSeoImg.src}" alt="Tendências de SEO e mudanças na busca com impacto em 2026" ${bodyImgClass} />`,
+<img src="${novaBuscaGoogleImg.src}" alt="Nova SERP do Google em 2026 com blocos de AI Overview e carrosséis híbridos" ${bodyImgClass} />`,
 
   `<h2>O que está em alta: busca com IA em ascensão acelerada</h2>
 <p>O usuário quer resposta pronta. Isso puxa AEO e GEO para o centro do jogo. Títulos em pergunta, respostas curtas e conteúdo estruturado passaram a valer mais.</p>
@@ -78,8 +77,7 @@ const sections: string[] = [
   <li>página de serviço genérica, sem prova e sem processo;</li>
   <li>site lento no celular e arquitetura confusa.</li>
 </ul>
-
-<img src="${marketingDigitalImg.src}" alt="Empresário organizando prioridades de marketing e SEO com foco em resultado" ${bodyImgClass} />`,
+`,
 
   `<h2>As 3 prioridades para o próximo trimestre</h2>
 <ol class="space-y-2 list-decimal pl-5 mb-6">

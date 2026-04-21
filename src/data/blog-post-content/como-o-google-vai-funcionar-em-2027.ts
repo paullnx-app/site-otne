@@ -3,8 +3,7 @@
  * Links externos: exatamente 2 (1 autoridade + 1 parceiro).
  * Imagens do corpo: distintas entre si e do hero do post.
  */
-import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
-import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
+import futuroIaBuscaImg from "@/assets/images/blog/futuro-ia-busca.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -81,7 +80,7 @@ const sections: string[] = [
 
 <p>Na prática, parece simples: o cliente pergunta e já recebe a melhor opção para ele. O problema é que essa melhor opção depende de sinais públicos. Se você não tem sinais, você não entra na lista.</p>
 
-<img src="${aiTrustImg.src}" alt="Confiança e verificação de informações em conteúdo para busca com IA" ${bodyImgClass} />`,
+<img src="${futuroIaBuscaImg.src}" alt="Visualização do futuro da busca com IA e camadas de conhecimento conectadas" ${bodyImgClass} />`,
 
   `<h2>Como a busca vai funcionar com agentes e o que acontece com os cliques</h2>
 <p><strong>O clique não some.</strong> Ele muda de lugar. Em consultas de topo de funil, a resposta pode ser entregue ali mesmo. Em consultas de compra, o usuário ainda precisa finalizar em algum lugar: site, WhatsApp, loja, checkout, formulário.</p>
@@ -94,8 +93,7 @@ const sections: string[] = [
 <p><strong>SEO não vira inútil.</strong> Ele fica mais exigente. A base técnica continua sendo o filtro de entrada. Se seu site é lento, confuso ou difícil de rastrear, você perde duas vezes: no ranking e na citação por IA.</p>
 
 <p>Para diagnosticar sua base, comece pelo essencial: <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO que drenam tráfego</a>. Esse ajuste costuma ser a diferença entre ter conteúdo bom e ter conteúdo invisível.</p>
-
-<img src="${technicalSeoImg.src}" alt="Análise técnica de SEO com foco em indexação, performance e estrutura" ${bodyImgClass} />`,
+`,
 
   `<h2>O que sobrevive e fica mais forte: autoridade de marca e conteúdo de especialista</h2>
 <p>Quando a busca sintetiza, ela precisa de critério. E critério nasce de confiança. Conteúdo de especialista, com autoria e prova real, tende a vencer texto genérico. A mesma lógica que protege seu SEO protege sua citação em IA.</p>

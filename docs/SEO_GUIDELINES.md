@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v1.9` |
+| **Revisão** | `v2.0` |
 | **Data** | 2026-04-21 |
-| **Alterações desta revisão** | Proibição explícita de rótulos da instrução de produção (ex.: "Conclusão com CTA", "Introdução", "Gancho", "Lead", "CTA final") como headings visíveis no artigo publicado (seção 1.3) + validação automática no `validate-ptbr.ts` |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória · v1.9 rótulos de instrução proibidos como heading |
+| **Alterações desta revisão** | Regra de imagens endurecida: cada arquivo de imagem aparece UMA única vez no site inteiro (hero + corpo de todos os posts somados). Cada post tem 1 hero + no máximo 1 imagem de corpo. Validação automática em `src/data/blog-posts.ts` derruba o build em qualquer repetição. |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória · v1.9 rótulos de instrução proibidos como heading · v2.0 imagens únicas em todo o site |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -63,7 +63,8 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Nomes de arquivos (imagens do blog):** usar **português** em slugs descritivos (palavras separadas por hífen; preferir **ASCII sem acentos** no nome do arquivo para compatibilidade entre sistemas). Ex.: `equipe-autoridade.jpg`, `erros-seo-tecnicos.jpg`. Evite nomes genéricos só em inglês quando houver equivalente claro em PT.
 
 ### Multimídia, performance e Core Web Vitals (obrigatório no site)
-- **Sem repetir o mesmo arquivo** no corpo do artigo: cada `<img>` no texto deve apontar para um **asset distinto**. O **hero** (imagem principal do post) conta como um arquivo, **não** volte a usar esse mesmo arquivo logo abaixo no corpo só para “cumprir meta” de imagens.
+- **Regra dura de unicidade global (v2.0):** cada arquivo de imagem pode aparecer **uma única vez no site inteiro**, somando hero e corpo de **todos** os posts. Hero de um post nunca pode ser body de outro; body de um post nunca pode ser body de outro. O validador em `src/data/blog-posts.ts` (`detectRepeatedImages`) **derruba o build** em qualquer repetição, inclusive cruzada entre posts.
+- **Estrutura canônica por post:** 1 hero + **no máximo 1** imagem de corpo. Posts podem ter 0 imagens de corpo quando não houver valor ilustrativo. Heroes são obrigatórios.
 - **Sem duplicatas de arquivo em todo o site:** cada imagem deve existir em **uma única cópia** no repositório. Arquivos com conteúdo idêntico mas nomes diferentes são proibidos, causam a mesma foto aparecendo em contextos distintos e desperdiçam banda. Antes de subir uma nova imagem, verificar o MD5/hash contra o **Registro de Imagens** (Seção 1.1). Se o hash já existir, reutilizar o arquivo original com seu nome canônico, **não** criar cópia com novo nome.
 - **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade, não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
 - **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200-300 KB** quando possível; corpo **&lt; 150 KB** por imagem, ajustar ao orçamento de qualidade).

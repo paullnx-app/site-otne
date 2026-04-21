@@ -5,8 +5,7 @@
  *   1. framework-decisao-seo-ia.jpg, após o tutorial passo a passo
  *   2. rede-construcao-links.jpg   , após as 5 ações / antes da tabela
  */
-import frameworkImg from "@/assets/images/blog/framework-decisao-seo-ia.jpg";
-import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
+import testeCitacoesImg from "@/assets/images/blog/teste-citacoes-ia.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -115,7 +114,7 @@ export const empresaApareceChatgptHtml = `
 
   <p><strong>Repita esse teste</strong> em 30 e 60 dias após as mudanças que você vai aprender a seguir. Comparar os resultados ao longo do tempo é o único jeito de medir evolução real.</p>
 
-  <img src="${frameworkImg.src}" alt="Fluxograma de processo para testar e monitorar presença de empresa nas IAs generativas" ${bodyImgClass} />
+  <img src="${testeCitacoesImg.src}" alt="Dashboard de monitoramento de citações de marca em assistentes de IA com prompts e status" ${bodyImgClass} />
 
   <h2>Por que algumas empresas aparecem e outras não?</h2>
 
@@ -167,8 +166,6 @@ export const empresaApareceChatgptHtml = `
 
   <p><strong>5. Adicione schema markup ao seu site</strong><br>
   <code>Organization</code>, <code>LocalBusiness</code> e <code>FAQPage</code> em JSON-LD ajudam as IAs a identificar sua empresa com precisão. É uma ação técnica de configuração única que melhora a citabilidade de longo prazo.</p>
-
-  <img src="${linkBuildingImg.src}" alt="Rede de conexões representando menções externas e autoridade de marca para citabilidade nas IAs" ${bodyImgClass} />
 
   <h2>Tabela comparativa: ChatGPT × Gemini × Perplexity</h2>
 

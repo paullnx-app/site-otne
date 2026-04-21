@@ -2,8 +2,7 @@
  * Artigo 08
  * Links externos: exatamente 2 (1 autoridade + 1 parceiro).
  */
-import localSearchImg from "@/assets/images/blog/guia-seo-local-diferenciado.jpg";
-import teamImg from "@/assets/images/blog/equipe-autoridade.jpg";
+import seoContinuaFuncionandoImg from "@/assets/images/blog/seo-continua-funcionando.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -75,12 +74,11 @@ const sections: string[] = [
   `<h2>Estratégia 1: E-E-A-T com prova verificável</h2>
 <p>O caminho mais curto para fortalecer E-E-A-T é mostrar prova: quem escreve, o que já fez e como entrega. Conteúdo que parece catálogo de promessas não sustenta.</p>
 
-<img src="${teamImg.src}" alt="Equipe e autoria clara como sinal de experiência e confiança em SEO" ${bodyImgClass} />`,
+<img src="${seoContinuaFuncionandoImg.src}" alt="SEO continua funcionando em 2026 sustentado por conteúdo, autoridade e técnica" ${bodyImgClass} />`,
 
   `<h2>Estratégia 2: SEO local como oportunidade subestimada</h2>
 <p>Para negócio local, o melhor SEO é o que coloca você no mapa e no top 3. Se isso vale para seu caso, este guia é o ponto de partida: <a href="/blog/seo-local-para-pequenas-empresas" class="text-primary font-bold hover:underline">SEO local para pequenas empresas</a>.</p>
-
-<img src="${localSearchImg.src}" alt="Busca local e mapa como canal de aquisição em SEO local" ${bodyImgClass} />`,
+`,
 
   `<h2>Estratégia 3: conteúdo baseado em perguntas reais</h2>
 <p>O conteúdo que funciona em 2026 nasce do que o cliente pergunta no WhatsApp. Estruture H2 como perguntas e responda em 2 ou 3 frases antes de aprofundar. Isso ajuda SEO, AEO e GEO ao mesmo tempo.</p>`,

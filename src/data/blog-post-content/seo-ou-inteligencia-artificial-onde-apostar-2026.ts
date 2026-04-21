@@ -2,9 +2,7 @@
  * Imagens do corpo: ficheiros distintos entre si e do hero do post (`tendencias-seo-2026` em blog-posts.ts).
  * Poucas imagens no corpo + lazy/async para não competir com o LCP do hero.
  */
-import teamImg from "@/assets/images/blog/equipe-autoridade.jpg";
-import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
-import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
+import decisaoSeoOuIaImg from "@/assets/images/blog/decisao-seo-ou-ia.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -69,7 +67,7 @@ const sections: string[] = [
 
 <p>Se você quer um <strong>guia completo de SEO para 2026</strong> com visão macro, leia também o nosso <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">guia completo de SEO para 2026</a>. Aqui o foco é decidir investimento com método.</p>
 
-<img src="${teamImg.src}" alt="Equipe em reunião alinhando decisões de marketing e investimento em SEO" ${bodyImgClass} />`,
+<img src="${decisaoSeoOuIaImg.src}" alt="Bifurcação entre caminho de SEO tradicional e caminho de IA em estratégia de marketing 2026" ${bodyImgClass} />`,
 
   `<h2>O que mudou na busca em 2026 (contexto em três blocos)</h2>
 <p><strong>Primeiro</strong>, a busca ganhou camadas. O usuário pesquisa no Google, em apps e em assistentes. <strong>Por isso</strong>, “ranquear” virou família de tarefas: clássica, com respostas geradas e com citação em ferramentas de IA.</p>
@@ -93,8 +91,7 @@ const sections: string[] = [
 <p>Se o tema é “<strong>vale a pena investir em SEO em 2026</strong>”, a resposta depende do seu <strong>ciclo de venda</strong> e da margem. <strong>Enfim</strong>, SEO costuma ser <strong>ativo composto</strong>: demora, porém acumula.</p>
 
 <p>Para aprofundar riscos técnicos, veja o artigo sobre <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO que drenam tráfego</a>.</p>
-
-<img src="${technicalSeoImg.src}" alt="Análise técnica de SEO: métricas, erros comuns e base para decisões de investimento" ${bodyImgClass} />`,
+`,
 
   `<h2>O que é busca por IA e como ela afeta negócios reais</h2>
 <p><strong>Busca por IA</strong> é o ato de pedir resposta a um modelo (resumo, comparação, roteiro) em interface de chat ou recurso integrado em buscador. <strong>Isto é</strong>, o usuário recebe texto sintetizado, nem sempre com link clicável como antes.</p>
@@ -109,8 +106,7 @@ const sections: string[] = [
 <p>Leia o guia <a href="/blog/como-construir-confianca-conteudo-digital-ia" class="text-primary font-bold hover:underline">como construir confiança em conteúdo digital na era da IA</a>. <strong>Além disso</strong>, para intenção de compra, o artigo <a href="/blog/como-aparecer-nas-buscas-do-seu-cliente" class="text-primary font-bold hover:underline">por que o concorrente aparece no Google e você não</a> ajuda a alinhar mensagem à busca real do cliente.</p>
 
 <p><strong>Otimização para ChatGPT</strong> (e similares) não é “truque oculto”. <strong>Em outras palavras</strong>, é <strong>clareza</strong>, estrutura, dados e consistência, o mesmo espírito do bom <strong>SEO 2026</strong>, com formato que modelos conseguem extrair.</p>
-
-<img src="${aiTrustImg.src}" alt="Confiança humana e conteúdo digital na era da inteligência artificial aplicada ao marketing" ${bodyImgClass} />`,
+`,
 
   `<h2>Framework de decisão: cinco perguntas para responder antes de escolher</h2>
 <p>Responda com honestidade. <strong>Se acaso</strong> marque muitos “não”, priorize base antes de escalar IA.</p>

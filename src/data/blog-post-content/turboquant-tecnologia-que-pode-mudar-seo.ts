@@ -4,8 +4,7 @@
  * Este artigo trata o tema como conceito emergente e ensina como avaliar alegações.
  * Links externos: exatamente 2 (2 autoridade).
  */
-import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
-import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
+import turboquantDadosImg from "@/assets/images/blog/turboquant-dados-busca.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -65,7 +64,7 @@ const sections: string[] = [
   `<h2>O que é TurboQuant, explicado para não técnicos</h2>
 <p><strong>Definição de trabalho:</strong> TurboQuant representa um cenário em que buscadores e sistemas de IA conseguem recuperar informação com mais contexto e responder com mais confiança. Quando isso acontece, a busca fica mais orientada à tarefa e menos orientada à lista de links.</p>
 
-<img src="${aiTrustImg.src}" alt="Confiança e verificação como base para mudanças na busca" ${bodyImgClass} />`,
+<img src="${turboquantDadosImg.src}" alt="Fluxo de dados de busca em alta velocidade sendo classificado em trilhas paralelas" ${bodyImgClass} />`,
 
   `<h2>Como isso poderia mudar buscadores e IAs</h2>
 <p>Se a resposta fica mais direta, dois efeitos aparecem:</p>
@@ -83,8 +82,7 @@ const sections: string[] = [
   <li><strong>Estrutura:</strong> definições, listas e tabelas viram vantagem.</li>
   <li><strong>Performance:</strong> site rápido no celular continua sendo filtro.</li>
 </ul>
-
-<img src="${linkBuildingImg.src}" alt="Autoridade e rede de citações como base para visibilidade em busca com IA" ${bodyImgClass} />`,
+`,
 
   `<h2>Linha do tempo de adoção estimada</h2>
 <p>Como não há anúncio oficial, trate como cenário. A linha do tempo abaixo ajuda a pensar, não a prever:</p>

@@ -2,8 +2,7 @@
  * Artigo 06
  * Links externos: exatamente 2 (1 autoridade + 1 parceiro).
  */
-import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
-import frameworkImg from "@/assets/images/blog/framework-decisao-seo-ia.jpg";
+import citacaoChatgptImg from "@/assets/images/blog/citacao-chatgpt-resposta.jpg";
 
 const bodyImgClass =
   'class="rounded-xl my-8 w-full max-w-4xl mx-auto object-cover h-[220px] sm:h-[260px]" loading="lazy" decoding="async" sizes="(max-width: 768px) 100vw, 896px"';
@@ -65,7 +64,7 @@ const sections: string[] = [
 
 <p>Referência técnica sobre rastreamento e como o Google entende conteúdo na web: <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" class="text-primary font-bold hover:underline">SEO Starter Guide do Google</a>.</p>
 
-<img src="${aiTrustImg.src}" alt="Confiança, autoria e verificação como base para citação por IA" ${bodyImgClass} />`,
+<img src="${citacaoChatgptImg.src}" alt="Resposta de IA citando fontes confiáveis com sinais de autoridade" ${bodyImgClass} />`,
 
   `<h2>Os 4 fatores que determinam se uma IA vai citar seu site</h2>
 <h3>Fator 1: autoridade e citações externas</h3>
@@ -79,8 +78,7 @@ const sections: string[] = [
 
 <h3>Fator 4: acessibilidade técnica</h3>
 <p>Se o site é lento, bloqueia rastreio ou tem conteúdo escondido, você perde. Comece pelo básico: <a href="/blog/erros-tecnicos-seo" class="text-primary font-bold hover:underline">erros técnicos de SEO</a>.</p>
-
-<img src="${frameworkImg.src}" alt="Checklist de estrutura e sinais para aumentar a citabilidade em respostas de IA" ${bodyImgClass} />`,
+`,
 
   `<h2>O que é llms.txt e como implementar no seu site</h2>
 <p><strong>Llms.txt</strong> é um arquivo que descreve, em formato simples, o que seu site tem de mais importante para consumo por modelos. Ele não resolve falta de autoridade. Ele ajuda na organização.</p>

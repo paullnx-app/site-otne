@@ -5,12 +5,24 @@ import teamImg from "@/assets/images/blog/equipe-autoridade.jpg";
 import localStoreImg from "@/assets/images/blog/loja-seo-local.jpg";
 import localSearchImg from "@/assets/images/blog/guia-seo-local-diferenciado.jpg";
 import googleMapsImg from "@/assets/images/blog/guia-google-maps.jpg";
+import googleMapsGuideImg from "@/assets/images/blog/google-maps-guide.png";
 import futureSeoImg from "@/assets/images/blog/tendencias-seo-2026.jpg";
 import technicalSeoImg from "@/assets/images/blog/erros-seo-tecnicos.jpg";
 import linkBuildingImg from "@/assets/images/blog/rede-construcao-links.jpg";
 import aiTrustImg from "@/assets/images/blog/confianca-conteudo-ia.jpg";
 import marketingDigitalImg from "@/assets/images/blog/marketing-digital-empreendedores.png";
 import aparecerNasBuscasImg from "@/assets/images/blog/aparecer-nas-buscas.jpg";
+import capaArtigoSeoOuIaImg from "@/assets/images/blog/capa-artigo-seo-ou-ia-2026.jpg";
+import googleBusca2027FuturoImg from "@/assets/images/blog/google-busca-2027-futuro.jpg";
+import coreUpdateGoogleMarcoImg from "@/assets/images/blog/core-update-google-marco-2026.jpg";
+import sitesQueCresceramImg from "@/assets/images/blog/sites-que-cresceram-google-2026.jpg";
+import mudancasBuscaImg from "@/assets/images/blog/mudancas-busca-2026.jpg";
+import seoFuncionaImg from "@/assets/images/blog/seo-funciona-2026.jpg";
+import spamUpdateMarcoImg from "@/assets/images/blog/spam-update-marco-2026.jpg";
+import turboquantBuscaIaImg from "@/assets/images/blog/turboquant-busca-ia.jpg";
+import marcaCitadaChatgptImg from "@/assets/images/blog/marca-citada-chatgpt.jpg";
+import estrategiaSeoImg from "@/assets/images/blog/estrategia-seo-2026.jpg";
+import autoriaAutoridadeImg from "@/assets/images/blog/autoria-autoridade-ia.jpg";
 import {
   seoOuInteligenciaArtificialHtml,
   seoOuInteligenciaArtificialFaqJsonLd,
@@ -51,7 +63,6 @@ import {
   turboquantTecnologiaPodeMudarSeoHtml,
   turboquantTecnologiaPodeMudarSeoFaqJsonLd,
 } from "./blog-post-content/turboquant-tecnologia-que-pode-mudar-seo";
-import empresaChatgptHeroImg from "@/assets/images/blog/midia-imprensa.jpg";
 
 export interface BlogPost {
   id: string;
@@ -237,7 +248,7 @@ const posts: BlogPost[] = [
         <li>Avaliações de clientes.</li>
       </ul>
 
-      <img src="${aparecerNasBuscasImg.src}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${googleMapsGuideImg.src}" alt="Empresa aparecendo no Google Maps com destaque" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Como Aparecer no Google Maps: Passo a Passo</h2>
 
@@ -358,8 +369,6 @@ const posts: BlogPost[] = [
       <h2>O Que é SEO Local e Por Que Ele é Diferente?</h2>
 
       <p>SEO Local é um conjunto de estratégias para otimizar sua visibilidade online em pesquisas locais. Diferente do SEO tradicional, que foca em ranquear globalmente ou nacionalmente, o SEO Local foca na proximidade, relevância e proeminência na sua cidade ou bairro.</p>
-
-      <img src="${googleMapsImg.src}" alt="Busca local no celular e mapas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>O algoritmo local leva em conta três fatores principais:</p>
       <ul class="space-y-2 list-disc pl-5 mb-6">
@@ -488,7 +497,6 @@ const posts: BlogPost[] = [
 
       <h3>2. Apareça na Mídia e Construa Menções</h3>
 
-      <img src="${mediaImg.src}" alt="Entrevista para mídia e podcasts" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Aparições em veículos de comunicação estabelecem autoridade como poucos recursos conseguem. Seja em portais de notícias, podcasts, canais do YouTube ou programas de TV - cada menção funciona como um selo de aprovação.</p>
 
@@ -508,7 +516,6 @@ const posts: BlogPost[] = [
 
       <p>Embora você não receba um backlink direto, ganha algo melhor - credibilidade para mencionar em suas comunicações. Imagine dizer em um email: "Já publiquei artigos na revista da ABRADI" ou "Fui colunista do boletim da Associação Brasileira de Marketing Digital".</p>
 
-      <img src="${partnershipImg.src}" alt="Parcerias e associações comerciais" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>Esse tipo de associação com marcas estabelecidas transfere autoridade imediatamente. Sobretudo quando você entra em contato com alguém que também é membro dessa organização.</p>
 
@@ -526,7 +533,6 @@ const posts: BlogPost[] = [
 
       <h3>5. Destaque a Autoridade dos Autores do Seu Site</h3>
 
-      <img src="${teamImg.src}" alt="Equipe profissional e autores especialistas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <p>A credibilidade não vem apenas da marca - vem também das pessoas por trás dela. Quando seus autores possuem experiência reconhecida, isso abre portas.</p>
 
@@ -655,7 +661,7 @@ const posts: BlogPost[] = [
 
       <p>Uma <strong>Consultoria de SEO</strong> moderna não olha apenas para o Google Search Console; ela analisa como sua marca está sendo percebida e citada pelos modelos de linguagem.</p>
 
-      <img src="${linkBuildingImg.src}" alt="Análise de dados de SEO e tendências de busca futuristas" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${estrategiaSeoImg.src}" alt="Planejamento estratégico de SEO em 2026 com pilares de conteúdo, autoridade e técnica" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>3. E-E-A-T: A Moeda Mais Forte de 2026</h2>
 
@@ -687,7 +693,6 @@ const posts: BlogPost[] = [
 
       <p>Não tente "vender" nesses espaços. Tente ajudar. A venda será consequência da sua autoridade percebida.</p>
 
-      <img src="${aiTrustImg.src}" alt="Estratégia de conteúdo humano e IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>6. A Morte das Palavras-Chave de Cauda Longa?</h2>
 
@@ -923,7 +928,7 @@ const posts: BlogPost[] = [
 
       <p>O Google atualizou seus algoritmos para penalizar conteúdo puramente gerado por IA sem supervisão humana. O foco agora é premiar conteúdo que demonstra <em>Experience</em> (Experiência real). É aqui que muitas PMEs falham: elas têm a experiência, mas não sabem como comunicá-la digitalmente.</p>
 
-      <img src="${linkBuildingImg.src}" alt="Conceito de segurança digital e autenticidade" class="rounded-xl my-8 w-full object-cover h-[300px]" />
+      <img src="${autoriaAutoridadeImg.src}" alt="Autoria, credenciais e verificação como pilares de confiança em conteúdo na era da IA" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>Desvendando o E-E-A-T: A Bússola da Confiança</h2>
 
@@ -960,7 +965,6 @@ const posts: BlogPost[] = [
       <h3>Invista em Consultoria de SEO Especializada</h3>
       <p>Muitas PMEs tentam fazer SEO sozinhas ou com ferramentas automáticas. O resultado geralmente é um site tecnicamente correto, mas sem alma e sem autoridade. Uma <strong>Consultoria de SEO</strong> profissional vai além do código: ela ajuda a estruturar a narrativa da sua marca para que ela ressoe tanto com os algoritmos quanto com os humanos.</p>
 
-      <img src="${teamImg.src}" alt="Profissionais analisando dados e construindo estratégia" class="rounded-xl my-8 w-full object-cover h-[300px]" />
 
       <h2>O Papel da IA: Ferramenta, Não Autor</h2>
 
@@ -1114,7 +1118,7 @@ const posts: BlogPost[] = [
     date: "20 Fev 2026",
     category: "Tendências",
     readTime: "10 min",
-    imageUrl: futureSeoImg.src,
+    imageUrl: googleBusca2027FuturoImg.src,
     faqJsonLd:
       comoOGoogleVaiFuncionarEm2027FaqJsonLd as unknown as Record<
         string,
@@ -1133,7 +1137,7 @@ const posts: BlogPost[] = [
     date: "27 Fev 2026",
     category: "Atualizações do Google",
     readTime: "12 min",
-    imageUrl: technicalSeoImg.src,
+    imageUrl: coreUpdateGoogleMarcoImg.src,
     faqJsonLd:
       coreUpdateMarco2026FaqJsonLd as unknown as Record<string, unknown>,
   },
@@ -1148,7 +1152,7 @@ const posts: BlogPost[] = [
     date: "06 Mar 2026",
     category: "Estudos",
     readTime: "11 min",
-    imageUrl: linkBuildingImg.src,
+    imageUrl: sitesQueCresceramImg.src,
     faqJsonLd:
       cincoCaracteristicasSitesCresceramGoogle2026FaqJsonLd as unknown as Record<
         string,
@@ -1183,7 +1187,7 @@ const posts: BlogPost[] = [
     date: "20 Mar 2026",
     category: "Tendências",
     readTime: "9 min",
-    imageUrl: aparecerNasBuscasImg.src,
+    imageUrl: mudancasBuscaImg.src,
     faqJsonLd:
       oQueMudouNaBuscaNoInicioDe2026FaqJsonLd as unknown as Record<
         string,
@@ -1202,7 +1206,7 @@ const posts: BlogPost[] = [
     date: "27 Mar 2026",
     category: "Estratégia",
     readTime: "10 min",
-    imageUrl: marketingDigitalImg.src,
+    imageUrl: seoFuncionaImg.src,
     faqJsonLd: seoAindaFuncionaEm2026FaqJsonLd as unknown as Record<
       string,
       unknown
@@ -1220,7 +1224,7 @@ const posts: BlogPost[] = [
     date: "03 Abr 2026",
     category: "Atualizações do Google",
     readTime: "11 min",
-    imageUrl: aiTrustImg.src,
+    imageUrl: spamUpdateMarcoImg.src,
     faqJsonLd:
       spamUpdateMarco2026FaqJsonLd as unknown as Record<string, unknown>,
   },
@@ -1235,7 +1239,7 @@ const posts: BlogPost[] = [
     date: "10 Abr 2026",
     category: "Tecnologia",
     readTime: "9 min",
-    imageUrl: futureSeoImg.src,
+    imageUrl: turboquantBuscaIaImg.src,
     faqJsonLd:
       turboquantTecnologiaPodeMudarSeoFaqJsonLd as unknown as Record<
         string,
@@ -1253,7 +1257,7 @@ const posts: BlogPost[] = [
     date: "17 Abr 2026",
     category: "Inteligência Artificial",
     readTime: "10 min",
-    imageUrl: empresaChatgptHeroImg.src,
+    imageUrl: marcaCitadaChatgptImg.src,
     faqJsonLd: empresaApareceChatgptFaqJsonLd as unknown as Record<string, unknown>,
   },
   {
@@ -1267,7 +1271,7 @@ const posts: BlogPost[] = [
     date: "17 Abr 2026",
     category: "Tendências",
     readTime: "12 min",
-    imageUrl: futureSeoImg.src,
+    imageUrl: capaArtigoSeoOuIaImg.src,
     faqJsonLd: seoOuInteligenciaArtificialFaqJsonLd as unknown as Record<
       string,
       unknown
@@ -1285,31 +1289,48 @@ function extractBodyImageSrcs(html: string): string[] {
   return srcs;
 }
 
-function collectImageIssues(post: BlogPost): string[] {
+interface ImageOccurrence {
+  src: string;
+  slug: string;
+  role: "hero" | "body";
+}
+
+function collectAllImageOccurrences(postsToCheck: BlogPost[]): ImageOccurrence[] {
+  const all: ImageOccurrence[] = [];
+  for (const post of postsToCheck) {
+    all.push({ src: post.imageUrl, slug: post.slug, role: "hero" });
+    for (const src of extractBodyImageSrcs(post.content)) {
+      all.push({ src, slug: post.slug, role: "body" });
+    }
+  }
+  return all;
+}
+
+/**
+ * Regra dura: cada arquivo de imagem só pode aparecer UMA vez no site inteiro
+ * (somando heroes e imagens de corpo de TODOS os posts). Qualquer repetição
+ * derruba o build.
+ */
+function detectRepeatedImages(postsToCheck: BlogPost[]): string[] {
   const issues: string[] = [];
-  const bodySrcs = extractBodyImageSrcs(post.content);
-  if (bodySrcs.length === 0) return issues;
-
-  const duplicatesInBody = bodySrcs.filter(
-    (src, idx) => bodySrcs.indexOf(src) !== idx
-  );
-  if (duplicatesInBody.length > 0) {
-    const unique = Array.from(new Set(duplicatesInBody));
-    issues.push(
-      `Imagem repetida no corpo do post "${post.slug}": ${unique.join(", ")}`
-    );
+  const occurrences = collectAllImageOccurrences(postsToCheck);
+  const bySrc = new Map<string, ImageOccurrence[]>();
+  for (const occ of occurrences) {
+    const list = bySrc.get(occ.src) ?? [];
+    list.push(occ);
+    bySrc.set(occ.src, list);
   }
-
-  if (bodySrcs.includes(post.imageUrl)) {
-    issues.push(
-      `Hero repetido no corpo do post "${post.slug}": ${post.imageUrl}`
-    );
+  for (const [src, list] of bySrc.entries()) {
+    if (list.length <= 1) continue;
+    const where = list
+      .map((o) => `${o.slug} (${o.role})`)
+      .join(", ");
+    issues.push(`Imagem repetida em múltiplos locais (${list.length}x): ${src} -> ${where}`);
   }
-
   return issues;
 }
 
-const imageIssues = posts.flatMap(collectImageIssues);
+const imageIssues = detectRepeatedImages(posts);
 if (imageIssues.length > 0) {
   throw new Error(
     `[blog] Problemas de imagens detectados (${imageIssues.length}):\n- ${imageIssues.join("\n- ")}`
