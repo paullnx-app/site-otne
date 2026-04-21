@@ -31,9 +31,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
+  const months: Record<string, number> = {
+    Jan: 0, Fev: 1, Mar: 2, Abr: 3, Mai: 4, Jun: 5,
+    Jul: 6, Ago: 7, Set: 8, Out: 9, Nov: 10, Dez: 11,
+  };
+  const parseBrDate = (s: string) => {
+    const [d, m, y] = s.trim().split(" ");
+    const date = new Date(parseInt(y), months[m] ?? 0, parseInt(d));
+    return isNaN(date.getTime()) ? null : date;
+  };
+
   const blogRoutes: MetadataRoute.Sitemap = blogPosts.map((post) => {
-    const parsed = new Date(post.date);
-    const lastModified = isNaN(parsed.getTime()) ? new Date() : parsed;
+    const updated = post.updatedDate ? parseBrDate(post.updatedDate) : null;
+    const published = parseBrDate(post.date);
+    const lastModified = updated ?? published ?? new Date();
     return {
       url: `${SITE_URL}/blog/${post.slug}`,
       lastModified,

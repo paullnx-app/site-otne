@@ -72,6 +72,13 @@ export interface BlogPost {
   content: string; // HTML content
   author: string;
   date: string;
+  /**
+   * Data da última revisão substantiva (DD MMM YYYY, ex.: "15 Abr 2026").
+   * Quando presente, é exibido como selo "Atualizado em DD/MM/AAAA" no header
+   * do post e alimenta `dateModified` no schema BlogPosting e `lastmod` no sitemap.
+   * Atualizar sempre que houver nova seção, dado novo ou correção relevante.
+   */
+  updatedDate?: string;
   category: string;
   readTime: string;
   imageUrl: string;
@@ -217,7 +224,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "28 Jan 2026",
     category: "Marketing",
     readTime: "8 min",
@@ -348,7 +355,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "02 Fev 2026",
     category: "Tutorial",
     readTime: "7 min",
@@ -453,7 +460,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "28 Jan 2026",
     category: "SEO Local",
     readTime: "6 min",
@@ -620,7 +627,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "25 Jan 2025",
     category: "Link Building",
     readTime: "8 min",
@@ -788,7 +795,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Rank.AI",
+    author: "Paul Leite",
     date: "22 Jan 2026",
     category: "Tendências",
     readTime: "10 min",
@@ -894,7 +901,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "15 Nov 2025",
     category: "Técnico",
     readTime: "8 min",
@@ -1026,7 +1033,7 @@ const posts: BlogPost[] = [
         </div>
       </div>
     `,
-    author: "Equipe Rank.AI",
+    author: "Paul Leite",
     date: "22 Jan 2026",
     category: "Inteligência Artificial",
     readTime: "15 min",
@@ -1100,7 +1107,7 @@ const posts: BlogPost[] = [
         <p class="mt-4 text-sm text-muted-foreground">Pare de depender apenas de indicações boca a boca. Solicite agora mesmo.</p>
       </div>
     `,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "03 Mar 2026",
     category: "Estratégia de Conteúdo",
     readTime: "6 min",
@@ -1114,7 +1121,7 @@ const posts: BlogPost[] = [
     excerpt:
       "O CEO do Google apontou a busca agêntica como virada. Entenda o impacto no tráfego orgânico e o plano prático para se preparar no Brasil.",
     content: comoOGoogleVaiFuncionarEm2027Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "20 Fev 2026",
     category: "Tendências",
     readTime: "10 min",
@@ -1133,7 +1140,7 @@ const posts: BlogPost[] = [
     excerpt:
       "O maior update do Google no Q1 de 2026 mudou rankings. Veja sinais no Search Console e um checklist de recuperação em 30 dias.",
     content: coreUpdateMarco2026Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "27 Fev 2026",
     category: "Atualizações do Google",
     readTime: "12 min",
@@ -1148,7 +1155,7 @@ const posts: BlogPost[] = [
     excerpt:
       "O que sites com crescimento orgânico real têm em comum. Veja 5 padrões e como aplicar no seu negócio com foco em resultado.",
     content: cincoCaracteristicasSitesCresceramGoogle2026Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "06 Mar 2026",
     category: "Estudos",
     readTime: "11 min",
@@ -1167,7 +1174,7 @@ const posts: BlogPost[] = [
     excerpt:
       "Entenda como as IAs escolhem fontes para citar e siga um guia prático para otimizar seu site e ser referenciado por ChatGPT e Gemini.",
     content: porQueChatgptCitaAlgunsSitesHtml,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "13 Mar 2026",
     category: "Inteligência Artificial",
     readTime: "12 min",
@@ -1183,7 +1190,7 @@ const posts: BlogPost[] = [
     excerpt:
       "Core update, spam update e busca com IA: o que mudou no Q1 de 2026 e como isso afeta tráfego e vendas de negócios no Brasil.",
     content: oQueMudouNaBuscaNoInicioDe2026Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "20 Mar 2026",
     category: "Tendências",
     readTime: "9 min",
@@ -1202,7 +1209,7 @@ const posts: BlogPost[] = [
     excerpt:
       "SEO funciona em 2026 quando você faz o básico muito bem. Veja 3 estratégias e um roteiro de 90 dias para gerar lead e venda.",
     content: seoAindaFuncionaEm2026Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "27 Mar 2026",
     category: "Estratégia",
     readTime: "10 min",
@@ -1220,7 +1227,7 @@ const posts: BlogPost[] = [
     excerpt:
       "O Google ficou mais rígido com conteúdo sem qualidade. Aprenda a diagnosticar no Search Console e siga um plano de recuperação.",
     content: spamUpdateMarco2026Html,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "03 Abr 2026",
     category: "Atualizações do Google",
     readTime: "11 min",
@@ -1235,7 +1242,7 @@ const posts: BlogPost[] = [
     excerpt:
       "Entenda o conceito por trás do TurboQuant e use um método para avaliar tecnologias emergentes e se preparar sem cair no hype.",
     content: turboquantTecnologiaPodeMudarSeoHtml,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "10 Abr 2026",
     category: "Tecnologia",
     readTime: "9 min",
@@ -1253,7 +1260,7 @@ const posts: BlogPost[] = [
     excerpt:
       "Saiba como verificar se seu negócio é citado pelas inteligências artificiais e o que fazer para aparecer nas respostas do ChatGPT, Gemini e Perplexity.",
     content: empresaApareceChatgptHtml,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "17 Abr 2026",
     category: "Inteligência Artificial",
     readTime: "10 min",
@@ -1267,7 +1274,7 @@ const posts: BlogPost[] = [
     excerpt:
       "Guia prático para decidir entre SEO tradicional e otimização para inteligência artificial, com checklist e framework de decisão para 2026.",
     content: seoOuInteligenciaArtificialHtml,
-    author: "Equipe Otne SEO",
+    author: "Paul Leite",
     date: "17 Abr 2026",
     category: "Tendências",
     readTime: "12 min",

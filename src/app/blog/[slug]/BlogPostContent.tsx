@@ -4,7 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { SchemaMarkup } from "@/components/seo/schema-markup";
-import { ArrowLeft, Calendar, Clock, User } from "lucide-react";
+import { ArrowLeft, Calendar, Clock, RefreshCw, User } from "lucide-react";
 import { processContent } from "@/lib/blog-utils";
 import { TableOfContents } from "@/components/blog/table-of-contents";
 import { BlogCTA } from "@/components/blog/blog-cta";
@@ -13,19 +13,40 @@ import { ScrollProgress } from "@/components/blog/scroll-progress";
 import { useMemo, useEffect, useRef } from "react";
 import type { BlogPost } from "@/data/blog-posts";
 
+const MONTHS: Record<string, string> = {
+  Jan: "01", Fev: "02", Mar: "03", Abr: "04", Mai: "05", Jun: "06",
+  Jul: "07", Ago: "08", Set: "09", Out: "10", Nov: "11", Dez: "12",
+};
+
+function formatBrDate(brDate: string): string {
+  const [d, m, y] = brDate.trim().split(" ");
+  const mm = MONTHS[m] ?? "01";
+  return `${d.padStart(2, "0")}/${mm}/${y}`;
+}
+
 const articleSchema = (post: BlogPost) => ({
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: post.title,
   image: post.imageUrl,
-  author: { "@type": "Organization", name: post.author },
+  author: {
+    "@type": "Person",
+    name: post.author,
+    url: "https://www.otne.com.br/autor/paul-leite",
+    sameAs: ["https://www.linkedin.com/in/paul-leite/"],
+  },
   publisher: {
     "@type": "Organization",
     name: "Otne SEO",
     logo: { "@type": "ImageObject", url: "https://www.otne.com.br/opengraph.jpg" },
   },
   datePublished: post.date,
+  dateModified: post.updatedDate ?? post.date,
   description: post.excerpt,
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": `https://www.otne.com.br/blog/${post.slug}`,
+  },
 });
 
 export function BlogPostContent({ post }: { post: BlogPost }) {
@@ -85,9 +106,15 @@ export function BlogPostContent({ post }: { post: BlogPost }) {
               {post.title}
             </h1>
 
-            <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground border-y border-border py-6">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground border-t border-border pt-6">
               <div className="flex items-center gap-2 font-medium">
-                <User className="w-4 h-4" /> {post.author}
+                <User className="w-4 h-4" />
+                <Link
+                  href="/autor/paul-leite"
+                  className="hover:text-primary transition-colors"
+                >
+                  {post.author}
+                </Link>
               </div>
               <div className="flex items-center gap-2 font-medium">
                 <Calendar className="w-4 h-4" /> {post.date}
@@ -96,6 +123,18 @@ export function BlogPostContent({ post }: { post: BlogPost }) {
                 <Clock className="w-4 h-4" /> {post.readTime}
               </div>
             </div>
+            {post.updatedDate && (
+              <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground border-b border-border pb-6 mt-2">
+                <RefreshCw className="w-3.5 h-3.5 text-primary/70" />
+                <span>
+                  Atualizado em{" "}
+                  <time dateTime={post.updatedDate} className="font-medium text-foreground">
+                    {formatBrDate(post.updatedDate)}
+                  </time>
+                </span>
+              </div>
+            )}
+            {!post.updatedDate && <div className="border-b border-border mb-0 pb-0" />}
           </header>
 
           <div className="aspect-video rounded-xl overflow-hidden mb-16 shadow-sm">
