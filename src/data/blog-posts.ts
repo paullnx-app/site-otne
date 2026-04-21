@@ -465,9 +465,9 @@ const posts: BlogPost[] = [
     title: "Como Aumentar a Autoridade e Conquistar Links: 5 Estratégias Comprovadas",
     excerpt: "Descubra táticas práticas para estabelecer credibilidade instantânea e atrair backlinks de qualidade para o seu site através da construção de autoridade.",
     content: `
-      <p class="lead">Você já se perguntou por que algumas marcas conquistam links naturalmente enquanto outras lutam para conseguir uma única menção? A resposta está na autoridade percebida, especialmente num <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">cenário de SEO cada vez mais competitivo em 2026</a>.</p>
+      <p class="lead">Algumas marcas conquistam links naturalmente e outras brigam meses por uma única menção. A diferença está na autoridade percebida, sobretudo num <a href="/blog/guia-seo-2026" class="text-primary font-bold hover:underline">cenário de SEO cada vez mais competitivo em 2026</a>.</p>
 
-      <p>Construir autoridade online não acontece da noite para o dia, porém existem estratégias específicas que qualquer negócio pode implementar para acelerar esse processo. Neste artigo, você vai descobrir cinco táticas práticas que estabelecem credibilidade instantânea e atraem links de qualidade para o seu site.</p>
+      <p>Autoridade online não aparece da noite para o dia. Existem, porém, estratégias específicas que qualquer negócio pode aplicar para acelerar esse processo. A seguir, cinco táticas práticas que estabelecem credibilidade real e atraem links de qualidade para o seu site.</p>
 
       <p>A grande sacada dessas estratégias é simples: primeiro você investe tempo construindo sua reputação, depois os resultados chegam de forma consistente e escalável.</p>
 
@@ -636,7 +636,7 @@ const posts: BlogPost[] = [
 
       <p>A entrada massiva da Inteligência Artificial nos resultados de pesquisa (com o Google AI Overviews e o Search Generative Experience - SGE) mudou as regras do jogo. Não se trata mais apenas de "rankear em primeiro lugar" com palavras-chave repetidas. Trata-se de ser a <strong>resposta definitiva</strong>.</p>
 
-      <p>Para pequenas e médias empresas, esse cenário pode parecer assustador. Mas a verdade é que ele nivela o campo de jogo. Neste guia completo, vamos dissecar exatamente o que mudou, o que permaneceu e como uma <strong>Consultoria de SEO</strong> estratégica pode ser o diferencial entre o esquecimento e o domínio do seu nicho.</p>
+      <p>Para pequenas e médias empresas, esse cenário pode parecer assustador. A verdade é outra: ele nivela o campo de jogo. Nas próximas seções, discutimos o que mudou, o que permaneceu e como uma <strong>Consultoria de SEO</strong> estratégica faz diferença entre o esquecimento e o domínio do seu nicho.</p>
 
       <h2>1. O Fim da "Pesquisa de 10 Links Azuis"</h2>
 

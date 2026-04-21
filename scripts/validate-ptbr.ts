@@ -227,10 +227,74 @@ const INSTRUCTION_LABEL_HEADINGS: RegExp[] = [
   /<h[1-6][^>]*>\s*FAQ\s*:\s*cinco\s+perguntas\s+frequentes\s*\(\s*formato\s+snippet\s*\)\s*<\/h[1-6]>/i,
 ];
 
+/**
+ * Frases-gatilho clássicas de IA e meta-frases sobre o próprio artigo.
+ * Presença de qualquer uma derruba o build (SEO_GUIDELINES v2.1).
+ */
+const AI_GIVEAWAY_PATTERNS: Array<{ pattern: RegExp; label: string }> = [
+  { pattern: /\bneste\s+artigo,?\s+(?:vamos|iremos)\s+(?:explorar|ver|entender|descobrir|mostrar|analisar|apresentar)\b/i, label: "meta-frase: 'neste artigo, vamos…'" },
+  { pattern: /\bao\s+longo\s+deste\s+(?:artigo|texto|conte(?:ú|u)do|guia)\b/i, label: "meta-frase: 'ao longo deste artigo'" },
+  { pattern: /\bno\s+decorrer\s+deste\s+(?:artigo|conte(?:ú|u)do|texto|guia)\b/i, label: "meta-frase: 'no decorrer deste…'" },
+  { pattern: /\bcomo\s+veremos\s+a\s+seguir\b/i, label: "meta-frase: 'como veremos a seguir'" },
+  { pattern: /\bneste\s+guia\s+completo\b/i, label: "abertura genérica: 'neste guia completo'" },
+  { pattern: /\bno\s+mundo\s+atual\b/i, label: "abertura genérica: 'no mundo atual'" },
+  { pattern: /\bem\s+um\s+cen(?:á|a)rio\s+cada\s+vez\s+mais\b/i, label: "abertura genérica: 'em um cenário cada vez mais'" },
+  { pattern: /\bvoc(?:ê|e)\s+j(?:á|a)\s+se\s+perguntou\b/i, label: "abertura genérica: 'você já se perguntou'" },
+  { pattern: /\bsem\s+d(?:ú|u)vida\s+alguma\b/i, label: "frase-gatilho: 'sem dúvida alguma'" },
+  { pattern: /\b(?:é|e)\s+imperativo\s+que\b/i, label: "frase-gatilho: 'é imperativo que'" },
+  { pattern: /\b(?:é|e)\s+fundamental\s+compreender\s+que\b/i, label: "frase-gatilho: 'é fundamental compreender que'" },
+  { pattern: /\b(?:é|e)\s+importante\s+ressaltar\s+que\b/i, label: "frase-gatilho: 'é importante ressaltar que'" },
+  { pattern: /\bvale\s+destacar\s+que\b/i, label: "frase-gatilho: 'vale destacar que'" },
+  { pattern: /\bn(?:ã|a)o\s+podemos\s+negar\s+que\b/i, label: "frase-gatilho: 'não podemos negar que'" },
+  { pattern: /\bem\s+(?:ú|u)ltima\s+an(?:á|a)lise\b/i, label: "frase-gatilho: 'em última análise'" },
+  { pattern: /\bisso\s+nos\s+leva\s+a\s+refletir\b/i, label: "frase-gatilho: 'isso nos leva a refletir'" },
+  { pattern: /\bisso\s+posto\b/i, label: "frase-gatilho: 'isso posto'" },
+];
+
+/**
+ * Vocabulário AI-inflated: palavras-gatilho típicas de texto gerado por IA.
+ * Uso esporádico é tolerado; abuso (mais de INFLATED_MAX ocorrências no mesmo
+ * arquivo) derruba o build (SEO_GUIDELINES v2.1 seção 1.2).
+ */
+const AI_INFLATED_WORDS: string[] = [
+  "crucial",
+  "holístico",
+  "holística",
+  "holísticos",
+  "holísticas",
+  "robusto",
+  "robusta",
+  "robustos",
+  "robustas",
+  "alavancar",
+  "alavancando",
+  "potencializar",
+  "potencializando",
+  "desvendar",
+  "desvendando",
+  "paradigma",
+  "jornada",
+  "panorama",
+  "disruptivo",
+  "disruptiva",
+  "tangível",
+  "intangível",
+  "subjacente",
+  "intrínseco",
+  "intrínseca",
+  "incrivelmente",
+  "notavelmente",
+  "significativamente",
+  "extremamente",
+];
+const INFLATED_MAX = 3;
+const AI_INFLATED_REGEX = new RegExp(`\\b(?:${AI_INFLATED_WORDS.join("|")})\\b`, "gi");
+
 function validateFile(relPath: string): Issue[] {
   const abs = join(ROOT, relPath);
   const text = readFileSync(abs, "utf8");
   const issues: Issue[] = [];
+  const inflatedCount = new Map<string, number>();
 
   text.split("\n").forEach((rawLine, idx) => {
     if (IGNORE_LINE_PATTERNS.some((re) => re.test(rawLine))) return;
@@ -252,6 +316,25 @@ function validateFile(relPath: string): Issue[] {
       stripped = stripped.replace(pattern, " ");
     }
 
+    for (const { pattern, label } of AI_GIVEAWAY_PATTERNS) {
+      if (pattern.test(stripped)) {
+        issues.push({
+          file: relPath,
+          line: idx + 1,
+          word: label,
+          context: rawLine.trim().slice(0, 160),
+        });
+      }
+    }
+
+    const inflatedMatches = stripped.match(AI_INFLATED_REGEX);
+    if (inflatedMatches) {
+      for (const word of inflatedMatches) {
+        const key = word.toLowerCase();
+        inflatedCount.set(key, (inflatedCount.get(key) ?? 0) + 1);
+      }
+    }
+
     const matches = stripped.match(OFFENDER_REGEX);
     if (!matches) return;
 
@@ -265,6 +348,17 @@ function validateFile(relPath: string): Issue[] {
     }
   });
 
+  for (const [word, count] of inflatedCount) {
+    if (count > INFLATED_MAX) {
+      issues.push({
+        file: relPath,
+        line: 0,
+        word: `vocabulário AI-inflated excessivo: "${word}" x${count} (máx. ${INFLATED_MAX})`,
+        context: `SEO_GUIDELINES v2.1 §1.2: reduza o uso de "${word}" ou substitua por termo concreto.`,
+      });
+    }
+  }
+
   return issues;
 }
 
@@ -274,18 +368,17 @@ function main() {
 
   if (allIssues.length === 0) {
     console.log(
-      `[validate-ptbr] OK - nenhum problema de acentuação encontrado em ${files.length} arquivos.`,
+      `[validate-ptbr] OK - nenhum problema de acentuação/voz humana em ${files.length} arquivos.`,
     );
     return;
   }
 
   console.error(
-    `[validate-ptbr] ❌ ${allIssues.length} possível(is) problema(s) de acentuação pt-BR:`,
+    `[validate-ptbr] ❌ ${allIssues.length} problema(s) detectado(s) (acentuação / rótulos / voz humana):`,
   );
   for (const issue of allIssues) {
-    console.error(
-      `  - ${issue.file}:${issue.line}  palavra="${issue.word}"  | ${issue.context}`,
-    );
+    const where = issue.line > 0 ? `${issue.file}:${issue.line}` : issue.file;
+    console.error(`  - ${where}  ${issue.word}  | ${issue.context}`);
   }
   process.exit(1);
 }
