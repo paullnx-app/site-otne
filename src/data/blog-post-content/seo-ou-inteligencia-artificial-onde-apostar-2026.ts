@@ -205,7 +205,7 @@ const sections: string[] = [
 
 <p><strong>Em resumo</strong>, os três se reforçam. <strong>Todavia</strong>, SEO sem página útil não sustenta os outros.</p>`,
 
-  `<h2>FAQ: cinco perguntas frequentes (formato snippet)</h2>
+  `<h2>Perguntas frequentes (FAQ)</h2>
 
 <h3>Preciso parar de investir em SEO para investir em IA?</h3>
 <p><strong>Não necessariamente.</strong> <strong>Em geral</strong>, IA acelera produção e análise, mas <strong>SEO</strong> ainda organiza descoberta em busca clássica. <strong>Portanto</strong>, trate IA como alavanca, não como substituto total de arquitetura e intenção.</p>

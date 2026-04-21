@@ -224,6 +224,7 @@ const INSTRUCTION_LABEL_HEADINGS: RegExp[] = [
   /<h[1-6][^>]*>\s*Gancho\s*<\/h[1-6]>/i,
   /<h[1-6][^>]*>\s*Lead\s*<\/h[1-6]>/i,
   /<h[1-6][^>]*>\s*CTA\s+final\s*<\/h[1-6]>/i,
+  /<h[1-6][^>]*>\s*FAQ\s*:\s*cinco\s+perguntas\s+frequentes\s*\(\s*formato\s+snippet\s*\)\s*<\/h[1-6]>/i,
 ];
 
 function validateFile(relPath: string): Issue[] {

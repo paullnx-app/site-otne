@@ -61,6 +61,7 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Padrão de escrita do FAQ no corpo:** use exatamente um heading `<h2>Perguntas Frequentes (FAQ)</h2>` e, abaixo, pares de `<h3>Pergunta</h3>` + `<p>Resposta</p>`, sem inventar headings de instrução e sem “widgets” com marcação alternativa.
 - **Evite divergência:** as perguntas/respostas do HTML devem bater com o `faqJsonLd` (mesmo sentido e termos). Se houver update no texto, atualize o `faqJsonLd` junto.
 - **Consistência visual:** não dependa de wrappers e classes para o FAQ “parecer certo”. O template do blog já aplica tipografia/spacing padronizados em `h2/h3/p` em qualquer profundidade do HTML.
+- **Proibição de rótulos internos no FAQ:** nunca publicar headings de instrução como `FAQ: cinco perguntas frequentes (formato snippet)` — isso é texto de briefing e é bloqueado pelo validador em `scripts/validate-ptbr.ts`.
 
 ### Padrões de E-E-A-T (Experiência, Especialização, Autoridade, Confiança):
 - **Autoria:** Todo artigo deve ter um autor definido (evite "Admin").
