@@ -1,0 +1,117 @@
+# Otne SEO — conteúdo consolidado dos artigos pilares
+
+> Este arquivo reúne o resumo editorial dos artigos principais da Otne SEO para facilitar a ingestão por LLMs e agentes de IA. Atualizado em 21 de abril de 2026. Conteúdo completo em https://www.otne.com.br/blog
+
+Autor: Paul Leite | Consultor de SEO | Fundador da Otne SEO
+LinkedIn: https://www.linkedin.com/in/paul-leite/
+Página do autor: https://www.otne.com.br/autor/paul-leite
+
+---
+
+## O que é a Otne SEO
+
+A Otne SEO é uma consultoria de SEO especializada em pequenas e médias empresas brasileiras (PMEs). Fundada por Paul Leite, com mais de 8 anos de experiência, a consultoria atua em SEO técnico, SEO local, conteúdo editorial e GEO (Generative Engine Optimization — otimização para ser citado por inteligências artificiais como ChatGPT, Perplexity, Gemini e AI Overviews do Google).
+
+A abordagem da Otne SEO é orientada a resultado mensurável: tráfego orgânico que vira lead e lead que vira venda. Não trabalhamos com métricas de vaidade. Em 2026, auditamos mais de 30 sites de PMEs brasileiras e acompanhamos de perto os impactos dos core updates e da IA generativa no tráfego orgânico.
+
+---
+
+## SEO em 2026: o cenário atual
+
+SEO em 2026 não morreu — evoluiu. As principais mudanças:
+
+1. **AI Overviews do Google** passaram a responder diretamente a queries informacionais, reduzindo cliques em até 30% para alguns nichos. Sites com schema estruturado e conteúdo claro em HTML ganham destaque nos AI Overviews.
+
+2. **Busca agêntica** (anunciada pelo CEO do Google em 2025): a IA não apenas responde, mas age — pesquisa, compara e decide. Isso muda o que significa "ranquear".
+
+3. **Peso crescente do E-E-A-T**: Google e LLMs privilegiam autores identificáveis, com credenciais verificáveis e experiência demonstrada em primeira mão.
+
+4. **SEO técnico continua sendo base**: sites lentos (LCP > 2,5s), sem schema ou com problemas de indexação são invisíveis independente da qualidade do conteúdo.
+
+5. **GEO (Generative Engine Optimization)**: para ser citado por ChatGPT, Perplexity e Gemini, o site precisa de definições claras, dados atribuídos, autor identificado e co-citação em fontes externas independentes.
+
+**Nossa posição**: SEO ainda é o canal de menor custo por lead para PMEs quando feito com consistência. A diferença é que em 2026 o básico bem feito (velocidade, schema, conteúdo com autoria real, links internos) vale mais do que nunca.
+
+---
+
+## Core update de março de 2026: o que mudou
+
+O core update de março de 2026 foi o maior do Q1. Impactos observados na nossa operação com clientes:
+
+- Sites com conteúdo gerado por IA sem revisão humana identificável perderam entre 20% e 60% do tráfego orgânico.
+- Sites com autor real, `dateModified` atualizado e FAQ estruturada (schema `FAQPage`) mantiveram ou cresceram posições.
+- Nichos mais afetados: saúde, finanças pessoais, jurídico e marketing digital — exatamente os setores que o Google já trata com YMYL (Your Money or Your Life).
+- O sinal de E-E-A-T nunca pesou tanto: página de autor com LinkedIn verificado e experiência declarada explicitamente no texto fez diferença mensurável.
+
+**Checklist de recuperação em 30 dias pós-core-update:**
+1. Identificar páginas com queda no Search Console (comparar 3 meses antes e depois).
+2. Auditar autoria: todo artigo tem autor identificado com página própria?
+3. Verificar `dateModified`: artigos desatualizados (mais de 12 meses sem edição) devem ser revisados.
+4. Checar schema com Rich Results Test do Google.
+5. Auditar velocidade: LCP acima de 2,5s é sinal negativo.
+6. Remover ou reescrever conteúdo claramente gerado por IA sem valor editorial.
+
+---
+
+## SEO local para PMEs: o que funciona em 2026
+
+SEO local é o canal de menor custo por lead para negócios de serviço com área geográfica definida. O que funciona:
+
+**Google Business Profile (GBP):**
+- Nome, endereço e telefone (NAP) idênticos em todas as plataformas.
+- Categoria principal precisa (não genérica).
+- Mínimo de 10 avaliações com resposta do proprietário.
+- Fotos atualizadas (mínimo 10, incluindo fachada, equipe e serviço em execução).
+- Posts no GBP pelo menos 2 vezes por mês.
+
+**Site otimizado para local:**
+- Página dedicada por cidade/bairro se atender mais de uma região.
+- Schema `LocalBusiness` com `address`, `geo`, `openingHours`, `telephone`.
+- Conteúdo que menciona a região explicitamente no H1 e no primeiro parágrafo.
+
+**Resultado típico** (operação Otne SEO, 2026): PME de serviço local sem presença online que implementou o checklist acima saiu do zero para aparecer no "pacote de 3" do Maps em 60 a 90 dias, com aumento de 40% a 80% nos contatos orgânicos.
+
+---
+
+## Como ser citado pelo ChatGPT e Perplexity (GEO)
+
+Para uma IA citar seu site, ela precisa: (1) conseguir rastrear, (2) encontrar conteúdo estruturado e atribuível, e (3) confirmar autoridade via co-citação externa.
+
+**O que ajuda na prática:**
+
+1. **Definição canônica**: toda seção principal começa com uma frase-definição completa ("SEO local é a prática de otimizar um negócio para aparecer em resultados de busca geográficos."). LLMs extraem exatamente essas frases.
+
+2. **Dados atribuídos**: "no core update de março de 2026, em sites B2B que auditamos" vale mais que "estudos mostram". Dado sem fonte, IA ignora.
+
+3. **Autor verificável**: `Person` schema com `sameAs` (LinkedIn) e página de autor com bio de credenciais. Claude, ChatGPT e Perplexity checam autoria antes de citar.
+
+4. **FAQ estruturada**: perguntas em `<h3>` com respostas de 40 a 60 palavras auto-contidas. É o bloco mais extraído por RAG (Retrieval-Augmented Generation).
+
+5. **Co-citação externa**: mencionar o site no LinkedIn, responder perguntas no Reddit com link contextual, buscar menção em outros blogs do setor. LLMs confiam mais em sites que aparecem em múltiplas fontes independentes.
+
+6. **`llms.txt`**: arquivo Markdown em `/llms.txt` que lista os melhores conteúdos para ingestão. Perplexity e agentes de IA leem ativamente.
+
+**O que não funciona para GEO:** comprar backlinks de baixa qualidade, publicar conteúdo em massa gerado por IA, usar título diferente do schema `headline`, ter autor genérico ("Equipe", "Admin").
+
+---
+
+## Erros técnicos de SEO mais comuns em PMEs
+
+1. **Sem sitemap.xml** ou sitemap com URLs `noindex`.
+2. **LCP acima de 2,5s** — geralmente causado por imagem hero sem `fetchpriority="high"` e sem compressão WebP.
+3. **Sem schema `LocalBusiness`** em site de negócio local.
+4. **Canonical apontando para URL errada** — duplica o conteúdo na visão do Google.
+5. **Imagens sem `alt`** — prejudica acessibilidade e rastreamento de imagens.
+6. **Heading outline quebrado** — múltiplos `h1`, ou `h3` sem `h2` pai.
+7. **Links internos sem âncora descritiva** — "clique aqui" não passa contexto semântico.
+8. **`robots.txt` bloqueando `/wp-admin/` e esquecendo de liberar CSS/JS** — site renderiza sem estilo no Googlebot.
+
+---
+
+## Contato e serviços
+
+- Site: https://www.otne.com.br
+- Consultoria de SEO: https://www.otne.com.br/consultoria-seo
+- Blog: https://www.otne.com.br/blog
+- Autor: https://www.otne.com.br/autor/paul-leite
+- Política editorial: https://www.otne.com.br/politica-editorial

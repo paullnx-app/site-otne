@@ -1,0 +1,44 @@
+# Otne SEO
+
+> Consultoria de SEO especializada em pequenas e médias empresas brasileiras (PMEs). Ajudamos negócios a crescer no Google e a ser citados por inteligências artificiais como ChatGPT, Perplexity e Gemini, com foco em tráfego orgânico real e previsível.
+
+Fundador e editor-chefe: Paul Leite — consultor de SEO com mais de 8 anos de experiência, especializado em PMEs brasileiras. Perfil completo: https://www.otne.com.br/autor/paul-leite
+
+## Serviços
+
+- [Consultoria de SEO para PMEs](https://www.otne.com.br/consultoria-seo): Diagnóstico, estratégia e execução de SEO para pequenas e médias empresas que querem crescer no Google com método e consistência.
+
+## Sobre
+
+- [Quem somos](https://www.otne.com.br/quem-somos): Missão, valores e diferenciais da Otne SEO.
+- [Paul Leite — autor e especialista em SEO](https://www.otne.com.br/autor/paul-leite): Bio, especialidades e lista completa de artigos publicados.
+- [Política editorial](https://www.otne.com.br/politica-editorial): Como produzimos, revisamos e atualizamos os conteúdos. Disclosure de uso de IA.
+
+## Artigos principais (pilares)
+
+- [Guia de SEO para 2026: o que mudou e como sobreviver](https://www.otne.com.br/blog/guia-seo-2026): Fundamentos, tendências, o que mudou com IA e como uma PME deve agir.
+- [SEO ou inteligência artificial: onde apostar agora?](https://www.otne.com.br/blog/seo-ou-inteligencia-artificial-onde-apostar-2026): Framework de decisão entre SEO tradicional e GEO/AEO para 2026.
+- [5 erros técnicos de SEO que matam seu tráfego](https://www.otne.com.br/blog/erros-tecnicos-seo): Core Web Vitals, indexação, sitemap e schema — os erros mais comuns em PMEs.
+- [Como aumentar autoridade e conquistar links: 5 estratégias](https://www.otne.com.br/blog/como-aumentar-autoridade-conquistar-links): E-E-A-T, link building e menções para PMEs brasileiras.
+- [Como construir confiança em conteúdo digital na era da IA](https://www.otne.com.br/blog/como-construir-confianca-conteudo-digital-ia): Estratégias para diferenciar sua marca do conteúdo gerado por IA.
+- [SEO local para pequenas empresas: guia definitivo](https://www.otne.com.br/blog/seo-local-para-pequenas-empresas): Google Business Profile, Maps, NAP e reviews para dominar a região.
+
+## Artigos satélites (atualizações e estudos)
+
+- [Core update de março de 2026: quem ganhou, quem perdeu](https://www.otne.com.br/blog/core-update-marco-2026-quem-ganhou-quem-perdeu): Análise do maior update do Google no Q1 2026 e checklist de recuperação em 30 dias.
+- [Spam update de março de 2026: como identificar e se recuperar](https://www.otne.com.br/blog/spam-update-marco-2026-como-identificar-recuperar): Diagnóstico no Search Console e plano de ação para sites penalizados.
+- [O que mudou na busca no início de 2026](https://www.otne.com.br/blog/o-que-mudou-na-busca-no-inicio-de-2026): Resumo do Q1 2026 — core update, spam update e busca com IA.
+- [SEO ainda funciona em 2026? Resposta honesta com 3 estratégias](https://www.otne.com.br/blog/seo-ainda-funciona-em-2026): Análise prática com roteiro de 90 dias para gerar lead e venda.
+- [5 características de sites que cresceram no Google em 2026](https://www.otne.com.br/blog/5-caracteristicas-sites-cresceram-no-google-2026): Padrões identificados em sites com crescimento orgânico real.
+- [Como o Google vai funcionar em 2027](https://www.otne.com.br/blog/como-o-google-vai-funcionar-em-2027): Busca agêntica, IA e o que PMEs precisam fazer agora para se preparar.
+- [TurboQuant: a tecnologia que pode mudar o SEO](https://www.otne.com.br/blog/turboquant-tecnologia-que-pode-mudar-seo): Análise crítica sem hype de tecnologias emergentes aplicadas ao SEO.
+- [Por que o ChatGPT cita alguns sites e ignora outros](https://www.otne.com.br/blog/por-que-chatgpt-cita-alguns-sites): Critérios de citação de IAs e guia prático para entrar nessa lista.
+- [Sua empresa aparece quando alguém pergunta ao ChatGPT?](https://www.otne.com.br/blog/empresa-aparece-chatgpt-como-testar): Como testar visibilidade da sua marca em ChatGPT, Gemini e Perplexity.
+- [Como aparecer no Google Maps: guia passo a passo 2026](https://www.otne.com.br/blog/como-aparecer-no-google-maps): Cadastro, verificação e otimização do Perfil da Empresa no Google.
+- [Marketing digital para empresários: guia prático](https://www.otne.com.br/blog/marketing-digital-para-empresarios): Sistema de atração, conversão e retenção para PMEs sem desperdício de verba.
+- [Por que seu concorrente aparece no Google e você não](https://www.otne.com.br/blog/como-aparecer-nas-buscas-do-seu-cliente): Intenção de busca e como aparecer exatamente quando o cliente está pronto para comprar.
+
+## Optional
+
+- [Blog completo — todos os artigos](https://www.otne.com.br/blog): Lista de todos os artigos publicados por Paul Leite na Otne SEO.
+- [llms-full.txt — versão consolidada do conteúdo principal](https://www.otne.com.br/llms-full.txt): Conteúdo textual dos artigos pilares em um único arquivo para ingestão por LLMs.
