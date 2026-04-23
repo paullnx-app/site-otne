@@ -27,6 +27,40 @@ async function writeFileEnsuringDir(filePath: string, content: string) {
   await fs.writeFile(filePath, content, "utf8");
 }
 
+function renderStaticPageMd(opts: {
+  pathname: string;
+  title: string;
+  description: string;
+  bullets?: string[];
+}): string {
+  const base = siteUrl();
+  const url = `${base}${opts.pathname}`;
+  const lines: string[] = [];
+
+  lines.push(`# ${opts.title}`);
+  lines.push("");
+  lines.push(`URL canônica: ${url}`);
+  lines.push("");
+  lines.push(opts.description);
+  lines.push("");
+
+  if (opts.bullets && opts.bullets.length > 0) {
+    lines.push("## Pontos principais");
+    lines.push("");
+    for (const item of opts.bullets) {
+      lines.push(`- ${item}`);
+    }
+    lines.push("");
+  }
+
+  lines.push("## Fonte (HTML)");
+  lines.push("");
+  lines.push(`Se você precisa de todos os detalhes, use a página HTML: ${url}`);
+  lines.push("");
+
+  return lines.join("\n");
+}
+
 function renderBlogIndexMd(): string {
   const base = siteUrl();
   const lines: string[] = [];
@@ -87,6 +121,79 @@ function renderBlogPostMd(post: (typeof blogPostsMeta)[number]): string {
 async function main() {
   const repoRoot = process.cwd();
   const publicMdRoot = path.join(repoRoot, "public", "md");
+
+  // static pages that agents frequently request
+  const staticPages = [
+    {
+      pathname: "/blog",
+      file: "blog.md",
+      title: "Blog",
+      description:
+        "Lista de artigos publicados. Versão em Markdown para agentes (GEO/AEO).",
+    },
+    {
+      pathname: "/consultoria-seo",
+      file: "consultoria-seo.md",
+      title: "Consultoria de SEO",
+      description:
+        "Página de serviço. Versão em Markdown para agentes (GEO/AEO), com link para a versão completa em HTML.",
+      bullets: [
+        "SEO técnico (Core Web Vitals, indexação e arquitetura)",
+        "Estratégia editorial e produção em pt-BR (qualidade e consistência)",
+        "AEO/GEO: estrutura citável (FAQs, headings em pergunta, clareza)",
+      ],
+    },
+    {
+      pathname: "/quem-somos",
+      file: "quem-somos.md",
+      title: "Quem somos",
+      description:
+        "Página institucional. Versão em Markdown para agentes (GEO/AEO), com link para a versão completa em HTML.",
+      bullets: [
+        "Foco em SEO com resultado mensurável",
+        "Transparência editorial e autoria definida",
+        "Performance e experiência do usuário como base",
+      ],
+    },
+    {
+      pathname: "/politica-editorial",
+      file: "politica-editorial.md",
+      title: "Política editorial",
+      description:
+        "Diretrizes editoriais do site. Versão em Markdown para agentes (GEO/AEO), com link para a versão completa em HTML.",
+      bullets: [
+        "Critérios de qualidade, revisão e atualização",
+        "Boas práticas para evitar conteúdo genérico",
+        "Padrões de schema e metadados",
+      ],
+    },
+    {
+      pathname: "/autor/paul-leite",
+      file: path.join("autor", "paul-leite.md"),
+      title: "Autor: Paul Leite",
+      description:
+        "Página de autor. Versão em Markdown para agentes (GEO/AEO), com link para a versão completa em HTML.",
+      bullets: [
+        "Biografia e credenciais do autor",
+        "Relação com os conteúdos publicados",
+        "Links para perfis públicos (quando aplicável)",
+      ],
+    },
+  ] as const;
+
+  for (const p of staticPages) {
+    // blog index is rendered from metadata list to remain always in sync
+    if (p.pathname === "/blog") continue;
+    await writeFileEnsuringDir(
+      path.join(publicMdRoot, p.file),
+      renderStaticPageMd({
+        pathname: p.pathname,
+        title: p.title,
+        description: p.description,
+        bullets: p.bullets ? [...p.bullets] : undefined,
+      })
+    );
+  }
 
   // index
   await writeFileEnsuringDir(
