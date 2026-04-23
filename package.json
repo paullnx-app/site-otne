@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "generate:public-md": "tsx scripts/generate-public-md.ts",
+    "build": "npm run -s generate:public-md && next build",
     "start": "next start",
     "lint": "eslint src/data/blog-post-content/**/*.ts src/data/blog-posts.ts src/data/blog-posts.meta.ts",
     "validate:ptbr": "tsx scripts/validate-ptbr.ts",

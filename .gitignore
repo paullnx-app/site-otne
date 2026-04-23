@@ -9,3 +9,8 @@ tsconfig.tsbuildinfo
 # iCloud Drive duplicates
 * 2.*
 .vercel
+
+# Agent-friendly Markdown exports (generated pre-build)
+public/md/blog.md
+public/md/blog/
+public/md/.generated.txt
