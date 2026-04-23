@@ -4,11 +4,13 @@ import React from 'react';
 import { artigoSeoIa2026 } from './draft-article';
 import { Share2, Twitter, Linkedin, Facebook, ArrowLeft, Calendar, Clock } from 'lucide-react';
 import { ScrollProgress } from '@/components/blog/scroll-progress';
+import { processContent } from "@/lib/blog-utils";
 
 // Visualizador de rascunho — metadata gerenciada em app/blog/rascunho/page.tsx
 export default function RascunhoArtigo() {
   const post = artigoSeoIa2026;
   const shareUrl = "https://www.otne.com.br/blog/seo-ou-inteligencia-artificial-2026";
+  const { content: processedContent } = processContent(post.content);
 
   return (
     <div className="min-h-screen bg-background relative">
@@ -91,7 +93,7 @@ export default function RascunhoArtigo() {
               prose-li:mb-2
               prose-blockquote:border-l-4 prose-blockquote:border-primary prose-blockquote:bg-secondary/50 prose-blockquote:p-6 prose-blockquote:rounded-r-xl prose-blockquote:text-foreground prose-blockquote:font-medium prose-blockquote:italic
               prose-img:rounded-xl prose-img:shadow-md"
-            dangerouslySetInnerHTML={{ __html: post.content }}
+            dangerouslySetInnerHTML={{ __html: processedContent }}
           />
 
         </article>

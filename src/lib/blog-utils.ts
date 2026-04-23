@@ -5,6 +5,64 @@ export interface TOCItem {
   level: number;
 }
 
+function escapeAttr(value: string): string {
+  return value.replace(/&/g, "&amp;").replace(/"/g, "&quot;");
+}
+
+function buildNextImageUrl(src: string, width: number, quality: number): string {
+  const url = `/_next/image?url=${encodeURIComponent(src)}&w=${width}&q=${quality}`;
+  return url;
+}
+
+function optimizeHtmlImages(html: string): string {
+  // Replace <img ...> tags by rewriting src/srcset/sizes to use Next's image optimizer.
+  // This keeps authoring simple (plain <img src="...">) while shipping responsive AVIF/WebP.
+  const widths = [480, 640, 768, 1024, 1280];
+  const quality = 82;
+
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    // Skip if already using Next optimizer, or explicitly disabled.
+    if (tag.includes("/_next/image?") || tag.includes('data-no-opt="true"')) {
+      return tag;
+    }
+
+    const srcMatch = tag.match(/\bsrc=(?:"|')([^"']+)(?:"|')/i);
+    if (!srcMatch) return tag;
+
+    const rawSrc = srcMatch[1];
+    // Only optimize same-origin/relative images. External images should be handled via next/image remotePatterns.
+    if (!rawSrc.startsWith("/")) return tag;
+
+    const optimizedSrc = buildNextImageUrl(rawSrc, 1280, quality);
+    const srcset = widths
+      .map((w) => `${buildNextImageUrl(rawSrc, w, quality)} ${w}w`)
+      .join(", ");
+
+    const hasLoading = /\bloading=(?:"|')/i.test(tag);
+    const hasDecoding = /\bdecoding=(?:"|')/i.test(tag);
+    const hasSizes = /\bsizes=(?:"|')/i.test(tag);
+    const hasSrcset = /\bsrcset=(?:"|')/i.test(tag);
+
+    let out = tag;
+    out = out.replace(/\bsrc=(?:"|')[^"']+(?:"|')/i, `src="${escapeAttr(optimizedSrc)}"`);
+
+    if (!hasSrcset) {
+      out = out.replace(/<img\b/i, `<img srcset="${escapeAttr(srcset)}"`);
+    }
+    if (!hasSizes) {
+      out = out.replace(/<img\b/i, `<img sizes="(max-width: 768px) 100vw, 896px"`);
+    }
+    if (!hasLoading) {
+      out = out.replace(/<img\b/i, `<img loading="lazy"`);
+    }
+    if (!hasDecoding) {
+      out = out.replace(/<img\b/i, `<img decoding="async"`);
+    }
+
+    return out;
+  });
+}
+
 export function processContent(html: string): { content: string; toc: TOCItem[] } {
   const toc: TOCItem[] = [];
   
@@ -39,6 +97,7 @@ export function processContent(html: string): { content: string; toc: TOCItem[] 
     
     return `<h${level}${attrs} id="${id}">${text}</h${level}>`;
   });
-  
-  return { content: processedContent, toc };
+
+  const contentWithOptimizedImages = optimizeHtmlImages(processedContent);
+  return { content: contentWithOptimizedImages, toc };
 }

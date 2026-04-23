@@ -2,10 +2,10 @@
 
 | Campo | Valor |
 |---|---|
-| **Revisão** | `v2.1` |
+| **Revisão** | `v2.2` |
 | **Data** | 2026-04-21 |
-| **Alterações desta revisão** | Endurecimento anti-IA 2026: vocabulário AI-inflated pt-BR, 1ª pessoa obrigatória, 1 dado concreto de operação por artigo, anti-simetria, controvérsia editorial, proibição de meta-frase sobre o texto. Novas seções: 1.5 Autoria real, 1.6 Freshness e `dateModified`, 2.2 Canibalização de palavra-chave, 2.3 Mapa topical e pilares, 3.1 Core Web Vitals com metas numéricas, 3.2 Acessibilidade (WCAG), 4.1 GEO citabilidade, 8 Metadados por página (canonical, OG, Twitter, robots), 9 Política editorial. Regra de transições ganhou teto com diversidade. Validador `validate-ptbr.ts` passou a bloquear AI-inflated, meta-frase sobre o artigo e aberturas genéricas. |
-| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória · v1.9 rótulos de instrução proibidos como heading · v2.0 imagens únicas em todo o site · v2.1 endurecimento anti-IA + autoria real + freshness + canibalização + mapa topical + CWV metas + acessibilidade + GEO citabilidade + metadados por página + política editorial |
+| **Alterações desta revisão** | Otimização radical de imagens: hero e cards do blog usam `next/image` e imagens no corpo do artigo passam por otimização automática via `/_next/image` com `srcset` + `sizes` + lazy/async, sem exigir marcação manual. |
+| **Histórico** | v1.0 base · v1.1 performance e multimídia · v1.2 pipeline e YAML · v1.3 Schema Markup · v1.4 registro de imagens e regra de duplicatas · v1.5 voz humana e sentence case · v1.6 travessão proibido · v1.7 links externos e parceiros · v1.8 acentuação pt-BR obrigatória · v1.9 rótulos de instrução proibidos como heading · v2.0 imagens únicas em todo o site · v2.1 endurecimento anti-IA + autoria real + freshness + canibalização + mapa topical + CWV metas + acessibilidade + GEO citabilidade + metadados por página + política editorial · v2.2 otimização automática de imagens (next/image + srcset no corpo) |
 
 > Para incrementar: atualize `Revisão`, `Data` e `Alterações desta revisão`. Registre a versão anterior em `Histórico`.
 
@@ -91,8 +91,8 @@ Este guia é **vivo**: deve acompanhar mudanças de busca, de interfaces com IA 
 - **Sem duplicatas de arquivo em todo o site:** cada imagem deve existir em **uma única cópia** no repositório. Arquivos com conteúdo idêntico mas nomes diferentes são proibidos, causam a mesma foto aparecendo em contextos distintos e desperdiçam banda. Antes de subir uma nova imagem, verificar o MD5/hash contra o **Registro de Imagens** (Seção 1.1). Se o hash já existir, reutilizar o arquivo original com seu nome canônico, **não** criar cópia com novo nome.
 - **Menos pedidos HTTP vale ouro:** prefira **menos imagens fortes** a muitas fotos médias repetidas. Tabelas, listas e infográficos embutidos contam para escaneabilidade, não substituem E-E-A-T, mas **podem** reduzir a necessidade de imagem a cada X palavras quando o texto já é denso.
 - **Peso e formato:** preferir **JPEG/WebP** otimizado para fotos; **PNG** só quando precisar transparência ou leitura fina. Evite PNG enormes para fotos realistas. Comprimir antes de subir (metas orientadoras: hero tipicamente **&lt; 200-300 KB** quando possível; corpo **&lt; 150 KB** por imagem, ajustar ao orçamento de qualidade).
-- **Carregamento no corpo do artigo:** imagens abaixo da dobra devem usar **carregamento tardio** (`loading="lazy"`), **`decoding="async"`** e **`sizes`** adequado ao layout; evitar alturas gigantes só por estética se não trouxer informação.
-- **Hero (LCP):** a imagem principal do post deve ser tratada como **LCP**: priorizar carregamento (ex.: `fetchpriority="high"` no template quando aplicável) e não competir com várias imagens pesadas logo acima do texto.
+- **Carregamento no corpo do artigo (padrão novo):** o site otimiza automaticamente imagens de corpo (a partir de `<img src="/...">`) usando o otimizador do Next (`/_next/image`) e injeta `srcset` + `sizes` + `loading="lazy"` + `decoding="async"`. Na prática: você **não precisa** escrever manualmente `srcset/sizes` — basta usar `<img src="...">` com `alt` correto e classes de tamanho/proporção.
+- **Hero (LCP):** a imagem principal do post deve ser tratada como **LCP**: ela é renderizada com `next/image` (priority + sizes). Mesmo assim, o arquivo original precisa ser bem comprimido para não estourar o orçamento.
 - **Texto alternativo:** todo arquivo publicado com **alt** descritivo, único por imagem, alinhado ao conteúdo adjacente (acessibilidade + SEO imagem).
 
 
