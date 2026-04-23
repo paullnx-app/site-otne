@@ -12,6 +12,7 @@ import { BlogCategories } from "@/components/blog/blog-categories";
 import { ScrollProgress } from "@/components/blog/scroll-progress";
 import { useMemo, useEffect, useRef } from "react";
 import type { BlogPost } from "@/data/blog-posts";
+import Image from "next/image";
 
 const MONTHS: Record<string, string> = {
   Jan: "01", Fev: "02", Mar: "03", Abr: "04", Mai: "05", Jun: "06",
@@ -137,13 +138,15 @@ export function BlogPostContent({ post }: { post: BlogPost }) {
             {!post.updatedDate && <div className="border-b border-border mb-0 pb-0" />}
           </header>
 
-          <div className="aspect-video rounded-xl overflow-hidden mb-16 shadow-sm">
-            <img
+          <div className="aspect-video rounded-xl overflow-hidden mb-16 shadow-sm relative">
+            <Image
               src={post.imageUrl}
               alt={post.title}
-              className="w-full h-full object-cover"
-              fetchPriority="high"
-              decoding="async"
+              fill
+              sizes="(max-width: 1024px) 100vw, 1100px"
+              className="object-cover"
+              priority
+              quality={85}
             />
           </div>
 

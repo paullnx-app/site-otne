@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Navbar } from "@/components/layout/Navbar";
 import { blogPosts } from "@/data/blog-posts";
 import Link from "next/link";
+import Image from "next/image";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
@@ -90,14 +91,15 @@ export default function BlogIndex() {
                 className="bg-white rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-md transition-all group"
               >
                 <Link href={`/blog/${post.slug}`}>
-                  <div className="aspect-video overflow-hidden cursor-pointer bg-muted">
-                    <img
+                  <div className="aspect-video overflow-hidden cursor-pointer bg-muted relative">
+                    <Image
                       src={post.imageUrl}
                       alt={post.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
-                      width="400"
-                      height="225"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      quality={82}
                     />
                   </div>
                   <div className="p-6">
